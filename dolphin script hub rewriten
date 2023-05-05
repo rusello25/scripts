@@ -1,0 +1,797 @@
+-- Instances:
+
+local ScriptHub = Instance.new("ScreenGui")
+local scripthub = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Btools = Instance.new("TextButton")
+local Dex = Instance.new("TextButton")
+local HomebrewAdmin = Instance.new("TextButton")
+local IYAdmin = Instance.new("TextButton")
+local KidnapGUI = Instance.new("TextButton")
+local Suicide = Instance.new("TextButton")
+local FatesAdmin = Instance.new("TextButton")
+local ReplicationGUI = Instance.new("TextButton")
+local RejoinButtonWhenKicked = Instance.new("TextButton")
+local Translator = Instance.new("TextButton")
+local c00lgui = Instance.new("TextButton")
+local NamelessAdmin = Instance.new("TextButton")
+local ClientsidedLaserGun = Instance.new("TextButton")
+local ExolinerAdmin = Instance.new("TextButton")
+local ProtonAdmin = Instance.new("TextButton")
+local DolphinIcon = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+
+--Properties:
+
+ScriptHub.Name = "Script Hub"
+ScriptHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScriptHub.ResetOnSpawn = false
+
+scripthub.Name = "scripthub"
+scripthub.Parent = ScriptHub
+scripthub.Active = true
+scripthub.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+scripthub.BorderSizePixel = 0
+scripthub.Position = UDim2.new(0.478734583, 0, 0.283235013, 0)
+scripthub.Size = UDim2.new(0, 411, 0, 383)
+
+TextLabel.Parent = scripthub
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 411, 0, 25)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dolphin Rewriten Script Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextButton.Name = "-"
+TextButton.Parent = scripthub
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.94382149, 0, -0.013338008, 0)
+TextButton.Size = UDim2.new(0, 26, 0, 27)
+TextButton.Font = Enum.Font.SourceSansSemibold
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 18.000
+TextButton.TextWrapped = true
+
+Frame.Parent = scripthub
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.01699985, 0, 0.112999976, 0)
+Frame.Size = UDim2.new(0, 397, 0, 290)
+
+UIListLayout.Parent = Frame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 1)
+
+Btools.Name = "Btools"
+Btools.Parent = Frame
+Btools.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Btools.BorderColor3 = Color3.fromRGB(84, 139, 175)
+Btools.BorderSizePixel = 0
+Btools.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+Btools.Size = UDim2.new(0, 96, 0, 18)
+Btools.AutoButtonColor = false
+Btools.Selected = true
+Btools.Font = Enum.Font.SourceSans
+Btools.Text = " BTools"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextSize = 15.000
+Btools.TextXAlignment = Enum.TextXAlignment.Left
+
+Dex.Name = "Dex"
+Dex.Parent = Frame
+Dex.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Dex.BorderColor3 = Color3.fromRGB(84, 139, 175)
+Dex.BorderSizePixel = 0
+Dex.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+Dex.Size = UDim2.new(0, 96, 0, 18)
+Dex.AutoButtonColor = false
+Dex.Selected = true
+Dex.Font = Enum.Font.SourceSans
+Dex.Text = " Dex"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextSize = 15.000
+Dex.TextXAlignment = Enum.TextXAlignment.Left
+
+HomebrewAdmin.Name = "Homebrew Admin"
+HomebrewAdmin.Parent = Frame
+HomebrewAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+HomebrewAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+HomebrewAdmin.BorderSizePixel = 0
+HomebrewAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+HomebrewAdmin.Size = UDim2.new(0, 96, 0, 18)
+HomebrewAdmin.AutoButtonColor = false
+HomebrewAdmin.Selected = true
+HomebrewAdmin.Font = Enum.Font.SourceSans
+HomebrewAdmin.Text = " Homebrew Admin"
+HomebrewAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomebrewAdmin.TextSize = 15.000
+HomebrewAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+IYAdmin.Name = "IY Admin"
+IYAdmin.Parent = Frame
+IYAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+IYAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+IYAdmin.BorderSizePixel = 0
+IYAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+IYAdmin.Size = UDim2.new(0, 96, 0, 18)
+IYAdmin.AutoButtonColor = false
+IYAdmin.Selected = true
+IYAdmin.Font = Enum.Font.SourceSans
+IYAdmin.Text = " IY Admin"
+IYAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+IYAdmin.TextSize = 15.000
+IYAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+KidnapGUI.Name = "Kidnap GUI"
+KidnapGUI.Parent = Frame
+KidnapGUI.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KidnapGUI.BorderColor3 = Color3.fromRGB(84, 139, 175)
+KidnapGUI.BorderSizePixel = 0
+KidnapGUI.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+KidnapGUI.Size = UDim2.new(0, 96, 0, 18)
+KidnapGUI.AutoButtonColor = false
+KidnapGUI.Selected = true
+KidnapGUI.Font = Enum.Font.SourceSans
+KidnapGUI.Text = " Kidnap GUI"
+KidnapGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+KidnapGUI.TextSize = 15.000
+KidnapGUI.TextXAlignment = Enum.TextXAlignment.Left
+
+Suicide.Name = "Suicide"
+Suicide.Parent = Frame
+Suicide.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Suicide.BorderColor3 = Color3.fromRGB(84, 139, 175)
+Suicide.BorderSizePixel = 0
+Suicide.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+Suicide.Size = UDim2.new(0, 96, 0, 18)
+Suicide.AutoButtonColor = false
+Suicide.Selected = true
+Suicide.Font = Enum.Font.SourceSans
+Suicide.Text = " Suicide"
+Suicide.TextColor3 = Color3.fromRGB(255, 255, 255)
+Suicide.TextSize = 15.000
+Suicide.TextXAlignment = Enum.TextXAlignment.Left
+
+FatesAdmin.Name = "Fates Admin"
+FatesAdmin.Parent = Frame
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+FatesAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+FatesAdmin.BorderSizePixel = 0
+FatesAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+FatesAdmin.Size = UDim2.new(0, 96, 0, 18)
+FatesAdmin.AutoButtonColor = false
+FatesAdmin.Selected = true
+FatesAdmin.Font = Enum.Font.SourceSans
+FatesAdmin.Text = " Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.TextSize = 15.000
+FatesAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+ReplicationGUI.Name = "Replication GUI"
+ReplicationGUI.Parent = Frame
+ReplicationGUI.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ReplicationGUI.BorderColor3 = Color3.fromRGB(84, 139, 175)
+ReplicationGUI.BorderSizePixel = 0
+ReplicationGUI.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+ReplicationGUI.Size = UDim2.new(0, 96, 0, 18)
+ReplicationGUI.AutoButtonColor = false
+ReplicationGUI.Selected = true
+ReplicationGUI.Font = Enum.Font.SourceSans
+ReplicationGUI.Text = " Replication GUI"
+ReplicationGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReplicationGUI.TextSize = 15.000
+ReplicationGUI.TextXAlignment = Enum.TextXAlignment.Left
+
+RejoinButtonWhenKicked.Name = "Rejoin Button When Kicked"
+RejoinButtonWhenKicked.Parent = Frame
+RejoinButtonWhenKicked.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+RejoinButtonWhenKicked.BorderColor3 = Color3.fromRGB(84, 139, 175)
+RejoinButtonWhenKicked.BorderSizePixel = 0
+RejoinButtonWhenKicked.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+RejoinButtonWhenKicked.Size = UDim2.new(0, 96, 0, 18)
+RejoinButtonWhenKicked.AutoButtonColor = false
+RejoinButtonWhenKicked.Selected = true
+RejoinButtonWhenKicked.Font = Enum.Font.SourceSans
+RejoinButtonWhenKicked.Text = " Rejoin Button When Kicked"
+RejoinButtonWhenKicked.TextColor3 = Color3.fromRGB(255, 255, 255)
+RejoinButtonWhenKicked.TextSize = 15.000
+RejoinButtonWhenKicked.TextXAlignment = Enum.TextXAlignment.Left
+
+Translator.Name = "Translator"
+Translator.Parent = Frame
+Translator.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Translator.BorderColor3 = Color3.fromRGB(84, 139, 175)
+Translator.BorderSizePixel = 0
+Translator.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+Translator.Size = UDim2.new(0, 96, 0, 18)
+Translator.AutoButtonColor = false
+Translator.Selected = true
+Translator.Font = Enum.Font.SourceSans
+Translator.Text = " Translator"
+Translator.TextColor3 = Color3.fromRGB(255, 255, 255)
+Translator.TextSize = 15.000
+Translator.TextXAlignment = Enum.TextXAlignment.Left
+
+c00lgui.Name = "c00lgui"
+c00lgui.Parent = Frame
+c00lgui.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+c00lgui.BorderColor3 = Color3.fromRGB(84, 139, 175)
+c00lgui.BorderSizePixel = 0
+c00lgui.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+c00lgui.Size = UDim2.new(0, 96, 0, 18)
+c00lgui.AutoButtonColor = false
+c00lgui.Selected = true
+c00lgui.Font = Enum.Font.SourceSans
+c00lgui.Text = " c00lgui"
+c00lgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+c00lgui.TextSize = 15.000
+c00lgui.TextXAlignment = Enum.TextXAlignment.Left
+
+NamelessAdmin.Name = "Nameless Admin"
+NamelessAdmin.Parent = Frame
+NamelessAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+NamelessAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+NamelessAdmin.BorderSizePixel = 0
+NamelessAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+NamelessAdmin.Size = UDim2.new(0, 96, 0, 18)
+NamelessAdmin.AutoButtonColor = false
+NamelessAdmin.Selected = true
+NamelessAdmin.Font = Enum.Font.SourceSans
+NamelessAdmin.Text = " Nameless Admin"
+NamelessAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+NamelessAdmin.TextSize = 15.000
+NamelessAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+ClientsidedLaserGun.Name = "Clientsided Laser Gun"
+ClientsidedLaserGun.Parent = Frame
+ClientsidedLaserGun.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ClientsidedLaserGun.BorderColor3 = Color3.fromRGB(84, 139, 175)
+ClientsidedLaserGun.BorderSizePixel = 0
+ClientsidedLaserGun.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+ClientsidedLaserGun.Size = UDim2.new(0, 96, 0, 18)
+ClientsidedLaserGun.AutoButtonColor = false
+ClientsidedLaserGun.Selected = true
+ClientsidedLaserGun.Font = Enum.Font.SourceSans
+ClientsidedLaserGun.Text = " Clientsided Laser Gun (might be useful)"
+ClientsidedLaserGun.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClientsidedLaserGun.TextSize = 15.000
+ClientsidedLaserGun.TextXAlignment = Enum.TextXAlignment.Left
+
+ExolinerAdmin.Name = "Exoliner Admin"
+ExolinerAdmin.Parent = Frame
+ExolinerAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ExolinerAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+ExolinerAdmin.BorderSizePixel = 0
+ExolinerAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+ExolinerAdmin.Size = UDim2.new(0, 96, 0, 18)
+ExolinerAdmin.AutoButtonColor = false
+ExolinerAdmin.Selected = true
+ExolinerAdmin.Font = Enum.Font.SourceSans
+ExolinerAdmin.Text = " Exoliner Admin"
+ExolinerAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExolinerAdmin.TextSize = 15.000
+ExolinerAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+ProtonAdmin.Name = "Proton Admin"
+ProtonAdmin.Parent = Frame
+ProtonAdmin.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ProtonAdmin.BorderColor3 = Color3.fromRGB(84, 139, 175)
+ProtonAdmin.BorderSizePixel = 0
+ProtonAdmin.Position = UDim2.new(0.0170000009, 0, 0.176380277, 0)
+ProtonAdmin.Size = UDim2.new(0, 96, 0, 18)
+ProtonAdmin.AutoButtonColor = false
+ProtonAdmin.Selected = true
+ProtonAdmin.Font = Enum.Font.SourceSans
+ProtonAdmin.Text = " Proton Admin"
+ProtonAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProtonAdmin.TextSize = 15.000
+ProtonAdmin.TextXAlignment = Enum.TextXAlignment.Left
+
+DolphinIcon.Name = "DolphinIcon"
+DolphinIcon.Parent = scripthub
+DolphinIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DolphinIcon.BackgroundTransparency = 1.000
+DolphinIcon.BorderSizePixel = 0
+DolphinIcon.Position = UDim2.new(-0.0239312761, 0, -0.027378371, 0)
+DolphinIcon.Size = UDim2.new(0, 60, 0, 44)
+DolphinIcon.Image = "rbxassetid://3390147595"
+
+TextBox.Parent = scripthub
+TextBox.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.01699985, 0, 0.909947336, 0)
+TextBox.Size = UDim2.new(0, 397, 0, 20)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Search"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+-- Scripts:
+
+local function XIAHFX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(XIAHFX_fake_script)()
+local function YKHCFOV_fake_script() -- Btools.LocalScript 
+	local script = Instance.new('LocalScript', Btools)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/FE%20BTools%20V3.Lua"))()
+	end)
+end
+coroutine.wrap(YKHCFOV_fake_script)()
+local function CYMF_fake_script() -- Dex.LocalScript 
+	local script = Instance.new('LocalScript', Dex)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+	end)
+end
+coroutine.wrap(CYMF_fake_script)()
+local function JTUDEPE_fake_script() -- HomebrewAdmin.LocalScript 
+	local script = Instance.new('LocalScript', HomebrewAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Syntaxx64/HomebrewAdmin/master/Main"))()
+	end)
+end
+coroutine.wrap(JTUDEPE_fake_script)()
+local function PWJJWT_fake_script() -- IYAdmin.LocalScript 
+	local script = Instance.new('LocalScript', IYAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(PWJJWT_fake_script)()
+local function NDXTLH_fake_script() -- KidnapGUI.LocalScript 
+	local script = Instance.new('LocalScript', KidnapGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Instances:
+	
+		local KidnapGui = Instance.new("ScreenGui")
+		local Opener = Instance.new("Frame")
+		local Open = Instance.new("TextButton")
+		local DaGui = Instance.new("Frame")
+		local Frame = Instance.new("Frame")
+		local Close = Instance.new("TextButton")
+		local Username = Instance.new("TextBox")
+		local VanDaPlayer = Instance.new("TextButton")
+		local TextLabel = Instance.new("TextLabel")
+	
+		--Properties:
+	
+		KidnapGui.Name = "KidnapGui"
+		KidnapGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		KidnapGui.ResetOnSpawn = false
+	
+		Opener.Name = "Opener"
+		Opener.Parent = KidnapGui
+		Opener.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Opener.BackgroundTransparency = 0.500
+		Opener.Position = UDim2.new(0, 19, 0, 564)
+		Opener.Size = UDim2.new(0, 224, 0, 40)
+	
+		Open.Name = "Open"
+		Open.Parent = Opener
+		Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Open.BackgroundTransparency = 0.500
+		Open.Size = UDim2.new(0, 224, 0, 40)
+		Open.Font = Enum.Font.SciFi
+		Open.Text = "Open"
+		Open.TextColor3 = Color3.fromRGB(0, 255, 255)
+		Open.TextSize = 42.000
+	
+		DaGui.Name = "DaGui"
+		DaGui.Parent = KidnapGui
+		DaGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		DaGui.BackgroundTransparency = 0.500
+		DaGui.Draggable = true
+		DaGui.Position = UDim2.new(0, 0, 0, 311)
+		DaGui.Size = UDim2.new(0, 343, 0, 197)
+		DaGui.Visible = false
+	
+		Frame.Parent = DaGui
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		Frame.Position = UDim2.new(0, 313, 0, 0)
+		Frame.Size = UDim2.new(0, 30, 0, 26)
+	
+		Close.Name = "Close"
+		Close.Parent = Frame
+		Close.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		Close.Size = UDim2.new(0, 30, 0, 26)
+		Close.Font = Enum.Font.SciFi
+		Close.Text = "X"
+		Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Close.TextSize = 14.000
+		Close.TextStrokeTransparency = 5.000
+	
+		Username.Name = "Username"
+		Username.Parent = DaGui
+		Username.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Username.BackgroundTransparency = 0.500
+		Username.Position = UDim2.new(0, 72, 0, 76)
+		Username.Size = UDim2.new(0, 200, 0.0999999866, 24)
+		Username.Font = Enum.Font.SciFi
+		Username.Text = "Username"
+		Username.TextColor3 = Color3.fromRGB(0, 255, 255)
+		Username.TextSize = 18.000
+	
+		VanDaPlayer.Name = "VanDaPlayer"
+		VanDaPlayer.Parent = DaGui
+		VanDaPlayer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		VanDaPlayer.BackgroundTransparency = 0.500
+		VanDaPlayer.Position = UDim2.new(0.0199999996, 90, 0.00999999978, 138)
+		VanDaPlayer.Size = UDim2.new(0, 150, 0, 26)
+		VanDaPlayer.Font = Enum.Font.SciFi
+		VanDaPlayer.Text = "KIdnap Player"
+		VanDaPlayer.TextColor3 = Color3.fromRGB(0, 255, 255)
+		VanDaPlayer.TextSize = 14.000
+	
+		TextLabel.Parent = DaGui
+		TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.BackgroundTransparency = 0.500
+		TextLabel.Position = UDim2.new(0, 48, 0, 22)
+		TextLabel.Size = UDim2.new(0, 246, 0, 19)
+		TextLabel.Font = Enum.Font.SciFi
+		TextLabel.Text = "KIdnap Player Gui by rusello25"
+		TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
+		TextLabel.TextSize = 17.000
+	
+		-- Scripts:
+	
+		local function ZNKPUH_fake_script() -- Open.LocalScript 
+			local script = Instance.new('LocalScript', Open)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Visible = false
+				script.Parent.Parent.Parent.DaGui.Visible = true
+			end)
+		end
+		coroutine.wrap(ZNKPUH_fake_script)()
+		local function XSGIG_fake_script() -- Close.LocalScript 
+			local script = Instance.new('LocalScript', Close)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Parent.Visible = false
+				script.Parent.Parent.Parent.Parent.Opener.Visible = true
+			end)
+		end
+		coroutine.wrap(XSGIG_fake_script)()
+		local function BGCLI_fake_script() -- VanDaPlayer.LocalScript 
+			local script = Instance.new('LocalScript', VanDaPlayer)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				targetname = script.Parent.Parent.Username.Text
+				Target = game.Players:FindFirstChild(targetname)
+	
+				local currentCFrame = Target.Character.Head.CFrame
+	
+	
+				local offset = Vector3.new(0, 0, -50)
+				local newPosition = currentCFrame.p + offset
+				local newCFrame = CFrame.new(newPosition, currentCFrame.lookVector)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = newCFrame
+				wait(1)
+				local Player = game.Players.LocalPlayer
+				local player = game.Players.LocalPlayer
+	
+				local targetPlayer = Target
+	
+				local tweenInfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+				-- create the teleport tween
+				local teleportTween = game:GetService("TweenService"):Create(player.Character.HumanoidRootPart, tweenInfo, {
+					CFrame = CFrame.new()
+				})
+	
+				-- start the teleport tween to the current target player
+				function startTeleportTween()
+					if targetPlayer then
+						teleportTween:Cancel()
+						teleportTween = game:GetService("TweenService"):Create(player.Character.HumanoidRootPart, tweenInfo, {
+							CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+						})
+						teleportTween:Play()
+					end
+				end
+	
+				startTeleportTween()
+				wait(2)
+				local TPlayer = Target
+				TRootPart = TPlayer.Character.HumanoidRootPart
+				local Character = Player.Character
+				local PlayerGui = Player:WaitForChild("PlayerGui")
+				local Backpack = Player:WaitForChild("Backpack")
+				local Humanoid = Character and Character:FindFirstChildWhichIsA("Humanoid") or false
+				local RootPart = Character and Humanoid and Humanoid.RootPart or false
+				local RightArm = Character and Character:FindFirstChild("Right Arm") or Character:FindFirstChild("RightHand")
+				if not Humanoid or not RootPart or not RightArm then
+					return
+				end
+				Humanoid:UnequipTools()
+				local MainTool = Backpack:FindFirstChildWhichIsA("Tool") or false
+				if not MainTool or not MainTool:FindFirstChild("Handle") then
+					return
+				end
+				Humanoid.Name = "DAttach"
+				local l = Character["DAttach"]:Clone()
+				l.Parent = Character
+				l.Name = "Humanoid"
+				wait()
+				Character["DAttach"]:Destroy()
+				game.Workspace.CurrentCamera.CameraSubject = Character
+				Character.Animate.Disabled = true
+				wait()
+				Character.Animate.Disabled = false
+				Character.Humanoid:EquipTool(MainTool)
+				wait()
+				CF = Player.Character.PrimaryPart.CFrame
+				if firetouchinterest then
+					local flag = false
+					task.defer(function()
+						MainTool.Handle.AncestryChanged:wait()
+						flag = true
+					end)
+					repeat
+						firetouchinterest(MainTool.Handle, TRootPart, 0)
+						firetouchinterest(MainTool.Handle, TRootPart, 1)
+						wait()
+					until flag
+				else
+					Player.Character.HumanoidRootPart.CFrame =
+						TCharacter.HumanoidRootPart.CFrame
+					wait()
+					Player.Character.HumanoidRootPart.CFrame =
+						TCharacter.HumanoidRootPart.CFrame
+					wait()
+				end
+				wait(0.7)
+				local targetPosition = player.Character.HumanoidRootPart.Position + Vector3.new(0, 0, 1000)
+	
+				local tweenInfo = TweenInfo.new(4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+				local teleportTween = game:GetService("TweenService"):Create(player.Character.HumanoidRootPart, tweenInfo, {
+					CFrame = CFrame.new(targetPosition)
+				})
+	
+				teleportTween:Play()	
+			end)
+		end
+		coroutine.wrap(BGCLI_fake_script)()
+	end)
+end
+coroutine.wrap(NDXTLH_fake_script)()
+local function IIRWRD_fake_script() -- Suicide.LocalScript 
+	local script = Instance.new('LocalScript', Suicide)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		return(function(snap_IIIllIIIlllIIlIlll,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl)local snap_lIlIlIIIIIlIIlIlllI=string.char;local snap_IIllIlIllIIlIlIIII=string.sub;local snap_llIlllIllIlIIIIlllIIl=table.concat;local snap_IlIllIlllIIllI=math.ldexp;local snap_llllllllIIllllIlI=getfenv or function()return _ENV end;local snap_IlIllIllIIlll=select;local snap_lllIllIIlIIIIlIllIlllIlI=unpack or table.unpack;local snap_IIIIlllIllllIIIIIlIll=tonumber;local function snap_IlllllIlIIIIIIIlll(snap_lllIllIIlIIIIlIllIlllIlI)local snap_llIIlIIlIlIllIl,snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIIlllIIIIIlIllllII="","",{}local snap_IlIlIIlIlIllIllIl=256;local snap_lIIlIIIllIIlIIIlI={}for snap_llIIlIlIlIllIlIl=0,snap_IlIlIIlIlIllIllIl-1 do snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl]=snap_lIlIlIIIIIlIIlIlllI(snap_llIIlIlIlIllIlIl)end;local snap_llIIlIlIlIllIlIl=1;local function snap_IIIllIIIlllIIlIlll()local snap_llIIlIIlIlIllIl=snap_IIIIlllIllllIIIIIlIll(snap_IIllIlIllIIlIlIIII(snap_lllIllIIlIIIIlIllIlllIlI,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl),36)snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+1;local snap_lIllIlIIIllIIIllIlIlllIlI=snap_IIIIlllIllllIIIIIlIll(snap_IIllIlIllIIlIlIIII(snap_lllIllIIlIIIIlIllIlllIlI,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl-1),36)snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl;return snap_lIllIlIIIllIIIllIlIlllIlI end;snap_llIIlIIlIlIllIl=snap_lIlIlIIIIIlIIlIlllI(snap_IIIllIIIlllIIlIlll())snap_IIIlllIIIIIlIllllII[1]=snap_llIIlIIlIlIllIl;while snap_llIIlIlIlIllIlIl<#snap_lllIllIIlIIIIlIllIlllIlI do local snap_llIIlIlIlIllIlIl=snap_IIIllIIIlllIIlIlll()if snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl]then snap_lIllIlIIIllIIIllIlIlllIlI=snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl]else snap_lIllIlIIIllIIIllIlIlllIlI=snap_llIIlIIlIlIllIl..snap_IIllIlIllIIlIlIIII(snap_llIIlIIlIlIllIl,1,1)end;snap_lIIlIIIllIIlIIIlI[snap_IlIlIIlIlIllIllIl]=snap_llIIlIIlIlIllIl..snap_IIllIlIllIIlIlIIII(snap_lIllIlIIIllIIIllIlIlllIlI,1,1)snap_IIIlllIIIIIlIllllII[#snap_IIIlllIIIIIlIllllII+1],snap_llIIlIIlIlIllIl,snap_IlIlIIlIlIllIllIl=snap_lIllIlIIIllIIIllIlIlllIlI,snap_lIllIlIIIllIIIllIlIlllIlI,snap_IlIlIIlIlIllIllIl+1 end;return table.concat(snap_IIIlllIIIIIlIllllII)end;local snap_IIIIlllIllllIIIIIlIll=snap_IlllllIlIIIIIIIlll('21L1L2751M1G2751L22U22T23822Q23F1M1H27923623823C2341M1I27921X23D23823023422V22U1M1U27922H23E23A23823D27Q27S27U1M1S27922E23H23822V23823A22P28728927521Z23G23623H22P21H22C22V23C27X27922F22V23423823I22N23E23G23F22P27W1T27922K23F22U22P23823F23A27M1M27923F23422Q1M1527922C23D28M23F22I22V23G23429423822P23G23E27F27H27522L28Y2351M1O29O29Q23623F21X23E22U23G29Z2A11M1V29O22P29C23A23H27L29427727921T23E27V23E28U27522C2AN28F2AQ29W22P2112AZ1L2B12AO2B42942101M1R27921Z23427B2A12AG22R29W2BJ22U2792BR23G22D1M1Q2BH28M23G2352AH23022823F23823B23D2342351K1K1M29727522H23423728P28R28T2CD1L2AE2AG2AI27F27O27521V23428G2AW2122BR27926L2162CY27526D2D12D227627Y27529T29V29X2CP2D224523722D2D626L24Q2DE23725X27G27922Q2382AH2D626T2D52CY1X2DH2D21X25X2D62292E123Z23W2E62E624S2161M1P2AU28E29A27C28X29E2302CC27922L22O23C29D2922A71J2EL28Y23D22P23H2DE21W2DY2CY22K2F02BR2172F327921D2BU2CR1L2292BJ22P22V23E2301L24P279172BG2751K2791N2892FO2CY29N2751N1L2FO172BR2FW27521H2D229H2G32CY27H2G62BR2782G62FS1L2ES2G62FW2FO2FA1L2FW2GH1L2FZ2GK1L2CL2GG2GP2892GO29H2AL2G22752A31L2D82FV1L27H2FW2GV2GQ2792G629H29H2GU2GZ1L2EC2GY1L2782752H21L29H2782H62HE2GR2HE27H2HD2HI1L2A92CY2ES2GD27927H2ES2HP2HV2HR2HV2782HU2ES2HX1L2G62FA2FM27527827O2FW2FU29H2BW27H2IK1L29N2782FU2FW2IM2IP2H32IQ1L2112H3142GN2IY2H3161L112J32HM1L2J12FZ2IZ2J92J52J72G62ES275102IC27527O2ES2GJ2II2FX2J21L27O2I627O27O2HU2972GX2JL1L28J2H12BR2JX2GP2GO2972I62K92K22JS2892HG2K12K02HL2JZ2K72752892I62892KO2JS2AL2IB27927Y2JI2BR28927Y2I42AL2I62AL2AL2HU27Y2IB2G62KF2IF1L2AL2EC2IJ2752972BW2892FU29729N2AL2FU27O2LG2IV2JT2IV2AL2JD27O2JB2J827O2JF2J82972LV2JD2972LY2GO27Y122H92HK2K42HU2EC1D2FK2752A91C2ME1L2BG1F2D227Y2BG2LD2KC132K42M51L2M72HH27Y27Y2MB1L192MI2A92ML2752GO2MK2MM2MJ2GP152G32891E2MS1B2K42MV2K12MX2KC2GO2EC182N21L2MH2N52752N72CY2MN2NA2HE2MR27Y2MT2NI2G62NK2MZ2NG2NS2HW1L2N42JS2NU2BR2NW2MP27H2NE2O02M91A2MI2EC2G92KT2GP2FY2M92O22M92MY2JS2MC2NP2NR2OB2O92N82MO2LP2892NZ2JS2M62M82K42OU2NM2N02NP2OA2N61L21G2P12NX2KC2OH2P62MU2P82O42OV1L2NO2O72MG2MI2OC2OO2P22FU27H2P52O12PO2MA2PQ2O62JS2N32PV1L21J2PI2OF1L2PL2MT2OK2O72EC2OY2OO2GM2Q22MW2Q42PB2MD2PT2NQ2Q92OA2PX2PJ2P42MS2OR2Q32PA2752EC2N12QS21I2Q92PH2NV2N92MP2ND2QZ2NH2R12NL2R32PR2OX2QU2QC2LP2Q02RE2P72QO2R22HF1L2Q62GO2A92R72O72BG2QB2RA2PY2HE2QF2OJ2OL1L21D2N82GM2O32OO2112FW27Y21C2QT2SC27521F2J827Y21E1L21P2PM2QH2PQ2S92RA2SB2M92SK2SM1L2SO21O2SR2S72SU2LE2K42SW2K42SY2JD2SN1L21R2T32QI2S82SA2JR2SJ1L2SL2TB2T01L21Q2TF2PQ2QK2M92SB2J52H227Y21H2R72NK2742H82KY2JR1L2QR2U52U82K02DO2752DQ2AH1M2J127522U2342EW2BZ23529W22T2FF22T27U22P2EJ2H027J27L27N27P27R27T27V2B82802822842UZ2872FU1L21Y23G23C22O27R2CP21Z2382C022O27W2H02EO2EW1M29H27522T23E29L2H023H22O23627M2NI22G2382312VB2EN2VA2VC2VE2A023F2VG2VI2BQ2G92FL2792I02R52JR2FW1J2R91L2OK2GD1H2PS2WM2JR2WE2H32N52J72FO2VP2K12FO2FO2G82FN2JR2782GO2WJ2MI29H2FA2HA2J92972GO27H2XA2HS2RH2HV2XG2I72KC2792HN2D62WF2JS2WU2JS2WX2P82X02H42WZ2X42JS2FW2K02H72XK2HB2H82XE2LQ2HH27H2HT2JS2IH2P82782I82BR2XO2XP2JR2H02XQ2U62YM2CY');local snap_llIIlIlIlIllIlIl=(bit or bit32);local snap_IlIlIIlIlIllIllIl=snap_llIIlIlIlIllIlIl and snap_llIIlIlIlIllIlIl.bxor or function(snap_llIIlIlIlIllIlIl,snap_lIllIlIIIllIIIllIlIlllIlI)local snap_llIIlIIlIlIllIl,snap_IlIlIIlIlIllIllIl,snap_IIllIlIllIIlIlIIII=1,0,10 while snap_llIIlIlIlIllIlIl>0 and snap_lIllIlIIIllIIIllIlIlllIlI>0 do local snap_IIllIlIllIIlIlIIII,snap_IIIlllIIIIIlIllllII=snap_llIIlIlIlIllIlIl%2,snap_lIllIlIIIllIIIllIlIlllIlI%2 if snap_IIllIlIllIIlIlIIII~=snap_IIIlllIIIIIlIllllII then snap_IlIlIIlIlIllIllIl=snap_IlIlIIlIlIllIllIl+snap_llIIlIIlIlIllIl end snap_llIIlIlIlIllIlIl,snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl=(snap_llIIlIlIlIllIlIl-snap_IIllIlIllIIlIlIIII)/2,(snap_lIllIlIIIllIIIllIlIlllIlI-snap_IIIlllIIIIIlIllllII)/2,snap_llIIlIIlIlIllIl*2 end if snap_llIIlIlIlIllIlIl<snap_lIllIlIIIllIIIllIlIlllIlI then snap_llIIlIlIlIllIlIl=snap_lIllIlIIIllIIIllIlIlllIlI end while snap_llIIlIlIlIllIlIl>0 do local snap_lIllIlIIIllIIIllIlIlllIlI=snap_llIIlIlIlIllIlIl%2 if snap_lIllIlIIIllIIIllIlIlllIlI>0 then snap_IlIlIIlIlIllIllIl=snap_IlIlIIlIlIllIllIl+snap_llIIlIIlIlIllIl end snap_llIIlIlIlIllIlIl,snap_llIIlIIlIlIllIl=(snap_llIIlIlIlIllIlIl-snap_lIllIlIIIllIIIllIlIlllIlI)/2,snap_llIIlIIlIlIllIl*2 end return snap_IlIlIIlIlIllIllIl end local function snap_lIllIlIIIllIIIllIlIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIlIlIllIlIl,snap_llIIlIIlIlIllIl)if snap_llIIlIIlIlIllIl then local snap_llIIlIlIlIllIlIl=(snap_lIllIlIIIllIIIllIlIlllIlI/2^(snap_llIIlIlIlIllIlIl-1))%2^((snap_llIIlIIlIlIllIl-1)-(snap_llIIlIlIlIllIlIl-1)+1);return snap_llIIlIlIlIllIlIl-snap_llIIlIlIlIllIlIl%1;else local snap_llIIlIlIlIllIlIl=2^(snap_llIIlIlIlIllIlIl-1);return(snap_lIllIlIIIllIIIllIlIlllIlI%(snap_llIIlIlIlIllIlIl+snap_llIIlIlIlIllIlIl)>=snap_llIIlIlIlIllIlIl)and 1 or 0;end;end;local snap_llIIlIlIlIllIlIl=1;local function snap_llIIlIIlIlIllIl()local snap_IIllIlIllIIlIlIIII,snap_llIIlIIlIlIllIl,snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIIlllIIIIIlIllllII=snap_IIIllIIIlllIIlIlll(snap_IIIIlllIllllIIIIIlIll,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl+3);snap_IIllIlIllIIlIlIIII=snap_IlIlIIlIlIllIllIl(snap_IIllIlIllIIlIlIIII,21)snap_llIIlIIlIlIllIl=snap_IlIlIIlIlIllIllIl(snap_llIIlIIlIlIllIl,21)snap_lIllIlIIIllIIIllIlIlllIlI=snap_IlIlIIlIlIllIllIl(snap_lIllIlIIIllIIIllIlIlllIlI,21)snap_IIIlllIIIIIlIllllII=snap_IlIlIIlIlIllIllIl(snap_IIIlllIIIIIlIllllII,21)snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+4;return(snap_IIIlllIIIIIlIllllII*16777216)+(snap_lIllIlIIIllIIIllIlIlllIlI*65536)+(snap_llIIlIIlIlIllIl*256)+snap_IIllIlIllIIlIlIIII;end;local function snap_lIIlIIIllIIlIIIlI()local snap_llIIlIIlIlIllIl=snap_IlIlIIlIlIllIllIl(snap_IIIllIIIlllIIlIlll(snap_IIIIlllIllllIIIIIlIll,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl),21);snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+1;return snap_llIIlIIlIlIllIl;end;local function snap_IIIlllIIIIIlIllllII()local snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl=snap_IIIllIIIlllIIlIlll(snap_IIIIlllIllllIIIIIlIll,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl+2);snap_lIllIlIIIllIIIllIlIlllIlI=snap_IlIlIIlIlIllIllIl(snap_lIllIlIIIllIIIllIlIlllIlI,21)snap_llIIlIIlIlIllIl=snap_IlIlIIlIlIllIllIl(snap_llIIlIIlIlIllIl,21)snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+2;return(snap_llIIlIIlIlIllIl*256)+snap_lIllIlIIIllIIIllIlIlllIlI;end;local function snap_IlllIIllIIlIIIlIlIIIlI()local snap_IlIlIIlIlIllIllIl=snap_llIIlIIlIlIllIl();local snap_llIIlIlIlIllIlIl=snap_llIIlIIlIlIllIl();local snap_IIllIlIllIIlIlIIII=1;local snap_IlIlIIlIlIllIllIl=(snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,1,20)*(2^32))+snap_IlIlIIlIlIllIllIl;local snap_llIIlIIlIlIllIl=snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,21,31);local snap_llIIlIlIlIllIlIl=((-1)^snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,32));if(snap_llIIlIIlIlIllIl==0)then if(snap_IlIlIIlIlIllIllIl==0)then return snap_llIIlIlIlIllIlIl*0;else snap_llIIlIIlIlIllIl=1;snap_IIllIlIllIIlIlIIII=0;end;elseif(snap_llIIlIIlIlIllIl==2047)then return(snap_IlIlIIlIlIllIllIl==0)and(snap_llIIlIlIlIllIlIl*(1/0))or(snap_llIIlIlIlIllIlIl*(0/0));end;return snap_IlIllIlllIIllI(snap_llIIlIlIlIllIlIl,snap_llIIlIIlIlIllIl-1023)*(snap_IIllIlIllIIlIlIIII+(snap_IlIlIIlIlIllIllIl/(2^52)));end;local snap_IlllllIlIIIIIIIlll=snap_llIIlIIlIlIllIl;local function snap_IlIllIlllIIllI(snap_llIIlIIlIlIllIl)local snap_lIllIlIIIllIIIllIlIlllIlI;if(not snap_llIIlIIlIlIllIl)then snap_llIIlIIlIlIllIl=snap_IlllllIlIIIIIIIlll();if(snap_llIIlIIlIlIllIl==0)then return'';end;end;snap_lIllIlIIIllIIIllIlIlllIlI=snap_IIllIlIllIIlIlIIII(snap_IIIIlllIllllIIIIIlIll,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl-1);snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl;local snap_llIIlIIlIlIllIl={}for snap_llIIlIlIlIllIlIl=1,#snap_lIllIlIIIllIIIllIlIlllIlI do snap_llIIlIIlIlIllIl[snap_llIIlIlIlIllIlIl]=snap_lIlIlIIIIIlIIlIlllI(snap_IlIlIIlIlIllIllIl(snap_IIIllIIIlllIIlIlll(snap_IIllIlIllIIlIlIIII(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIlIlIllIlIl,snap_llIIlIlIlIllIlIl)),21))end return snap_llIlllIllIlIIIIlllIIl(snap_llIIlIIlIlIllIl);end;local snap_llIIlIlIlIllIlIl=snap_llIIlIIlIlIllIl;local function snap_llIlllIllIlIIIIlllIIl(...)return{...},snap_IlIllIllIIlll('#',...)end local function snap_IIIllIIIlllIIlIlll()local snap_lIlIlIIIIIlIIlIlllI={};local snap_IIIIlllIllllIIIIIlIll={};local snap_llIIlIlIlIllIlIl={};local snap_lllIllIIlIIIIlIllIlllIlI={[#{{580;182;548;651};"1 + 1 = 111";}]=snap_IIIIlllIllllIIIIIlIll,[#{"1 + 1 = 111";"1 + 1 = 111";{447;585;150;446};}]=nil,[#{{111;800;296;654};"1 + 1 = 111";{737;421;35;828};{386;57;571;921};}]=snap_llIIlIlIlIllIlIl,[#{"1 + 1 = 111";}]=snap_lIlIlIIIIIlIIlIlllI,};local snap_llIIlIlIlIllIlIl=snap_llIIlIIlIlIllIl()local snap_IIllIlIllIIlIlIIII={}for snap_lIllIlIIIllIIIllIlIlllIlI=1,snap_llIIlIlIlIllIlIl do local snap_llIIlIIlIlIllIl=snap_lIIlIIIllIIlIIIlI();local snap_llIIlIlIlIllIlIl;if(snap_llIIlIIlIlIllIl==1)then snap_llIIlIlIlIllIlIl=(snap_lIIlIIIllIIlIIIlI()~=0);elseif(snap_llIIlIIlIlIllIl==0)then snap_llIIlIlIlIllIlIl=snap_IlllIIllIIlIIIlIlIIIlI();elseif(snap_llIIlIIlIlIllIl==3)then snap_llIIlIlIlIllIlIl=snap_IlIllIlllIIllI();end;snap_IIllIlIllIIlIlIIII[snap_lIllIlIIIllIIIllIlIlllIlI]=snap_llIIlIlIlIllIlIl;end;snap_lllIllIIlIIIIlIllIlllIlI[3]=snap_lIIlIIIllIIlIIIlI();for snap_lllIllIIlIIIIlIllIlllIlI=1,snap_llIIlIIlIlIllIl()do local snap_llIIlIlIlIllIlIl=snap_lIIlIIIllIIlIIIlI();if(snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,1,1)==0)then local snap_IlIlIIlIlIllIllIl=snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,2,3);local snap_lIIlIIIllIIlIIIlI=snap_lIllIlIIIllIIIllIlIlllIlI(snap_llIIlIlIlIllIlIl,4,6);local snap_llIIlIlIlIllIlIl={snap_IIIlllIIIIIlIllllII(),snap_IIIlllIIIIIlIllllII(),nil,nil};if(snap_IlIlIIlIlIllIllIl==0)then snap_llIIlIlIlIllIlIl[3]=snap_IIIlllIIIIIlIllllII();snap_llIIlIlIlIllIlIl[4]=snap_IIIlllIIIIIlIllllII();elseif(snap_IlIlIIlIlIllIllIl==1)then snap_llIIlIlIlIllIlIl[3]=snap_llIIlIIlIlIllIl();elseif(snap_IlIlIIlIlIllIllIl==2)then snap_llIIlIlIlIllIlIl[3]=snap_llIIlIIlIlIllIl()-(2^16)elseif(snap_IlIlIIlIlIllIllIl==3)then snap_llIIlIlIlIllIlIl[3]=snap_llIIlIIlIlIllIl()-(2^16)snap_llIIlIlIlIllIlIl[4]=snap_IIIlllIIIIIlIllllII();end;if(snap_lIllIlIIIllIIIllIlIlllIlI(snap_lIIlIIIllIIlIIIlI,1,1)==1)then snap_llIIlIlIlIllIlIl[2]=snap_IIllIlIllIIlIlIIII[snap_llIIlIlIlIllIlIl[2]]end if(snap_lIllIlIIIllIIIllIlIlllIlI(snap_lIIlIIIllIIlIIIlI,2,2)==1)then snap_llIIlIlIlIllIlIl[3]=snap_IIllIlIllIIlIlIIII[snap_llIIlIlIlIllIlIl[3]]end if(snap_lIllIlIIIllIIIllIlIlllIlI(snap_lIIlIIIllIIlIIIlI,3,3)==1)then snap_llIIlIlIlIllIlIl[4]=snap_IIllIlIllIIlIlIIII[snap_llIIlIlIlIllIlIl[4]]end snap_lIlIlIIIIIlIIlIlllI[snap_lllIllIIlIIIIlIllIlllIlI]=snap_llIIlIlIlIllIlIl;end end;for snap_llIIlIlIlIllIlIl=1,snap_llIIlIIlIlIllIl()do snap_IIIIlllIllllIIIIIlIll[snap_llIIlIlIlIllIlIl-1]=snap_IIIllIIIlllIIlIlll();end;return snap_lllIllIIlIIIIlIllIlllIlI;end;local function snap_IlllllIlIIIIIIIlll(snap_llIIlIlIlIllIlIl,snap_llIIlIIlIlIllIl,snap_IIIlllIIIIIlIllllII)snap_llIIlIlIlIllIlIl=(snap_llIIlIlIlIllIlIl==true and snap_IIIllIIIlllIIlIlll())or snap_llIIlIlIlIllIlIl;return(function(...)local snap_IlIlIIlIlIllIllIl=snap_llIIlIlIlIllIlIl[1];local snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[3];local snap_IlIllIlllIIllI=snap_llIIlIlIlIllIlIl[2];local snap_IIIIlllIllllIIIIIlIll=snap_llIlllIllIlIIIIlllIIl local snap_llIIlIIlIlIllIl=1;local snap_IIIllIIIlllIIlIlll=-1;local snap_llllllllIIllllIlI={};local snap_lIIlIIIllIIlIIIlI={...};local snap_lIlIlIIIIIlIIlIlllI=snap_IlIllIllIIlll('#',...)-1;local snap_llIIlIlIlIllIlIl={};local snap_lIllIlIIIllIIIllIlIlllIlI={};for snap_llIIlIlIlIllIlIl=0,snap_lIlIlIIIIIlIIlIlllI do if(snap_llIIlIlIlIllIlIl>=snap_IIllIlIllIIlIlIIII)then snap_llllllllIIllllIlI[snap_llIIlIlIlIllIlIl-snap_IIllIlIllIIlIlIIII]=snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl+1];else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]=snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl+#{{241;568;64;9};}];end;end;local snap_llIIlIlIlIllIlIl=snap_lIlIlIIIIIlIIlIlllI-snap_IIllIlIllIIlIlIIII+1 local snap_llIIlIlIlIllIlIl;local snap_lIIlIIIllIIlIIIlI;while true do snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIIlIIIllIIlIIIlI=snap_llIIlIlIlIllIlIl[1];if snap_lIIlIIIllIIlIIIlI<=17 then if snap_lIIlIIIllIIlIIIlI<=8 then if snap_lIIlIIIllIIlIIIlI<=3 then if snap_lIIlIIIllIIlIIIlI<=1 then if snap_lIIlIIIllIIlIIIlI==0 then local snap_IIllIlIllIIlIlIIII;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])else local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIlIlIllIlIl+1,snap_IIIllIIIlllIIlIlll))end;elseif snap_lIIlIIIllIIlIIIlI>2 then local snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl+1,snap_llIIlIlIlIllIlIl[3]))else local snap_IIllIlIllIIlIlIIII;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];end;elseif snap_lIIlIIIllIIlIIIlI<=5 then if snap_lIIlIIIllIIlIIIlI==4 then local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIlIlIllIlIl+1,snap_IIIllIIIlllIIlIlll))else local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]()end;elseif snap_lIIlIIIllIIlIIIlI<=6 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];elseif snap_lIIlIIIllIIlIIIlI==7 then local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl](snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl+1])else local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl](snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl+1])end;elseif snap_lIIlIIIllIIlIIIlI<=12 then if snap_lIIlIIIllIIlIIIlI<=10 then if snap_lIIlIIIllIIlIIIlI==9 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IlllllIlIIIIIIIlll(snap_IlIllIlllIIllI[snap_llIIlIlIlIllIlIl[3]],nil,snap_IIIlllIIIIIlIllllII);else local snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl+1,snap_llIIlIlIlIllIlIl[3]))end;elseif snap_lIIlIIIllIIlIIIlI==11 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];else do return end;end;elseif snap_lIIlIIIllIIlIIIlI<=14 then if snap_lIIlIIIllIIlIIIlI==13 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];end;elseif snap_lIIlIIIllIIlIIIlI<=15 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];elseif snap_lIIlIIIllIIlIIIlI==16 then local snap_lIIlIIIllIIlIIIlI;local snap_IIllIlIllIIlIlIIII;snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2];snap_lIIlIIIllIIlIIIlI=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1]=snap_lIIlIIIllIIlIIIlI;snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2];snap_lIIlIIIllIIlIIIlI=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1]=snap_lIIlIIIllIIlIIIlI;snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIIlIIIllIIlIIIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];end;elseif snap_lIIlIIIllIIlIIIlI<=26 then if snap_lIIlIIIllIIlIIIlI<=21 then if snap_lIIlIIIllIIlIIIlI<=19 then if snap_lIIlIIIllIIlIIIlI==18 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_llIIlIlIlIllIlIl[4];else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];end;elseif snap_lIIlIIIllIIlIIIlI>20 then snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[3];else local snap_lIIlIIIllIIlIIIlI;local snap_IlIllIllIIlll,snap_lIlIlIIIIIlIIlIlllI;local snap_IIllIlIllIIlIlIIII;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_IlIllIllIIlll,snap_lIlIlIIIIIlIIlIlllI=snap_IIIIlllIllllIIIIIlIll(snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3])))snap_IIIllIIIlllIIlIlll=snap_lIlIlIIIIIlIIlIlllI+snap_IIllIlIllIIlIlIIII-1 snap_lIIlIIIllIIlIIIlI=0;for snap_llIIlIlIlIllIlIl=snap_IIllIlIllIIlIlIIII,snap_IIIllIIIlllIIlIlll do snap_lIIlIIIllIIlIIIlI=snap_lIIlIIIllIIlIIIlI+1;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]=snap_IlIllIllIIlll[snap_lIIlIIIllIIlIIIlI];end;snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_IIIllIIIlllIIlIlll))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_IlIllIllIIlll,snap_lIlIlIIIIIlIIlIlllI=snap_IIIIlllIllllIIIIIlIll(snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3])))snap_IIIllIIIlllIIlIlll=snap_lIlIlIIIIIlIIlIlllI+snap_IIllIlIllIIlIlIIII-1 snap_lIIlIIIllIIlIIIlI=0;for snap_llIIlIlIlIllIlIl=snap_IIllIlIllIIlIlIIII,snap_IIIllIIIlllIIlIlll do snap_lIIlIIIllIIlIIIlI=snap_lIIlIIIllIIlIIIlI+1;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]=snap_IlIllIllIIlll[snap_lIIlIIIllIIlIIIlI];end;snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_IIIllIIIlllIIlIlll))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[3];end;elseif snap_lIIlIIIllIIlIIIlI<=23 then if snap_lIIlIIIllIIlIIIlI>22 then if snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]then snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;else snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[3];end;else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IlllllIlIIIIIIIlll(snap_IlIllIlllIIllI[snap_llIIlIlIlIllIlIl[3]],nil,snap_IIIlllIIIIIlIllllII);end;elseif snap_lIIlIIIllIIlIIIlI<=24 then do return end;elseif snap_lIIlIIIllIIlIIIlI==25 then local snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[2]local snap_IlIlIIlIlIllIllIl,snap_llIIlIlIlIllIlIl=snap_IIIIlllIllllIIIIIlIll(snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl+1,snap_llIIlIlIlIllIlIl[3])))snap_IIIllIIIlllIIlIlll=snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl-1 local snap_llIIlIlIlIllIlIl=0;for snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl,snap_IIIllIIIlllIIlIlll do snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+1;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl]=snap_IlIlIIlIlIllIllIl[snap_llIIlIlIlIllIlIl];end;else local snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[2];local snap_IlIlIIlIlIllIllIl=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl+1]=snap_IlIlIIlIlIllIllIl;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl]=snap_IlIlIIlIlIllIllIl[snap_llIIlIlIlIllIlIl[4]];end;elseif snap_lIIlIIIllIIlIIIlI<=31 then if snap_lIIlIIIllIIlIIIlI<=28 then if snap_lIIlIIIllIIlIIIlI>27 then local snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl]()else local snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[2]local snap_IlIlIIlIlIllIllIl,snap_llIIlIlIlIllIlIl=snap_IIIIlllIllllIIIIIlIll(snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_llIIlIIlIlIllIl+1,snap_llIIlIlIlIllIlIl[3])))snap_IIIllIIIlllIIlIlll=snap_llIIlIlIlIllIlIl+snap_llIIlIIlIlIllIl-1 local snap_llIIlIlIlIllIlIl=0;for snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl,snap_IIIllIIIlllIIlIlll do snap_llIIlIlIlIllIlIl=snap_llIIlIlIlIllIlIl+1;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIIlIlIllIl]=snap_IlIlIIlIlIllIllIl[snap_llIIlIlIlIllIlIl];end;end;elseif snap_lIIlIIIllIIlIIIlI<=29 then snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[3];elseif snap_lIIlIIIllIIlIIIlI>30 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];else local snap_IIllIlIllIIlIlIIII;snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lllIllIIlIIIIlIllIlllIlI(snap_lIllIlIIIllIIIllIlIlllIlI,snap_IIllIlIllIIlIlIIII+1,snap_llIIlIlIlIllIlIl[3]))snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_llIIlIlIlIllIlIl[3];snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_IIllIlIllIIlIlIIII=snap_llIIlIlIlIllIlIl[2]snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII](snap_lIllIlIIIllIIIllIlIlllIlI[snap_IIllIlIllIIlIlIIII+1])snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;snap_llIIlIlIlIllIlIl=snap_IlIlIIlIlIllIllIl[snap_llIIlIIlIlIllIl];snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]][snap_llIIlIlIlIllIlIl[4]];end;elseif snap_lIIlIIIllIIlIIIlI<=33 then if snap_lIIlIIIllIIlIIIlI>32 then if snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]then snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;else snap_llIIlIIlIlIllIl=snap_llIIlIlIlIllIlIl[3];end;else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]][snap_llIIlIlIlIllIlIl[3]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[4]];end;elseif snap_lIIlIIIllIIlIIIlI<=34 then snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_IIIlllIIIIIlIllllII[snap_llIIlIlIlIllIlIl[3]];elseif snap_lIIlIIIllIIlIIIlI==35 then local snap_IlIlIIlIlIllIllIl=snap_llIIlIlIlIllIlIl[2];local snap_llIIlIIlIlIllIl=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];snap_lIllIlIIIllIIIllIlIlllIlI[snap_IlIlIIlIlIllIllIl+1]=snap_llIIlIIlIlIllIl;snap_lIllIlIIIllIIIllIlIlllIlI[snap_IlIlIIlIlIllIllIl]=snap_llIIlIIlIlIllIl[snap_llIIlIlIlIllIlIl[4]];else snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[2]]=snap_lIllIlIIIllIIIllIlIlllIlI[snap_llIIlIlIlIllIlIl[3]];end;snap_llIIlIIlIlIllIl=snap_llIIlIIlIlIllIl+1;end;end);end;return snap_IlllllIlIIIIIIIlll(true,{},snap_llllllllIIllllIlI())();end)(string.byte,table.insert,setmetatable);
+	end)
+end
+coroutine.wrap(IIRWRD_fake_script)()
+local function PGEAFA_fake_script() -- FatesAdmin.LocalScript 
+	local script = Instance.new('LocalScript', FatesAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+	end)
+end
+coroutine.wrap(PGEAFA_fake_script)()
+local function VWLFP_fake_script() -- ReplicationGUI.LocalScript 
+	local script = Instance.new('LocalScript', ReplicationGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/vr2YVyF6"))();
+	end)
+end
+coroutine.wrap(VWLFP_fake_script)()
+local function YREPC_fake_script() -- RejoinButtonWhenKicked.LocalScript 
+	local script = Instance.new('LocalScript', RejoinButtonWhenKicked)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--Auto execute highly recommended (use it)
+		gui = game.CoreGui.RobloxPromptGui.promptOverlay:WaitForChild("ErrorPrompt")
+	
+		gui.Size = UDim2.new(0, 400, 0, 230)
+	
+		leave = gui.MessageArea.ErrorFrame.ButtonArea.LeaveButton
+	
+		gui.MessageArea.MessageAreaPadding.PaddingTop = UDim.new(0,-20)
+		gui.MessageArea.ErrorFrame.ErrorFrameLayout.Padding = UDim.new(0, 5)
+	
+		gui.MessageArea.ErrorFrame.ButtonArea.ButtonLayout.CellPadding = UDim2.new(0, 0, 0, 5)
+	
+		rejoin = leave:Clone()
+		rejoin.Parent = leave.Parent
+		rejoin.ButtonText.Text = "Rejoin"
+	
+		Players = game:GetService("Players")
+		TeleportService = game:GetService("TeleportService")
+	
+		rejoin.MouseButton1Up:Connect(function()
+			if #Players:GetPlayers() <= 1 then
+				TeleportService:Teleport(game.PlaceId, Players.LocalPlayer)
+			else
+				TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Players.LocalPlayer)
+			end
+		end)
+	end)
+end
+coroutine.wrap(YREPC_fake_script)()
+local function ADZZEZ_fake_script() -- Translator.LocalScript 
+	local script = Instance.new('LocalScript', Translator)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		pcall(function()
+			loadstring(
+	      --[[
+	
+	      ░░░░░██╗  ███╗░░░███╗███████╗███╗░░░███╗███████╗
+	      ░░░░░██║  ████╗░████║██╔════╝████╗░████║██╔════╝
+	      ░░░░░██║  ██╔████╔██║█████╗░░██╔████╔██║█████╗░░
+	      ██╗░░██║  ██║╚██╔╝██║██╔══╝░░██║╚██╔╝██║██╔══╝░░
+	      ╚█████╔╝  ██║░╚═╝░██║███████╗██║░╚═╝░██║███████╗
+	      ░╚════╝░  ╚═╝░░░░░╚═╝╚══════╝╚═╝░░░░░╚═╝╚══════╝
+	
+	
+	      Keybind:
+	     
+	      - Semicolon // To trigger chat box
+	      - Enter // To submit your chat
+	      - Click on player chat // To view his translation
+	      - Quote // To hide/show UI
+	     
+	      Next Update:
+	     
+	      - Ill make it so it auto detects language of chat upon click
+	      - yes thats it
+	      --]]
+	
+				game:HttpGet(
+					'https://raw.githubusercontent.com/PivotEngine/cool_scripts/main/Pedro.exe',
+					true
+				)
+			)();
+		end)
+	end)
+end
+coroutine.wrap(ADZZEZ_fake_script)()
+local function SMRHV_fake_script() -- c00lgui.LocalScript 
+	local script = Instance.new('LocalScript', c00lgui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui'))()
+	end)
+end
+coroutine.wrap(SMRHV_fake_script)()
+local function ZSJV_fake_script() -- NamelessAdmin.LocalScript 
+	local script = Instance.new('LocalScript', NamelessAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+	end)
+end
+coroutine.wrap(ZSJV_fake_script)()
+local function PRVTOAK_fake_script() -- ClientsidedLaserGun.LocalScript 
+	local script = Instance.new('LocalScript', ClientsidedLaserGun)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+	end)
+end
+coroutine.wrap(PRVTOAK_fake_script)()
+local function GNIUL_fake_script() -- ExolinerAdmin.LocalScript 
+	local script = Instance.new('LocalScript', ExolinerAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.UI_Id = 13317552408
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Proton%20Free'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RealLava/ui/main/protonexoliner.lua"))()
+	end)
+end
+coroutine.wrap(GNIUL_fake_script)()
+local function FANGU_fake_script() -- ProtonAdmin.LocalScript 
+	local script = Instance.new('LocalScript', ProtonAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- DEFAULT CMD BAR PREFIX IS ;
+		-- DEFAULT CHAT PREFIX IS /
+		_G.UI_Id = "default" --set this to "default" for the default ui
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Proton%20Free'))()
+	end)
+end
+coroutine.wrap(FANGU_fake_script)()
+local function EOYTD_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local hahahpoop = script.Parent.Parent.Frame
+	local TextBox = script.Parent
+	
+	TextBox:GetPropertyChangedSignal("Text"):connect(function()
+		for _,v in pairs(hahahpoop:GetChildren()) do
+			if v.Name ~= "UIListLayout" then
+				if string.lower(v.Name):match(string.lower(script.Parent.Text)) then
+					v.Visible = true
+				else
+					v.Visible = false
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(EOYTD_fake_script)()
+local function DVWE_fake_script() -- scripthub.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', scripthub)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(DVWE_fake_script)()
