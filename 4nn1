@@ -1,0 +1,1302 @@
+	-- Instances:
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local TextButton = Instance.new("TextButton")
+	local TextButton_2 = Instance.new("TextButton")
+	local TextLabel = Instance.new("TextLabel")
+	local Scripts = Instance.new("Frame")
+	local Script = Instance.new("TextButton")
+	local Script_2 = Instance.new("TextButton")
+	local Script_3 = Instance.new("TextButton")
+	local ComingSoon = Instance.new("Frame")
+	local ComingSoon_2 = Instance.new("TextButton")
+	local Settings = Instance.new("Frame")
+	local TextButton_3 = Instance.new("TextButton")
+	local TextButton_4 = Instance.new("TextButton")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local Scripts_2 = Instance.new("Frame")
+	local smb = Instance.new("TextButton")
+	local sm = Instance.new("TextBox")
+	local ym = Instance.new("TextBox")
+	local Name1 = Instance.new("TextLabel")
+	local ComingSoon_3 = Instance.new("Frame")
+	local ComingSoon_4 = Instance.new("TextButton")
+	local Scripts2 = Instance.new("Frame")
+	local Script_4 = Instance.new("TextButton")
+	local Script_5 = Instance.new("TextButton")
+	local Script_6 = Instance.new("TextButton")
+	local Script_7 = Instance.new("TextButton")
+
+	--Properties:
+
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	ScreenGui.ResetOnSpawn = false
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Frame.BorderSizePixel = 2
+	Frame.Position = UDim2.new(0.088168785, 0, 0.250617296, 0)
+	Frame.Size = UDim2.new(0, 415, 0, 392)
+
+	TextButton.Parent = Frame
+	TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	TextButton.BorderSizePixel = 2
+	TextButton.Position = UDim2.new(0, 0, 0.167979002, 0)
+	TextButton.Size = UDim2.new(0, 213, 0, 35)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = "<"
+	TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.TextSize = 50.000
+
+	TextButton_2.Parent = Frame
+	TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	TextButton_2.BorderSizePixel = 2
+	TextButton_2.Position = UDim2.new(0.496385545, 0, 0.167979002, 0)
+	TextButton_2.Size = UDim2.new(0, 209, 0, 35)
+	TextButton_2.Font = Enum.Font.SourceSans
+	TextButton_2.Text = ">"
+	TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_2.TextSize = 50.000
+
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(0.257831335, 0, 0.0183727033, 0)
+	TextLabel.Size = UDim2.new(0, 200, 0, 50)
+	TextLabel.Font = Enum.Font.Arial
+	TextLabel.Text = "4nn1"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 40.000
+
+	Scripts.Name = "Scripts"
+	Scripts.Parent = Frame
+	Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Scripts.BackgroundTransparency = 1.000
+	Scripts.Position = UDim2.new(0, 0, 0.259842515, 0)
+	Scripts.Size = UDim2.new(0, 415, 0, 282)
+
+	Script.Name = "Script"
+	Script.Parent = Scripts
+	Script.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script.BorderSizePixel = 2
+	Script.Position = UDim2.new(0.250602424, 0, 0.109929085, 0)
+	Script.Size = UDim2.new(0, 207, 0, 51)
+	Script.Font = Enum.Font.SourceSans
+	Script.Text = "Suicide B0mb using socky"
+	Script.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script.TextSize = 14.000
+
+	Script_2.Name = "Script"
+	Script_2.Parent = Scripts
+	Script_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_2.BorderSizePixel = 2
+	Script_2.Position = UDim2.new(0.250602424, 0, 0.369772613, 0)
+	Script_2.Size = UDim2.new(0, 207, 0, 51)
+	Script_2.Font = Enum.Font.SourceSans
+	Script_2.Text = "4nn1 GUI"
+	Script_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_2.TextSize = 14.000
+
+	Script_3.Name = "Script"
+	Script_3.Parent = Scripts
+	Script_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_3.BorderSizePixel = 2
+	Script_3.Position = UDim2.new(0.248192787, 0, 0.634751797, 0)
+	Script_3.Size = UDim2.new(0, 207, 0, 51)
+	Script_3.Font = Enum.Font.SourceSans
+	Script_3.Text = "Suicide B0mb using muffy"
+	Script_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_3.TextSize = 14.000
+
+	ComingSoon.Name = "Coming Soon"
+	ComingSoon.Parent = Frame
+	ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ComingSoon.BackgroundTransparency = 1.000
+	ComingSoon.Position = UDim2.new(0, 0, 0.259842515, 0)
+	ComingSoon.Size = UDim2.new(0, 415, 0, 282)
+	ComingSoon.Visible = false
+
+	ComingSoon_2.Name = "Coming Soon"
+	ComingSoon_2.Parent = ComingSoon
+	ComingSoon_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	ComingSoon_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	ComingSoon_2.BorderSizePixel = 2
+	ComingSoon_2.Position = UDim2.new(0.113253012, 0, 0.138297871, 0)
+	ComingSoon_2.Size = UDim2.new(0, 321, 0, 155)
+	ComingSoon_2.Font = Enum.Font.SourceSans
+	ComingSoon_2.Text = "c0ming s00n!"
+	ComingSoon_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ComingSoon_2.TextSize = 50.000
+
+	Settings.Name = "Settings"
+	Settings.Parent = Frame
+	Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Settings.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Settings.BorderSizePixel = 2
+	Settings.Position = UDim2.new(0.999012172, 0, -0.00193372369, 0)
+	Settings.Size = UDim2.new(0, 415, 0, 392)
+
+	TextButton_3.Parent = Settings
+	TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	TextButton_3.BorderSizePixel = 2
+	TextButton_3.Position = UDim2.new(0, 0, 0.167979002, 0)
+	TextButton_3.Size = UDim2.new(0, 213, 0, 35)
+	TextButton_3.Font = Enum.Font.SourceSans
+	TextButton_3.Text = "<"
+	TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_3.TextSize = 50.000
+
+	TextButton_4.Parent = Settings
+	TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	TextButton_4.BorderSizePixel = 2
+	TextButton_4.Position = UDim2.new(0.496385545, 0, 0.167979002, 0)
+	TextButton_4.Size = UDim2.new(0, 209, 0, 35)
+	TextButton_4.Font = Enum.Font.SourceSans
+	TextButton_4.Text = ">"
+	TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_4.TextSize = 50.000
+
+	TextLabel_2.Parent = Settings
+	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.BackgroundTransparency = 1.000
+	TextLabel_2.Position = UDim2.new(0.257831335, 0, 0.0183727033, 0)
+	TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+	TextLabel_2.Font = Enum.Font.Arial
+	TextLabel_2.Text = "Settings"
+	TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.TextSize = 40.000
+
+	Scripts_2.Name = "Scripts"
+	Scripts_2.Parent = Settings
+	Scripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Scripts_2.BackgroundTransparency = 1.000
+	Scripts_2.Position = UDim2.new(0, 0, 0.259842515, 0)
+	Scripts_2.Size = UDim2.new(0, 415, 0, 282)
+
+	smb.Name = "smb"
+	smb.Parent = Scripts_2
+	smb.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	smb.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	smb.BorderSizePixel = 2
+	smb.Position = UDim2.new(0.24186644, 0, 0.637488484, 0)
+	smb.Size = UDim2.new(0, 213, 0, 61)
+	smb.Font = Enum.Font.SourceSans
+	smb.Text = "Server Message"
+	smb.TextColor3 = Color3.fromRGB(255, 255, 255)
+	smb.TextSize = 14.000
+
+	sm.Name = "sm"
+	sm.Parent = Scripts_2
+	sm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	sm.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	sm.BorderSizePixel = 2
+	sm.Position = UDim2.new(0.219277114, 0, 0.357179701, 0)
+	sm.Size = UDim2.new(0, 233, 0, 50)
+	sm.Font = Enum.Font.SourceSans
+	sm.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+	sm.PlaceholderText = "Server's Message"
+	sm.Text = ""
+	sm.TextColor3 = Color3.fromRGB(255, 255, 255)
+	sm.TextSize = 14.000
+
+	ym.Name = "ym"
+	ym.Parent = Scripts_2
+	ym.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	ym.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	ym.BorderSizePixel = 2
+	ym.Position = UDim2.new(0.219277114, 0, 0.0983954966, 0)
+	ym.Size = UDim2.new(0, 233, 0, 50)
+	ym.Font = Enum.Font.SourceSans
+	ym.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+	ym.PlaceholderText = "Your Message"
+	ym.Text = ""
+	ym.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ym.TextSize = 14.000
+
+	Name1.Name = "Name1"
+	Name1.Parent = Scripts_2
+	Name1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Name1.Position = UDim2.new(0.91349566, 0, 1.28321993, 0)
+	Name1.Size = UDim2.new(0, 211, 0, 52)
+	Name1.Visible = false
+	Name1.Font = Enum.Font.SourceSans
+	Name1.Text = "4nn1"
+	Name1.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Name1.TextSize = 14.000
+
+	ComingSoon_3.Name = "Coming Soon"
+	ComingSoon_3.Parent = Settings
+	ComingSoon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ComingSoon_3.BackgroundTransparency = 1.000
+	ComingSoon_3.Position = UDim2.new(0, 0, 0.259842515, 0)
+	ComingSoon_3.Size = UDim2.new(0, 415, 0, 282)
+	ComingSoon_3.Visible = false
+
+	ComingSoon_4.Name = "Coming Soon"
+	ComingSoon_4.Parent = ComingSoon_3
+	ComingSoon_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	ComingSoon_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	ComingSoon_4.BorderSizePixel = 2
+	ComingSoon_4.Position = UDim2.new(0.113253012, 0, 0.138297871, 0)
+	ComingSoon_4.Size = UDim2.new(0, 321, 0, 155)
+	ComingSoon_4.Font = Enum.Font.SourceSans
+	ComingSoon_4.Text = "c0ming s00n!"
+	ComingSoon_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ComingSoon_4.TextSize = 50.000
+
+	Scripts2.Name = "Scripts2"
+	Scripts2.Parent = Frame
+	Scripts2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Scripts2.BackgroundTransparency = 1.000
+	Scripts2.Position = UDim2.new(0, 0, 0.259842515, 0)
+	Scripts2.Size = UDim2.new(0, 415, 0, 282)
+	Scripts2.Visible = false
+
+	Script_4.Name = "Script"
+	Script_4.Parent = Scripts2
+	Script_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_4.BorderSizePixel = 2
+	Script_4.Position = UDim2.new(0.250602424, 0, 0.109929085, 0)
+	Script_4.Size = UDim2.new(0, 207, 0, 51)
+	Script_4.Font = Enum.Font.SourceSans
+	Script_4.Text = "Bomb Vest using socky (fd)"
+	Script_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_4.TextSize = 14.000
+
+	Script_5.Name = "Script"
+	Script_5.Parent = Scripts2
+	Script_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_5.BorderSizePixel = 2
+	Script_5.Position = UDim2.new(0.250602424, 0, 0.369772613, 0)
+	Script_5.Size = UDim2.new(0, 207, 0, 51)
+	Script_5.Font = Enum.Font.SourceSans
+	Script_5.Text = "Bomb Vest using muffy (fd)"
+	Script_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_5.TextSize = 14.000
+
+	Script_6.Name = "Script"
+	Script_6.Parent = Scripts2
+	Script_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_6.BorderSizePixel = 2
+	Script_6.Position = UDim2.new(0.257831335, 0, 0.634751797, 0)
+	Script_6.Size = UDim2.new(0, 205, 0, 31)
+	Script_6.Font = Enum.Font.SourceSans
+	Script_6.Text = "Execute this first to use muffy"
+	Script_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_6.TextSize = 14.000
+
+	Script_7.Name = "Script"
+	Script_7.Parent = Scripts2
+	Script_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Script_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	Script_7.BorderSizePixel = 2
+	Script_7.Position = UDim2.new(0.257831335, 0, 0.78014183, 0)
+	Script_7.Size = UDim2.new(0, 205, 0, 30)
+	Script_7.Font = Enum.Font.SourceSans
+	Script_7.Text = "Execute this first to use socky"
+	Script_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Script_7.TextSize = 14.000
+
+	-- Scripts:
+
+	local function LPPI_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts2"].Visible = false
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Coming Soon"].Visible = false
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts"].Visible = true
+		end)
+	end
+	coroutine.wrap(LPPI_fake_script)()
+	local function CEXEWY_fake_script() -- TextButton_2.LocalScript 
+		local script = Instance.new('LocalScript', TextButton_2)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts2"].Visible = true
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Coming Soon"].Visible = false
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts"].Visible = false
+		end)
+	end
+	coroutine.wrap(CEXEWY_fake_script)()
+	local function YHAZOK_fake_script() -- Script.LocalScript 
+		local script = Instance.new('LocalScript', Script)
+
+		script.Parent.MouseButton1Click:Connect(function()
+
+	--[[
+	Fedoratum FE Explode 4nn1 Place
+	
+	Click explode button to explode
+	Rejoin to stop script
+	To kill other people make sure you are really close when you explode
+	
+	You can combine with any fly.
+	]]
+
+			-- // Netless to be able to modify NPC health
+			-- // Netless by gelatek
+
+			local Workspace = game:GetService("Workspace")
+			local Client = game:GetService("Players").LocalPlayer
+			local Character = Client.Character
+			local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+			local Physics = settings()["Physics"]
+
+			Workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Disabled
+			Workspace.Retargeting = "Disabled"
+			Client.ReplicationFocus = Workspace
+
+			pcall(function()
+				sethiddenproperty(Humanoid, "InternalBodyScale", Vector3(9e9,9e9,9e9))
+				sethiddenproperty(Workspace, "SignalBehavior", "Immediate")
+				Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+				Physics.AllowSleep = false
+				Physics.ThrottleAdjustTime = math.huge
+			end)
+
+			local RunService = game:GetService("RunService")
+
+			SuperStepper = Instance.new("BindableEvent")
+			setfflag("NewRunServiceSignals","true")
+			for _,vQ in pairs({RunService.RenderStepped,RunService.Heartbeat,RunService.Stepped,RunService.PreSimulation,RunService.PostSimulation}) do
+				vQ:Connect(function()
+					return
+						SuperStepper:Fire(SuperStepper,tick())
+				end)
+			end
+
+			SuperStepper.Event:Connect(function()
+				if Character and Humanoid then
+					sethiddenproperty(Humanoid, "InternalBodyScale", Vector3.new(9e9,9e9,9e9))
+				end
+			end)
+
+			Client.SimulationRadiusChanged:Connect(function()
+				Radius = 1e+10
+				return Radius
+			end)
+
+			SuperStepper.Event:Connect(function()
+				sethiddenproperty(Client, "MaximumSimulationRadius", 1e+10)
+				sethiddenproperty(Client, "SimulationRadius", 1e+10)
+			end)
+
+			-- // Check network owner
+
+			local isnetworkowner = isnetworkowner or function(Part)
+				return Part.ReceiveAge == 0
+			end
+
+			-- // GUI
+
+			local ScreenGui = Instance.new("ScreenGui")
+			local KaboomButton = Instance.new("TextButton")
+
+			ScreenGui.Parent = game:GetService("CoreGui")
+			ScreenGui.ResetOnSpawn = false
+
+			KaboomButton.Name = "SilentCMD"
+			KaboomButton.Parent = ScreenGui
+			KaboomButton.BackgroundColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.BorderColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.Position = UDim2.new(0.912970064, 0, 0.194202876, 0)
+			KaboomButton.Size = UDim2.new(0, 50, 0, 50)
+			KaboomButton.Font = Enum.Font.Gotham
+			KaboomButton.Text = "Explode"
+			KaboomButton.TextColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextSize = 14
+			KaboomButton.TextStrokeColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextWrapped = true
+			KaboomButton.Transparency = 0.2
+
+			-- // NPC that explodes
+
+			local cats = Workspace.socky
+			local char = Client.Character
+
+			for i, x in pairs(cats:GetDescendants()) do
+				if x:IsA("BasePart") then
+					x.CanCollide = false
+				end
+			end
+
+			Workspace.DescendantAdded:Connect(function(cat)
+				if cat.Name == "socky" then
+					task.wait(0.1)
+					cats = Workspace.socky
+
+					for i, x in pairs(cats:GetDescendants()) do
+						if x:IsA("BasePart") then
+							x.CanCollide = false
+						end
+					end
+
+				end
+			end)
+
+			-- // Check NPC netship to ensure its right
+
+			task.spawn(function()
+				pcall(function()
+					while task.wait() do
+						if char and char.Torso and char:FindFirstChildOfClass("Humanoid") and char.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats.Torso) then
+								cats:FindFirstChild("Torso").CFrame = char:FindFirstChild("Torso").CFrame
+							else
+								char:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end
+				end)
+			end)
+
+			Client.CharacterAdded:Connect(function(chr)
+				while task.wait() do
+					pcall(function()
+						if chr and chr.Torso and chr:FindFirstChildOfClass("Humanoid") and chr.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats:FindFirstChild("Torso")) then
+								cats:FindFirstChild("Torso").CFrame = chr:FindFirstChild("Torso").CFrame
+							else
+								chr:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end)
+				end
+			end)
+
+			-- // Kill to make npc explode
+			-- // explosion has blastradius
+			-- // therefore it kills other people
+
+			KaboomButton.MouseButton1Click:Connect(function()
+				pcall(function()
+					if cats and cats.Humanoid and cats.Torso then
+						if isnetworkowner(cats.Torso) then
+							cats.Humanoid.Health = 0
+						end
+					end
+				end)
+			end)
+		end)
+	end
+	coroutine.wrap(YHAZOK_fake_script)()
+	local function DLFTC_fake_script() -- Script_2.LocalScript 
+		local script = Instance.new('LocalScript', Script_2)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/9sxf7TVz'),true))()
+		end)
+	end
+	coroutine.wrap(DLFTC_fake_script)()
+	local function YQCOR_fake_script() -- Script_3.LocalScript 
+		local script = Instance.new('LocalScript', Script_3)
+
+		script.Parent.MouseButton1Click:Connect(function()
+
+	--[[
+	Fedoratum FE Explode 4nn1 Place
+	
+	Click explode button to explode
+	Rejoin to stop script
+	To kill other people make sure you are really close when you explode
+	
+	You can combine with any fly.
+	]]
+
+			-- // Netless to be able to modify NPC health
+			-- // Netless by gelatek
+
+			local Workspace = game:GetService("Workspace")
+			local Client = game:GetService("Players").LocalPlayer
+			local Character = Client.Character
+			local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+			local Physics = settings()["Physics"]
+
+			Workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Disabled
+			Workspace.Retargeting = "Disabled"
+			Client.ReplicationFocus = Workspace
+
+			pcall(function()
+				sethiddenproperty(Humanoid, "InternalBodyScale", Vector3(9e9,9e9,9e9))
+				sethiddenproperty(Workspace, "SignalBehavior", "Immediate")
+				Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+				Physics.AllowSleep = false
+				Physics.ThrottleAdjustTime = math.huge
+			end)
+
+			local RunService = game:GetService("RunService")
+
+			SuperStepper = Instance.new("BindableEvent")
+			setfflag("NewRunServiceSignals","true")
+			for _,vQ in pairs({RunService.RenderStepped,RunService.Heartbeat,RunService.Stepped,RunService.PreSimulation,RunService.PostSimulation}) do
+				vQ:Connect(function()
+					return
+						SuperStepper:Fire(SuperStepper,tick())
+				end)
+			end
+
+			SuperStepper.Event:Connect(function()
+				if Character and Humanoid then
+					sethiddenproperty(Humanoid, "InternalBodyScale", Vector3.new(9e9,9e9,9e9))
+				end
+			end)
+
+			Client.SimulationRadiusChanged:Connect(function()
+				Radius = 1e+10
+				return Radius
+			end)
+
+			SuperStepper.Event:Connect(function()
+				sethiddenproperty(Client, "MaximumSimulationRadius", 1e+10)
+				sethiddenproperty(Client, "SimulationRadius", 1e+10)
+			end)
+
+			-- // Check network owner
+
+			local isnetworkowner = isnetworkowner or function(Part)
+				return Part.ReceiveAge == 0
+			end
+
+			-- // GUI
+
+			local ScreenGui = Instance.new("ScreenGui")
+			local KaboomButton = Instance.new("TextButton")
+
+			ScreenGui.Parent = game:GetService("CoreGui")
+			ScreenGui.ResetOnSpawn = false
+
+			KaboomButton.Name = "SilentCMD"
+			KaboomButton.Parent = ScreenGui
+			KaboomButton.BackgroundColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.BorderColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.Position = UDim2.new(0.912970064, 0, 0.194202876, 0)
+			KaboomButton.Size = UDim2.new(0, 50, 0, 50)
+			KaboomButton.Font = Enum.Font.Gotham
+			KaboomButton.Text = "Explode"
+			KaboomButton.TextColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextSize = 14
+			KaboomButton.TextStrokeColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextWrapped = true
+			KaboomButton.Transparency = 0.2
+
+			-- // NPC that explodes
+
+			local cats = Workspace.muffy
+			local char = Client.Character
+
+			for i, x in pairs(cats:GetDescendants()) do
+				if x:IsA("BasePart") then
+					x.CanCollide = false
+				end
+			end
+
+			Workspace.DescendantAdded:Connect(function(cat)
+				if cat.Name == "muffy" then
+					task.wait(0.1)
+					cats = Workspace.muffy
+
+					for i, x in pairs(cats:GetDescendants()) do
+						if x:IsA("BasePart") then
+							x.CanCollide = false
+						end
+					end
+
+				end
+			end)
+
+			-- // Check NPC netship to ensure its right
+
+			task.spawn(function()
+				pcall(function()
+					while task.wait() do
+						if char and char.Torso and char:FindFirstChildOfClass("Humanoid") and char.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats.Torso) then
+								cats:FindFirstChild("Torso").CFrame = char:FindFirstChild("Torso").CFrame
+							else
+								char:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end
+				end)
+			end)
+
+			Client.CharacterAdded:Connect(function(chr)
+				while task.wait() do
+					pcall(function()
+						if chr and chr.Torso and chr:FindFirstChildOfClass("Humanoid") and chr.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats:FindFirstChild("Torso")) then
+								cats:FindFirstChild("Torso").CFrame = chr:FindFirstChild("Torso").CFrame
+							else
+								chr:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end)
+				end
+			end)
+
+			-- // Kill to make npc explode
+			-- // explosion has blastradius
+			-- // therefore it kills other people
+
+			KaboomButton.MouseButton1Click:Connect(function()
+				pcall(function()
+					if cats and cats.Humanoid and cats.Torso then
+						if isnetworkowner(cats.Torso) then
+							cats.Humanoid.Health = 0
+						end
+					end
+				end)
+			end)
+		end)
+	end
+	coroutine.wrap(YQCOR_fake_script)()
+	local function FCITX_fake_script() -- Frame.Dragify 
+		local script = Instance.new('LocalScript', Frame)
+
+		local UIS = game:GetService("UserInputService")
+		function dragify(Frame)
+			dragToggle = nil
+			local dragSpeed = 0
+			dragInput = nil
+			dragStart = nil
+			local dragPos = nil
+			function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(FCITX_fake_script)()
+	local function XUPIUVN_fake_script() -- TextButton_3.LocalScript 
+		local script = Instance.new('LocalScript', TextButton_3)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Coming Soon"].Visible = false
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts"].Visible = true
+		end)
+	end
+	coroutine.wrap(XUPIUVN_fake_script)()
+	local function IWPQU_fake_script() -- TextButton_4.LocalScript 
+		local script = Instance.new('LocalScript', TextButton_4)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Coming Soon"].Visible = true
+			game.Players.LocalPlayer.PlayerGui.ScreenGui.Frame["Scripts"].Visible = false
+		end)
+	end
+	coroutine.wrap(IWPQU_fake_script)()
+	local function HSRXPIF_fake_script() -- smb.LocalScript 
+		local script = Instance.new('LocalScript', smb)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(""..script.Parent.Parent.ym.Text.."                                                                                                   " ..
+				"                                                ["..script.Parent.Parent.Name1.Text.."]: "..script.Parent.Parent.sm.Text.."","All")
+		end)
+
+	end
+	coroutine.wrap(HSRXPIF_fake_script)()
+	local function GHZRQOT_fake_script() -- Script_4.LocalScript 
+		local script = Instance.new('LocalScript', Script_4)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local cats = game.Workspace.socky
+
+			local Me = game:GetService("Players").LocalPlayer
+			local Char = Me.Character
+			local Torso = Char.Torso
+			local TickWait = 1
+			local Color = "Medium stone gray"
+			local Dead = false
+
+			local Tool = Instance.new("HopperBin", Me.Backpack)
+			Tool.Name = "Bomb Vest"
+
+			local Position = Vector3.new(0,100,0)
+			function NewPart(Parent)
+				local Part = Instance.new("Part", Parent)
+				Part.CanCollide = false
+				Part.FormFactor = "Custom"
+				Part.Position = Position
+				Part.TopSurface = "Smooth"
+				Part.BottomSurface = "Smooth"
+				Part.BrickColor = BrickColor.new(Color)
+				Position = Position + Vector3.new(0,Part.Size.Y + 10,0)
+				return Part
+			end
+
+			local Model = Char:FindFirstChild("Bomb")
+			if Model then Model:Destroy() end
+
+			Model = Instance.new("Model", Char)
+			Model.Name = "Bomb"
+
+			local Belt = NewPart(Model)
+			Belt.Size = Vector3.new(2.2,0.5,1.2)
+			local Weld = Instance.new("Weld", Belt)
+			Weld.Part0 = Belt
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0,1.1,0)
+			local Light = Instance.new("PointLight", Belt)
+			Light.Range = 15
+			Light.Brightness = 5
+			Light.Color = Color3.new(1,0,0)
+			local Beep = Instance.new("Sound", Belt)
+			Beep.SoundId = "http://www.roblox.com/asset/?id=188588790"
+			local ExplodeSound = Instance.new("Sound", Belt)
+			ExplodeSound.SoundId = "http://www.roblox.com/asset/?id="..(tonumber((math.ceil(1776.66^2)+17).."."..string.rep("36",3))*77)+0.00003 --144507765
+			ExplodeSound.Pitch = 2.8
+			ExplodeSound.Volume = 3
+
+			local Back = NewPart(Model)
+			Back.Size = Vector3.new(1.5,1.5,0.5)
+			local Weld = Instance.new("Weld", Back)
+			Weld.Part0 = Back
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0,0.1,-0.75)
+
+			local StrapLeft = NewPart(Model)
+			StrapLeft.Size = Vector3.new(0.2,0.5,1.6)
+			local Weld = Instance.new("Weld", StrapLeft)
+			Weld.Part0 = StrapLeft
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0.65,-0.9,-0.2)
+
+			local BuckleLeft = NewPart(Model)
+			BuckleLeft.Size = Vector3.new(0.2,1.5,0.2)
+			local Weld = Instance.new("Weld", BuckleLeft)
+			Weld.Part0 = BuckleLeft
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0.65,0.1,0.5)
+
+			local StrapRight = NewPart(Model)
+			StrapRight.Size = Vector3.new(0.2,0.5,1.6)
+			local Weld = Instance.new("Weld", StrapRight)
+			Weld.Part0 = StrapRight
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(-0.65,-0.9,-0.2)
+
+			local BuckleRight = NewPart(Model)
+			BuckleRight.Size = Vector3.new(0.2,1.5,0.2)
+			local Weld = Instance.new("Weld", BuckleRight)
+			Weld.Part0 = BuckleRight
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(-0.65,0.1,0.5)
+
+			Tool.Selected:connect(function(Mouse)
+				TickWait = 0.3
+				Mouse.Icon = "http://www.roblox.com/asset/?id=9109985"
+
+				Mouse.Button1Down:connect(function()
+					if Dead == false then
+						Dead = true
+						ExplodeSound:Play()
+						wait(1.4)
+						pcall(function()
+							if cats and cats.Humanoid and cats.Torso then
+								if isnetworkowner(cats.Torso) then
+									cats.Humanoid.Health = 0
+								end
+							end
+						end)
+					end
+				end)
+			end)
+
+			Tool.Deselected:connect(function()
+				TickWait = 1
+			end)
+
+			coroutine.wrap(function()
+				repeat
+					wait(TickWait)
+					Light.Enabled = not Light.Enabled
+					Beep:Play()
+				until Dead == true
+			end)()
+		end)
+	end
+	coroutine.wrap(GHZRQOT_fake_script)()
+	local function VACBBVR_fake_script() -- Script_5.LocalScript 
+		local script = Instance.new('LocalScript', Script_5)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local cats = game.Workspace.muffy
+
+			local Me = game:GetService("Players").LocalPlayer
+			local Char = Me.Character
+			local Torso = Char.Torso
+			local TickWait = 1
+			local Color = "Medium stone gray"
+			local Dead = false
+
+			local Tool = Instance.new("HopperBin", Me.Backpack)
+			Tool.Name = "Bomb Vest"
+
+			local Position = Vector3.new(0,100,0)
+			function NewPart(Parent)
+				local Part = Instance.new("Part", Parent)
+				Part.CanCollide = false
+				Part.FormFactor = "Custom"
+				Part.Position = Position
+				Part.TopSurface = "Smooth"
+				Part.BottomSurface = "Smooth"
+				Part.BrickColor = BrickColor.new(Color)
+				Position = Position + Vector3.new(0,Part.Size.Y + 10,0)
+				return Part
+			end
+
+			local Model = Char:FindFirstChild("Bomb")
+			if Model then Model:Destroy() end
+
+			Model = Instance.new("Model", Char)
+			Model.Name = "Bomb"
+
+			local Belt = NewPart(Model)
+			Belt.Size = Vector3.new(2.2,0.5,1.2)
+			local Weld = Instance.new("Weld", Belt)
+			Weld.Part0 = Belt
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0,1.1,0)
+			local Light = Instance.new("PointLight", Belt)
+			Light.Range = 15
+			Light.Brightness = 5
+			Light.Color = Color3.new(1,0,0)
+			local Beep = Instance.new("Sound", Belt)
+			Beep.SoundId = "http://www.roblox.com/asset/?id=188588790"
+			local ExplodeSound = Instance.new("Sound", Belt)
+			ExplodeSound.SoundId = "http://www.roblox.com/asset/?id="..(tonumber((math.ceil(1776.66^2)+17).."."..string.rep("36",3))*77)+0.00003 --144507765
+			ExplodeSound.Pitch = 2.8
+			ExplodeSound.Volume = 3
+
+			local Back = NewPart(Model)
+			Back.Size = Vector3.new(1.5,1.5,0.5)
+			local Weld = Instance.new("Weld", Back)
+			Weld.Part0 = Back
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0,0.1,-0.75)
+
+			local StrapLeft = NewPart(Model)
+			StrapLeft.Size = Vector3.new(0.2,0.5,1.6)
+			local Weld = Instance.new("Weld", StrapLeft)
+			Weld.Part0 = StrapLeft
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0.65,-0.9,-0.2)
+
+			local BuckleLeft = NewPart(Model)
+			BuckleLeft.Size = Vector3.new(0.2,1.5,0.2)
+			local Weld = Instance.new("Weld", BuckleLeft)
+			Weld.Part0 = BuckleLeft
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(0.65,0.1,0.5)
+
+			local StrapRight = NewPart(Model)
+			StrapRight.Size = Vector3.new(0.2,0.5,1.6)
+			local Weld = Instance.new("Weld", StrapRight)
+			Weld.Part0 = StrapRight
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(-0.65,-0.9,-0.2)
+
+			local BuckleRight = NewPart(Model)
+			BuckleRight.Size = Vector3.new(0.2,1.5,0.2)
+			local Weld = Instance.new("Weld", BuckleRight)
+			Weld.Part0 = BuckleRight
+			Weld.Part1 = Torso
+			Weld.C0 = CFrame.new(-0.65,0.1,0.5)
+
+			Tool.Selected:connect(function(Mouse)
+				TickWait = 0.3
+				Mouse.Icon = "http://www.roblox.com/asset/?id=9109985"
+
+				Mouse.Button1Down:connect(function()
+					if Dead == false then
+						Dead = true
+						ExplodeSound:Play()
+						wait(1.4)
+						pcall(function()
+							if cats and cats.Humanoid and cats.Torso then
+								if isnetworkowner(cats.Torso) then
+									cats.Humanoid.Health = 0
+								end
+							end
+						end)
+					end
+				end)
+			end)
+
+			Tool.Deselected:connect(function()
+				TickWait = 1
+			end)
+
+			coroutine.wrap(function()
+				repeat
+					wait(TickWait)
+					Light.Enabled = not Light.Enabled
+					Beep:Play()
+				until Dead == true
+			end)()
+		end)
+	end
+	coroutine.wrap(VACBBVR_fake_script)()
+	local function YFMUS_fake_script() -- Script_6.LocalScript 
+		local script = Instance.new('LocalScript', Script_6)
+
+		script.Parent.MouseButton1Click:Connect(function()
+
+	--[[
+	Fedoratum FE Explode 4nn1 Place
+	
+	Click explode button to explode
+	Rejoin to stop script
+	To kill other people make sure you are really close when you explode
+	
+	You can combine with any fly.
+	]]
+
+			-- // Netless to be able to modify NPC health
+			-- // Netless by gelatek
+
+			local Workspace = game:GetService("Workspace")
+			local Client = game:GetService("Players").LocalPlayer
+			local Character = Client.Character
+			local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+			local Physics = settings()["Physics"]
+
+			Workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Disabled
+			Workspace.Retargeting = "Disabled"
+			Client.ReplicationFocus = Workspace
+
+			pcall(function()
+				sethiddenproperty(Humanoid, "InternalBodyScale", Vector3(9e9,9e9,9e9))
+				sethiddenproperty(Workspace, "SignalBehavior", "Immediate")
+				Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+				Physics.AllowSleep = false
+				Physics.ThrottleAdjustTime = math.huge
+			end)
+
+			local RunService = game:GetService("RunService")
+
+			SuperStepper = Instance.new("BindableEvent")
+			setfflag("NewRunServiceSignals","true")
+			for _,vQ in pairs({RunService.RenderStepped,RunService.Heartbeat,RunService.Stepped,RunService.PreSimulation,RunService.PostSimulation}) do
+				vQ:Connect(function()
+					return
+						SuperStepper:Fire(SuperStepper,tick())
+				end)
+			end
+
+			SuperStepper.Event:Connect(function()
+				if Character and Humanoid then
+					sethiddenproperty(Humanoid, "InternalBodyScale", Vector3.new(9e9,9e9,9e9))
+				end
+			end)
+
+			Client.SimulationRadiusChanged:Connect(function()
+				Radius = 1e+10
+				return Radius
+			end)
+
+			SuperStepper.Event:Connect(function()
+				sethiddenproperty(Client, "MaximumSimulationRadius", 1e+10)
+				sethiddenproperty(Client, "SimulationRadius", 1e+10)
+			end)
+
+			-- // Check network owner
+
+			local isnetworkowner = isnetworkowner or function(Part)
+				return Part.ReceiveAge == 0
+			end
+
+			-- // GUI
+
+			local ScreenGui = Instance.new("ScreenGui")
+			local KaboomButton = Instance.new("TextButton")
+
+			ScreenGui.Parent = game:GetService("CoreGui")
+			ScreenGui.ResetOnSpawn = false
+
+			KaboomButton.Name = "SilentCMD"
+			KaboomButton.Parent = ScreenGui
+			KaboomButton.BackgroundColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.BorderColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.Position = UDim2.new(0.912970064, 0, 0.194202876, 0)
+			KaboomButton.Size = UDim2.new(0, 50, 0, 50)
+			KaboomButton.Font = Enum.Font.Gotham
+			KaboomButton.Text = "Explode"
+			KaboomButton.TextColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextSize = 14
+			KaboomButton.TextStrokeColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextWrapped = true
+			KaboomButton.Transparency = 0.2
+
+			-- // NPC that explodes
+
+			local cats = Workspace.muffy
+			local char = Client.Character
+
+			for i, x in pairs(cats:GetDescendants()) do
+				if x:IsA("BasePart") then
+					x.CanCollide = false
+				end
+			end
+
+			Workspace.DescendantAdded:Connect(function(cat)
+				if cat.Name == "muffy" then
+					task.wait(0.1)
+					cats = Workspace.muffy
+
+					for i, x in pairs(cats:GetDescendants()) do
+						if x:IsA("BasePart") then
+							x.CanCollide = false
+						end
+					end
+
+				end
+			end)
+
+			-- // Check NPC netship to ensure its right
+
+			task.spawn(function()
+				pcall(function()
+					while task.wait() do
+						if char and char.Torso and char:FindFirstChildOfClass("Humanoid") and char.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats.Torso) then
+								cats:FindFirstChild("Torso").CFrame = char:FindFirstChild("Torso").CFrame
+							else
+								char:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end
+				end)
+			end)
+
+			Client.CharacterAdded:Connect(function(chr)
+				while task.wait() do
+					pcall(function()
+						if chr and chr.Torso and chr:FindFirstChildOfClass("Humanoid") and chr.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats:FindFirstChild("Torso")) then
+								cats:FindFirstChild("Torso").CFrame = chr:FindFirstChild("Torso").CFrame
+							else
+								chr:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end)
+				end
+			end)
+
+			-- // Kill to make npc explode
+			-- // explosion has blastradius
+			-- // therefore it kills other people
+
+			KaboomButton.MouseButton1Click:Connect(function()
+				pcall(function()
+					if cats and cats.Humanoid and cats.Torso then
+						if isnetworkowner(cats.Torso) then
+							cats.Humanoid.Health = 0
+						end
+					end
+				end)
+			end)
+		end)
+	end
+	coroutine.wrap(YFMUS_fake_script)()
+	local function NUZM_fake_script() -- Script_7.LocalScript 
+		local script = Instance.new('LocalScript', Script_7)
+
+		script.Parent.MouseButton1Click:Connect(function()
+
+	--[[
+	Fedoratum FE Explode 4nn1 Place
+	
+	Click explode button to explode
+	Rejoin to stop script
+	To kill other people make sure you are really close when you explode
+	
+	You can combine with any fly.
+	]]
+
+			-- // Netless to be able to modify NPC health
+			-- // Netless by gelatek
+
+			local Workspace = game:GetService("Workspace")
+			local Client = game:GetService("Players").LocalPlayer
+			local Character = Client.Character
+			local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+			local Physics = settings()["Physics"]
+
+			Workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Disabled
+			Workspace.Retargeting = "Disabled"
+			Client.ReplicationFocus = Workspace
+
+			pcall(function()
+				sethiddenproperty(Humanoid, "InternalBodyScale", Vector3(9e9,9e9,9e9))
+				sethiddenproperty(Workspace, "SignalBehavior", "Immediate")
+				Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+				Physics.AllowSleep = false
+				Physics.ThrottleAdjustTime = math.huge
+			end)
+
+			local RunService = game:GetService("RunService")
+
+			SuperStepper = Instance.new("BindableEvent")
+			setfflag("NewRunServiceSignals","true")
+			for _,vQ in pairs({RunService.RenderStepped,RunService.Heartbeat,RunService.Stepped,RunService.PreSimulation,RunService.PostSimulation}) do
+				vQ:Connect(function()
+					return
+						SuperStepper:Fire(SuperStepper,tick())
+				end)
+			end
+
+			SuperStepper.Event:Connect(function()
+				if Character and Humanoid then
+					sethiddenproperty(Humanoid, "InternalBodyScale", Vector3.new(9e9,9e9,9e9))
+				end
+			end)
+
+			Client.SimulationRadiusChanged:Connect(function()
+				Radius = 1e+10
+				return Radius
+			end)
+
+			SuperStepper.Event:Connect(function()
+				sethiddenproperty(Client, "MaximumSimulationRadius", 1e+10)
+				sethiddenproperty(Client, "SimulationRadius", 1e+10)
+			end)
+
+			-- // Check network owner
+
+			local isnetworkowner = isnetworkowner or function(Part)
+				return Part.ReceiveAge == 0
+			end
+
+			-- // GUI
+
+			local ScreenGui = Instance.new("ScreenGui")
+			local KaboomButton = Instance.new("TextButton")
+
+			ScreenGui.Parent = game:GetService("CoreGui")
+			ScreenGui.ResetOnSpawn = false
+
+			KaboomButton.Name = "SilentCMD"
+			KaboomButton.Parent = ScreenGui
+			KaboomButton.BackgroundColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.BorderColor3 = Color3.new(0.168627, 0.513726, 0.25098)
+			KaboomButton.Position = UDim2.new(0.912970064, 0, 0.194202876, 0)
+			KaboomButton.Size = UDim2.new(0, 50, 0, 50)
+			KaboomButton.Font = Enum.Font.Gotham
+			KaboomButton.Text = "Explode"
+			KaboomButton.TextColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextSize = 14
+			KaboomButton.TextStrokeColor3 = Color3.new(1, 1, 1)
+			KaboomButton.TextWrapped = true
+			KaboomButton.Transparency = 0.2
+
+			-- // NPC that explodes
+
+			local cats = Workspace.socky
+			local char = Client.Character
+
+			for i, x in pairs(cats:GetDescendants()) do
+				if x:IsA("BasePart") then
+					x.CanCollide = false
+				end
+			end
+
+			Workspace.DescendantAdded:Connect(function(cat)
+				if cat.Name == "socky" then
+					task.wait(0.1)
+					cats = Workspace.socky
+
+					for i, x in pairs(cats:GetDescendants()) do
+						if x:IsA("BasePart") then
+							x.CanCollide = false
+						end
+					end
+
+				end
+			end)
+
+			-- // Check NPC netship to ensure its right
+
+			task.spawn(function()
+				pcall(function()
+					while task.wait() do
+						if char and char.Torso and char:FindFirstChildOfClass("Humanoid") and char.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats.Torso) then
+								cats:FindFirstChild("Torso").CFrame = char:FindFirstChild("Torso").CFrame
+							else
+								char:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end
+				end)
+			end)
+
+			Client.CharacterAdded:Connect(function(chr)
+				while task.wait() do
+					pcall(function()
+						if chr and chr.Torso and chr:FindFirstChildOfClass("Humanoid") and chr.Humanoid.RootPart and cats.Torso and cats then
+							if isnetworkowner(cats:FindFirstChild("Torso")) then
+								cats:FindFirstChild("Torso").CFrame = chr:FindFirstChild("Torso").CFrame
+							else
+								chr:FindFirstChildOfClass("Humanoid").RootPart.CFrame = cats:FindFirstChild("Torso").CFrame
+							end
+						end
+					end)
+				end
+			end)
+
+			-- // Kill to make npc explode
+			-- // explosion has blastradius
+			-- // therefore it kills other people
+
+			KaboomButton.MouseButton1Click:Connect(function()
+				pcall(function()
+					if cats and cats.Humanoid and cats.Torso then
+						if isnetworkowner(cats.Torso) then
+							cats.Humanoid.Health = 0
+						end
+					end
+				end)
+			end)
+		end)
+	end
+	coroutine.wrap(NUZM_fake_script)()
