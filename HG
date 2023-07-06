@@ -1,0 +1,461 @@
+	-- Instances:
+
+	local F3X = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Frame_2 = Instance.new("Frame")
+	local Frame_3 = Instance.new("Frame")
+	local TextLabel = Instance.new("TextLabel")
+	local Frame_4 = Instance.new("Frame")
+	local Frame_5 = Instance.new("Frame")
+	local Frame_6 = Instance.new("Frame")
+	local Frame_7 = Instance.new("Frame")
+	local Frame_8 = Instance.new("Frame")
+	local Frame_9 = Instance.new("Frame")
+	local TextButton = Instance.new("TextButton")
+	local btools = Instance.new("TextButton")
+	local btools_2 = Instance.new("TextButton")
+	local btools_3 = Instance.new("TextButton")
+	local btools_4 = Instance.new("TextButton")
+	local btools_5 = Instance.new("TextButton")
+	local btools_6 = Instance.new("TextButton")
+	local btools_7 = Instance.new("TextButton")
+	local Frame_10 = Instance.new("Frame")
+
+	--Properties:
+
+	F3X.Name = "F3X"
+	F3X.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	F3X.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	F3X.ResetOnSpawn = false
+
+	Frame.Parent = F3X
+	Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+	Frame.BorderSizePixel = 0
+	Frame.Position = UDim2.new(0.20021075, 0, 0.215334415, 0)
+	Frame.Size = UDim2.new(0, 337, 0, 193)
+
+	Frame_2.Parent = Frame
+	Frame_2.BackgroundColor3 = Color3.fromRGB(123, 52, 154)
+	Frame_2.BorderSizePixel = 0
+	Frame_2.Size = UDim2.new(0, 338, 0, 6)
+
+	Frame_3.Parent = Frame
+	Frame_3.BackgroundColor3 = Color3.fromRGB(165, 70, 209)
+	Frame_3.BorderSizePixel = 0
+	Frame_3.Position = UDim2.new(0, 0, 0.031493824, 0)
+	Frame_3.Size = UDim2.new(0, 338, 0, 21)
+
+	TextLabel.Parent = Frame_3
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(0.0207100585, 0, 0, 0)
+	TextLabel.Size = UDim2.new(0, 331, 0, 20)
+	TextLabel.Font = Enum.Font.Arial
+	TextLabel.Text = "HARKINIAN"
+	TextLabel.TextColor3 = Color3.fromRGB(230, 153, 255)
+	TextLabel.TextSize = 15.000
+	TextLabel.TextWrapped = true
+
+	Frame_4.Parent = Frame
+	Frame_4.BackgroundColor3 = Color3.fromRGB(123, 52, 154)
+	Frame_4.BorderSizePixel = 0
+	Frame_4.Size = UDim2.new(0, 7, 0, 27)
+
+	Frame_5.Parent = Frame
+	Frame_5.BackgroundColor3 = Color3.fromRGB(165, 70, 209)
+	Frame_5.BorderSizePixel = 0
+	Frame_5.Position = UDim2.new(0, 0, 0.140302122, 0)
+	Frame_5.Size = UDim2.new(0, 7, 0, 165)
+
+	Frame_6.Parent = Frame
+	Frame_6.BackgroundColor3 = Color3.fromRGB(123, 52, 154)
+	Frame_6.BorderSizePixel = 0
+	Frame_6.Size = UDim2.new(0, 7, 0, 27)
+
+	Frame_7.Parent = Frame
+	Frame_7.BackgroundColor3 = Color3.fromRGB(165, 70, 209)
+	Frame_7.BorderSizePixel = 0
+	Frame_7.Position = UDim2.new(0, 0, 0.140302122, 0)
+	Frame_7.Size = UDim2.new(0, 7, 0, 165)
+
+	Frame_8.Parent = Frame
+	Frame_8.BackgroundColor3 = Color3.fromRGB(165, 70, 209)
+	Frame_8.BorderSizePixel = 0
+	Frame_8.Position = UDim2.new(1, 0, 0.140302122, 0)
+	Frame_8.Size = UDim2.new(0, 7, 0, 165)
+
+	Frame_9.Parent = Frame
+	Frame_9.BackgroundColor3 = Color3.fromRGB(123, 52, 154)
+	Frame_9.BorderSizePixel = 0
+	Frame_9.Position = UDim2.new(0, 0, 0.958549201, 0)
+	Frame_9.Size = UDim2.new(0, 344, 0, 8)
+
+	TextButton.Parent = Frame
+	TextButton.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0.0415430255, 0, 0.186528504, 0)
+	TextButton.Size = UDim2.new(0, 99, 0, 26)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = "Give Sword"
+	TextButton.TextColor3 = Color3.fromRGB(100, 87, 129)
+	TextButton.TextSize = 15.000
+	TextButton.TextStrokeColor3 = Color3.fromRGB(86, 75, 111)
+	TextButton.TextWrapped = true
+
+	btools.Name = "btools"
+	btools.Parent = Frame
+	btools.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools.BorderSizePixel = 0
+	btools.Position = UDim2.new(0.350698948, 0, 0.186528504, 0)
+	btools.Size = UDim2.new(0, 99, 0, 27)
+	btools.ZIndex = 5
+	btools.Font = Enum.Font.SourceSansLight
+	btools.Text = "Penis All"
+	btools.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools.TextSize = 15.000
+
+	btools_2.Name = "btools"
+	btools_2.Parent = Frame
+	btools_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_2.BorderSizePixel = 0
+	btools_2.Position = UDim2.new(0.662271619, 0, 0.186528504, 0)
+	btools_2.Size = UDim2.new(0, 99, 0, 27)
+	btools_2.ZIndex = 5
+	btools_2.Font = Enum.Font.SourceSansLight
+	btools_2.Text = "Raining Men"
+	btools_2.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_2.TextSize = 15.000
+
+	btools_3.Name = "btools"
+	btools_3.Parent = Frame
+	btools_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_3.BorderSizePixel = 0
+	btools_3.Position = UDim2.new(0.0415430255, 0, 0.362694293, 0)
+	btools_3.Size = UDim2.new(0, 99, 0, 27)
+	btools_3.ZIndex = 5
+	btools_3.Font = Enum.Font.SourceSansLight
+	btools_3.Text = "Thomas"
+	btools_3.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_3.TextSize = 15.000
+
+	btools_4.Name = "btools"
+	btools_4.Parent = Frame
+	btools_4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_4.BorderSizePixel = 0
+	btools_4.Position = UDim2.new(0.35014838, 0, 0.362694293, 0)
+	btools_4.Size = UDim2.new(0, 99, 0, 27)
+	btools_4.ZIndex = 5
+	btools_4.Font = Enum.Font.SourceSansLight
+	btools_4.Text = "Kill All"
+	btools_4.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_4.TextSize = 15.000
+
+	btools_5.Name = "btools"
+	btools_5.Parent = Frame
+	btools_5.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_5.BorderSizePixel = 0
+	btools_5.Position = UDim2.new(0.66172111, 0, 0.362694293, 0)
+	btools_5.Size = UDim2.new(0, 99, 0, 27)
+	btools_5.ZIndex = 5
+	btools_5.Font = Enum.Font.SourceSansLight
+	btools_5.Text = "Annoy All"
+	btools_5.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_5.TextSize = 15.000
+
+	btools_6.Name = "btools"
+	btools_6.Parent = Frame
+	btools_6.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_6.BorderSizePixel = 0
+	btools_6.Position = UDim2.new(0.0415430665, 0, 0.538860083, 0)
+	btools_6.Size = UDim2.new(0, 99, 0, 27)
+	btools_6.ZIndex = 5
+	btools_6.Font = Enum.Font.SourceSansLight
+	btools_6.Text = "Rainbow All"
+	btools_6.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_6.TextSize = 15.000
+
+	btools_7.Name = "btools"
+	btools_7.Parent = Frame
+	btools_7.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+	btools_7.BorderSizePixel = 0
+	btools_7.Position = UDim2.new(0.35014841, 0, 0.538860083, 0)
+	btools_7.Size = UDim2.new(0, 99, 0, 27)
+	btools_7.ZIndex = 5
+	btools_7.Font = Enum.Font.SourceSansLight
+	btools_7.Text = "Weird"
+	btools_7.TextColor3 = Color3.fromRGB(100, 87, 129)
+	btools_7.TextSize = 15.000
+
+	Frame_10.Parent = Frame
+	Frame_10.BackgroundColor3 = Color3.fromRGB(123, 52, 154)
+	Frame_10.BorderSizePixel = 0
+	Frame_10.Position = UDim2.new(1, 0, 0, 0)
+	Frame_10.Size = UDim2.new(0, 7, 0, 27)
+
+	-- Scripts:
+
+	local function YGZL_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Click:Connect(function()
+
+		end)
+
+	end
+	coroutine.wrap(YGZL_fake_script)()
+	local function UWSBSA_fake_script() -- btools.LocalScript 
+		local script = Instance.new('LocalScript', btools)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+
+					local part = F3X.new("Part", workspace)
+					part.CanCollide = false
+					part.BrickColor = BrickColor.new(3)
+					part.Material = ("Smooth Plastic")
+					part.Size = Vector3.new(0.8, 0.8, 3)
+					part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+					wait()
+					part:WeldTo(player.Character.HumanoidRootPart)
+
+					local part2 = F3X.new("Ball", workspace)
+					part2.CanCollide = false
+					part2.BrickColor = BrickColor.new(3)
+					part2.Material = ("Smooth Plastic")
+					part2.Size = Vector3.new(1, 1, 4)
+					part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+					wait()
+					part2:WeldTo(player.Character.HumanoidRootPart)
+
+					local part3 = F3X.new("Ball", workspace)
+					part3.CanCollide = false
+					part3.Material = ("Smooth Plastic")
+					part3.BrickColor = BrickColor.new(22)
+					part3.Size = Vector3.new(1, 1, 3)
+					part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+					wait()
+					part3:WeldTo(player.Character.HumanoidRootPart)
+					local part1 = F3X.new("Ball", workspace)
+					part1.CanCollide = false
+					part1.BrickColor = BrickColor.new(3)
+					part1.Material = ("Smooth Plastic")
+					part1.Size = Vector3.new(1, 1, 4)
+					part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+					wait()
+
+					part1:WeldTo(player.Character.HumanoidRootPart)
+
+				end)
+
+			end
+
+
+		end)
+	end
+	coroutine.wrap(UWSBSA_fake_script)()
+	local function MVHGN_fake_script() -- btools_2.LocalScript 
+		local script = Instance.new('LocalScript', btools_2)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game:GetService("Players").LocalPlayer:GetChildren()) do
+				spawn(function()
+					F3X.Edit(game:GetService("Players").LocalPlayer:GetChildren(), {Transparency = 1})
+					for _,limb in pairs(game:GetService("Players").LocalPlayer:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+					while wait(10 % 1 * 1e2) do
+						local part = F3X.new("Part", workspace)
+
+						part.CanCollide = false
+						part.Size = Vector3.new(440,530,380)
+						part.Position = Vector3.new(math.random(-3000,1000),math.random(1,3000),math.random(-3000,3000))
+						wait()
+						local mesh = part:AddMesh()
+						mesh.MeshId = "rbxassetid://7234998844"
+						mesh.TextureId = "rbxassetid://7234998875"
+					end
+				end)
+			end
+		end)
+	end
+	coroutine.wrap(MVHGN_fake_script)()
+	local function DLEB_fake_script() -- btools_3.LocalScript 
+		local script = Instance.new('LocalScript', btools_3)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+
+			F3X.Edit(game:GetService("Players").LocalPlayer:GetChildren(), {Transparency = 0})
+
+			local part = F3X.new("Part",workspace)
+			part.CanCollide = false
+			part.Size = Vector3.new(0, 0, 0)
+			part.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0) * CFrame.Angles(0, math.pi, 0)
+			wait()
+			part:WeldTo(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)
+			local mesh = part:AddMesh()
+			mesh.MeshId = "rbxassetid://431017802"
+			mesh.TextureId = "rbxassetid://431017809"
+			mesh.Scale = Vector3.new(0.03, 0.03, 0.03)
+			mesh.Angles = CFrame.Angles(0, math.pi, 0)
+
+			local lol = part:AddSpotLight()
+			lol.Face = "Back"
+			lol.Range = 60
+			local smoke = part:AddSmoke()
+			smoke.Color = Color3.new(255, 255, 255)
+			smoke.Opacity = 0.9
+			smoke.Size = 2
+			smoke.RiseVelocity = 60
+
+		end)
+	end
+	coroutine.wrap(DLEB_fake_script)()
+	local function ZFXX_fake_script() -- btools_4.LocalScript 
+		local script = Instance.new('LocalScript', btools_4)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					for _,limb in pairs(player.Character:GetChildren()) do
+						if limb:IsA("Accessory") and limb:FindFirstChildWhichIsA("BasePart") then
+							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
+						end
+					end
+
+					F3X.Object(player.Character.Head).CFrame = game:GetService("Players").LocalPlayer.Character["Left Arm"].CFrame * CFrame.new(0, -0.5, 0)
+
+
+				end)
+			end
+
+		end)
+	end
+	coroutine.wrap(ZFXX_fake_script)()
+	local function HZAR_fake_script() -- btools_5.LocalScript 
+		local script = Instance.new('LocalScript', btools_5)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+
+					F3X.Object(player.Character["Head"]).Anchored = true
+					F3X.Object(player.Character["Head"]):WeldTo(game:GetService("Players").LocalPlayer.Character["Head"])
+
+
+				end)
+			end
+		end)
+	end
+	coroutine.wrap(HZAR_fake_script)()
+	local function DVSI_fake_script() -- btools_6.LocalScript 
+		local script = Instance.new('LocalScript', btools_6)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+					while wait(0.7) do
+						F3X.Object(player.Character["Head"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Torso"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Left Leg"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.random()
+					end
+				end)
+			end
+
+
+		end)
+	end
+	coroutine.wrap(DVSI_fake_script)()
+	local function RGWPQY_fake_script() -- btools_7.LocalScript 
+		local script = Instance.new('LocalScript', btools_7)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+
+			for _,player in pairs(game.Players:GetPlayers()) do
+				spawn(function()
+					F3X.Edit(player.Character:GetChildren(), {})
+
+					F3X.Object(player.Character["Head"]).Transparency = 0.35
+					F3X.Object(player.Character["Torso"]).Transparency = 0.35
+					F3X.Object(player.Character["Left Leg"]).Transparency = 0.35
+					F3X.Object(player.Character["Right Leg"]).Transparency = 0.35
+					F3X.Object(player.Character["Left Arm"]).Transparency = 0.35
+					F3X.Object(player.Character["Right Arm"]).Transparency = 0.35
+					while wait(1) do
+						F3X.Object(player.Character["Head"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Torso"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Left Leg"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.random()
+						F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.random()
+					end
+				end)
+			end
+
+		end)
+	end
+	coroutine.wrap(RGWPQY_fake_script)()
+	local function SSHFMPD_fake_script() -- Frame.Dragify 
+		local script = Instance.new('LocalScript', Frame)
+
+		local UIS = game:GetService("UserInputService")
+		function dragify(Frame)
+			dragToggle = nil
+			local dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			local dragPos = nil
+			function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+
+		dragify(script.Parent)
+	end
+	coroutine.wrap(SSHFMPD_fake_script)()
