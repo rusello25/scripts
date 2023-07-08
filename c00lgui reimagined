@@ -13,9 +13,9 @@ local DecalSpam = Instance.new("TextButton")
 local Vector13 = Instance.new("TextButton")
 local ClearWorkspace = Instance.new("TextButton")
 local Crucify = Instance.new("TextButton")
-local Empty = Instance.new("TextButton")
-local Empty_2 = Instance.new("TextButton")
-local Empty_3 = Instance.new("TextButton")
+local butt = Instance.new("TextButton")
+local penis = Instance.new("TextButton")
+local tits = Instance.new("TextButton")
 local Title = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
 local Settings = Instance.new("Frame")
@@ -218,46 +218,46 @@ Crucify.Text = "Crucify Victim"
 Crucify.TextColor3 = Color3.fromRGB(255, 255, 255)
 Crucify.TextSize = 14.000
 
-Empty.Name = "Empty"
-Empty.Parent = Btools
-Empty.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Empty.BorderColor3 = Color3.fromRGB(255, 0, 0)
-Empty.BorderSizePixel = 3
-Empty.Position = UDim2.new(0.5, 3, 0, 165)
-Empty.Size = UDim2.new(0.5, -3, 0, 30)
-Empty.ZIndex = 2
-Empty.Font = Enum.Font.SourceSans
-Empty.Text = "Empty"
-Empty.TextColor3 = Color3.fromRGB(255, 255, 255)
-Empty.TextSize = 14.000
+butt.Name = "butt"
+butt.Parent = Btools
+butt.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+butt.BorderColor3 = Color3.fromRGB(255, 0, 0)
+butt.BorderSizePixel = 3
+butt.Position = UDim2.new(0.5, 3, 0, 165)
+butt.Size = UDim2.new(0.5, -3, 0, 30)
+butt.ZIndex = 2
+butt.Font = Enum.Font.SourceSans
+butt.Text = "Butt Victim"
+butt.TextColor3 = Color3.fromRGB(255, 255, 255)
+butt.TextSize = 14.000
 
-Empty_2.Name = "Empty"
-Empty_2.Parent = Btools
-Empty_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Empty_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
-Empty_2.BorderSizePixel = 3
-Empty_2.Position = UDim2.new(0, 0, 0, 198)
-Empty_2.Size = UDim2.new(0.5, 0, 0, 30)
-Empty_2.ZIndex = 2
-Empty_2.Font = Enum.Font.SourceSans
-Empty_2.Text = "Empty"
-Empty_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Empty_2.TextSize = 14.000
-Empty_2.TextWrapped = true
+penis.Name = "penis"
+penis.Parent = Btools
+penis.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+penis.BorderColor3 = Color3.fromRGB(255, 0, 0)
+penis.BorderSizePixel = 3
+penis.Position = UDim2.new(0, 0, 0, 198)
+penis.Size = UDim2.new(0.5, 0, 0, 30)
+penis.ZIndex = 2
+penis.Font = Enum.Font.SourceSans
+penis.Text = "Penis Victim"
+penis.TextColor3 = Color3.fromRGB(255, 255, 255)
+penis.TextSize = 14.000
+penis.TextWrapped = true
 
-Empty_3.Name = "Empty"
-Empty_3.Parent = Btools
-Empty_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Empty_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
-Empty_3.BorderSizePixel = 3
-Empty_3.Position = UDim2.new(0.5, 3, 0, 198)
-Empty_3.Size = UDim2.new(0.49000001, 0, 0, 30)
-Empty_3.ZIndex = 2
-Empty_3.Font = Enum.Font.SourceSans
-Empty_3.Text = "Empty"
-Empty_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Empty_3.TextSize = 14.000
-Empty_3.TextWrapped = true
+tits.Name = "tits"
+tits.Parent = Btools
+tits.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+tits.BorderColor3 = Color3.fromRGB(255, 0, 0)
+tits.BorderSizePixel = 3
+tits.Position = UDim2.new(0.5, 3, 0, 198)
+tits.Size = UDim2.new(0.49000001, 0, 0, 30)
+tits.ZIndex = 2
+tits.Font = Enum.Font.SourceSans
+tits.Text = "Tits Victim"
+tits.TextColor3 = Color3.fromRGB(255, 255, 255)
+tits.TextSize = 14.000
+tits.TextWrapped = true
 
 Title.Name = "Title"
 Title.Parent = Btools
@@ -794,7 +794,7 @@ CloseOpen.TextSize = 18.000
 
 -- Scripts:
 
-local function XDYKUDX_fake_script() -- TrollingGUI.LocalScript 
+local function HGVIAJ_fake_script() -- TrollingGUI.LocalScript 
 	local script = Instance.new('LocalScript', TrollingGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1536,8 +1536,8 @@ local function XDYKUDX_fake_script() -- TrollingGUI.LocalScript
 		coroutine.wrap(ZCHRME_fake_script)()
 	end)
 end
-coroutine.wrap(XDYKUDX_fake_script)()
-local function DNOLC_fake_script() -- Harked.LocalScript 
+coroutine.wrap(HGVIAJ_fake_script)()
+local function ECHN_fake_script() -- Harked.LocalScript 
 	local script = Instance.new('LocalScript', Harked)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2148,24 +2148,24 @@ local function DNOLC_fake_script() -- Harked.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(DNOLC_fake_script)()
-local function HUCIAH_fake_script() -- RK1.LocalScript 
+coroutine.wrap(ECHN_fake_script)()
+local function DKXGS_fake_script() -- RK1.LocalScript 
 	local script = Instance.new('LocalScript', RK1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/RK1"))()
 	end)
 end
-coroutine.wrap(HUCIAH_fake_script)()
-local function WAYO_fake_script() -- HarkinianGui.LocalScript 
+coroutine.wrap(DKXGS_fake_script)()
+local function IZFCCM_fake_script() -- HarkinianGui.LocalScript 
 	local script = Instance.new('LocalScript', HarkinianGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/HG"))()
 	end)
 end
-coroutine.wrap(WAYO_fake_script)()
-local function GUYSCA_fake_script() -- UnanchorAll.LocalScript 
+coroutine.wrap(IZFCCM_fake_script)()
+local function IIMCTXD_fake_script() -- UnanchorAll.LocalScript 
 	local script = Instance.new('LocalScript', UnanchorAll)
 
 	local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
@@ -2221,8 +2221,8 @@ local function GUYSCA_fake_script() -- UnanchorAll.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GUYSCA_fake_script)()
-local function VFLWP_fake_script() -- DecalSpam.LocalScript 
+coroutine.wrap(IIMCTXD_fake_script)()
+local function ACMFQO_fake_script() -- DecalSpam.LocalScript 
 	local script = Instance.new('LocalScript', DecalSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2261,8 +2261,8 @@ local function VFLWP_fake_script() -- DecalSpam.LocalScript
 		Spam(DECALID)
 	end)
 end
-coroutine.wrap(VFLWP_fake_script)()
-local function YSYTFN_fake_script() -- Vector13.LocalScript 
+coroutine.wrap(ACMFQO_fake_script)()
+local function SXXLNBB_fake_script() -- Vector13.LocalScript 
 	local script = Instance.new('LocalScript', Vector13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -4044,8 +4044,8 @@ local function YSYTFN_fake_script() -- Vector13.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(YSYTFN_fake_script)()
-local function OQWSGVF_fake_script() -- ClearWorkspace.LocalScript 
+coroutine.wrap(SXXLNBB_fake_script)()
+local function OLXA_fake_script() -- ClearWorkspace.LocalScript 
 	local script = Instance.new('LocalScript', ClearWorkspace)
 
 	local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
@@ -4101,8 +4101,8 @@ local function OQWSGVF_fake_script() -- ClearWorkspace.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OQWSGVF_fake_script)()
-local function SLGNL_fake_script() -- Crucify.LocalScript 
+coroutine.wrap(OLXA_fake_script)()
+local function BEGCPN_fake_script() -- Crucify.LocalScript 
 	local script = Instance.new('LocalScript', Crucify)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -4137,32 +4137,178 @@ local function SLGNL_fake_script() -- Crucify.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(SLGNL_fake_script)()
-local function QEBAV_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(BEGCPN_fake_script)()
+local function VTUOOA_fake_script() -- butt.LocalScript 
+	local script = Instance.new('LocalScript', butt)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+		
+		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
+		local player = game.Players:FindFirstChild(playername)
+		
+		spawn(function()
+			F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+			local part2 = F3X.new("Ball", workspace)
+			part2.CanCollide = false
+			part2.BrickColor = BrickColor.new(3)
+			part2.Material = ("Smooth Plastic")
+			part2.Size = Vector3.new(2, 2, 2)
+			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, 0.8)
+			wait()
+			part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+			local part1 = F3X.new("Ball", workspace)
+			part1.CanCollide = false
+			part1.BrickColor = BrickColor.new(3)
+			part1.Material = ("Smooth Plastic")
+			part1.Size = Vector3.new(2, 2, 2)
+			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, 0.8)
+			wait()
+	
+			part1:WeldTo(player.Character.HumanoidRootPart)
+	
+		end)
+	end)
+end
+coroutine.wrap(VTUOOA_fake_script)()
+local function QPLY_fake_script() -- penis.LocalScript 
+	local script = Instance.new('LocalScript', penis)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
+		local player = game.Players:FindFirstChild(playername)
+		
+		spawn(function()
+			F3X.Edit(player.Character:GetChildren(), {})
+	
+			local part = F3X.new("Part", workspace)
+			part.CanCollide = false
+			part.BrickColor = BrickColor.new(3)
+			part.Material = ("Smooth Plastic")
+			part.Size = Vector3.new(0.8, 0.8, 3)
+			part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
+			wait()
+			part:WeldTo(player.Character.HumanoidRootPart)
+	
+			local part2 = F3X.new("Ball", workspace)
+			part2.CanCollide = false
+			part2.BrickColor = BrickColor.new(3)
+			part2.Material = ("Smooth Plastic")
+			part2.Size = Vector3.new(1, 1, 4)
+			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
+			wait()
+			part2:WeldTo(player.Character.HumanoidRootPart)
+	
+			local part3 = F3X.new("Ball", workspace)
+			part3.CanCollide = false
+			part3.Material = ("Smooth Plastic")
+			part3.BrickColor = BrickColor.new(22)
+			part3.Size = Vector3.new(1, 1, 3)
+			part3.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -3.5)
+			wait()
+			part3:WeldTo(player.Character.HumanoidRootPart)
+			local part1 = F3X.new("Ball", workspace)
+			part1.CanCollide = false
+			part1.BrickColor = BrickColor.new(3)
+			part1.Material = ("Smooth Plastic")
+			part1.Size = Vector3.new(1, 1, 4)
+			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
+			wait()
+	
+			part1:WeldTo(player.Character.HumanoidRootPart)
+	
+		end)
+	
+	end)
+end
+coroutine.wrap(QPLY_fake_script)()
+local function XQCGF_fake_script() -- tits.LocalScript 
+	local script = Instance.new('LocalScript', tits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
+	
+		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
+		local player = game.Players:FindFirstChild(playername)
+		
+		spawn(function()
+			F3X.Edit(player.Character:GetChildren(), {})
+	
+	
+			local part2 = F3X.new("Ball", workspace)
+			part2.CanCollide = false
+			part2.BrickColor = BrickColor.new(3)
+			part2.Material = ("Smooth Plastic")
+			part2.Size = Vector3.new(2, 2, 2)
+			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1)
+			wait()
+			part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+			local part1 = F3X.new("Ball", workspace)
+			part1.CanCollide = false
+			part1.BrickColor = BrickColor.new(3)
+			part1.Material = ("Smooth Plastic")
+			part1.Size = Vector3.new(2, 2, 2)
+			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1)
+			wait()
+	
+			part1:WeldTo(player.Character.HumanoidRootPart)
+			local part2 = F3X.new("Ball", workspace)
+			part2.CanCollide = false
+			part2.BrickColor = BrickColor.new(9)
+			part2.Material = ("Smooth Plastic")
+			part2.Size = Vector3.new(1, 1, 1)
+			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1.8)
+			wait()
+			part2:WeldTo(player.Character.HumanoidRootPart)
+	
+	
+			local part1 = F3X.new("Ball", workspace)
+			part1.CanCollide = false
+			part1.BrickColor = BrickColor.new(9)
+			part1.Material = ("Smooth Plastic")
+			part1.Size = Vector3.new(1, 1, 1)
+			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1.8)
+			wait()
+	
+			part1:WeldTo(player.Character.HumanoidRootPart)
+	
+		end)
+	end)
+end
+coroutine.wrap(XQCGF_fake_script)()
+local function OMYDXI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/4nn1")))()
 	end)
 end
-coroutine.wrap(QEBAV_fake_script)()
-local function GVIJB_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(OMYDXI_fake_script)()
+local function UAKYQY_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/redwood")))()
 	end)
 end
-coroutine.wrap(GVIJB_fake_script)()
-local function YEXGMJD_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(UAKYQY_fake_script)()
+local function WHGVKC_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
 	end)
 end
-coroutine.wrap(YEXGMJD_fake_script)()
-local function DXMFQ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WHGVKC_fake_script)()
+local function YCUTD_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -5016,16 +5162,16 @@ local function DXMFQ_fake_script() -- TextButton_4.LocalScript
 		end) 
 	end)
 end
-coroutine.wrap(DXMFQ_fake_script)()
-local function IVBJ_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(YCUTD_fake_script)()
+local function QVLR_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/Harked"),true))()
 	end)
 end
-coroutine.wrap(IVBJ_fake_script)()
-local function SCZHXCV_fake_script() -- SettingsButton.LocalScript 
+coroutine.wrap(QVLR_fake_script)()
+local function EYDFJA_fake_script() -- SettingsButton.LocalScript 
 	local script = Instance.new('LocalScript', SettingsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -5033,8 +5179,8 @@ local function SCZHXCV_fake_script() -- SettingsButton.LocalScript
 		script.Parent.Parent.Parent.SettingsButton.Visible = true
 	end)
 end
-coroutine.wrap(SCZHXCV_fake_script)()
-local function HVZTGAV_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(EYDFJA_fake_script)()
+local function OLDQ_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -5042,8 +5188,8 @@ local function HVZTGAV_fake_script() -- TextButton_8.LocalScript
 		script.Parent.Parent.Page2.Visible = true
 	end)
 end
-coroutine.wrap(HVZTGAV_fake_script)()
-local function HBHN_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(OLDQ_fake_script)()
+local function GIEG_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -5051,8 +5197,8 @@ local function HBHN_fake_script() -- TextButton_9.LocalScript
 		script.Parent.Parent.Page2.Visible = false
 	end)
 end
-coroutine.wrap(HBHN_fake_script)()
-local function KTVVHGM_fake_script() -- KohlsAdmin.LocalScript 
+coroutine.wrap(GIEG_fake_script)()
+local function TKBXIR_fake_script() -- KohlsAdmin.LocalScript 
 	local script = Instance.new('LocalScript', KohlsAdmin)
 
 	local kholsmodule = loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/Kohl's%20Module"))()
@@ -5098,8 +5244,8 @@ local function KTVVHGM_fake_script() -- KohlsAdmin.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KTVVHGM_fake_script)()
-local function WTOWEWG_fake_script() -- SettingsButton_2.LocalScript 
+coroutine.wrap(TKBXIR_fake_script)()
+local function IHXEY_fake_script() -- SettingsButton_2.LocalScript 
 	local script = Instance.new('LocalScript', SettingsButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -5107,8 +5253,8 @@ local function WTOWEWG_fake_script() -- SettingsButton_2.LocalScript
 		script.Parent.Parent.Settings.Visible = true
 	end)
 end
-coroutine.wrap(WTOWEWG_fake_script)()
-local function PYXNCW_fake_script() -- CloseOpen.LocalScript 
+coroutine.wrap(IHXEY_fake_script)()
+local function TNSWPHB_fake_script() -- CloseOpen.LocalScript 
 	local script = Instance.new('LocalScript', CloseOpen)
 
 	local Open = true
@@ -5130,4 +5276,4 @@ local function PYXNCW_fake_script() -- CloseOpen.LocalScript
 	
 	Button.MouseButton1Click:connect(Clicked)
 end
-coroutine.wrap(PYXNCW_fake_script)()
+coroutine.wrap(TNSWPHB_fake_script)()
