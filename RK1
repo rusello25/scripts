@@ -897,10 +897,6 @@
 				AddDecal(char.Part,monid,Enum.NormalId.Front)
 				SpawnDecal(char.Part,Enum.NormalId.Back)
 				AddDecal(char.Part,monid,Enum.NormalId.Back)
-				SpawnDecal(char.Part,Enum.NormalId.Left)
-				AddDecal(char.Part,monid,Enum.NormalId.Left)
-				SpawnDecal(char.Part,Enum.NormalId.Right)
-				AddDecal(char.Part,monid,Enum.NormalId.Right)
 				Resize(char.Part, Vector3.new(6.2,6.2,6.2),char.Part.CFrame)
 				--SetTrans(char.Part,0)
 				for i, v in pairs(char:GetDescendants()) do
