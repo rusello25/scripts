@@ -892,7 +892,7 @@
 				CreatePart(char.HumanoidRootPart.CFrame,char)
 				SetCollision(char.Part,false)
 				SetLocked(char.Part,false)
-				local monid = "13522886371"
+				local monid = "13896708828"
 				SpawnDecal(char.Part,Enum.NormalId.Front)
 				AddDecal(char.Part,monid,Enum.NormalId.Front)
 				SpawnDecal(char.Part,Enum.NormalId.Back)
