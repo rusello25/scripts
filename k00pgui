@@ -18,14 +18,14 @@ local thomas = Instance.new("TextButton")
 local Inject = Instance.new("TextButton")
 local Fire = Instance.new("TextButton")
 local avatar = Instance.new("TextButton")
-local kopop = Instance.new("TextButton")
+local noot = Instance.new("TextButton")
 local baseplate = Instance.new("TextButton")
 local chatbypas = Instance.new("TextButton")
 local johndoe = Instance.new("TextButton")
 local bighead = Instance.new("TextButton")
 local randomcolors = Instance.new("TextButton")
 local antikick = Instance.new("TextButton")
-local message = Instance.new("TextButton")
+local delete = Instance.new("TextButton")
 local slap = Instance.new("TextButton")
 local canadaspam = Instance.new("TextButton")
 local theme = Instance.new("TextButton")
@@ -238,19 +238,19 @@ avatar.TextScaled = true
 avatar.TextSize = 29.000
 avatar.TextWrapped = true
 
-kopop.Name = "kopop"
-kopop.Parent = ScrollingFrame
-kopop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-kopop.BorderColor3 = Color3.fromRGB(0, 53, 4)
-kopop.BorderSizePixel = 3
-kopop.Position = UDim2.new(0.373934716, 0, 0.388916999, 0)
-kopop.Size = UDim2.new(0, 88, 0, 37)
-kopop.Font = Enum.Font.SourceSans
-kopop.Text = "too lazy to add in AGAIN"
-kopop.TextColor3 = Color3.fromRGB(255, 255, 255)
-kopop.TextScaled = true
-kopop.TextSize = 29.000
-kopop.TextWrapped = true
+noot.Name = "noot"
+noot.Parent = ScrollingFrame
+noot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noot.BorderColor3 = Color3.fromRGB(0, 53, 4)
+noot.BorderSizePixel = 3
+noot.Position = UDim2.new(0.373934716, 0, 0.388916999, 0)
+noot.Size = UDim2.new(0, 88, 0, 37)
+noot.Font = Enum.Font.SourceSans
+noot.Text = "Noot-Noot"
+noot.TextColor3 = Color3.fromRGB(255, 255, 255)
+noot.TextScaled = true
+noot.TextSize = 29.000
+noot.TextWrapped = true
 
 baseplate.Name = "baseplate"
 baseplate.Parent = ScrollingFrame
@@ -332,19 +332,19 @@ antikick.Text = "Insert Anti-Kick"
 antikick.TextColor3 = Color3.fromRGB(255, 255, 255)
 antikick.TextSize = 29.000
 
-message.Name = "message"
-message.Parent = ScrollingFrame
-message.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-message.BorderColor3 = Color3.fromRGB(0, 53, 4)
-message.BorderSizePixel = 3
-message.Position = UDim2.new(0.376587242, 0, 0.643259406, 0)
-message.Size = UDim2.new(0, 88, 0, 37)
-message.Font = Enum.Font.SourceSans
-message.Text = "empty"
-message.TextColor3 = Color3.fromRGB(255, 255, 255)
-message.TextScaled = true
-message.TextSize = 29.000
-message.TextWrapped = true
+delete.Name = "delete"
+delete.Parent = ScrollingFrame
+delete.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+delete.BorderColor3 = Color3.fromRGB(0, 53, 4)
+delete.BorderSizePixel = 3
+delete.Position = UDim2.new(0.376587242, 0, 0.643259406, 0)
+delete.Size = UDim2.new(0, 88, 0, 37)
+delete.Font = Enum.Font.SourceSans
+delete.Text = "delete everything"
+delete.TextColor3 = Color3.fromRGB(255, 255, 255)
+delete.TextScaled = true
+delete.TextSize = 29.000
+delete.TextWrapped = true
 
 slap.Name = "slap"
 slap.Parent = ScrollingFrame
@@ -515,7 +515,7 @@ TextLabel_8.TextWrapped = true
 
 -- Scripts:
 
-local function YJCG_fake_script() -- LoginButton.LocalScript 
+local function WHHLST_fake_script() -- LoginButton.LocalScript 
 	local script = Instance.new('LocalScript', LoginButton)
 
 	local password = script.Parent.Parent.Parent.PasswordThing
@@ -611,8 +611,8 @@ local function YJCG_fake_script() -- LoginButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YJCG_fake_script)()
-local function OTPV_fake_script() -- LoginUI.Drag Gui Script 
+coroutine.wrap(WHHLST_fake_script)()
+local function GEXGWJ_fake_script() -- LoginUI.Drag Gui Script 
 	local script = Instance.new('LocalScript', LoginUI)
 
 	function dragify(Main)
@@ -656,24 +656,24 @@ local function OTPV_fake_script() -- LoginUI.Drag Gui Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(OTPV_fake_script)()
-local function TWPHLPY_fake_script() -- avatar.LocalScript 
+coroutine.wrap(GEXGWJ_fake_script)()
+local function KACDAS_fake_script() -- avatar.LocalScript 
 	local script = Instance.new('LocalScript', avatar)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-3/main/FE%20character%20creator.lua"))()
 	end)
 end
-coroutine.wrap(TWPHLPY_fake_script)()
-local function KQNPX_fake_script() -- chatbypas.LocalScript 
+coroutine.wrap(KACDAS_fake_script)()
+local function UIINEZ_fake_script() -- chatbypas.LocalScript 
 	local script = Instance.new('LocalScript', chatbypas)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SXNTII/VadriftsHost/main/source.lua"))()
 	end)
 end
-coroutine.wrap(KQNPX_fake_script)()
-local function YLJPY_fake_script() -- antikick.LocalScript 
+coroutine.wrap(UIINEZ_fake_script)()
+local function CDTGF_fake_script() -- antikick.LocalScript 
 	local script = Instance.new('LocalScript', antikick)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -699,16 +699,16 @@ local function YLJPY_fake_script() -- antikick.LocalScript
 		notify('Client Antikick','Client anti kick is now active (only effective on localscript kick)')
 	end)
 end
-coroutine.wrap(YLJPY_fake_script)()
-local function XDCIIIK_fake_script() -- r6.LocalScript 
+coroutine.wrap(CDTGF_fake_script)()
+local function NLXGHJ_fake_script() -- r6.LocalScript 
 	local script = Instance.new('LocalScript', r6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
 	end)
 end
-coroutine.wrap(XDCIIIK_fake_script)()
-local function KJZTCN_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(NLXGHJ_fake_script)()
+local function LWVT_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	--rgrg
@@ -1374,9 +1374,99 @@ local function KJZTCN_fake_script() -- ScrollingFrame.LocalScript
 		end
 		SpawnBasePlate()
 	end)
+	
+	script.Parent.noot.MouseButton1Click:Connect(function()
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://14036250208"
+		sound.Looped = false
+		sound.Volume = 2
+		sound.Parent = workspace
+		sound:Play()
+		
+		wait(10.19)
+		
+		local sound2 = Instance.new("Sound")
+		sound2.SoundId = "rbxassetid://14036259191"
+		sound2.Looped = true
+		sound2.Volume = 2
+		sound2.Parent = workspace
+		sound2:Play()
+		
+		local function KillAll()
+			for i,v in game.Players:GetPlayers() do
+				spawn(function()
+					SetLocked(v.Character.Head,false)
+					DestroyPart(v.Character.Head)
+				end)
+			end
+		end
+		
+		local function Sky(id)
+			local e = char.HumanoidRootPart.CFrame.x
+			local f = char.HumanoidRootPart.CFrame.y
+			local g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"not the sky lol")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		
+		local function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		
+		spam("6368258828")
+		Sky("6368258828")
+		DestroyPart(game.Workspace.Baseplate)
+		DestroyPart(game.Workspace.SpawnLocation)
+		wait(5)
+		KillAll()
+	end)
+	
+	script.Parent.delete.MouseButton1Click:Connect(function()
+		for i, v in pairs(workspace:GetDescendants()) do
+			if v:IsA("BasePart") or v:IsA("Part") then
+				DestroyPart(v)
+			end
+		end
+	end)
 end
-coroutine.wrap(KJZTCN_fake_script)()
-local function GMSN_fake_script() -- Framez.Drag Gui Script 
+coroutine.wrap(LWVT_fake_script)()
+local function QPSPN_fake_script() -- Framez.Drag Gui Script 
 	local script = Instance.new('LocalScript', Framez)
 
 	function dragify(Main)
@@ -1420,11 +1510,11 @@ local function GMSN_fake_script() -- Framez.Drag Gui Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(GMSN_fake_script)()
-local function JEAXQJK_fake_script() -- Framez.LocalScript 
+coroutine.wrap(QPSPN_fake_script)()
+local function QEBLEMP_fake_script() -- Framez.LocalScript 
 	local script = Instance.new('LocalScript', Framez)
 
 	script.Parent.Visible = false
 	script:Destroy()
 end
-coroutine.wrap(JEAXQJK_fake_script)()
+coroutine.wrap(QEBLEMP_fake_script)()
