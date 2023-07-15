@@ -1,5 +1,4 @@
 -- Instances:
--- lol
 
 local RX6 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -47,6 +46,9 @@ local On_6 = Instance.new("TextButton")
 local reanim = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
 local On_7 = Instance.new("TextButton")
+local gun2 = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local On_8 = Instance.new("TextButton")
 local ScriptTab = Instance.new("Frame")
 local ValueBox = Instance.new("TextBox")
 local ScrollingFrame_4 = Instance.new("ScrollingFrame")
@@ -55,20 +57,19 @@ local k00pgui = Instance.new("TextButton")
 local DecalSky = Instance.new("Frame")
 local ScrollingFrame_5 = Instance.new("ScrollingFrame")
 local thing = Instance.new("Frame")
-local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
 local decalid = Instance.new("Frame")
 local ValueBox_2 = Instance.new("TextBox")
-local TextLabel_9 = Instance.new("TextLabel")
-local sky = Instance.new("Frame")
 local TextLabel_10 = Instance.new("TextLabel")
-local On_8 = Instance.new("TextButton")
-local Off = Instance.new("TextButton")
-local decal = Instance.new("Frame")
+local sky = Instance.new("Frame")
 local TextLabel_11 = Instance.new("TextLabel")
 local On_9 = Instance.new("TextButton")
+local Off = Instance.new("TextButton")
+local decal = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local On_10 = Instance.new("TextButton")
 local Credits = Instance.new("Frame")
 local ScrollingFrame_6 = Instance.new("ScrollingFrame")
-local TextLabel_12 = Instance.new("TextLabel")
 local TextLabel_13 = Instance.new("TextLabel")
 local TextLabel_14 = Instance.new("TextLabel")
 local TextLabel_15 = Instance.new("TextLabel")
@@ -83,13 +84,14 @@ local TextLabel_23 = Instance.new("TextLabel")
 local TextLabel_24 = Instance.new("TextLabel")
 local TextLabel_25 = Instance.new("TextLabel")
 local TextLabel_26 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
 local TextLabel_27 = Instance.new("TextLabel")
-local TextButton_6 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
 local TextLabel_28 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local TextLabel_29 = Instance.new("TextLabel")
 local TextButton_7 = Instance.new("TextButton")
 local thing_2 = Instance.new("Frame")
-local TextLabel_29 = Instance.new("TextLabel")
+local TextLabel_30 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -455,7 +457,7 @@ TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
 TextLabel_6.BackgroundTransparency = 0.850
 TextLabel_6.Position = UDim2.new(0, 5, 0, 5)
 TextLabel_6.Size = UDim2.new(1, -160, 0, 25)
-TextLabel_6.Text = "Gun"
+TextLabel_6.Text = "russian gun"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextStrokeTransparency = 0.500
 TextLabel_6.TextWrapped = true
@@ -498,6 +500,34 @@ On_7.Text = "On"
 On_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 On_7.TextStrokeTransparency = 0.500
 On_7.TextWrapped = true
+
+gun2.Name = "gun2"
+gun2.Parent = ScrollingFrame_3
+gun2.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+gun2.BackgroundTransparency = 0.850
+gun2.Position = UDim2.new(0, 0, 0, 175)
+gun2.Size = UDim2.new(1, -10, 0, 35)
+
+TextLabel_8.Parent = gun2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+TextLabel_8.BackgroundTransparency = 0.850
+TextLabel_8.Position = UDim2.new(0, 5, 0, 5)
+TextLabel_8.Size = UDim2.new(1, -160, 0, 25)
+TextLabel_8.Text = "M4A1"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextStrokeTransparency = 0.500
+TextLabel_8.TextWrapped = true
+
+On_8.Name = "On"
+On_8.Parent = gun2
+On_8.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+On_8.BackgroundTransparency = 0.850
+On_8.Position = UDim2.new(1.22522521, -80, 0, 5)
+On_8.Size = UDim2.new(0, -145, 0, 25)
+On_8.Text = "On"
+On_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+On_8.TextStrokeTransparency = 0.500
+On_8.TextWrapped = true
 
 ScriptTab.Name = "Script Tab"
 ScriptTab.Parent = Frame_7
@@ -573,14 +603,14 @@ thing.BackgroundTransparency = 1.000
 thing.BorderSizePixel = 0
 thing.Size = UDim2.new(1.25754344, -90, 0, 140)
 
-TextLabel_8.Parent = thing
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Size = UDim2.new(1, -10, 0, 35)
-TextLabel_8.Text = "  Selected Id: Custom"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextStrokeTransparency = 0.500
-TextLabel_8.TextWrapped = true
-TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_9.Parent = thing
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Size = UDim2.new(1, -10, 0, 35)
+TextLabel_9.Text = "  Selected Id: Custom"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextStrokeTransparency = 0.500
+TextLabel_9.TextWrapped = true
+TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
 
 decalid.Name = "decal id"
 decalid.Parent = thing
@@ -604,16 +634,16 @@ ValueBox_2.TextSize = 12.000
 ValueBox_2.TextStrokeTransparency = 0.500
 ValueBox_2.TextWrapped = true
 
-TextLabel_9.Parent = decalid
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-TextLabel_9.BackgroundTransparency = 0.850
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0, 5, 0, 5)
-TextLabel_9.Size = UDim2.new(0, 70, 0, 25)
-TextLabel_9.Text = "Decal Id"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextStrokeTransparency = 0.500
-TextLabel_9.TextWrapped = true
+TextLabel_10.Parent = decalid
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+TextLabel_10.BackgroundTransparency = 0.850
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 5, 0, 5)
+TextLabel_10.Size = UDim2.new(0, 70, 0, 25)
+TextLabel_10.Text = "Decal Id"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextStrokeTransparency = 0.500
+TextLabel_10.TextWrapped = true
 
 sky.Name = "sky"
 sky.Parent = thing
@@ -622,26 +652,26 @@ sky.BackgroundTransparency = 0.850
 sky.Position = UDim2.new(0, 0, 0, 70)
 sky.Size = UDim2.new(1, -10, 0, 35)
 
-TextLabel_10.Parent = sky
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-TextLabel_10.BackgroundTransparency = 0.850
-TextLabel_10.Position = UDim2.new(0, 5, 0, 5)
-TextLabel_10.Size = UDim2.new(1, -160, 0, 25)
-TextLabel_10.Text = "Set Sky"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextStrokeTransparency = 0.500
-TextLabel_10.TextWrapped = true
+TextLabel_11.Parent = sky
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+TextLabel_11.BackgroundTransparency = 0.850
+TextLabel_11.Position = UDim2.new(0, 5, 0, 5)
+TextLabel_11.Size = UDim2.new(1, -160, 0, 25)
+TextLabel_11.Text = "Set Sky"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextStrokeTransparency = 0.500
+TextLabel_11.TextWrapped = true
 
-On_8.Name = "On"
-On_8.Parent = sky
-On_8.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-On_8.BackgroundTransparency = 0.850
-On_8.Position = UDim2.new(1, -80, 0, 5)
-On_8.Size = UDim2.new(0, -70, 0, 25)
-On_8.Text = "On"
-On_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-On_8.TextStrokeTransparency = 0.500
-On_8.TextWrapped = true
+On_9.Name = "On"
+On_9.Parent = sky
+On_9.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+On_9.BackgroundTransparency = 0.850
+On_9.Position = UDim2.new(1, -80, 0, 5)
+On_9.Size = UDim2.new(0, -70, 0, 25)
+On_9.Text = "On"
+On_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+On_9.TextStrokeTransparency = 0.500
+On_9.TextWrapped = true
 
 Off.Name = "Off"
 Off.Parent = sky
@@ -661,26 +691,26 @@ decal.BackgroundTransparency = 0.850
 decal.Position = UDim2.new(0, 0, 0, 105)
 decal.Size = UDim2.new(1, -10, 0, 35)
 
-TextLabel_11.Parent = decal
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-TextLabel_11.BackgroundTransparency = 0.850
-TextLabel_11.Position = UDim2.new(0, 5, 0, 5)
-TextLabel_11.Size = UDim2.new(1, -160, 0, 25)
-TextLabel_11.Text = "Decal Spam"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.TextStrokeTransparency = 0.500
-TextLabel_11.TextWrapped = true
+TextLabel_12.Parent = decal
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+TextLabel_12.BackgroundTransparency = 0.850
+TextLabel_12.Position = UDim2.new(0, 5, 0, 5)
+TextLabel_12.Size = UDim2.new(1, -160, 0, 25)
+TextLabel_12.Text = "Decal Spam"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextStrokeTransparency = 0.500
+TextLabel_12.TextWrapped = true
 
-On_9.Name = "On"
-On_9.Parent = decal
-On_9.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-On_9.BackgroundTransparency = 0.850
-On_9.Position = UDim2.new(1.25097096, -80, 0, 5)
-On_9.Size = UDim2.new(0, -149, 0, 25)
-On_9.Text = "Spam"
-On_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-On_9.TextStrokeTransparency = 0.500
-On_9.TextWrapped = true
+On_10.Name = "On"
+On_10.Parent = decal
+On_10.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+On_10.BackgroundTransparency = 0.850
+On_10.Position = UDim2.new(1.25097096, -80, 0, 5)
+On_10.Size = UDim2.new(0, -149, 0, 25)
+On_10.Text = "Spam"
+On_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+On_10.TextStrokeTransparency = 0.500
+On_10.TextWrapped = true
 
 Credits.Name = "Credits"
 Credits.Parent = Frame_7
@@ -696,139 +726,139 @@ ScrollingFrame_6.Size = UDim2.new(1, 10, 1, 0)
 ScrollingFrame_6.CanvasSize = UDim2.new(0, 0, 0, 525)
 ScrollingFrame_6.ScrollBarThickness = 10
 
-TextLabel_12.Parent = ScrollingFrame_6
-TextLabel_12.BackgroundTransparency = 1.000
-TextLabel_12.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_12.Text = "[CREATOR]"
-TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.TextStrokeTransparency = 0.500
-TextLabel_12.TextWrapped = true
-
 TextLabel_13.Parent = ScrollingFrame_6
 TextLabel_13.BackgroundTransparency = 1.000
-TextLabel_13.Position = UDim2.new(0, 0, 0, 35)
 TextLabel_13.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_13.Text = "KrystalTeam"
+TextLabel_13.Text = "[CREATOR]"
 TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.TextStrokeTransparency = 0.500
 TextLabel_13.TextWrapped = true
 
 TextLabel_14.Parent = ScrollingFrame_6
 TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.Position = UDim2.new(0, 0, 0, 70)
+TextLabel_14.Position = UDim2.new(0, 0, 0, 35)
 TextLabel_14.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_14.Text = "[POSTER & TESTER]"
+TextLabel_14.Text = "KrystalTeam"
 TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.TextStrokeTransparency = 0.500
 TextLabel_14.TextWrapped = true
 
 TextLabel_15.Parent = ScrollingFrame_6
 TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.Position = UDim2.new(0, 0, 0, 105)
+TextLabel_15.Position = UDim2.new(0, 0, 0, 70)
 TextLabel_15.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_15.Text = "Serntimon"
+TextLabel_15.Text = "[POSTER & TESTER]"
 TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.TextStrokeTransparency = 0.500
 TextLabel_15.TextWrapped = true
 
 TextLabel_16.Parent = ScrollingFrame_6
 TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.Position = UDim2.new(0, 0, 0, 140)
+TextLabel_16.Position = UDim2.new(0, 0, 0, 105)
 TextLabel_16.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_16.Text = "[TESTERS]"
+TextLabel_16.Text = "Serntimon"
 TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.TextStrokeTransparency = 0.500
 TextLabel_16.TextWrapped = true
 
 TextLabel_17.Parent = ScrollingFrame_6
 TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.Position = UDim2.new(0, 0, 0, 175)
+TextLabel_17.Position = UDim2.new(0, 0, 0, 140)
 TextLabel_17.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_17.Text = "Walter White"
+TextLabel_17.Text = "[TESTERS]"
 TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.TextStrokeTransparency = 0.500
 TextLabel_17.TextWrapped = true
 
 TextLabel_18.Parent = ScrollingFrame_6
 TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.Position = UDim2.new(0, 0, 0, 210)
+TextLabel_18.Position = UDim2.new(0, 0, 0, 175)
 TextLabel_18.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_18.Text = "TimberMan"
+TextLabel_18.Text = "Walter White"
 TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.TextStrokeTransparency = 0.500
 TextLabel_18.TextWrapped = true
 
 TextLabel_19.Parent = ScrollingFrame_6
 TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.Position = UDim2.new(0, 0, 0, 245)
+TextLabel_19.Position = UDim2.new(0, 0, 0, 210)
 TextLabel_19.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_19.Text = "Mr. Waffles"
+TextLabel_19.Text = "TimberMan"
 TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.TextStrokeTransparency = 0.500
 TextLabel_19.TextWrapped = true
 
 TextLabel_20.Parent = ScrollingFrame_6
 TextLabel_20.BackgroundTransparency = 1.000
-TextLabel_20.Position = UDim2.new(0, 0, 0, 280)
+TextLabel_20.Position = UDim2.new(0, 0, 0, 245)
 TextLabel_20.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_20.Text = "Green Hat L33t"
+TextLabel_20.Text = "Mr. Waffles"
 TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.TextStrokeTransparency = 0.500
 TextLabel_20.TextWrapped = true
 
 TextLabel_21.Parent = ScrollingFrame_6
 TextLabel_21.BackgroundTransparency = 1.000
-TextLabel_21.Position = UDim2.new(0, 0, 0, 315)
+TextLabel_21.Position = UDim2.new(0, 0, 0, 280)
 TextLabel_21.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_21.Text = "Pulkit"
+TextLabel_21.Text = "Green Hat L33t"
 TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.TextStrokeTransparency = 0.500
 TextLabel_21.TextWrapped = true
 
 TextLabel_22.Parent = ScrollingFrame_6
 TextLabel_22.BackgroundTransparency = 1.000
-TextLabel_22.Position = UDim2.new(0, 0, 0, 350)
+TextLabel_22.Position = UDim2.new(0, 0, 0, 315)
 TextLabel_22.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_22.Text = "LaserTic_"
+TextLabel_22.Text = "Pulkit"
 TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_22.TextStrokeTransparency = 0.500
 TextLabel_22.TextWrapped = true
 
 TextLabel_23.Parent = ScrollingFrame_6
 TextLabel_23.BackgroundTransparency = 1.000
-TextLabel_23.Position = UDim2.new(0, 0, 0, 385)
+TextLabel_23.Position = UDim2.new(0, 0, 0, 350)
 TextLabel_23.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_23.Text = "[SCRIPTS]"
+TextLabel_23.Text = "LaserTic_"
 TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.TextStrokeTransparency = 0.500
 TextLabel_23.TextWrapped = true
 
 TextLabel_24.Parent = ScrollingFrame_6
 TextLabel_24.BackgroundTransparency = 1.000
-TextLabel_24.Position = UDim2.new(0, 0, 0, 420)
+TextLabel_24.Position = UDim2.new(0, 0, 0, 385)
 TextLabel_24.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_24.Text = "KrystalTeam For KrystalDance & Tweaking X-Ray"
+TextLabel_24.Text = "[SCRIPTS]"
 TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_24.TextStrokeTransparency = 0.500
 TextLabel_24.TextWrapped = true
 
 TextLabel_25.Parent = ScrollingFrame_6
 TextLabel_25.BackgroundTransparency = 1.000
-TextLabel_25.Position = UDim2.new(0, 0, 0, 455)
+TextLabel_25.Position = UDim2.new(0, 0, 0, 420)
 TextLabel_25.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_25.Text = "RadiationMatrix For X-Ray"
+TextLabel_25.Text = "KrystalTeam For KrystalDance & Tweaking X-Ray"
 TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_25.TextStrokeTransparency = 0.500
 TextLabel_25.TextWrapped = true
 
 TextLabel_26.Parent = ScrollingFrame_6
 TextLabel_26.BackgroundTransparency = 1.000
-TextLabel_26.Position = UDim2.new(0, 0, 0, 490)
+TextLabel_26.Position = UDim2.new(0, 0, 0, 455)
 TextLabel_26.Size = UDim2.new(1, 0, 0, 35)
-TextLabel_26.Text = "Other Unknown Person For Other Scripts"
+TextLabel_26.Text = "RadiationMatrix For X-Ray"
 TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_26.TextStrokeTransparency = 0.500
 TextLabel_26.TextWrapped = true
+
+TextLabel_27.Parent = ScrollingFrame_6
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.Position = UDim2.new(0, 0, 0, 490)
+TextLabel_27.Size = UDim2.new(1, 0, 0, 35)
+TextLabel_27.Text = "Other Unknown Person For Other Scripts"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextStrokeTransparency = 0.500
+TextLabel_27.TextWrapped = true
 
 ImageLabel.Parent = Frame_2
 ImageLabel.BackgroundTransparency = 1.000
@@ -838,17 +868,17 @@ ImageLabel.Size = UDim2.new(0, 100, 0, 100)
 ImageLabel.ZIndex = 4
 ImageLabel.Image = "rbxassetid://278201073"
 
-TextLabel_27.Parent = Frame
-TextLabel_27.BackgroundTransparency = 1.000
-TextLabel_27.Position = UDim2.new(0, 15, 0, 0)
-TextLabel_27.Size = UDim2.new(0.5, 0, 1, 0)
-TextLabel_27.ZIndex = 3
-TextLabel_27.Text = "Ro-Xploit 6.0"
-TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_27.TextSize = 12.000
-TextLabel_27.TextStrokeTransparency = 0.500
-TextLabel_27.TextWrapped = true
-TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_28.Parent = Frame
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.Position = UDim2.new(0, 15, 0, 0)
+TextLabel_28.Size = UDim2.new(0.5, 0, 1, 0)
+TextLabel_28.ZIndex = 3
+TextLabel_28.Text = "Ro-Xploit 6.0"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextSize = 12.000
+TextLabel_28.TextStrokeTransparency = 0.500
+TextLabel_28.TextWrapped = true
+TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
 
 TextButton_6.Parent = Frame
 TextButton_6.BackgroundTransparency = 1.000
@@ -861,15 +891,15 @@ TextButton_6.TextSize = 12.000
 TextButton_6.TextStrokeTransparency = 0.500
 TextButton_6.TextWrapped = true
 
-TextLabel_28.Parent = RX6
-TextLabel_28.BackgroundTransparency = 1.000
-TextLabel_28.Position = UDim2.new(0, 0, 1, -15)
-TextLabel_28.Size = UDim2.new(1, 0, 0, 15)
-TextLabel_28.Text = "Ro-Xploit 6.0, By: KrystalTeam."
-TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_28.TextStrokeTransparency = 0.500
-TextLabel_28.TextTransparency = 0.500
-TextLabel_28.TextWrapped = true
+TextLabel_29.Parent = RX6
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.Position = UDim2.new(0, 0, 1, -15)
+TextLabel_29.Size = UDim2.new(1, 0, 0, 15)
+TextLabel_29.Text = "Ro-Xploit 6.0, By: KrystalTeam."
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextStrokeTransparency = 0.500
+TextLabel_29.TextTransparency = 0.500
+TextLabel_29.TextWrapped = true
 
 TextButton_7.Parent = RX6
 TextButton_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -890,21 +920,21 @@ thing_2.Position = UDim2.new(0.396485865, 0, 0.366586536, 0)
 thing_2.Size = UDim2.new(0, 270, 0, 248)
 thing_2.Style = Enum.FrameStyle.RobloxRound
 
-TextLabel_29.Parent = thing_2
-TextLabel_29.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
-TextLabel_29.BackgroundTransparency = 1.000
-TextLabel_29.BorderSizePixel = 0
-TextLabel_29.Position = UDim2.new(0, -34, 0, 90)
-TextLabel_29.Size = UDim2.new(0, 321, 0, 25)
-TextLabel_29.Text = "ur mom"
-TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_29.TextSize = 50.000
-TextLabel_29.TextStrokeTransparency = 0.500
-TextLabel_29.TextWrapped = true
+TextLabel_30.Parent = thing_2
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(0, 75, 150)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.BorderSizePixel = 0
+TextLabel_30.Position = UDim2.new(0, -34, 0, 90)
+TextLabel_30.Size = UDim2.new(0, 321, 0, 25)
+TextLabel_30.Text = "ur mom"
+TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.TextSize = 50.000
+TextLabel_30.TextStrokeTransparency = 0.500
+TextLabel_30.TextWrapped = true
 
 -- Scripts:
 
-local function IDSIUI_fake_script() -- TextButton.LocalScript 
+local function UBNUQEQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -915,8 +945,8 @@ local function IDSIUI_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.Parent.Parent.real.Frame["Server Destruction"].Visible = true
 	end)
 end
-coroutine.wrap(IDSIUI_fake_script)()
-local function CCXRYQH_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(UBNUQEQ_fake_script)()
+local function JUKVMN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -927,8 +957,8 @@ local function CCXRYQH_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Parent.real.Frame["Server Destruction"].Visible = false
 	end)
 end
-coroutine.wrap(CCXRYQH_fake_script)()
-local function SNUC_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(JUKVMN_fake_script)()
+local function MUIZ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -939,8 +969,8 @@ local function SNUC_fake_script() -- TextButton_3.LocalScript
 		script.Parent.Parent.Parent.Parent.real.Frame["Server Destruction"].Visible = false
 	end)
 end
-coroutine.wrap(SNUC_fake_script)()
-local function ECCMJ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(MUIZ_fake_script)()
+local function ZCKVXR_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -951,8 +981,8 @@ local function ECCMJ_fake_script() -- TextButton_4.LocalScript
 		script.Parent.Parent.Parent.Parent.real.Frame["Server Destruction"].Visible = false
 	end)
 end
-coroutine.wrap(ECCMJ_fake_script)()
-local function XRZLNL_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZCKVXR_fake_script)()
+local function TIYPKZR_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -963,32 +993,40 @@ local function XRZLNL_fake_script() -- TextButton_5.LocalScript
 		script.Parent.Parent.Parent.Parent.real.Frame["Server Destruction"].Visible = false
 	end)
 end
-coroutine.wrap(XRZLNL_fake_script)()
-local function JNNUL_fake_script() -- On_7.LocalScript 
+coroutine.wrap(TIYPKZR_fake_script)()
+local function RSYQUM_fake_script() -- On_7.LocalScript 
 	local script = Instance.new('LocalScript', On_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-3/main/simple%20reanimate.Lua"))()
 	end)
 end
-coroutine.wrap(JNNUL_fake_script)()
-local function XSBO_fake_script() -- c00lgui.LocalScript 
+coroutine.wrap(RSYQUM_fake_script)()
+local function VONROTA_fake_script() -- On_8.LocalScript 
+	local script = Instance.new('LocalScript', On_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/m4a1"))()
+	end)
+end
+coroutine.wrap(VONROTA_fake_script)()
+local function EXMYH_fake_script() -- c00lgui.LocalScript 
 	local script = Instance.new('LocalScript', c00lgui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimagined"))()
 	end)
 end
-coroutine.wrap(XSBO_fake_script)()
-local function GEGA_fake_script() -- k00pgui.LocalScript 
+coroutine.wrap(EXMYH_fake_script)()
+local function SOHT_fake_script() -- k00pgui.LocalScript 
 	local script = Instance.new('LocalScript', k00pgui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui"))()
 	end)
 end
-coroutine.wrap(GEGA_fake_script)()
-local function IRQXFOI_fake_script() -- Frame_7.LocalScript 
+coroutine.wrap(SOHT_fake_script)()
+local function IFPFQIA_fake_script() -- Frame_7.LocalScript 
 	local script = Instance.new('LocalScript', Frame_7)
 
 	--rgrg
@@ -3468,16 +3506,16 @@ local function IRQXFOI_fake_script() -- Frame_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IRQXFOI_fake_script)()
-local function JTUZSG_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(IFPFQIA_fake_script)()
+local function LEJW_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while wait() do
 		script.Parent.Rotation = script.Parent.Rotation + 1
 	end
 end
-coroutine.wrap(JTUZSG_fake_script)()
-local function LPXMI_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(LEJW_fake_script)()
+local function JTAEBHS_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3485,8 +3523,8 @@ local function LPXMI_fake_script() -- TextButton_6.LocalScript
 		script.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(LPXMI_fake_script)()
-local function JUHKLCA_fake_script() -- Frame.Smooth GUI Dragging 
+coroutine.wrap(JTAEBHS_fake_script)()
+local function SINE_fake_script() -- Frame.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3543,8 +3581,8 @@ local function JUHKLCA_fake_script() -- Frame.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(JUHKLCA_fake_script)()
-local function KERSVOY_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(SINE_fake_script)()
+local function CTVY_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3552,12 +3590,12 @@ local function KERSVOY_fake_script() -- TextButton_7.LocalScript
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(KERSVOY_fake_script)()
-local function UTLDVQ_fake_script() -- thing_2.LocalScript 
+coroutine.wrap(CTVY_fake_script)()
+local function TTILTL_fake_script() -- thing_2.LocalScript 
 	local script = Instance.new('LocalScript', thing_2)
 
 	wait(4)
 	script.Parent.Parent.TextButton.Visible = true
 	script.Parent:Destroy()
 end
-coroutine.wrap(UTLDVQ_fake_script)()
+coroutine.wrap(TTILTL_fake_script)()
