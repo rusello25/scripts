@@ -1,0 +1,684 @@
+-- Cleaner version with cleaner code - LazyNoob 6/30/2023
+-- fe bypass mml admin
+
+repeat wait() until game:IsLoaded()
+wait(3)
+
+local Services = setmetatable({}, {__index = function(b, c) return game:service(c) end})
+
+local function hasprop(object, prop)
+    return pcall(function() local t = object[prop] end)
+end
+
+local plrs = Services.Players
+local lplr = plrs.LocalPlayer
+local lp = game:FindService("Players").LocalPlayer
+
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() or v.DisplayName:lower():find(name) then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+
+local uis = Services.UserInputService
+local function getPlayer(name)
+    local targets = {}
+    local plrstbl = plrs:GetPlayers()
+    if name == "me" then
+        return {lplr}
+    elseif name == "others" then
+        for i, v in pairs(plrstbl) do
+            if v ~= lplr then
+                targets[#targets + 1] = v
+            end
+        end
+    elseif name == "all" then
+        for i, v in pairs(plrstbl) do
+            targets[#targets + 1] = v
+        end
+    elseif name == "random" then
+        for i, v in pairs(plrstbl) do
+            if v ~= lplr then
+                return {plrstbl[math.random(1,#plrstbl)]}
+            end
+        end
+    else
+        name = name:lower()
+        for i, v in pairs(plrs:GetPlayers()) do
+            if v.Name:lower():find(name) or v.DisplayName:lower():find(name) then
+                return {v}
+            end
+        end
+    end
+    return targets
+end
+
+local cmds = {}
+local prefix = "="
+local runservice = Services.RunService
+
+function setCommand(name, callback, info)
+    cmds[name] = {callback=callback,info=info}
+end
+
+function handleCommand(rawargs)
+    local args = {unpack(rawargs)}
+    args[1] = nil
+    for i,v in pairs(args) do
+        args[i-1] = v
+    end
+    if cmds[rawargs[1]:lower()] then
+        cmds[rawargs[1]:lower()].callback(args)
+        return true
+    end
+    return false
+end
+
+lplr.Chatted:Connect(function(message)
+    local m = message
+    if m:sub(1, 3) == "/e " then
+        m = m:sub(4, #m)
+    end
+    local rawargs
+    if m:sub(1,#prefix) == prefix then
+        m = m:sub(2,#m)
+        rawargs = m:split(" ")
+    end
+    if rawargs then
+        handleCommand(rawargs)
+    end
+end)
+
+setCommand("cart", function()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";invis")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 11008939542")
+end)
+
+setCommand("jeep", function()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";invis")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 11118699229")
+end)
+
+setCommand("redkart", function()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";invis")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 13290857897")
+end)
+
+setCommand("flingbypass", function()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+    wait()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r15")
+end)
+
+setCommand("claim", function(player)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(player[1])
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(0,2500,0))
+    wait(0.5)
+    for _,Target in pairs(targets) do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6")
+        wait(1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";invis")
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";name me ")
+        for i = 1,15,1 do
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+            wait()
+        end
+        wait(1)
+    end
+    game:GetService("Players").LocalPlayer.Character:PivotTo(lpos)
+end)
+
+setCommand("re", function()
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re")
+end)
+
+setCommand("jail", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";jail me")
+        wait()
+    end
+    wait(1.5)
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = lpos
+end, "[plr] - put them in jail")
+
+setCommand("kill", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        wait(0.25)
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        for i=1,85 do
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+        wait()
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(150,-500,150) -- where you teleport
+        end
+        wait(0.85)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me builderman")
+        wait(1.2)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")
+        wait(0.6)
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+    end
+end, "[plr] - kill them")
+
+setCommand("goto", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        local plr = game.Players.LocalPlayer
+
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+    end
+end, "[plr] - brings you to them")
+
+setCommand("bring", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        wait(0.25)
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        for i=1,85 do
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+        wait()
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+        end
+
+        wait(0.05)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")
+        wait(0.6)
+    end
+end, "[plr] - brings them to you")
+
+setCommand("kidnap", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";size me 1.5")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 11118699229")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";size me 1.5")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        wait(0.25)
+        game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players")[Target.Name].Character.Humanoid
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(45, Enum.EasingStyle.Linear)	
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(0, 0, 2000)})
+        for i=1,85 do
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+        wait()
+        tween:Play()
+        end
+        wait(0.85)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me builderman")
+        wait(1.2)
+
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")
+
+        wait(0.6)
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+        game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character.Humanoid
+    end
+end, "[plr] - kidnap them")
+
+setCommand("sink", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        wait(0.25)
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(300, Enum.EasingStyle.Linear)	
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(0, -1000, 0)})
+        for i=1,85 do
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+        wait()
+        tween:Play()
+        end
+        wait(0.85)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me builderman")
+        wait(1.2)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")
+        wait(0.6)
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+    end
+end, "[plr] - sinks them")
+
+setCommand("rocket", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        wait(0.25)
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(50, Enum.EasingStyle.Linear)	
+        tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(0, 2500, 0)})
+        for i=1,85 do
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+        wait()
+        tween:Play()
+        end
+        wait(0.85)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me builderman")
+        wait(1.2)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")
+        wait(0.6)
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+    end
+end, "[plr] - rockets them")
+
+setCommand("kick", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+    for _,Target in pairs(targets) do
+        wait()
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+        wait(0.1)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";size me 2")
+        wait(0.2)
+
+        local plr = game.Players.LocalPlayer
+        local old = plr.Character.HumanoidRootPart.CFrame
+        for i=1,285 do
+            wait()
+            game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+            wait(0.1)
+            game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+            wait(0.1)
+            game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";size me 2")
+            wait(0.2)
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.Head.CFrame * CFrame.new(0,-0.85,0)
+            wait()
+            plr.Character.HumanoidRootPart.CFrame = CFrame.new(9999999999999999999,math.huge+math.huge,9999999999999999999999)
+            wait(0.85)
+            game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me builderman")
+            wait(0.6)
+            game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me")-- where you teleport
+        end
+
+        wait(1.15)
+        plr.Character.HumanoidRootPart.CFrame = old -- teleports you back to your old position
+    end
+
+end, "[plr] - kick them")
+    
+local jailing = true
+
+setCommand("permjail", function(args)
+    local lpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    local targets = getPlayer(args[1])
+
+    for _,Target in pairs(targets) do
+        function JailTarget()
+            if jailing then
+                game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";unjail me")
+                wait(.2)
+                for i=1,3 do
+                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,1)
+                    wait()
+                end
+                wait(.5)
+                game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";jail me")
+                for i=1,3 do
+                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,1)
+                    wait()
+                end
+                    
+                wait(1.5)
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = lpos-- tp back
+            end
+        end
+            
+        Target.CharacterAdded:Connect(JailTarget)
+    end
+end, "[plr] - put them in perm jail")
+
+setCommand("unpermjail", function(args)
+    jailing = false
+end, "[plr] - put them out of perm jail")
+
+setCommand("size", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";size me "..args[1])
+end, "[yourself] - resize your character")
+
+setCommand("bigpoop", function(args)
+    for i=1,5 do
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";rainbowfart me ")
+        wait(0.2)
+        game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";re me ")
+        wait(0.15)
+    end
+end, "[yourself] - resize your character")
+    
+setCommand("headsize", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";headsize me "..args[1])
+end, "[yourself] - resize your head")
+
+setCommand("name", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";name me "..args[1])
+end, "[yourself] - change your name")
+
+setCommand("height", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";height me "..args[1])
+end, "[yourself] - be tall")
+
+setCommand("width", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";width me "..args[1])
+end, "[yourself] - edit width")
+
+setCommand("fat", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";depth me "..args[1])
+end, "[yourself] - edit your fatness")
+
+setCommand("r6", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r6 ")
+end, "[yourself] - changes you from R15 to R6")
+    
+setCommand("r15", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";r15 ")
+end, "[yourself] - changes you to R15")
+
+setCommand("unjail", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";unjail me")
+end, "[plr] - take them out of jail")
+
+setCommand("control", function(args)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me chair")
+    wait(0.1)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";transparency me 1")
+    wait(0.1)
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer(";headsize me 0")
+end, "[plr] - take them out of jail")
+
+setCommand("cmds", function()
+    local a = "[Commands]\nVelocity Admin\n"
+    for i,v in pairs(cmds) do
+        a ..= i
+        if v.info then
+            a ..= " "..v.info
+        end
+        a ..= "\n"
+    end
+    print(a)
+end, "- Prints out all the commands")
+
+local function createInstance(className, properties, parent)
+    local i = Instance.new(className)
+    
+    for name, val in pairs(properties or {}) do
+        i[name] = val
+    end
+    if parent then
+        i.Parent = parent
+    end
+
+    return i
+end
+
+local GUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local LogoHolder = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local Box = Instance.new("TextBox")
+local Line = Instance.new("TextLabel")
+local Commands = Instance.new("ScrollingFrame")
+local Logo = Instance.new("ImageLabel")
+local Corner = Instance.new("ImageLabel")
+local Corner_2 = Instance.new("ImageLabel")
+local Corner_3 = Instance.new("ImageLabel")
+local Corner_4 = Instance.new("ImageLabel")
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUI.ResetOnSpawn = false
+Frame.Parent = GUI
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.528701603, 0, 0.805340409, 0)
+Frame.Size = UDim2.new(0, 819, 0, 178)
+Frame.Active = true
+Frame.Draggable = true
+Top.Name = "Top"
+Top.Parent = Frame
+Top.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.0699450225, 0, 0.0223640706, 0)
+Top.Size = UDim2.new(0, 713, 0, 24)
+Top.Font = Enum.Font.SourceSansBold
+Top.Text = "MML: Command Bar"
+Top.TextColor3 = Color3.fromRGB(0, 0, 0)
+Top.TextScaled = true
+Top.TextSize = 17.000
+Top.TextWrapped = true
+Top.TextXAlignment = Enum.TextXAlignment.Left
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.968459725, 0, 0.022364242, 0)
+Close.Size = UDim2.new(0, 19, 0, 24)
+Close.ZIndex = 3
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 17.000
+Close.TextWrapped = true
+Close.MouseButton1Down:Connect(function()
+    GUI:Destroy()
+end)
+LogoHolder.Name = "LogoHolder"
+LogoHolder.Parent = Frame
+LogoHolder.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+LogoHolder.BorderSizePixel = 0
+LogoHolder.Position = UDim2.new(0.00767395971, 0, 0.022364242, 0)
+LogoHolder.Size = UDim2.new(0, 21, 0, 23)
+LogoHolder.Font = Enum.Font.SourceSans
+LogoHolder.Text = ""
+LogoHolder.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogoHolder.TextSize = 14.000
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 0.500
+Execute.Position = UDim2.new(0.288923949, 0, 0.697139442, 0)
+Execute.Size = UDim2.new(0, 563, 0, 46)
+Execute.Font = Enum.Font.SourceSansBold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 25.000
+Execute.TextWrapped = true
+Box.Name = "Box"
+Box.Parent = Frame
+Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Box.BackgroundTransparency = 0.500
+Box.Position = UDim2.new(0.288923949, 0, 0.266224891, 0)
+Box.Size = UDim2.new(0, 563, 0, 54)
+Box.Font = Enum.Font.SourceSans
+Box.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+Box.PlaceholderText = "Enter a command here"
+Box.Text = ""
+Box.TextColor3 = Color3.fromRGB(0, 0, 0)
+Box.TextSize = 20.000
+Box.TextXAlignment = Enum.TextXAlignment.Left
+Execute.MouseButton1Down:Connect(function()
+    handleCommand(Box.Text:split(" "))
+end)
+execprefix = "]"
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+    if k:lower() == prefix then
+       Box:CaptureFocus()
+       wait()
+       Box.Text = ""
+    end
+end)
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+    if k:lower() == execprefix then
+       handleCommand(Box.Text:split(" "))
+    end
+end)
+Line.Name = "Line"
+Line.Parent = Frame
+Line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.191521466, 0)
+Line.Size = UDim2.new(0, 819, 0, 5)
+Line.Font = Enum.Font.SourceSansBold
+Line.Text = ""
+Line.TextColor3 = Color3.fromRGB(0, 0, 0)
+Line.TextScaled = true
+Line.TextSize = 17.000
+Line.TextWrapped = true
+Line.TextXAlignment = Enum.TextXAlignment.Left
+Commands.Name = "Commands"
+Commands.Parent = Frame
+Commands.Active = true
+Commands.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Commands.BackgroundTransparency = 0.500
+Commands.Position = UDim2.new(0, 0, 0.225229323, 0)
+Commands.Size = UDim2.new(0, 230, 0, 138)
+Commands.CanvasSize = UDim2.new(0, 0, 8, 0)
+Commands.AutomaticCanvasSize = 2
+local c = 0
+for i,v in pairs(cmds) do
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Parent = Commands
+TextLabel.BackgroundColor3 = Color3.fromRGB(238, 238, 238)
+TextLabel.BackgroundTransparency = 0.300
+TextLabel.Size = UDim2.new(0, 217, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = i
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 15.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.Position = UDim2.fromOffset(0,c*23)
+c = c + 1
+end
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.00767395971, 0, 0.022364242, 0)
+Logo.Size = UDim2.new(0, 26, 0, 23)
+Logo.ZIndex = 3
+Logo.Image = "rbxthumb://type=Asset&id=302470270&w=420&h=420"
+Corner.Name = "Corner"
+Corner.Parent = Frame
+Corner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner.BackgroundTransparency = 1.000
+Corner.Position = UDim2.new(0.0328682885, 0, 0.022364242, 0)
+Corner.Size = UDim2.new(0, 22, 0, 23)
+Corner.Image = "http://www.roblox.com/asset/?id=10568531663"
+Corner_2.Name = "Corner"
+Corner_2.Parent = Frame
+Corner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_2.BackgroundTransparency = 1.000
+Corner_2.Position = UDim2.new(0.940518916, 0, 0.022364242, 0)
+Corner_2.Size = UDim2.new(0, 15, 0, 24)
+Corner_3.Name = "Corner"
+Corner_3.Parent = Frame
+Corner_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_3.BackgroundTransparency = 1.000
+Corner_3.Position = UDim2.new(0.0429340973, 0, 0.022364242, 0)
+Corner_3.Size = UDim2.new(0, 22, 0, 24)
+Corner_3.Image = "http://www.roblox.com/asset/?id=10568705537"
+Corner_4.Name = "Corner"
+Corner_4.Parent = Frame
+Corner_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_4.BackgroundTransparency = 1.000
+Corner_4.Position = UDim2.new(0.953949928, 0, 0.022364242, 0)
+Corner_4.Size = UDim2.new(0, 12, 0, 24)
+Corner_4.Image = "http://www.roblox.com/asset/?id=10568769340"
