@@ -1,0 +1,3177 @@
+-- bad code for velocity cause i am lazy to not use 100 more lines^^^ - Voids 12/7/2022
+repeat wait() until game:IsLoaded()
+wait()
+local Services = setmetatable({}, {__index = function(b, c) return game:service(c) end})
+local function hasprop(object, prop)
+	return pcall(function() local t = object[prop] end)
+end
+local plrs = Services.Players
+local lplr = plrs.LocalPlayer
+function cloud(...)
+	local chr = lplr.Character
+	if chr:FindFirstChild("PompousTheCloud") then
+		chr.PompousTheCloud.Parent = lplr.Backpack
+	end
+	local a = lplr.Backpack:FindFirstChild("PompousTheCloud") or lplr.Backpack:FindFirstChild("Cloud")
+	a.Parent = chr
+	function setProp(object,prop,val)
+		a["ServerControl"]:InvokeServer("SetProperty",{Value=val,Property=prop,Object=object})
+	end
+	for i,v in next, {...} do
+		if type(v) == "table" then
+			local obj = v[1]
+			if v[1] == "cloud" then
+				obj = a
+			end
+			setProp(obj,v[2],v[3])
+		elseif type(v) == "string" then
+			loadstring(v)()
+		end
+	end
+	return a
+end
+local uis = Services.UserInputService
+local function getPlayer(name)
+	local targets = {}
+	local plrstbl = plrs:GetPlayers()
+	if name == "me" then
+		return {lplr}
+	elseif name == "others" then
+		for i, v in pairs(plrstbl) do
+			if v ~= lplr then
+				targets[#targets + 1] = v
+			end
+		end
+	elseif name == "all" then
+		for i, v in pairs(plrstbl) do
+			targets[#targets + 1] = v
+		end
+	elseif name == "random" then
+		for i, v in pairs(plrstbl) do
+			if v ~= lplr then
+				return {plrstbl[math.random(1,#plrstbl)]}
+			end
+		end
+	else
+		name = name:lower()
+		for i, v in pairs(plrs:GetPlayers()) do
+			if v.Name:lower():find(name) or v.DisplayName:lower():find(name) then
+				return {v}
+			end
+		end
+	end
+	return targets
+end
+local cmds = {}
+local prefix = ";"
+local runservice = Services.RunService
+function setCommand(name, callback, info)
+	cmds[name] = {callback=callback,info=info}
+end
+function handleCommand(rawargs)
+	local args = {unpack(rawargs)}
+	args[1] = nil
+	for i,v in pairs(args) do
+		args[i-1] = v
+	end
+	if cmds[rawargs[1]:lower()] then
+		cmds[rawargs[1]:lower()].callback(args)
+		return true
+	end
+	return false
+end
+lplr.Chatted:Connect(function(message)
+	local m = message
+	if m:sub(1, 3) == "/e " then
+		m = m:sub(4, #m)
+	end
+	local rawargs
+	if m:sub(1,#prefix) == prefix then
+		m = m:sub(2,#m)
+		rawargs = m:split(" ")
+	end
+	if rawargs then
+		handleCommand(rawargs)
+	end
+end)
+setCommand("hatdupe", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr.Torso
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	for i = 0,100 do
+		local ok = chr:FindFirstChildWhichIsA"Accessory"
+		setproperty(chr.WatermelonHat.Handle.SpecialMesh,'Scale',5,5,5)
+		setproperty(chr.WatermelonHat.Handle.SpecialMesh,'MeshId','rbxassetid://4051945568')
+		setproperty(chr.WatermelonHat.Handle.SpecialMesh,'TextureId','rbxassetid://'..args[2])
+		setproperty(ok,"Parent",c.Handle)
+		fly(true)
+		pcall(function()
+			for i = 0,100 do
+				task.spawn(function()
+					setproperty(c:WaitForChild("EffectCloud")[ok.Name],"Parent",chr)
+				end)
+			end
+		end)
+	end
+	for i = 0,10 do
+		fly(true)
+		k = c:WaitForChild("EffectCloud")
+		setproperty(k,"Transparency",1)
+		k:BreakJoints()
+		setproperty(k,"Anchored",true)
+		setproperty(k,"Parent",workspace)
+	end
+end, "[plr] - dupes your hat with the given textureid do ids to get some! change the mesh,scale manually to not make it messy")
+setCommand("bodyspam", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function sp(obj,p,v)
+		task.spawn(setproperty,obj,p,v)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	function s(i,p,v)
+		c.Parent = chr
+		sp(i,p,v)
+		c.Parent = plr.Backpack
+	end
+	function r(tbl)
+		return tbl[math.random(1,#tbl)] 
+	end
+	pcall(function() 
+		chr.Head:FindFirstChildWhichIsA("SpecialMesh"):Destroy()
+		repeat chr:FindFirstChild("CharacterMesh"):Destroy() until not chr:FindFirstChild("CharacterMesh") end)
+	while wait() and chr.Parent do
+		local ps = {}
+		for _,x in pairs(chr:GetChildren()) do if x:isA"Part" then ps[#ps+1] = x end end
+		s(r(ps),"BrickColor",BrickColor.random())
+		s(r(ps),"Shape",r(Enum.PartType:GetEnumItems()))
+		s(r(ps),"Material",r(Enum.Material:GetEnumItems()))
+	end
+end, "[plr] - bodyspam")
+
+setCommand("namespam", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	c.LocalScript.Disabled = true
+	function setp(obj,prop,val)
+		c.Parent = chr
+		task.spawn(setproperty,obj,prop,val)
+		c.Parent = plr.Backpack
+	end
+	c.Parent = chr
+	while task.wait(0.1) do
+		setp(chr.Humanoid,"DisplayName",math.random(os.time()))
+	end
+end, "[plr] - name spam using mth.ran os.time")
+setCommand("skydive", function(args)
+	local targets = getPlayer(args[1])
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	wait()
+	local oldcframe = chr.HumanoidRootPart.CFrame
+	pcall(function()
+		for i,mad in pairs(targets) do
+			if c.Parent == chr then
+				wait(0.1)
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.2)
+				spx2(joint,'Parent',chr)
+				chr.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+				spx2(joint,'Part0',mad.Character.HumanoidRootPart)
+				spx2(ec,'CFrame',CFrame.new() * chr.Torso.CFrame+Vector3.new(math.random(1,650),math.random(1,5000),math.random(1,650)))
+			end
+
+		end
+		wait(0.1)
+		chr.Humanoid:UnequipTools()
+		wait(0.1)
+		if args[1] == "me" or "all" then repeat task.wait() until targets == plr chr.HumanoidRootPart.CFrame = chr.Torso.CFrame+Vector3.new(math.random(1,650),math.random(1,5000),math.random(1,650)) elseif args[1] == not "me" or "all" then  wait(0.1) chr.HumanoidRootPart.CFrame = oldcf end
+	end)
+end, "[plrs] - plr(s) now skydive")
+
+setCommand("sink", function(args)
+	local targets = getPlayer(args[1])
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	wait()
+	local oldcframe = chr.HumanoidRootPart.CFrame
+	pcall(function()
+		for i,mad in pairs(targets) do
+			if c.Parent == chr then
+				wait(0.1)
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.2)
+				spx2(joint,'Parent',chr)
+				chr.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+				spx2(joint,'Part0',mad.Character.HumanoidRootPart)
+				spx2(ec,'CFrame',CFrame.new() * chr.Torso.CFrame+Vector3.new(0,-600,0))
+			end
+
+		end
+		wait(0.1)
+		chr.Humanoid:UnequipTools()
+		wait(0.1)
+		if args[1] == "me" or "all" then repeat task.wait() until targets == plr chr.HumanoidRootPart.CFrame = chr.Torso.CFrame+Vector3.new(0,-600,0) elseif args[1] == not "me" or "all" then  wait(0.1) chr.HumanoidRootPart.CFrame = oldcf end
+	end)
+end, "[plrs] - plr(s) now sink")
+setCommand("particle", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr.Torso
+
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+
+	c.Parent = chr
+	if not c.Handle:FindFirstChild("watermelon") then
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Texture","rbxassetid://"..args[2])
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Rate",90)
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Color",ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),ColorSequenceKeypoint.new(1,Color3.new(1,1,1))}))
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Transparency",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Size",NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(1,1)}))
+		pcall(function()spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Lifetime",NumberRange.new(20))
+			spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"SpreadAngle",NumberSequence.new({NumberSequenceKeypoint.new(1,1),NumberSequenceKeypoint.new(2,2)}))
+		end)
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"LightEmission",0)
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"RotSpeed",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Rotation",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+		spx2(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Parent",c.Handle)
+	end
+	local targets = getPlayer(args[1])
+	for _,targett in pairs(targets) do
+		fly(true)
+		local a = c:WaitForChild("EffectCloud"):WaitForChild("watermelon")
+		wait()
+		spx2(a,"Parent",targett.Character.Head)
+		fly(false)
+	end
+end, "[id] - plr(s) now got a particle effect")
+
+setCommand("voidspawn", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	wait()
+	wait()
+	chr.HumanoidRootPart.CFrame = CFrame.new(601000,30000000,600)
+	wait(0.072)
+
+
+	for i,mad in pairs(game:GetDescendants()) do
+		if mad:IsA"SpawnLocation" or mad.Name == "SpawnLocation" or mad.Name == "HumanoidRootPart" then
+			if c.Parent == chr then
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.1)
+
+				spx2(joint,'Parent',chr)
+				spx2(joint,'Part0',mad)
+				spx2(ec,'CFrame',CFrame.new(80000,500,600))
+				spx2(ec,'Parent',game)
+			end
+		end
+	end
+	wait(1)
+	chr:BreakJoints()
+end, "[spawn] - every spawnpoint is now located over void")
+setCommand("wwwwww", function()
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	c.LocalScript.Disabled = false
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function sp2(obj,prop,val)
+		c.Parent = chr
+		task.spawn(setproperty,obj,prop,val)
+		c.Parent = plr.Backpack
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	function fixasset(id) 
+		return string.format("rbxthumb://type=Asset&id=%d&w=420&h=420",id) 
+	end
+
+	sp2(chr.Humanoid,'MaxHealth',math.huge)
+	sp2(chr.Humanoid,'Health',math.huge)
+end, "- Become a god")
+
+setCommand("ungod", function()
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	c.LocalScript.Disabled = false
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function sp2(obj,prop,val)
+		c.Parent = chr
+		task.spawn(setproperty,obj,prop,val)
+		c.Parent = plr.Backpack
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	function fixasset(id) 
+		return string.format("rbxthumb://type=Asset&id=%d&w=420&h=420",id) 
+	end
+
+	sp2(chr.Humanoid,'MaxHealth',100)
+	sp2(chr.Humanoid,'Health',100)
+end, "- Unbecomes a god")
+setCommand("grabknife", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Grip = CFrame.new(0.75,0,-0.2) * CFrame.Angles(math.rad(90),math.rad(180),math.rad(-90))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	wait()
+	wait()
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://490893357")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://490893474")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(.25,.25,.25))
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+		return rootjoint
+	end
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://27432686"
+	local anim = chr.Humanoid:LoadAnimation(anim)
+	anim.Looped = false
+	local holding
+	c.Activated:connect(function() if not holding then anim:Play() else repeat wait() until type(holding) ~= "number"; setproperty(chr.Torso.Neck,"Part1",holding.Part0.Parent.Head) end end)
+	c.Handle.Touched:connect(function(part)
+		if not holding and anim.IsPlaying then
+			if part.Parent:FindFirstChild("HumanoidRootPart") then
+				anim.TimePosition = 0.5
+				anim:AdjustSpeed(0)
+				holding = true -- cuz weld yields
+				holding = weld(part.Parent.HumanoidRootPart,chr["Right Arm"],CFrame.new(1,0,0)*CFrame.Angles(math.rad(90),0,0))
+			end
+		end
+	end)
+end, "[plr] - grabknife like frfr")
+
+setCommand("coffee", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Grip = CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	wait()
+	wait()
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://10970208924")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://10970209066")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(.0025,.0025,.0025))
+	setproperty(c,"CanBeDropped",true)
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+		return rootjoint
+	end
+
+
+end, "[plr] - coffee like frfr")
+setCommand("soup", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Grip = CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	wait()
+	wait()
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://10970296939")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://10970297065")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(.025,.025,.025))
+	setproperty(c,"CanBeDropped",true)
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+		return rootjoint
+	end
+
+
+end, "[plr] - noodle like frfr")
+setCommand("teaturret", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	c.LocalScript.Disabled = true
+	function sp2(obj,prop,val)
+		c.Parent = chr
+		task.spawn(setproperty,obj,prop,val)
+		c.Parent = plr.Backpack
+	end
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	local t = chr.Torso
+	local la = chr["Left Arm"]
+	local ra = chr["Right Arm"]
+	local ll = chr["Left Leg"]
+	local rl = chr["Right Leg"]
+	local h = chr.Head
+	local hum = chr.Humanoid
+	c.Parent = chr
+	local ec = c.ServerControl:InvokeServer("Fly",{Flying=true})
+	for _,x in pairs(hum:GetPlayingAnimationTracks()) do x:Stop() end
+	local hrp = chr.HumanoidRootPart
+	local rootjoint = hrp.RootJoint
+	local n = t.Neck
+	local hm = h.Mesh
+	local rs = t["Right Shoulder"]
+	local ls = t["Left Shoulder"]
+	local rh = t["Right Hip"]
+	local lh = t["Left Hip"]
+	pcall(function() h.face:Destroy() end)
+	sp2(hum,"MaxHealth",9e18)
+	sp2(hum,"Health",9e18)
+	sp2(hm,"Scale",Vector3.new(0.075,0.075,0.075))
+	sp2(hm,"MeshId","rbxassetid://430920848")
+	sp2(hm,"VertexColor",Vector3.new(5,1,1))
+	local dnc0 = CFrame.new(0,1.3,-0.1) * CFrame.Angles(math.rad(-90),0,29.8)
+	sp2(n,"C0",dnc0)
+	sp2(h,"Size",Vector3.new(4,4,4))
+	sp2(h,"CanCollide",false)
+	c.Grip = CFrame.new(-0.1,0,-2.5) * CFrame.Angles(math.rad(180),math.rad(90),math.rad(-90))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://1256290")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://1256283")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(0.05,0.05,0.05))
+	setproperty(c.Handle,"Size",Vector3.new(1,4,1))
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+		return rootjoint
+	end
+	local t = false
+
+	wait()
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://33169573"
+	anim = chr.Humanoid:LoadAnimation(anim)
+	anim.Looped = false
+
+	c.Activated:connect(function() if not print[[wawa]] then anim:Play() end end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			anim.TimePosition = 0.5
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			setproperty(ec,"Transparency",1)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec.Weld,"C0",CFrame.new(600,6000,600))
+			wait(0.25)
+			fly(false)
+			t = false
+		end
+	end)
+	anim:AdjustSpeed(1)
+end, "[plr] - teapot turret")
+setCommand("banv2", function(args)
+
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+--[[
+if chr:FindFirstChild("WatermelonHat") then
+    local k = chr.WatermelonHat.Handle.VFX_Att.watermelon
+    setproperty(k,"Parent",c.Handle)
+    setproperty(k,"Texture","rbxassetid://431559364")
+    setproperty(k,"Rate",25)
+    setproperty(k,"EmissionDirection",5)
+    setproperty(k,"LightEmission",5)
+    setproperty(k,"VelocityInheritance",0.5)
+    setproperty(k,"Lifetime",NumberRange.new(2,4))
+    setproperty(k,"Size",NumberRange.new(2,4))
+end
+]]
+	local t = false
+	setproperty(c.LocalScript,"Disabled",true)
+	setproperty(c,"CanBeDropped",true)
+	setproperty(c,"Name","PompousTheCloud")
+	setproperty(c,"TextureId","rbxassetid://430355036")
+	setproperty(c.Handle.Mesh,"MeshId","http://www.roblox.com/asset/?id=12443582525")
+
+	setproperty(c.Handle.Mesh,"TextureId","http://www.roblox.com/asset/?id=1179108570")
+
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(1.925,1.925,1.925))
+
+	setproperty(c.Handle,"Size",Vector3.new(1,4,1))
+	c.Grip = CFrame.new(-0.1,0,-7.5) * CFrame.Angles(20.4,0,0)
+	setproperty(c.CoastingPose,"AnimationId","http://www.roblox.com/twohandswordwithswingout-item?id=32659706")
+	c.Activated:Connect(function()
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			setproperty(ec,"Transparency",1)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec.Weld,"C0",CFrame.new(9e9,0,9e9))
+			wait(0.25)
+			fly(false)
+			t = false
+		end
+	end)
+end, "[plr] - ban xd")
+setCommand("grab", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Grip = CFrame.new(0,-0.9,0.65) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	wait()
+	wait()
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://1")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://1")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(3.25,3.25,3.25))
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.7,0))
+		return rootjoint
+	end
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://27432686"
+	local anim = chr.Humanoid:LoadAnimation(anim)
+	anim.Looped = false
+	local holding
+	c.Activated:connect(function() if not holding then anim:Play() else repeat wait() until type(holding) ~= "number";  end end)
+	c.Handle.Touched:connect(function(part)
+		if not holding and anim.IsPlaying then
+			if part.Parent:FindFirstChild("HumanoidRootPart") then
+				anim.TimePosition = 0.5
+				anim:AdjustSpeed(0)
+				holding = true -- cuz weld yields
+				holding = weld(part.Parent.HumanoidRootPart,chr["Right Arm"],CFrame.new(-0.5,-0.5,0)*CFrame.Angles(math.rad(90),0,0))
+			end
+		end
+	end)
+end, "[plr] - grab like frfr")
+setCommand("testing", function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	local target = chr
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Grip = CFrame.new(0,1,0.65) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+	c.Parent = chr
+	c.LocalScript.Disabled = true
+	wait()
+	wait()
+	setproperty(c.Handle.Mesh,"MeshId","rbxassetid://0")
+	setproperty(c.Handle.Mesh,"TextureId","rbxassetid://0")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(3.25,3.25,3.25))
+	function weld(part0,part1,c0,c1,selfparent)
+		fly(true)
+		local ec = c:WaitForChild("EffectCloud")
+		local rootjoint = ec:WaitForChild("Weld")
+		wait()
+		setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+		setproperty(rootjoint,"Part0",part0)
+		setproperty(rootjoint,"Part1",part1 or chr.Torso)
+		setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+		setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+		return rootjoint
+	end
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://27432686"
+	local anim = chr.Humanoid:LoadAnimation(anim)
+	anim.Looped = false
+	local holding
+	c.Activated:connect(function() if not holding then anim:Play() else repeat wait() until type(holding) ~= "number";  end end)
+	c.Handle.Touched:connect(function(part)
+		if not holding and anim.IsPlaying then
+			if part.Parent:FindFirstChild("HumanoidRootPart") then
+				anim.TimePosition = 0.5
+				anim:AdjustSpeed(0)
+				holding = true -- cuz weld yields
+				holding = weld(part.Parent.HumanoidRootPart,chr["Right Arm"],CFrame.new(-1.5,0.5,0)*CFrame.Angles(math.rad(90),0,0))
+			end
+		end
+	end)
+end, "[plr] - grab like frfr")
+setCommand("setspawn", function(args)
+
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	wait(0.072)
+
+
+	for i,mad in pairs(game:GetDescendants()) do
+		if mad:IsA"SpawnLocation" or mad.Name == "SpawnLocation" or mad.Name == "HumanoidRootPart" then
+			if c.Parent == chr then
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.1)
+
+				spx2(joint,'Parent',chr)
+				spx2(joint,'Part0',mad)
+				spx2(ec,'CFrame',chr.HumanoidRootPart.CFrame)
+				spx2(ec,'Parent',game)
+			end
+		end
+	end
+	wait(1)
+	chr:BreakJoints() 
+end, '[spawn] - everyone now spawns at your location')
+setCommand("banhammer", function(args)
+
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+--[[
+if chr:FindFirstChild("WatermelonHat") then
+    local k = chr.WatermelonHat.Handle.VFX_Att.watermelon
+    setproperty(k,"Parent",c.Handle)
+    setproperty(k,"Texture","rbxassetid://431559364")
+    setproperty(k,"Rate",25)
+    setproperty(k,"EmissionDirection",5)
+    setproperty(k,"LightEmission",5)
+    setproperty(k,"VelocityInheritance",0.5)
+    setproperty(k,"Lifetime",NumberRange.new(2,4))
+    setproperty(k,"Size",NumberRange.new(2,4))
+end
+]]
+	local t = false
+	setproperty(c.LocalScript,"Disabled",true)
+	setproperty(c,"CanBeDropped",true)
+	setproperty(c,"Name","BanHammer")
+	setproperty(c,"TextureId","rbxassetid://430355036")
+	setproperty(c.Handle.Mesh,"MeshId","http://www.roblox.com/asset/?id=10604848")
+	setproperty(c.Handle.Mesh,"TextureId","http://www.roblox.com/asset/?id=10605252")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(0.625,0.625,0.625))
+	setproperty(c.Handle,"Size",Vector3.new(4,8,4))
+	setproperty(c,"Grip",CFrame.new(0,-2,0))
+	setproperty(c.CoastingPose,"AnimationId","http://www.roblox.com/twohandswordwithswingout-item?id=32659706")
+	c.Activated:Connect(function()
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			setproperty(ec,"Transparency",1)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec.Weld,"C0",CFrame.new(600,0,600))
+			wait(0.25)
+			fly(false)
+			t = false
+		end
+	end)
+end, "[plr] - gives you a ban hammer")
+setCommand("bigban", function(args)
+
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+--[[
+if chr:FindFirstChild("WatermelonHat") then
+    local k = chr.WatermelonHat.Handle.VFX_Att.watermelon
+    setproperty(k,"Parent",c.Handle)
+    setproperty(k,"Texture","rbxassetid://431559364")
+    setproperty(k,"Rate",25)
+    setproperty(k,"EmissionDirection",5)
+    setproperty(k,"LightEmission",5)
+    setproperty(k,"VelocityInheritance",0.5)
+    setproperty(k,"Lifetime",NumberRange.new(2,4))
+    setproperty(k,"Size",NumberRange.new(2,4))
+end
+]]
+	local t = false
+	setproperty(c.LocalScript,"Disabled",true)
+	setproperty(c,"CanBeDropped",true)
+	setproperty(c,"Name","BanHammer")
+	setproperty(c,"TextureId","rbxassetid://430355036")
+	setproperty(c.Handle.Mesh,"MeshId","http://www.roblox.com/asset/?id=10604848")
+	setproperty(c.Handle.Mesh,"TextureId","http://www.roblox.com/asset/?id=10605252")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(2.925,2.925,2.925))
+	setproperty(c.Handle,"Size",Vector3.new(4,8,4))
+	setproperty(c,"Grip",CFrame.new(0,-8.5,0))
+	setproperty(c.CoastingPose,"AnimationId","http://www.roblox.com/twohandswordwithswingout-item?id=32659706")
+	c.Activated:Connect(function()
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			setproperty(ec,"Transparency",1)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec.Weld,"C0",CFrame.new(9e9,0,9e9))
+			wait(0.25)
+			fly(false)
+			t = false
+		end
+	end)
+end, "[plr] - gives you a ban hammer")
+setCommand("banv2", function(args)
+
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+--[[
+if chr:FindFirstChild("WatermelonHat") then
+    local k = chr.WatermelonHat.Handle.VFX_Att.watermelon
+    setproperty(k,"Parent",c.Handle)
+    setproperty(k,"Texture","rbxassetid://431559364")
+    setproperty(k,"Rate",25)
+    setproperty(k,"EmissionDirection",5)
+    setproperty(k,"LightEmission",5)
+    setproperty(k,"VelocityInheritance",0.5)
+    setproperty(k,"Lifetime",NumberRange.new(2,4))
+    setproperty(k,"Size",NumberRange.new(2,4))
+end
+]]
+	local t = false
+	setproperty(c.LocalScript,"Disabled",true)
+	setproperty(c,"CanBeDropped",true)
+	setproperty(c,"Name","BanHammer")
+	setproperty(c,"TextureId","rbxassetid://430355036")
+	setproperty(c.Handle.Mesh,"MeshId","http://www.roblox.com/asset/?id=12443582525")
+	setproperty(c.Handle.Mesh,"TextureId","http://www.roblox.com/asset/?id=0")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(2.925,2.925,2.925))
+	setproperty(c.Handle,"Size",Vector3.new(4,8,4))
+	setproperty(c,"Grip",CFrame.new(0,-8.5,0) * CFrame.Angles(math.rad(0),math.rad(),math.rad()))
+	setproperty(c.CoastingPose,"AnimationId","http://www.roblox.com/twohandswordwithswingout-item?id=32659706")
+	c.Activated:Connect(function()
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			setproperty(ec,"Transparency",1)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec.Weld,"C0",CFrame.new(9e9,0,9e9))
+			wait(0.25)
+			fly(false)
+			t = false
+		end
+	end)
+end, "[plr] - gives you a ban hammer")
+setCommand("icehammer", function(args) 
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	if chr:FindFirstChild("WatermelonHat") then
+		local k = chr.WatermelonHat.Handle.VFX_Att.watermelon
+		setproperty(k,"Parent",c.Handle)
+		setproperty(k,"Texture","rbxassetid://431559364")
+		setproperty(k,"Rate",25)
+		setproperty(k,"EmissionDirection",2)
+		setproperty(k,"LightEmission",5)
+		setproperty(k,"VelocityInheritance",0.5)
+		setproperty(k,"Lifetime",NumberRange.new(2,4))
+		setproperty(k,"Size",NumberRange.new(2,4))
+	end
+	local t = false
+	c.LocalScript.Disabled = true
+	setproperty(c.Handle.Mesh,"MeshId","http://www.roblox.com/asset/?id=15924243")
+	setproperty(c.Handle.Mesh,"TextureId","http://www.roblox.com/asset/?id=15924246")
+	setproperty(c.Handle.Mesh,"Scale",Vector3.new(1.5,1.5,1.5))
+	setproperty(c.Handle,"Size",Vector3.new(4,8,4))
+	setproperty(c,"Grip",CFrame.new(0,0,-2)*CFrame.Angles(0,math.rad(90),math.rad(90)))
+	setproperty(c.CoastingPose,"AnimationId","http://www.roblox.com/twohandswordwithswingout-item?id=32659706")
+	c.Activated:Connect(function()
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			local oldcf = op.Parent.Torso.CFrame
+			setproperty(ec.Mesh,"MeshId","rbxassetid://2784482070")
+			setproperty(ec.Mesh,"TextureId","")
+			setproperty(ec,"Transparency",0.5)
+			setproperty(ec.Weld,"C0",CFrame.new(0,0,0))
+			setproperty(ec.Weld,"Part1",op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec,"Anchored",true)
+			setproperty(ec,"CFrame",oldcf)
+			setproperty(c.Handle,"Transparency",0)
+			setproperty(c.Handle,"CanCollide",true)
+			wait(3)
+			setproperty(ec,"Anchored",false)
+			setproperty(ec.Weld,"C0",CFrame.new(5000,5000,5000))
+			t = false
+		end
+	end)
+end, "[plr] - gives you an ice hammer")
+
+setCommand("statue", function(args) 
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.LocalScript.Disabled = true
+	c.Parent = chr
+	if chr:FindFirstChild("GingerbreadPal") then
+		local k = chr.GingerbreadPal.Handle.VFX_Att.peppermint
+		setproperty(k,"Parent",c.Handle)
+		setproperty(k,"Texture","rbxassetid://2770710438")
+		setproperty(k,"Rate",25)
+		setproperty(k,"EmissionDirection",-2)
+		setproperty(k,"LightEmission",5)
+		setproperty(k,"VelocityInheritance",0.5)
+		setproperty(k,"Lifetime",NumberRange.new(2,4))
+		setproperty(k,"Size",NumberRange.new(2,4))
+	end
+	wait()
+	spx2(c,"CanBeDropped",true)
+	spx2(c,"Name","Statue")
+	spx2(c,"TextureId","rbxassetid://2770710438")
+	spx2(c.Handle.Mesh,"MeshId",'rbxassetid://2770710422')
+	spx2(c.Handle.Mesh,"TextureId",'rbxassetid://2770710438')
+	spx2(c.Handle.Mesh,"Scale",Vector3.new(4,4,4))
+	spx2(c.CoastingPose,"AnimationId","rbxassetid://218504594")
+	c.Activated:Connect(function()
+		wait(0.2)
+		c.Parent.Humanoid:LoadAnimation(c.CoastingPose):Play()
+	end)
+	c.Handle.Touched:connect(function(op)
+		if not t and op.Parent:FindFirstChild"Torso" then
+			t = true
+			wait()
+			wait()
+			fly(true)
+			local ec = c:WaitForChild("EffectCloud")
+			local oldcf = op.Parent.Torso.CFrame
+			spx2(ec.Mesh,"MeshId","rbxassetid://2784482070")
+			spx2(ec.Mesh,"TextureId","2770710438")
+			spx2(ec.Mesh,"Scale",Vector3.new(1,1,1))
+			spx2(ec,"Transparency",0.5)
+			spx2(ec.Weld,'C0',CFrame.new(0,0,0))
+			spx2(ec.Weld,'Part1',op.Parent.Torso)
+			setproperty(ec.Weld,"Part0",ec)
+			setproperty(ec,"Anchored",true)
+			setproperty(ec,"CFrame",oldcf)
+			spx2(c.Handle,"Transparency",0)
+			spx2(c.Handle,"CanCollide",true)
+			wait(3)
+			spx2(ec,"Anchored",false)
+			spx2(ec.Weld,"C0",CFrame.new(5000,5000,5000))
+			t = false
+		end
+	end)
+
+end, "[plr] - gives you a statue")
+
+--
+setCommand("2d", function(args) 
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function sp(obj,p,v)
+		task.spawn(setproperty,obj,p,v)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	function s(i,p,v)
+		c.Parent = chr
+		sp(i,p,v)
+		c.Parent = plr.Backpack
+	end
+	function r(tbl)
+		return tbl[math.random(1,#tbl)]
+	end
+	for _,x in pairs(chr:GetDescendants()) do if x:isA"BasePart" then s(x,"Transparency",1) end end
+	pcall(function() chr.Head.Mesh:Destroy() end)
+	s(chr.Head,"Size",Vector3.new(8,8,0.1))
+	s(chr.Head.face,"Texture","rbxassetid://"..args[1])
+end, "[2d] - Changes the look of you to the id you enter.")
+
+
+setCommand("nameurself", function(args) 
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	c.Parent = chr
+	setproperty(chr.Humanoid,'DisplayName',args[1])
+	c.Parent = plr.Backpack
+end, "[plr] - gives you a new name")
+
+
+setCommand("prefix", function(args) 
+	prefix = args[1]
+end, "[char] - Changes the prefix of chat command handling.")
+local noclipC
+setCommand("ws", function(args)
+	lplr.Character.Humanoid.WalkSpeed = tonumber(args[1])
+end, "[num] - Changes your WalkSpeed")
+setCommand("morph", function(args)
+	local morphInto = args[1]
+	local chr = lplr.Character
+	if morphInto == "roblox" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://2711191020"},{chr.Head.Mesh,"TextureId","rbxassetid://2711191097"},{chr.Head.Mesh,"Scale",Vector3.new(4,2,4)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = 3
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "lego" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://7936699063"},{chr.Head.Mesh,"Offset",Vector3.new(0,-0.5,0)},{chr.Head.Mesh,"TextureId","rbxassetid://7936699209"},{chr.Head.Mesh,"Scale",Vector3.new(4,4.5,4)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "dog" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://886188175"},{chr.Head.Mesh,"Offset",Vector3.new(0,-0.5,0)},{chr.Head.Mesh,"TextureId","rbxassetid://886188180"},{chr.Head.Mesh,"Scale",Vector3.new(0.05,0.05,0.05)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "scp" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://11036033548"},{chr.Head.Mesh,"Offset",Vector3.new(0,0.5,0)},{chr.Head.Mesh,"TextureId","rbxassetid://11036034070"},{chr.Head.Mesh,"Scale",Vector3.new(0.5,0.5,0.5)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+		local chr = lplr.Character
+		local c = cloud()
+		for i,v in pairs(c.Handle:GetChildren()) do 
+			if v.Name == "Wind" then 
+				c.ServerControl:InvokeServer("SetProperty",{["Value"]=chr.Head,["Property"]="Parent",["Object"]=v})
+
+			end
+		end
+		wait(0.3)
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]="rbxassetid://150185006"..args[1],["Property"]="SoundId",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]=10,["Property"]="Volume",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="MaxDistance",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="EmitterSize",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]=true,["Property"]="Playing",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{["Value"]=1,["Property"]="PlaybackSpeed",["Object"]=chr.Head.Wind})
+		c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle.Mesh,Property="MeshId",Value="http://www.roblox.com/asset/?id=212302951"})
+		c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle.Mesh,Property="TextureId",Value="http://www.roblox.com/asset/?id=212303049"})
+		chr.Head.Wind:Play()
+	end
+	if morphInto == "sonic" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://5330562519"},{chr.Head.Mesh,"Offset",Vector3.new(0,-0.5,0)},{chr.Head.Mesh,"TextureId","rbxassetid://5330562592"},{chr.Head.Mesh,"Scale",Vector3.new(4,4.5,4)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+
+	end
+	if morphInto == "eggdog" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://3142513417"},{chr.Head.Mesh,"Offset",Vector3.new(0,0.25,0)},{chr.Head.Mesh,"TextureId","rbxassetid://3142513433"},{chr.Head.Mesh,"Scale",Vector3.new(0.2,0.15,0.2)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		chr.Head.face:Destroy()
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "builderman" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://2711196756"},{chr.Head.Mesh,"TextureId","rbxassetid://2711196829"},{chr.Head.Mesh,"Scale",Vector3.new(4,2,4)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = 3
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "krabbypatty" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://430286890"},{chr.Head.Mesh,"Offset",Vector3.new(0,-1,0)},{chr.Head.Mesh,"TextureId","rbxassetid://430286895"},{chr.Head.Mesh,"Scale",Vector3.new(1,1,1)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = 3
+		chr.Head.face:Destroy()
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+	if morphInto == "freddy" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://492489808"},{chr.Head.Mesh,"Offset",Vector3.new(0,-1,0)},{chr.Head.Mesh,"TextureId","rbxassetid://492490015"},{chr.Head.Mesh,"Scale",Vector3.new(0.05,0.05,0.05)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = 3
+		chr.Head.face:Destroy()
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end 
+	if morphInto == "titan" then
+		local plr = game.Players.LocalPlayer
+		local chr = plr.Character
+		local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+		local sc = c.ServerControl
+		function setproperty(object,property,value)
+			sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+		end
+		c.LocalScript.Disabled = true
+		function sp2(obj,prop,val)
+			c.Parent = chr
+			task.spawn(setproperty,obj,prop,val)
+			c.Parent = plr.Backpack
+		end
+		local t = chr.Torso
+		local la = chr["Left Arm"]
+		local ra = chr["Right Arm"]
+		local ll = chr["Left Leg"]
+		local rl = chr["Right Leg"]
+		local h = chr.Head
+		local hum = chr.Humanoid
+		c.Parent = chr
+		wait()
+		wait()
+		local ec = c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local weld = ec:WaitForChild("Weld")
+		sp2(weld,"Parent",ra)
+		chr.Animate.Disabled = true
+		for _,x in pairs(hum:GetPlayingAnimationTracks()) do x:Stop() end
+		local hrp = chr.HumanoidRootPart
+		sp2(t,"Size",Vector3.new(4,4,2))
+		sp2(la,"Size",Vector3.new(2,4,2))
+		sp2(ra,"Size",Vector3.new(2,4,2))
+		sp2(ll,"Size",Vector3.new(2,4,2))
+		sp2(rl,"Size",Vector3.new(2,4,2))
+		sp2(hrp,"Size",Vector3.new(4,4,2))
+		local rootjoint = hrp.RootJoint
+		local n = t.Neck
+		local hm = h.Mesh
+		local rs = t["Right Shoulder"]
+		local ls = t["Left Shoulder"]
+		local rh = t["Right Hip"]
+		local lh = t["Left Hip"]
+		pcall(function() h.face:Destroy() end)
+		sp2(hum,"MaxHealth",9e18)
+		sp2(hum,"Health",9e18)
+		sp2(hm,"Scale",Vector3.new(2,2,2))
+		sp2(hm,"MeshId","rbxassetid://4468054457")
+		sp2(hm,"TextureId","rbxassetid://4468054488")
+		sp2(h,"Size",Vector3.new(4,4,4))
+		local dnc0 = CFrame.new(0,2,0.5) * CFrame.Angles(math.rad(-90),0,0)
+		sp2(n,"C0",dnc0)
+		local drsc0 = CFrame.new(2.5,0.5,0) * CFrame.Angles(0,math.rad(90),0)
+		sp2(rs,"C0",drsc0)
+		local dlsc0 = CFrame.new(-2.5,0.5,0) * CFrame.Angles(0,math.rad(-90),0)
+		sp2(ls,"C0",dlsc0)
+		local drhc0 = CFrame.new(1.5,-3,0) * CFrame.Angles(0,math.rad(90),0)
+		sp2(rh,"C0",drhc0)
+		local dlhc0 = CFrame.new(-1.5,-3,0) * CFrame.Angles(0,math.rad(-90),0)
+		sp2(lh,"C0",dlhc0)
+		sp2(hrp,"CustomPhysicalProperties",PhysicalProperties.new(math.huge,math.huge,math.huge,math.huge,math.huge))
+		local drjc0 = CFrame.new(0,0,0) * CFrame.Angles(math.rad(90),math.rad(180),0)
+		sp2(rootjoint,"C0",drjc0)
+		hum.WalkSpeed = 100
+		-- C0 Anims
+		local rhc0 = drhc0
+		local lhc0 = dlhc0
+		local rsc0 = drsc0
+		local lsc0 = dlsc0
+		local rjc0 = drjc0
+		task.spawn(function()
+			for i = 0,math.huge do
+				if not chr.Parent then
+					break
+				end
+				if rh.C0 ~= rhc0 then
+					sp2(rh,"C0",rh.C0:Lerp(rhc0,0.3334))
+				end
+				if lh.C0 ~= lhc0 then
+					sp2(lh,"C0",lh.C0:Lerp(lhc0,0.3334))
+				end
+				if rs.C0 ~= rsc0 then
+					sp2(rs,"C0",rs.C0:Lerp(rsc0,0.3334))
+				end
+				if ls.C0 ~= lsc0 then
+					sp2(ls,"C0",ls.C0:Lerp(lsc0,0.3334))
+				end
+				if rootjoint.C0 ~= rjc0 then
+					sp2(rootjoint,"C0",rootjoint.C0:Lerp(rjc0,0.3334))
+				end
+				wait(0.03)
+			end
+		end)
+		-- Abilities
+		function activated(tool,callback)
+			plr:GetMouse().Button1Down:connect(function()
+				if tool.Parent == plr.Character and tool.Enabled then
+					callback()
+				end
+			end)
+		end
+		local pick = Instance.new("Tool",plr.Backpack)
+		pick.Name = "Pick & Eat"
+		pick.RequiresHandle = false
+		local pickedPlayer
+		sp2(c.Handle,"Transparency",1)
+		activated(pick,function()
+			if not pickedPlayer then
+				task.spawn(function()
+					pick.Enabled = false
+					local touch = h.Touched:connect(function(part)
+						if part.Parent:FindFirstChildWhichIsA("Humanoid") and not pickedPlayer then
+							if part.Parent:FindFirstChild("HumanoidRootPart") then
+								pickedPlayer = part.Parent
+								sp2(weld,"C0",CFrame.new(0,0,2) * CFrame.Angles(0,math.rad(180),0))
+								sp2(weld,"C1",CFrame.new(0,0,0))
+								sp2(weld,"Part0",pickedPlayer.HumanoidRootPart)
+								sp2(weld,"Part1",h)
+							end
+						end
+					end)
+					rjc0 = CFrame.new(0,-4,0) * CFrame.Angles(math.rad(10),math.rad(180),0)
+					wait(0.5)
+					rjc0 = drjc0
+					touch:Disconnect()
+					pick.Enabled = true
+				end)
+			else
+				task.spawn(function()
+					sp2(weld,"Part0",pickedPlayer.Head)
+					sp2(weld,"Part1",pickedPlayer.Torso)
+					sp2(weld,"C0",CFrame.new(0,-math.huge,0))
+					pickedPlayer = nil
+				end)
+			end
+		end)
+		--Animations
+		for i = 0,math.huge do
+			chr.Humanoid.WalkSpeed = 100
+			if chr.Humanoid.MoveDirection.Magnitude > 0 then
+				rhc0 = drhc0 * CFrame.Angles(0,0,math.rad(-45))
+				lhc0 = dlhc0 * CFrame.Angles(0,0,math.rad(45))
+				lsc0 = dlsc0 * CFrame.Angles(0,0,math.rad(30))
+				rsc0 = drsc0 * CFrame.Angles(0,0,math.rad(-30))
+			else
+				rhc0 = drhc0
+				lhc0 = dlhc0
+				lsc0 = dlsc0 * CFrame.Angles(math.rad(-12-math.sin(i/12)*12),0,0)
+				rsc0 = drsc0 * CFrame.Angles(math.rad(-12-math.sin(i/12)*12),0,0)
+			end
+			wait(0.03)
+		end
+	end
+	if morphInto == "megaman" then
+		local plr = game.Players.LocalPlayer
+		local chr = plr.Character
+		local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+		local sc = c.ServerControl
+		function setproperty(object,property,value)
+			sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+		end
+		c.LocalScript.Disabled = true
+		function sp2(obj,prop,val)
+			c.Parent = chr
+			task.spawn(setproperty,obj,prop,val)
+			c.Parent = plr.Backpack
+		end
+		local t = chr.Torso
+		local la = chr["Left Arm"]
+		local ra = chr["Right Arm"]
+		local ll = chr["Left Leg"]
+		local rl = chr["Right Leg"]
+		local h = chr.Head
+		local hum = chr.Humanoid
+		c.Parent = chr
+		wait()
+		wait()
+		local ec = c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local weld = ec:WaitForChild("Weld")
+		sp2(weld,"Parent",ra)
+		chr.Animate.Disabled = true
+		for _,x in pairs(hum:GetPlayingAnimationTracks()) do x:Stop() end
+		local hrp = chr.HumanoidRootPart
+		sp2(t,"Size",Vector3.new(4,4,2))
+		sp2(la,"Size",Vector3.new(2,4,2))
+		sp2(ra,"Size",Vector3.new(2,4,2))
+		sp2(ll,"Size",Vector3.new(2,4,2))
+		sp2(rl,"Size",Vector3.new(2,4,2))
+		sp2(hrp,"Size",Vector3.new(4,4,2))
+		local rootjoint = hrp.RootJoint
+		local n = t.Neck
+		local hm = h.Mesh
+		local rs = t["Right Shoulder"]
+		local ls = t["Left Shoulder"]
+		local rh = t["Right Hip"]
+		local lh = t["Left Hip"]
+		pcall(function() h.face:Destroy() end)
+		sp2(hum,"MaxHealth",9e18)
+		sp2(hum,"Health",9e18)
+		sp2(hm,"Scale",Vector3.new(2,2,2))
+		sp2(hm,"MeshId","rbxassetid://4468054457")
+		sp2(hm,"TextureId","rbxassetid://4468054488")
+		sp2(h,"Size",Vector3.new(4,4,4))
+		local dnc0 = CFrame.new(0,2,0.5) * CFrame.Angles(math.rad(-90),0,0)
+		sp2(n,"C0",dnc0)
+		local drsc0 = CFrame.new(2.5,0.5,0) * CFrame.Angles(0,math.rad(90),0)
+		sp2(rs,"C0",drsc0)
+		local dlsc0 = CFrame.new(-2.5,0.5,0) * CFrame.Angles(0,math.rad(-90),0)
+		sp2(ls,"C0",dlsc0)
+		local drhc0 = CFrame.new(1.5,-3,0) * CFrame.Angles(0,math.rad(90),0)
+		sp2(rh,"C0",drhc0)
+		local dlhc0 = CFrame.new(-1.5,-3,0) * CFrame.Angles(0,math.rad(-90),0)
+		sp2(lh,"C0",dlhc0)
+		sp2(hrp,"CustomPhysicalProperties",PhysicalProperties.new(math.huge,math.huge,math.huge,math.huge,math.huge))
+		local drjc0 = CFrame.new(0,0,0) * CFrame.Angles(math.rad(90),math.rad(180),0)
+		sp2(rootjoint,"C0",drjc0)
+		hum.WalkSpeed = 100
+		-- C0 Anims
+		local rhc0 = drhc0
+		local lhc0 = dlhc0
+		local rsc0 = drsc0
+		local lsc0 = dlsc0
+		local rjc0 = drjc0
+		task.spawn(function()
+			for i = 0,math.huge do
+				if not chr.Parent then
+					break
+				end
+				if rh.C0 ~= rhc0 then
+					sp2(rh,"C0",rh.C0:Lerp(rhc0,0.3334))
+				end
+				if lh.C0 ~= lhc0 then
+					sp2(lh,"C0",lh.C0:Lerp(lhc0,0.3334))
+				end
+				if rs.C0 ~= rsc0 then
+					sp2(rs,"C0",rs.C0:Lerp(rsc0,0.3334))
+				end
+				if ls.C0 ~= lsc0 then
+					sp2(ls,"C0",ls.C0:Lerp(lsc0,0.3334))
+				end
+				if rootjoint.C0 ~= rjc0 then
+					sp2(rootjoint,"C0",rootjoint.C0:Lerp(rjc0,0.3334))
+				end
+				wait(0.03)
+			end
+		end)
+		-- Abilities
+		function activated(tool,callback)
+			plr:GetMouse().Button1Down:connect(function()
+				if tool.Parent == plr.Character and tool.Enabled then
+					callback()
+				end
+			end)
+		end
+		local pick = Instance.new("Tool",plr.Backpack)
+		pick.Name = "Pick & Eat"
+		pick.RequiresHandle = false
+		local pickedPlayer
+		sp2(c.Handle,"Transparency",1)
+		activated(pick,function()
+			if not pickedPlayer then
+				task.spawn(function()
+					pick.Enabled = false
+					local touch = h.Touched:connect(function(part)
+						if part.Parent:FindFirstChildWhichIsA("Humanoid") and not pickedPlayer then
+							if part.Parent:FindFirstChild("HumanoidRootPart") then
+								pickedPlayer = part.Parent
+								sp2(weld,"C0",CFrame.new(0,0,2) * CFrame.Angles(0,math.rad(180),0))
+								sp2(weld,"C1",CFrame.new(0,0,0))
+								sp2(weld,"Part0",pickedPlayer.HumanoidRootPart)
+								sp2(weld,"Part1",h)
+							end
+						end
+					end)
+					rjc0 = CFrame.new(0,-9,0) * CFrame.Angles(math.rad(10),math.rad(180),0)
+					wait(0.5)
+					rjc0 = drjc0
+					touch:Disconnect()
+					pick.Enabled = true
+				end)
+			else
+				task.spawn(function()
+					sp2(weld,"Part0",pickedPlayer.Head)
+					sp2(weld,"Part1",pickedPlayer.Torso)
+					sp2(weld,"C0",CFrame.new(0,-math.huge,0))
+					pickedPlayer = nil
+				end)
+			end
+		end)
+		--Animations
+	end
+	if morphInto == "thomas" then
+		local plr = game.Players.LocalPlayer
+		local chr = plr.Character
+		local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+		local sc = c.ServerControl
+		function setproperty(object,property,value)
+			sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+		end
+		c.LocalScript.Disabled = true
+		function sp2(obj,prop,val)
+			task.spawn(setproperty,obj,prop,val)
+		end
+		function setp(obj,prop,val)
+			c.Parent = chr
+			task.spawn(setproperty,obj,prop,val)
+			c.Parent = plr.Backpack
+		end
+		c.Parent = chr
+		wait(0.06)
+		for i = 1,1 do
+			if workspace.CenterBlocks:FindFirstChild("Wind") then break end
+
+			c.Parent = chr
+			wait(0.06)
+			for i,v in pairs(game.Players.LocalPlayer.Character.PompousTheCloud.Handle:GetChildren()) do 
+				if v.Name == "Wind" then 
+					sc:InvokeServer("SetProperty",{["Value"]=chr.Head,["Property"]="Parent",["Object"]=v})
+				end
+			end
+			wait(0.4)
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]="rbxassetid://475073913",["Property"]="SoundId",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=1,["Property"]="Volume",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=50,["Property"]="MaxDistance",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=50,["Property"]="EmitterSize",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=false,["Property"]="Playing",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=1,["Property"]="PlaybackSpeed",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+			wait()
+			setproperty(game:GetService("Workspace")[plr.Name].Head.Wind,"Parent",workspace.CenterBlocks)
+			wait()
+
+		end
+		c.Parent = chr
+		pcall(function()
+			if not c.Handle:FindFirstChild("watermelon") then
+				setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Texture","rbxassetid://133619974")
+				setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Rate",50)
+				setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Color",ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),ColorSequenceKeypoint.new(1,Color3.new(1,1,1))}))
+				setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Transparency",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+				setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Size",NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(1,1)}))
+				pcall(function()setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Lifetime",NumberRange.new(5))
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Speed",NumberRange.new(30,60))
+
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"LightEmission",0)
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"RotSpeed",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"Rotation",NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,0)}))
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"].watermelon,"VelocitySpread",4)
+					setproperty(chr.WatermelonHat.Handle["VFX_Att"],"Parent",c.Handle)
+
+				end)
+				setproperty(c.Handle["VFX_Att"],'Parent',chr.Head)
+			end
+
+			setproperty(chr.Head["VFX_Att"],'CFrame',CFrame.new(0,4.5,3.5))
+		end)
+
+		setproperty(chr.Humanoid,'DisplayName','dank engine')
+		c.Parent = chr
+
+		wait(0.06)
+		local ec = sc:InvokeServer("Fly",{Flying=true})
+		local w = ec:WaitForChild("Weld")
+		sp2(w,"Parent",chr.Head)
+		sp2(w,"C0",CFrame.new(0,-math.huge,0))
+		sp2(w,"C1",CFrame.new(0,0,0))
+		sp2(w,"Part0",workspace.CenterBlocks.center)
+		sp2(w,"Part1",workspace.CenterBlocks.center)
+		c.Parent = plr.Backpack
+		local m = chr.Head:FindFirstChildWhichIsA"SpecialMesh"
+		setp(m,"MeshId","rbxassetid://431017802")
+		setp(m,"TextureId","rbxassetid://431017809")
+		setp(m,"Scale",Vector3.new(0.02,0.02,0.015))
+		for _,x in pairs(chr:GetDescendants()) do
+			if x:IsA"BasePart" and x.Name ~= "Head" then setp(x,"Transparency",1) end
+		end
+		if chr.Head:FindFirstChild("face") then chr.Head.face:Destroy() end
+		chr.Animate.Disabled = true
+		for _,x in pairs(chr.Humanoid:GetPlayingAnimationTracks()) do x:Stop(0) end
+		setp(chr.Torso.Neck,"C0",CFrame.new(0,0,0) * CFrame.Angles(-math.rad(90),0,0))
+		setp(chr.Head,"Size",Vector3.new(4,4,10))
+		setp(chr.Humanoid,"WalkSpeed",100)
+		setp(chr.Humanoid,"MaxHealth",math.huge)
+		setp(chr.Humanoid,"Health",math.huge)
+		local play = true
+		wait(0.4)
+		chr.Head.Touched:connect(function(part)
+			if w.Part0 ~= part and part.Parent:FindFirstChildWhichIsA("Humanoid") then
+				setp(w,"Part0",part)
+				play = false
+				wait(0.2)
+				play = true
+				wait(0.1)
+				workspace.CenterBlocks.Wind:Play()
+				wait(0.7)
+				workspace.CenterBlocks.Wind:Stop()
+			end
+		end)
+		chr.Humanoid.Died:connect(function()
+			wait()
+			workspace.CenterBlocks.Wind:Stop()
+			wait()
+			workspace.CenterBlocks.Wind:Destroy()
+		end)
+	end
+	if morphInto == "mario" then
+		cloud({chr.Head.Mesh,"MeshId","rbxassetid://913871980"},{chr.Head.Mesh,"Offset",Vector3.new(0,-0.5,0)},{chr.Head.Mesh,"TextureId","rbxassetid://913871983"},{chr.Head.Mesh,"Scale",Vector3.new(1,1,1)},{chr.Torso.Neck,"C0",CFrame.new(0,0,0)*CFrame.Angles(0,math.rad(90),0)},{chr.Torso.Neck,"C1",CFrame.new(0,0,0)})
+		chr.Humanoid.HipHeight = Button1Down
+		local zz = {}
+		for i,v in pairs(chr:GetDescendants()) do
+			if v:IsA"BasePart" and v.Name ~= "Head" then
+				table.insert(zz,{v,"Transparency",1})
+			end
+		end
+		cloud({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18},unpack(zz))
+	end
+end, "[roblox/sonic/eggdog/builderma\nkrabbypatty/freddy/mario/titan/thomas - Morph.")
+setCommand("btools", function(args)
+	local chr = lplr.Character
+	local c = cloud()
+	wait(0.07)
+	c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle,Property="Transparency",Value=1})
+	c.LocalScript.Disabled = true
+	function RemoveAnim()
+		for i,ZAZA in next, chr.Humanoid:GetPlayingAnimationTracks() do
+			if not string.find(ZAZA.Animation.AnimationId,"180426354") then
+				ZAZA:stop()
+			end
+		end
+	end
+	RemoveAnim()
+	lplr:GetMouse().Button1Down:Connect(function()
+		if c.Parent == chr then
+			c.ServerControl:InvokeServer("Fly",{Flying=true})
+			local ec = c:WaitForChild("EffectCloud")
+			local w = ec:WaitForChild("Weld")
+			wait(0.07)
+			c.ServerControl:InvokeServer("SetProperty",{Object=w,Property="Parent",Value=chr})
+			c.ServerControl:InvokeServer("SetProperty",{Object=w,Property="Part0",Value=lplr:GetMouse().Target})
+			c.ServerControl:InvokeServer("SetProperty",{Object=ec,Property="CFrame",Value=CFrame.new(9e9,9e9,0)})
+			c.ServerControl:InvokeServer("SetProperty",{Object=ec,Property="Parent",Value=workspace})
+		end
+	end)
+end, "- Btools.")
+setCommand("keepitem", function(args)
+	local chr = lplr.Character
+	cloud({chr:FindFirstChildWhichIsA"Tool", "Parent", lplr.StarterGear})
+end, "[plr] - keeps the item your holding.")
+setCommand("music", function(args)
+	local chr = lplr.Character
+	local c = cloud()
+	for i,v in pairs(c.Handle:GetChildren()) do 
+		if v.Name == "Wind" then 
+			c.ServerControl:InvokeServer("SetProperty",{["Value"]=chr.Head,["Property"]="Parent",["Object"]=v})
+
+		end
+	end
+	wait(0.3)
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]="rbxassetid://"..args[1],["Property"]="SoundId",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]=1000,["Property"]="Volume",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="MaxDistance",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="EmitterSize",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]=true,["Property"]="Playing",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{["Value"]=1,["Property"]="PlaybackSpeed",["Object"]=chr.Head.Wind})
+	c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle.Mesh,Property="MeshId",Value="http://www.roblox.com/asset/?id=212302951"})
+	c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle.Mesh,Property="TextureId",Value="http://www.roblox.com/asset/?id=212303049"})
+	chr.Head.Wind:Play()
+	task.spawn(function()
+		for i = 0,math.huge do task.wait(0.6)
+			local k = i % 3 == 1 and Vector3.new(6,6,6) or Vector3.new(4,4,4)
+			c.ServerControl:InvokeServer("SetProperty",{Object=c.Handle.Mesh,Property="Scale",Value=k})
+		end
+	end)
+end,"[id] - Plays music on boombox")
+setCommand("infmusic",function(args)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local a = plr.Backpack:WaitForChild("PompousTheCloud")
+	local id = args[1]
+	a.Parent = chr
+	function setProp(object,prop,val)
+		a["ServerControl"]:InvokeServer("SetProperty",{Value=val,Property=prop,Object=object})
+	end
+	wait()
+
+	for i,v in pairs(game.Players.LocalPlayer.Character.PompousTheCloud.Handle:GetChildren()) do 
+		if v.Name == "Wind" then 
+			game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=game.Players.LocalPlayer.Character.Head,["Property"]="Parent",["Object"]=v})
+
+		end
+	end
+	wait(0.3)
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]="rbxassetid://"..id,["Property"]="SoundId",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=10,["Property"]="Volume",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="MaxDistance",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=9e9,["Property"]="EmitterSize",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=true,["Property"]="Playing",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	game.Players.LocalPlayer.Character.PompousTheCloud.ServerControl:InvokeServer("SetProperty",{["Value"]=1,["Property"]="PlaybackSpeed",["Object"]=game.Players.LocalPlayer.Character.Head.Wind})
+	setProp(game.Players.LocalPlayer.Character.Head.Wind,"Parent",workspace.Terrain4)
+	workspace.Terrain4.Wind.Name = "detroit" -- for the fun
+	wait(0.2)
+	chr.Humanoid:UnequipTools()
+	wait(0.2)
+	workspace.Terrain4.detroit:Play()
+	wait(0.5)
+	chr:BreakJoints()
+end,"[id] - Plays music infinitly not on boombox")
+setCommand("skybox", function(args)
+	local a = cloud()
+	function setProp(object,prop,val)
+		a["ServerControl"]:InvokeServer("SetProperty",{Value=val,Property=prop,Object=object})
+	end
+	wait(0.07)
+	a["ServerControl"]:InvokeServer("Fly",{Flying=true})
+	local z = a:WaitForChild("EffectCloud")
+	wait()
+	setProp(z.Mesh,"MeshId","rbxassetid://4839763905")
+	setProp(z.Mesh,"TextureId","rbxthumb://type=Asset&id="..args[1].."&w=420&h=420")
+	setProp(z,"Size",Vector3.new(8048, 8048, 8048))
+	setProp(z.Mesh,"Scale",Vector3.new(256, 256, 256))
+	setProp(z,"Anchored",true)
+	z:BreakJoints()
+	setProp(z,"CanCollide",false)
+	setProp(z,"Parent",workspace)
+end,"[id]") 
+setCommand("baseplate", function(args)
+	-- badly made (like 7 lines more then needed cause i am lazyyyteyyyyyy same for every script basically which i added)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	c.LocalScript.Disabled = true
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	spx2({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18})
+	wait()
+	wait()
+	chr.HumanoidRootPart.CFrame = CFrame.new(6000,30000,600)
+	wait(0.072)
+	for i,mad in pairs(game:GetDescendants()) do
+		if mad:IsA"SpawnLocation" or mad.Name == "SpawnLocation" or mad.Name == "HumanoidRootPart" then
+			if c.Parent == chr then
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.1)
+
+				spx2(joint,'Parent',chr)
+				chr.HumanoidRootPart.Velocity = Vector3.new(-1,100,-1)
+				spx2(joint,'Part0',mad)
+				spx2(ec,'CFrame',CFrame.new(6000,500,600))
+			end
+		end
+	end
+	wait(0.5)
+	chr.HumanoidRootPart.CFrame = CFrame.new(6000,900000,600)
+	wait(0.1)
+	c["ServerControl"]:InvokeServer("Fly",{Flying=true})
+
+	local z = c:WaitForChild("EffectCloud")
+	wait()
+	setproperty(z.Mesh,'Parent',workspace)
+	wait()
+
+	setproperty(z,"Size",Vector3.new(1512, 16, 1512))
+	setproperty(z,"Color",Color3.fromRGB(31, 128, 29))
+	wait()
+	setproperty(z,"Velocity",Vector3.new(0,0,0))
+	wait()
+	setproperty(z,"Anchored",true)
+	setproperty(z,"Material",Enum.Material.Grass)
+	setproperty(z,"CanCollide",true)
+	local cf = CFrame.new(Vector3.new(601000,490,600))
+	setproperty(c.Handle,"CFrame",cf)
+	setproperty(z,"Name","Baseplate")
+	setproperty(z,'Parent',workspace)
+	wait(4)
+	chr:BreakJoints()
+
+end,"[spawn] - Makes everyone spawn in grass")
+setCommand("skybox", function(args)
+	local a = cloud()
+	function setProp(object,prop,val)
+		a["ServerControl"]:InvokeServer("SetProperty",{Value=val,Property=prop,Object=object})
+	end
+	wait(0.07)
+	a["ServerControl"]:InvokeServer("Fly",{Flying=true})
+	local z = a:WaitForChild("EffectCloud")
+	wait()
+	setProp(z.Mesh,"MeshId","rbxassetid://4839763905")
+	setProp(z.Mesh,"TextureId","rbxthumb://type=Asset&id="..args[1].."&w=420&h=420")
+	setProp(z,"Size",Vector3.new(8048, 8048, 8048))
+	setProp(z.Mesh,"Scale",Vector3.new(256, 256, 256))
+	setProp(z,"Anchored",true)
+	z:BreakJoints()
+	setProp(z,"CanCollide",false)
+	setProp(z,"Parent",workspace)
+end,"[id]") 
+setCommand("grabknifev3", function(args)
+	local player = game.Players.LocalPlayer
+	local rekt = {}
+	local paralyzed = false
+	local curpoint = nil
+	local curpart = nil
+	local finishnum = 1
+	local zombiemode = false
+	local zombies = {}
+	local lastgui = nil
+	local mouse = player:GetMouse()
+
+	function getplr(char)
+		local plr = nil
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Character == char then
+				plr = v
+			end
+		end
+		return plr
+	end
+
+	local me = player.Character
+	local point = me.HumanoidRootPart
+	local playergui = player.PlayerGui
+	local rightshoulderz = me.Torso["Right Shoulder"]:Clone()
+	local leftshoulderz = me.Torso["Left Shoulder"]:Clone()
+	local torsojoint = me.HumanoidRootPart["RootJoint"]:Clone()
+	local lefthipz = me.Torso["Left Hip"]:Clone()
+	local righthipz = me.Torso["Right Hip"]:Clone()
+	local mode = "kill"
+	local lerpz = false
+	local active = false
+	local acting = false
+	local hit = false
+	local canClick = true
+	local stabbing = false
+	local grabbing = false
+	local finishing = false
+	local kyssing = false
+	local canbackgroundmusic = true
+	local cancolorfilter = true
+	local spinboolean = false
+	local grabbed = nil
+	local doing = false
+	local rightshoulder = nil
+	local leftshoulder = nil
+	local headweld = nil
+	local knifeparts = {}
+	local usable = true
+	finishnum = 1
+
+	function notify(msg,forever)
+		local doit = coroutine.wrap(function()
+			local gui = Instance.new('ScreenGui',playergui)
+			gui.Name = "Notification"
+			local frame = Instance.new('Frame',gui)
+			frame.Position = UDim2.new(0,0,0,0)
+			frame.Size = UDim2.new(1,0,0.2,0)
+			frame.BackgroundTransparency = 1
+			local txt = Instance.new('TextLabel',frame)
+			txt.TextColor3 = Color3.new(255,255,255)
+			txt.TextStrokeColor3 = Color3.new(0, 0, 0)
+			txt.TextStrokeTransparency = 0
+			txt.BackgroundTransparency = 1
+			txt.Text = ""
+			txt.Size = UDim2.new(1,0,0.3,0)
+			txt.Position = UDim2.new(0,0,0.4,0)
+			txt.TextScaled = true
+			txt.Font = "Code"
+			txt.TextXAlignment = "Center"
+			local tap = Instance.new("Sound")
+			tap.Parent = gui
+			tap.SoundId = "rbxassetid://147982968"
+			tap.TimePosition = 0.1
+			local str = msg
+			local len = string.len(str)
+			for i=1,len do
+				txt.Text = string.sub(str,1,i)
+				pitche = math.random(20, 40)/10
+				tap.PlaybackSpeed = pitche
+				tap:Play()
+				wait(0.01)
+			end
+			if forever == false then
+				wait(1)
+				while txt.TextTransparency < 1 do
+					txt.TextTransparency = txt.TextTransparency + 0.1
+					txt.TextStrokeTransparency = txt.TextStrokeTransparency + 0.1
+					wait(0.001)
+				end
+				gui:Destroy()
+			end
+		end)
+		doit()
+	end
+	wait(0.5)
+	notify("PRESS [Z] TO EQUIP KNIFE || Created by mustardfoot and Tollonis",true)
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local CustomizeGui = Instance.new("Frame")
+	local Customize = Instance.new("TextLabel")
+	local ClosestColor = Instance.new("TextLabel")
+	local Line = Instance.new("TextLabel")
+	local Color = Instance.new("ImageLabel")
+	local Close = Instance.new("TextButton")
+	local RedHue = Instance.new("TextLabel")
+	local GreenHue = Instance.new("TextLabel")
+	local RedInput = Instance.new("TextBox")
+	local BlueHue = Instance.new("TextLabel")
+	local GreenInput = Instance.new("TextBox")
+	local TransInput = Instance.new("TextBox")
+	local BlueInput = Instance.new("TextBox")
+	local Message = Instance.new("TextLabel")
+	local Message2 = Instance.new("TextLabel")
+	local TrailTransparency = Instance.new("TextLabel")
+	local TrailInput = Instance.new("TextBox")
+	local MusicOption = Instance.new("TextButton")
+	local ScreenOption = Instance.new("TextButton")
+	local ScreenOptionTxt = Instance.new("TextLabel")
+	local MusicOptionTxt = Instance.new("TextLabel")
+
+	-- Properties
+
+	ScreenGui.Parent = playergui
+
+	CustomizeGui.Name = "CustomizeGui"
+	CustomizeGui.Parent = ScreenGui
+	CustomizeGui.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+	CustomizeGui.BackgroundTransparency = 0.5
+	CustomizeGui.BorderColor3 = Color3.new(0, 0, 0)
+	CustomizeGui.BorderSizePixel = 2
+	CustomizeGui.Position = UDim2.new(0, 0, 0.5, 0)
+	CustomizeGui.Size = UDim2.new(0.449999988, 0, 0.449999988, 0)
+
+	Customize.Name = "Customize"
+	Customize.Parent = CustomizeGui
+	Customize.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+	Customize.BackgroundTransparency = 0.75
+	Customize.BorderSizePixel = 0
+	Customize.Size = UDim2.new(1, 0, 0.200000003, 0)
+	Customize.FontSize = Enum.FontSize.Size28
+	Customize.Text = "ACCENT COLOR CUSTOMIZATION"
+	Customize.TextColor3 = Color3.new(1, 1, 1)
+	Customize.TextScaled = true
+	Customize.TextSize = 25
+	Customize.TextStrokeTransparency = 0.5
+	Customize.TextWrapped = true
+
+	ClosestColor.Name = "ClosestColor"
+	ClosestColor.Parent = CustomizeGui
+	ClosestColor.BackgroundColor3 = Color3.new(1, 1, 1)
+	ClosestColor.BackgroundTransparency = 1
+	ClosestColor.Position = UDim2.new(0, 0, 0.850000024, 0)
+	ClosestColor.Size = UDim2.new(1, 0, 0.150000006, 0)
+	ClosestColor.Font = Enum.Font.SourceSansLight
+	ClosestColor.FontSize = Enum.FontSize.Size32
+	ClosestColor.Text = "Your color is closest to Institutional White"
+	ClosestColor.TextColor3 = Color3.new(1, 1, 1)
+	ClosestColor.TextSize = 30
+	ClosestColor.TextStrokeTransparency = 0.5
+
+	Line.Name = "Line"
+	Line.Parent = CustomizeGui
+	Line.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+	Line.BackgroundTransparency = 0.5
+	Line.BorderColor3 = Color3.new(0, 0, 0)
+	Line.BorderSizePixel = 0
+	Line.Position = UDim2.new(0, 0, 0.200000003, 0)
+	Line.Size = UDim2.new(1, 0, 0.0299999993, 0)
+	Line.Font = Enum.Font.SourceSans
+	Line.FontSize = Enum.FontSize.Size14
+	Line.Text = " "
+	Line.TextSize = 14
+
+	Color.Name = "Color"
+	Color.Parent = CustomizeGui
+	Color.BackgroundColor3 = Color3.new(1, 1, 1)
+	Color.BorderSizePixel = 0
+	Color.Position = UDim2.new(0.699999988, 0, 0.419999987, 0)
+	Color.Size = UDim2.new(0.300000012, 0, 0.300000012, 0)
+	Color.SizeConstraint = Enum.SizeConstraint.RelativeYY
+
+	MusicOption.Parent = CustomizeGui
+	MusicOption.Name = "MusicOption"
+	MusicOption.BackgroundColor3 = Color3.new(0, 1, 0)
+	MusicOption.BorderSizePixel = 1
+	MusicOption.Position = UDim2.new(0.01, 0, -0.12, 0)
+	MusicOption.Size = UDim2.new(0.05, 0, 0.1, 0)
+	MusicOption.Text = ""
+	MusicOption.BackgroundTransparency = 0.5
+
+	ScreenOption.Parent = CustomizeGui
+	ScreenOption.Name = "ScreenOption"
+	ScreenOption.BackgroundColor3 = Color3.new(0, 1, 0)
+	ScreenOption.BorderSizePixel = 1
+	ScreenOption.Position = UDim2.new(0.01, 0, -0.23, 0)
+	ScreenOption.Size = UDim2.new(0.05, 0, 0.1, 0)
+	ScreenOption.Text = ""
+	ScreenOption.BackgroundTransparency = 0.5
+
+	ScreenOptionTxt.Name = "ScreenOptionTxt"
+	ScreenOptionTxt.Parent = CustomizeGui
+	ScreenOptionTxt.BackgroundColor3 = Color3.new(1, 1, 1)
+	ScreenOptionTxt.BackgroundTransparency = 1
+	ScreenOptionTxt.Position = UDim2.new(0.07, 0, -0.23, 0)
+	ScreenOptionTxt.Size = UDim2.new(1, 0, 0.07, 0)
+	ScreenOptionTxt.Font = Enum.Font.SourceSans
+	ScreenOptionTxt.FontSize = Enum.FontSize.Size24
+	ScreenOptionTxt.Text = "Psychopath Red Filter"
+	ScreenOptionTxt.TextColor3 = Color3.new(1, 1, 1)
+	ScreenOptionTxt.TextScaled = true
+	ScreenOptionTxt.TextSize = 20
+	ScreenOptionTxt.TextStrokeColor3 = Color3.new(0, 0, 0)
+	ScreenOptionTxt.TextStrokeTransparency = 0.5
+	ScreenOptionTxt.TextWrapped = true
+	ScreenOptionTxt.TextXAlignment = "Left"
+
+	MusicOptionTxt.Name = "MusicOptionTxt"
+	MusicOptionTxt.Parent = CustomizeGui
+	MusicOptionTxt.BackgroundColor3 = Color3.new(1, 1, 1)
+	MusicOptionTxt.BackgroundTransparency = 1
+	MusicOptionTxt.Position = UDim2.new(0.07, 0, -0.12, 0)
+	MusicOptionTxt.Size = UDim2.new(1, 0, 0.07, 0)
+	MusicOptionTxt.Font = Enum.Font.SourceSans
+	MusicOptionTxt.FontSize = Enum.FontSize.Size24
+	MusicOptionTxt.Text = "Psychopath Background Music"
+	MusicOptionTxt.TextColor3 = Color3.new(1, 1, 1)
+	MusicOptionTxt.TextScaled = true
+	MusicOptionTxt.TextSize = 20
+	MusicOptionTxt.TextStrokeColor3 = Color3.new(0, 0, 0)
+	MusicOptionTxt.TextStrokeTransparency = 0.5
+	MusicOptionTxt.TextWrapped = true
+	MusicOptionTxt.TextXAlignment = "Left"
+
+	Close.Name = "Close"
+	Close.Parent = CustomizeGui
+	Close.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+	Close.BackgroundTransparency = 0.5
+	Close.BorderColor3 = Color3.new(0, 0, 0)
+	Close.BorderSizePixel = 2
+	Close.Position = UDim2.new(1.005, 0, 0, 0)
+	Close.Size = UDim2.new(0.100000001, 0, 0.2, 0)
+	Close.Font = Enum.Font.SourceSans
+	Close.FontSize = Enum.FontSize.Size14
+	Close.Text = "X"
+	Close.TextColor3 = Color3.new(1, 1, 1)
+	Close.TextScaled = true
+	Close.TextSize = 14
+	Close.TextStrokeTransparency = 0
+	Close.TextWrapped = true
+
+	RedHue.Name = "RedHue"
+	RedHue.Parent = CustomizeGui
+	RedHue.BackgroundColor3 = Color3.new(1, 1, 1)
+	RedHue.BackgroundTransparency = 1
+	RedHue.Position = UDim2.new(0.100000001, 0, 0.400000006, 0)
+	RedHue.Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
+	RedHue.Font = Enum.Font.SourceSans
+	RedHue.FontSize = Enum.FontSize.Size24
+	RedHue.Text = "RED Hue Value: "
+	RedHue.TextColor3 = Color3.new(1, 1, 1)
+	RedHue.TextScaled = true
+	RedHue.TextSize = 20
+	RedHue.TextStrokeColor3 = Color3.new(1, 0, 0)
+	RedHue.TextStrokeTransparency = 0.75
+	RedHue.TextWrapped = true
+
+	GreenHue.Name = "GreenHue"
+	GreenHue.Parent = CustomizeGui
+	GreenHue.BackgroundColor3 = Color3.new(1, 1, 1)
+	GreenHue.BackgroundTransparency = 1
+	GreenHue.Position = UDim2.new(0.100000001, 0, 0.5, 0)
+	GreenHue.Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
+	GreenHue.Font = Enum.Font.SourceSans
+	GreenHue.FontSize = Enum.FontSize.Size24
+	GreenHue.Text = "GREEN Hue Value:"
+	GreenHue.TextColor3 = Color3.new(1, 1, 1)
+	GreenHue.TextScaled = true
+	GreenHue.TextSize = 20
+	GreenHue.TextStrokeColor3 = Color3.new(0, 1, 0)
+	GreenHue.TextStrokeTransparency = 0.75
+	GreenHue.TextWrapped = true
+
+	RedInput.Name = "RedInput"
+	RedInput.Parent = CustomizeGui
+	RedInput.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+	RedInput.BackgroundTransparency = 0.5
+	RedInput.BorderSizePixel = 0
+	RedInput.Position = UDim2.new(0.419999987, 0, 0.425000007, 0)
+	RedInput.Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
+	RedInput.Font = Enum.Font.SourceSans
+	RedInput.FontSize = Enum.FontSize.Size14
+	RedInput.Text = "255"
+	RedInput.TextColor3 = Color3.new(1, 1, 1)
+	RedInput.TextSize = 14
+	RedInput.TextStrokeTransparency = 0
+
+	BlueHue.Name = "BlueHue"
+	BlueHue.Parent = CustomizeGui
+	BlueHue.BackgroundColor3 = Color3.new(1, 1, 1)
+	BlueHue.BackgroundTransparency = 1
+	BlueHue.Position = UDim2.new(0.100000001, 0, 0.600000024, 0)
+	BlueHue.Size = UDim2.new(0.300000012, 0, 0.100000001, 0)
+	BlueHue.Font = Enum.Font.SourceSans
+	BlueHue.FontSize = Enum.FontSize.Size24
+	BlueHue.Text = "BLUE Hue Value:"
+	BlueHue.TextColor3 = Color3.new(1, 1, 1)
+	BlueHue.TextScaled = true
+	BlueHue.TextSize = 20
+	BlueHue.TextStrokeColor3 = Color3.new(0, 0, 1)
+	BlueHue.TextStrokeTransparency = 0.75
+	BlueHue.TextWrapped = true
+
+	TrailTransparency.Name = "TrailTransparency"
+	TrailTransparency.Parent = CustomizeGui
+	TrailTransparency.BackgroundColor3 = Color3.new(1, 1, 1)
+	TrailTransparency.BackgroundTransparency = 1
+	TrailTransparency.Position = UDim2.new(0.090000001, 0, 0.700000024, 0)
+	TrailTransparency.Size = UDim2.new(0.310000012, 0, 0.100000001, 0)
+	TrailTransparency.Font = Enum.Font.SourceSans
+	TrailTransparency.FontSize = Enum.FontSize.Size24
+	TrailTransparency.Text = "Trail Transparency:"
+	TrailTransparency.TextColor3 = Color3.new(1, 1, 1)
+	TrailTransparency.TextScaled = true
+	TrailTransparency.TextSize = 20
+	TrailTransparency.TextStrokeColor3 = Color3.new(0, 0, 0)
+	TrailTransparency.TextWrapped = true
+
+	GreenInput.Name = "GreenInput"
+	GreenInput.Parent = CustomizeGui
+	GreenInput.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+	GreenInput.BackgroundTransparency = 0.5
+	GreenInput.BorderSizePixel = 0
+	GreenInput.Position = UDim2.new(0.419999987, 0, 0.524999976, 0)
+	GreenInput.Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
+	GreenInput.Font = Enum.Font.SourceSans
+	GreenInput.FontSize = Enum.FontSize.Size14
+	GreenInput.Text = "255"
+	GreenInput.TextColor3 = Color3.new(1, 1, 1)
+	GreenInput.TextSize = 14
+	GreenInput.TextStrokeTransparency = 0
+
+	TransInput.Name = "TransInput"
+	TransInput.Parent = CustomizeGui
+	TransInput.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+	TransInput.BackgroundTransparency = 0.5
+	TransInput.BorderSizePixel = 0
+	TransInput.Position = UDim2.new(0.419999987, 0, 0.725000024, 0)
+	TransInput.Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
+	TransInput.Font = Enum.Font.SourceSans
+	TransInput.FontSize = Enum.FontSize.Size14
+	TransInput.Text = "50"
+	TransInput.TextColor3 = Color3.new(1, 1, 1)
+	TransInput.TextSize = 14
+	TransInput.TextStrokeTransparency = 0
+
+	BlueInput.Name = "BlueInput"
+	BlueInput.Parent = CustomizeGui
+	BlueInput.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+	BlueInput.BackgroundTransparency = 0.5
+	BlueInput.BorderSizePixel = 0
+	BlueInput.Position = UDim2.new(0.419999987, 0, 0.625, 0)
+	BlueInput.Size = UDim2.new(0.200000003, 0, 0.075000003, 0)
+	BlueInput.Font = Enum.Font.SourceSans
+	BlueInput.FontSize = Enum.FontSize.Size14
+	BlueInput.Text = "255"
+	BlueInput.TextColor3 = Color3.new(1, 1, 1)
+	BlueInput.TextSize = 14
+	BlueInput.TextStrokeTransparency = 0
+
+	Message.Name = "Message"
+	Message.Parent = CustomizeGui
+	Message.BackgroundColor3 = Color3.new(1, 1, 1)
+	Message.BackgroundTransparency = 1
+	Message.Position = UDim2.new(0, 0, 0.2500004, 0)
+	Message.Size = UDim2.new(1, 0, 0.100000006, 0)
+	Message.Font = Enum.Font.SourceSans
+	Message.FontSize = Enum.FontSize.Size18
+	Message.Text = "|| Inputs must be values ||"
+	Message.TextColor3 = Color3.new(1, 1, 1)
+	Message.TextScaled = true
+	Message.TextSize = 15
+	Message.TextStrokeTransparency = 0.75
+	Message.TextWrapped = true
+
+	local attun = Instance.new("Attachment", knife)
+	attun.Position = Vector3.new(0, 0.1, -1.75)
+	local atdos = Instance.new("Attachment", knife)
+	atdos.Position = Vector3.new(0, -0.1, 0.5)
+	local trail = Instance.new("Trail", knife)
+	trail.LightEmission = 0.5
+	trail.Attachment0 = attun
+	trail.Attachment1 = atdos
+	trail.Lifetime = 0.175
+	trail.MinLength = 0
+	trail.Enabled = false
+
+	function updatez()
+		local rc = tonumber(RedInput.Text)
+		local gc = tonumber(GreenInput.Text)
+		local bc = tonumber(BlueInput.Text)
+		local tcupd = tonumber(TransInput.Text)
+		if rc == nil then
+			rc = 0
+		end
+		if gc == nil then
+			gc = 0
+		end
+		if bc == nil then
+			bc = 0
+		end
+		if tcupd == nil then
+			tcupd = 0
+		end
+		local tc = tcupd/100
+		Color.BackgroundColor3 = Color3.fromRGB(rc,gc,bc)
+		ClosestColor.Text = "Your color is closest to "..tostring(BrickColor.new(Color3.fromRGB(rc,gc,bc)))
+		obj32.Color = Color3.fromRGB(rc,gc,bc)
+		obj33.Color = Color3.fromRGB(rc,gc,bc)
+		obj34.Color = Color3.fromRGB(rc,gc,bc)
+		obj35.Color = Color3.fromRGB(rc,gc,bc)
+		obj36.Color = Color3.fromRGB(rc,gc,bc)
+		obj37.Color = Color3.fromRGB(rc,gc,bc)
+		obj38.Color = Color3.fromRGB(rc,gc,bc)
+		trail.Color = ColorSequence.new(Color3.fromRGB(rc, gc, bc))
+		trail.Transparency = NumberSequence.new(tc)
+		TrailTransparency.TextStrokeTransparency = tc
+	end
+
+	RedInput.Changed:connect(function(val)
+		if val == "Text" and tonumber(RedInput.Text) then
+			RedInput.Text = tostring(tonumber(RedInput.Text))
+			if tonumber(RedInput.Text) > 255 then
+				RedInput.Text = '255'
+			end
+		elseif val == "Text" then
+			RedInput.Text = ""
+		end
+		updatez()
+	end)
+	GreenInput.Changed:connect(function(val)
+		if val == "Text" and tonumber(GreenInput.Text) then
+			GreenInput.Text = tostring(tonumber(GreenInput.Text))
+			if tonumber(GreenInput.Text) > 255 then
+				GreenInput.Text = '255'
+			end
+		elseif val == "Text" then
+			GreenInput.Text = ""
+		end
+		updatez()
+	end)
+	BlueInput.Changed:connect(function(val)
+		if val == "Text" and tonumber(BlueInput.Text) then
+			BlueInput.Text = tostring(tonumber(BlueInput.Text))
+			if tonumber(BlueInput.Text) > 255 then
+				BlueInput.Text = '255'
+			end
+		elseif val == "Text" then
+			BlueInput.Text = ""
+		end
+		updatez()
+	end)
+	TransInput.Changed:connect(function(val)
+		if val == "Text" and tonumber(TransInput.Text) then
+			TransInput.Text = tostring(tonumber(TransInput.Text))
+			if tonumber(TransInput.Text) > 100 then
+				TransInput.Text = '100'
+			end
+		elseif val == "Text" then
+			TransInput.Text = ""
+		end
+		updatez()
+	end)
+
+	Close.MouseButton1Click:connect(function()
+		if lerpz == false then
+			lerpz = true
+			if Close.Text ~= "+" then
+				CustomizeGui:TweenPosition(UDim2.new(-0.45,0,0.5,0,Enum.EasingDirection.Out,Enum.EasingStyle.Quint,2))
+				for i=1,10 do
+					Close.TextTransparency = i/10
+					Close.TextStrokeTransparency = i/10
+					wait(0.01)
+				end
+				Close.Text = "+"
+				for i=1,10 do
+					Close.TextTransparency = (10-i+1)/10
+					Close.TextStrokeTransparency = (10-i+1)/10
+					wait(0.01)
+				end
+				lerpz = false
+			else
+				CustomizeGui:TweenPosition(UDim2.new(0,0,0.5,0,Enum.EasingDirection.Out,Enum.EasingStyle.Quint,2))
+				for i=1,10 do
+					Close.TextTransparency = i/10
+					Close.TextStrokeTransparency = i/10
+					wait(0.01)
+				end
+				Close.Text = "X"
+				for i=1,10 do
+					Close.TextTransparency = (10-i+1)/10
+					Close.TextStrokeTransparency = (10-i+1)/10
+					wait(0.01)
+				end
+				lerpz = false
+			end
+		end
+	end)
+
+	MusicOption.MouseButton1Click:connect(function()
+		if canbackgroundmusic == true then
+			canbackgroundmusic = false
+			MusicOption.BackgroundColor3 = Color3.new(1, 0, 0)
+		else
+			canbackgroundmusic = true
+			MusicOption.BackgroundColor3 = Color3.new(0, 1, 0)
+		end
+	end)
+
+	ScreenOption.MouseButton1Click:connect(function()
+		if cancolorfilter == true then
+			cancolorfilter = false
+			ScreenOption.BackgroundColor3 = Color3.new(1, 0, 0)
+		else
+			cancolorfilter = true
+			ScreenOption.BackgroundColor3 = Color3.new(0, 1, 0)
+		end
+	end)
+
+	mouse.KeyDown:connect(function(key)
+		if usable == true then
+			if key == "z" then
+				if active == false and acting == false then
+					active = true
+					if playergui:FindFirstChild('Notification') then playergui.Notification:Destroy() end
+					notify("KNIFE EQUIPPED",false)
+					local plr = game.Players.LocalPlayer
+					local chr = plr.Character
+					local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+					local sc = c.ServerControl
+					local target = chr
+					function setproperty(object,property,value)
+						sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+					end
+					function fly(flying)
+						sc:InvokeServer("Fly",{Flying=flying})
+					end
+					c.Grip = CFrame.new(0.75,0,-0.2) * CFrame.Angles(math.rad(90),math.rad(180),math.rad(-90))
+					c.Parent = chr
+					c.LocalScript.Disabled = true
+					wait(0.1)
+					local animation = Instance.new("Animation")
+					local plr = game.Players.LocalPlayer
+					animation.AnimationId = "rbxassetid://94160581"
+					animTrack = plr.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(animation)
+					animTrack:Play()
+					wait()
+					setproperty(c.Handle.Mesh,"MeshId","rbxassetid://490893357")
+					setproperty(c.Handle.Mesh,"TextureId","rbxassetid://490893474")
+					setproperty(c.Handle.Mesh,"Scale",Vector3.new(.25,.25,.25))
+					function weld(part0,part1,c0,c1,selfparent)
+						fly(true)
+						local ec = c:WaitForChild("EffectCloud")
+						local rootjoint = ec:WaitForChild("Weld")
+						wait()
+						setproperty(rootjoint,"Parent",not selfparent and part1 or chr.Torso)
+						setproperty(rootjoint,"Part0",part0)
+						setproperty(rootjoint,"Part1",part1 or chr.Torso)
+						setproperty(rootjoint,"C0",c0 or CFrame.new(-5,5,0))
+						setproperty(rootjoint,"C1",c1 or CFrame.new(-0.5,-0.3,0))
+						return rootjoint
+					end
+
+					local anim = Instance.new("Animation")
+					anim.AnimationId = "rbxassetid://27432686"
+					local anim = chr.Humanoid:LoadAnimation(anim)
+					anim.Looped = false
+					local holding
+					c.Activated:connect(function() if not holding then anim:Play() else repeat wait() until type(holding) ~= "number"; setproperty(chr.Torso.Neck,"Part1",holding.Part0.Parent.Head) end end)
+					c.Handle.Touched:connect(function(part)
+						if not holding and anim.IsPlaying then
+							if part.Parent:FindFirstChild("HumanoidRootPart") then
+								anim.TimePosition = 0.5
+								anim:AdjustSpeed(0)
+								holding = true -- cuz weld yields
+								holding = weld(part.Parent.HumanoidRootPart,chr["Right Arm"],CFrame.new(1,0,0)*CFrame.Angles(math.rad(90),0,0))
+								game:GetService("Players").LocalPlayer.Character.PompousTheCloud.Parent = game:GetService("Players").LocalPlayer.Backpack
+								game:GetService("Players").LocalPlayer.Backpack.PompousTheCloud.Parent = game:GetService("Players").LocalPlayer.Character
+								wait(0.1)
+								game:GetService("Players").LocalPlayer.Character.PompousTheCloud.Grip = CFrame.new(0.5,0,-0.2) *CFrame.Angles(math.rad(10), math.rad(30), math.rad(-10))
+
+							end
+						end
+					end)
+				end
+			end
+		end
+	end)
+end,"GrabKnife V3")
+setCommand("sandplate",function()
+	-- badly made (like 7 lines more then needed cause i am lazyyyteyyyyyy same for every script basically which i added)
+	local plr = game.Players.LocalPlayer
+	local chr = plr.Character
+	local c = plr.Backpack:FindFirstChild("PompousTheCloud") or chr.PompousTheCloud
+	c.LocalScript.Disabled = true
+	local sc = c.ServerControl
+	function setproperty(object,property,value)
+		sc:InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function spx2(obj,prop,val)
+		task.spawn(setproperty,obj,prop,val)
+	end
+	function fly(flying)
+		sc:InvokeServer("Fly",{Flying=flying})
+	end
+	c.Parent = chr
+	spx2({chr.Humanoid,"MaxHealth",9e18},{chr.Humanoid,"Health",9e18})
+	wait()
+	wait()
+	chr.HumanoidRootPart.CFrame = CFrame.new(601000,30000000,600)
+	wait(0.072)
+	for i,mad in pairs(game:GetDescendants()) do
+		if mad:IsA"SpawnLocation" or mad.Name == "SpawnLocation" or mad.Name == "HumanoidRootPart" then
+			if c.Parent == chr then
+				fly(true)
+				local ec = c:WaitForChild("EffectCloud")
+				local joint = ec:WaitForChild("Weld")
+				wait(0.1)
+
+				spx2(joint,'Parent',chr)
+				chr.HumanoidRootPart.Velocity = Vector3.new(-1,100,-1)
+				spx2(joint,'Part0',mad)
+				spx2(ec,'CFrame',CFrame.new(601000,500,600))
+			end
+		end
+	end
+	wait(0.5)
+	chr.HumanoidRootPart.CFrame = CFrame.new(601000,90000000,600)
+	wait(0.1)
+	c["ServerControl"]:InvokeServer("Fly",{Flying=true})
+
+	local z = c:WaitForChild("EffectCloud")
+	wait()
+	setproperty(z.Mesh,'Parent',workspace)
+	wait()
+
+	setproperty(z,"Size",Vector3.new(512, 16, 512))
+	setproperty(z,"Color",Color3.fromRGB(128, 187, 219))
+	wait()
+	setproperty(z,"Velocity",Vector3.new(0,0,0))
+	wait()
+	setproperty(z,"Anchored",true)
+	setproperty(z,"Material",Enum.Material.Sand)
+	setproperty(z,"CanCollide",true)
+	local cf = CFrame.new(Vector3.new(601000,490,600))
+	setproperty(c.Handle,"CFrame",cf)
+	setproperty(z,"Name","Baseplate")
+	setproperty(z,'Parent',workspace)
+	wait(4)
+	chr:BreakJoints()
+end,"[spawn] - Makes everyone spawn in sand")
+setCommand("message",function(args)
+	if game.PlaceId ~= 662417684 then return end
+	local plr = game:GetService("Players").LocalPlayer
+	local chr = plr.Character
+	function chr() return plr.Character end
+	function c() return plr.Backpack:FindFirstChild("PompousTheCloud") or chr():FindFirstChild("PompousTheCloud") end
+	function sc() return c().ServerControl end
+	function fixasset(id) return string.format("rbxthumb://type=Asset&id=%d&w=420&h=420",id) end
+	function setproperty(object,property,value)
+		sc():InvokeServer("SetProperty",{Object=object,Value=value,Property=property})
+	end
+	function sp(obj,p,v)
+		task.spawn(setproperty,obj,p,v)
+	end
+	function spp(obj,p,v)
+		c().Parent = chr()
+		sp(obj,p,v)
+		c().Parent = plr.Backpack
+	end
+	function fly(flying)
+		return sc():InvokeServer("Fly",{Flying=flying})
+	end
+
+	local msg = table.concat(args," ")
+	local hab = plr.Backpack:FindFirstChild("HeartAirBalloon") or chr():FindFirstChild("HeartAirBalloon")
+	local gui = hab.Script.Gui
+	hab.Parent = chr()
+	spp(gui.Frame.Message,"Text",msg)
+	spp(gui.Frame.Message,"TextColor3",Color3.fromRGB(255,255,255))
+	spp(gui.Frame.Message,"Position",UDim2.fromScale(0,0))
+	spp(gui.Frame.Message,"Size",UDim2.fromScale(1,1))  
+	spp(gui.Frame.Message,"TextSize",36)
+	spp(gui.Frame,"Size",UDim2.fromScale(0.75,0.2))
+	spp(gui.Frame,"Position",UDim2.fromScale(0.125,0))
+	spp(gui.Frame,"Style",Enum.FrameStyle.DropShadow)
+	spp(gui,"Parent",game.StarterGui)
+	hab.Parent = plr.Backpack
+	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
+end,"[text] - puts a message onscreen")
+setCommand("crash", function(args)
+	local a = cloud()
+	function setProp(object,prop,val)
+		a["ServerControl"]:InvokeServer("SetProperty",{Value=val,Property=prop,Object=object})
+	end
+	setProp(a.Handle,"Size",Vector3.new(9e18,9e18,9e18))
+	setProp(a.Handle.Mesh,"Scale",Vector3.new(9e18,9e18,9e18))
+	a.ServerControl:InvokeServer("Fly",{Flying=true})
+end,"[server] - crashes the server can take time")
+
+setCommand("bighead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(1.25,2.5,2.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Brick})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+
+setCommand("boxhead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Brick})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("wedgehead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Wedge})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("spherehead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Sphere})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("prismhead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Prism})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("removehead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Pyramid})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("removehead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(3.25,3.5,3.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Pyramid})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("paperhead", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(1.25,1.5,0.01)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Brick})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Head})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - gives [plrs] big head.")
+setCommand("duck", function(args)
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	for _,target in pairs(targets) do
+		local c = cloud()
+		wait(0.07)
+		c.ServerControl:InvokeServer("Fly",{Flying=true})
+		local a = c:WaitForChild("EffectCloud")
+		wait()
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="TextureId",Value="rbxassetid://9419827"})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshId",Value="rbxassetid://9419831"})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(6,6,6)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Offset",Value=Vector3.new(0,0,1.5)})
+		c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Torso})
+		c.ServerControl:InvokeServer("Fly",{Flying=false})
+	end
+end, "[plrs] - makes [plrs] duck.")
+
+setCommand("fat", function(args)
+	local c = cloud()
+	local chr = lplr.Character
+	local targets = getPlayer(args[1])
+	local m = CharacterMesh
+	cloud({m,"MeshId",46345096},{m,"BodyPart",Enum.BodyPart.Torso})
+	wait(0.07)
+	c.ServerControl:InvokeServer("SetProperty",{Object=m,Property="Parent",Value=c.Handle})
+	pcall(function()
+		for _,target in pairs(targets) do
+			wait()
+			c.ServerControl:InvokeServer("Fly",{Flying=true})
+			local a = c:WaitForChild("EffectCloud")
+			wait()
+			c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Scale",Value=Vector3.new(2,4,5)})
+			c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="MeshType",Value=Enum.MeshType.Head})
+			c.ServerControl:InvokeServer("SetProperty",{Object=a.Mesh,Property="Parent",Value=target.Character.Torso})
+			c.ServerControl:InvokeServer("SetProperty",{Object=CharacterMesh,Property="Parent",Value=target.Character})
+			c.ServerControl:InvokeServer("Fly",{Flying=false})
+		end
+	end)
+end, "[plrs] - makes [plrs] fat.")
+setCommand("smoke", function(args)
+	local chr = lplr.Character
+	local c = cloud()
+	wait(0.05)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local z = c:WaitForChild("EffectCloud"):WaitForChild("Smoke")
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Opacity",Value=0.5})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Parent",Value=chr.HumanoidRootPart})
+end, "- Makes smoke come out of your character")
+setCommand("blood", function(args)
+	local chr = lplr.Character
+	local c = cloud()
+	wait(0.08)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local z = c:WaitForChild("EffectCloud"):WaitForChild("Smoke")
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Opacity",Value=1})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="RiseVelocity",Value=-2.5})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Color",Value=Color3.new(1,0,0)})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Parent",Value=chr.Head})
+end, "- Makes blood come out of your head")
+setCommand("rainbowsmoke", function(args)
+	local chr = lplr.Character
+	local c = cloud()
+	wait(0.08)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local z = c:WaitForChild("EffectCloud"):WaitForChild("Smoke")
+	wait(0.05)
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Opacity",Value=tonumber(args[2])})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="RiseVelocity",Value=2.5})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Size",Value=tonumber(args[1])})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Color",Value=Color3.new(1,0,0)})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Parent",Value=chr.Head})
+	for i = 0,math.huge,0.1 do wait(0.5)
+		c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Color",Value=Color3.fromHSV(i%1,1,1)})
+	end
+end, "[size] [opacity] - Makes rainbow smoke come out of your head")
+setCommand("cum",function()
+	local chr = lplr.Character
+	local c = cloud()
+	wait(0.08)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local z = c:WaitForChild("EffectCloud"):WaitForChild("Smoke")
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Opacity",Value=1})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="RiseVelocity",Value=-2.5})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Color",Value=Color3.new(255,255,255)})
+	c.ServerControl:InvokeServer("SetProperty",{Object=z,Property="Parent",Value=chr.HumanoidRootPart})
+end, "- Makes cum come out of your body")
+setCommand("kill", function(args)
+	local chr = lplr.Character
+	for _,target in pairs(getPlayer(args[1])) do
+		pcall(function()
+			cloud({chr.Torso.Neck,"Part1",target.Character.Head})
+		end)
+	end
+end, "[plr] - Kill [plr]")
+
+
+
+setCommand("bring", function(args)
+	local chr = lplr.Character
+	for _,target in pairs(getPlayer(args[1])) do
+		pcall(function()
+			cloud({chr.Torso["Left Shoulder"],"Part1",target.Character.Torso})
+		end)
+	end
+	pcall(function() cloud({chr.Torso["Left Shoulder"],"Part1",chr["Left Arm"]}) end)
+end, "[plr] - Bring [plr]")
+setCommand("fastrape", function(args)
+	local chr = lplr.Character
+	local target = getPlayer(args[1])[1]
+	local c = cloud()
+	wait(0.07)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local zaza = c:WaitForChild("EffectCloud"):WaitForChild("Weld")
+	chr.Animate.Disabled = true
+	for i,ZAZA in next, chr.Humanoid:GetPlayingAnimationTracks() do
+		ZAZA:stop()
+	end
+	wait()
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="Parent",Value=chr.HumanoidRootPart})
+	c.ServerControl:InvokeServer("SetProperty",{Object=chr.Torso["Left Shoulder"],Property="C0",Value=CFrame.new(-1,0.5,-1)*CFrame.Angles(math.rad(45),0,math.rad(22.5))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=chr.Torso["Right Shoulder"],Property="C0",Value=CFrame.new(1,0.5,-1)*CFrame.Angles(math.rad(45),0,-math.rad(22.5))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C0",Value=CFrame.new(0,-1.5,-2)*CFrame.Angles(math.rad(90),math.rad(180),math.rad(180))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C1",Value=CFrame.new(0,0,0)})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="Part1",Value=target.Character.HumanoidRootPart})
+	task.spawn(function()
+		for i = 0,math.huge,0.5 do task.wait(0.5)
+			c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C0",Value=CFrame.new(0,-1.5,-(2.5+(math.floor(i)==i and 0.5 or 0)))*CFrame.Angles(math.rad(90),math.rad(180),math.rad(180))})
+		end
+	end)
+end, "[plr] - Does [plr]")
+setCommand("rape", function(args)
+	local chr = lplr.Character
+	local target = getPlayer(args[1])[1]
+	local c = cloud()
+	wait(0.07)
+	c.ServerControl:InvokeServer("Fly",{Flying=true})
+	local zaza = c:WaitForChild("EffectCloud"):WaitForChild("Weld")
+	chr.Animate.Disabled = true
+	for i,ZAZA in next, chr.Humanoid:GetPlayingAnimationTracks() do
+		ZAZA:stop()
+	end
+	wait()
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="Parent",Value=chr.HumanoidRootPart})
+	c.ServerControl:InvokeServer("SetProperty",{Object=chr.Torso["Left Shoulder"],Property="C0",Value=CFrame.new(-1,0.5,-1)*CFrame.Angles(math.rad(45),0,math.rad(22.5))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=chr.Torso["Right Shoulder"],Property="C0",Value=CFrame.new(1,0.5,-1)*CFrame.Angles(math.rad(45),0,-math.rad(22.5))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C0",Value=CFrame.new(0,-1.5,-2)*CFrame.Angles(math.rad(90),math.rad(180),math.rad(180))})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C1",Value=CFrame.new(0,0,0)})
+	c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="Part1",Value=target.Character.HumanoidRootPart})
+	task.spawn(function()
+		for i = 0,math.huge,0.5 do task.wait(0.5)
+			c.ServerControl:InvokeServer("SetProperty",{Object=zaza,Property="C0",Value=CFrame.new(0,-1.5,-(1.5+(math.floor(i)==i and 0.5 or 0)))*CFrame.Angles(math.rad(90),math.rad(180),math.rad(180))})
+		end
+	end)
+end, "[plr] - Does [plr]")
+setCommand("getcloud",function()
+	repeat wait() until game.IsLoaded
+	if game.PlaceId == 662417684 then
+		repeat wait() until pcall(function()
+			return game.Players.LocalPlayer.Character
+		end)
+
+		repeat wait() until pcall(function()
+			return game.Players.LocalPlayer.Backpack
+		end)
+
+		wait(0.25)
+		local p = game:GetService("Players").LocalPlayer
+		local b = p.Backpack
+		repeat
+			game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer() task.wait() until
+		b:FindFirstChild("HeartAirBalloon") and b:FindFirstChild("PompousTheCloud")
+		local heart = b.HeartAirBalloon
+		local ptz = b.PompousTheCloud
+		ptz.Parent = p.Character
+		heart.Parent = p.Character
+		ptz.ServerControl:InvokeServer("SetProperty", {Object=heart,Property="Parent",Value=p.StarterGear})
+		task.wait()
+		ptz.ServerControl:InvokeServer("SetProperty", {Object=ptz,Property="Parent",Value=p.StarterGear})
+		p.Character:BreakJoints()
+	end
+end, "- Gives you a cloud")
+setCommand("jp", function(args)
+	lplr.Character.Humanoid.JumpPower = tonumber(args[1])
+end, "[num] - Changes your JumpPower")
+setCommand("hipheight", function(args)
+	lplr.Character.Humanoid.HipHeight = tonumber(args[1])
+end, "[num] - Changes your JumpHeight")
+setCommand("goto", function(args)
+	local target = getPlayer(args[1])[1]
+	if target then
+		lplr.Character:PivotTo(target.Character:GetPivot())
+	end
+end, "[plr] - Teleport to [plr]")
+setCommand("noclip", function() 
+	noclipC = runservice.Stepped:Connect(function()
+		if lplr.Character then
+			for i,v in pairs(lplr.Character:GetDescendants()) do
+				if hasprop(v,"CanCollide") and v.CanCollide == true then
+					v.CanCollide = false
+					print(v)
+				end
+			end
+		end
+	end)
+end, "- Self explainatory")
+setCommand("clip", function()
+	if noclipC then
+		noclipC:Disconnect()
+		noclipC = nil
+	end
+end, "- Disables noclip")
+setCommand("rj", function()
+	Services.TeleportService:Teleport(game.PlaceId, lplr)
+end, "- Rejoins the server")
+
+setCommand("view", function(args)
+	for i,v in pairs(getPlayer(args[1])) do
+		workspace.CurrentCamera.CameraSubject = v.Character.Humanoid
+	end
+end, "[plr] - Views the player")
+
+setCommand("unview", function()
+	workspace.CurrentCamera.CameraSubject = lplr.Character.Humanoid
+end, "- Stops viewing")
+
+setCommand("re", function()
+	--local c = lplr.Character lplr.Character = nil lplr.Character = c wait(plrs.RespawnTime-0.1) c:ClearAllChildren() local chr = lp.CharacterAdded:Wait() chr:WaitForChild("HumanoidRootPart") chr:WaitForChild("Head") wait() chr:PivotTo(c:GetPivot())
+	local cf = lplr.Character.HumanoidRootPart.CFrame
+	lplr.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Dead)
+	lplr.CharacterAdded:Wait()
+	for i = 0,10 do task.wait(0.05)
+		lplr.Character.HumanoidRootPart.CFrame = cf
+	end
+end, "- Reset's then tp's back")
+
+setCommand("ids", function()
+	print("Decals \n 1x1x1x1 decal id - 865518083 \n tubers93 decal id -7171256448 \n among us decal id - 9476795890 \n thomas the tank engine decal id - 10144229573 \n you are an idiot decal id -4616500111 \n john doe decal id - 954144496 \n welcome to hell decal id - 29135182 \n hell decal id - 10087634990 \n anonymous face decal id - 127476787 \n krystal team decal id - 408308384 - \n sky mesh - 456273617 \n better sky mesh (cube) - 4839763905 \n small ball mesh id - 4051945568 \n Songs\n hungarian dance song id - 1836282791 \n Classic song id - 1846458016 \n tubers93 audio - 9069609200 \n stop posting amongus audio - 6677157344 \n pro music - 6828176320 \n ok song - 1842727209 \n good song frfr - 1840962160 \n you are an idiot audio id -7266001792")
+end, "- some ids you can use")
+
+
+
+
+
+setCommand("cmds", function()
+	local a = "[Commands]\nVelocity Admin\n"
+	for i,v in pairs(cmds) do
+		a ..= i
+		if v.info then
+			a ..= " "..v.info
+		end
+		a ..= "\n"
+	end
+	print(a)
+end, "- Prints out all the commands")
+local function createInstance(className, properties, parent)
+	local i = Instance.new(className)
+
+	for name, val in pairs(properties or {}) do
+		i[name] = val
+	end
+	if parent then
+		i.Parent = parent
+	end
+
+	return i
+end
+
+local GUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local LogoHolder = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local Box = Instance.new("TextBox")
+local Line = Instance.new("TextLabel")
+local Commands = Instance.new("ScrollingFrame")
+local Logo = Instance.new("ImageLabel")
+local Corner = Instance.new("ImageLabel")
+local Corner_2 = Instance.new("ImageLabel")
+local Corner_3 = Instance.new("ImageLabel")
+local Corner_4 = Instance.new("ImageLabel")
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUI.ResetOnSpawn = false
+Frame.Parent = GUI
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.528701603, 0, 0.805340409, 0)
+Frame.Size = UDim2.new(0, 819, 0, 178)
+Frame.Active = true
+Frame.Draggable = true
+Top.Name = "Top"
+Top.Parent = Frame
+Top.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.0699450225, 0, 0.0223640706, 0)
+Top.Size = UDim2.new(0, 713, 0, 24)
+Top.Font = Enum.Font.SourceSansBold
+Top.Text = "Spigma: Command Bar"
+Top.TextColor3 = Color3.fromRGB(0, 0, 0)
+Top.TextScaled = true
+Top.TextSize = 17.000
+Top.TextWrapped = true
+Top.TextXAlignment = Enum.TextXAlignment.Left
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.968459725, 0, 0.022364242, 0)
+Close.Size = UDim2.new(0, 19, 0, 24)
+Close.ZIndex = 3
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 17.000
+Close.TextWrapped = true
+Close.MouseButton1Down:Connect(function()
+	GUI:Destroy()
+end)
+LogoHolder.Name = "LogoHolder"
+LogoHolder.Parent = Frame
+LogoHolder.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+LogoHolder.BorderSizePixel = 0
+LogoHolder.Position = UDim2.new(0.00767395971, 0, 0.022364242, 0)
+LogoHolder.Size = UDim2.new(0, 21, 0, 23)
+LogoHolder.Font = Enum.Font.SourceSans
+LogoHolder.Text = ""
+LogoHolder.TextColor3 = Color3.fromRGB(0, 0, 0)
+LogoHolder.TextSize = 14.000
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 0.500
+Execute.Position = UDim2.new(0.288923949, 0, 0.697139442, 0)
+Execute.Size = UDim2.new(0, 563, 0, 46)
+Execute.Font = Enum.Font.SourceSansBold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 25.000
+Execute.TextWrapped = true
+Box.Name = "Box"
+Box.Parent = Frame
+Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Box.BackgroundTransparency = 0.500
+Box.Position = UDim2.new(0.288923949, 0, 0.266224891, 0)
+Box.Size = UDim2.new(0, 563, 0, 54)
+Box.Font = Enum.Font.SourceSans
+Box.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+Box.PlaceholderText = "Enter a command here"
+Box.Text = ""
+Box.TextColor3 = Color3.fromRGB(0, 0, 0)
+Box.TextSize = 20.000
+Box.TextXAlignment = Enum.TextXAlignment.Left
+Execute.MouseButton1Down:Connect(function()
+	handleCommand(Box.Text:split(" "))
+end)
+execprefix = "]"
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+	if k:lower() == prefix then
+		Box:CaptureFocus()
+		wait()
+		Box.Text = ""
+	end
+end)
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+	if k:lower() == execprefix then
+		handleCommand(Box.Text:split(" "))
+	end
+end)
+Line.Name = "Line"
+Line.Parent = Frame
+Line.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.191521466, 0)
+Line.Size = UDim2.new(0, 819, 0, 5)
+Line.Font = Enum.Font.SourceSansBold
+Line.Text = ""
+Line.TextColor3 = Color3.fromRGB(0, 0, 0)
+Line.TextScaled = true
+Line.TextSize = 17.000
+Line.TextWrapped = true
+Line.TextXAlignment = Enum.TextXAlignment.Left
+Commands.Name = "Commands"
+Commands.Parent = Frame
+Commands.Active = true
+Commands.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Commands.BackgroundTransparency = 0.500
+Commands.Position = UDim2.new(0, 0, 0.225229323, 0)
+Commands.Size = UDim2.new(0, 230, 0, 138)
+Commands.CanvasSize = UDim2.new(0, 0, 8, 0)
+Commands.AutomaticCanvasSize = 2
+local c = 0
+for i,v in pairs(cmds) do
+	local TextLabel = Instance.new("TextLabel")
+	TextLabel.Parent = Commands
+	TextLabel.BackgroundColor3 = Color3.fromRGB(238, 238, 238)
+	TextLabel.BackgroundTransparency = 0.300
+	TextLabel.Size = UDim2.new(0, 217, 0, 23)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = i
+	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.TextSize = 15.000
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Position = UDim2.fromOffset(0,c*23)
+	c = c + 1
+end
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.00767395971, 0, 0.022364242, 0)
+Logo.Size = UDim2.new(0, 26, 0, 23)
+Logo.ZIndex = 3
+Logo.Image = "rbxthumb://type=Asset&id=10774209326&w=420&h=420"
+Corner.Name = "Corner"
+Corner.Parent = Frame
+Corner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner.BackgroundTransparency = 1.000
+Corner.Position = UDim2.new(0.0328682885, 0, 0.022364242, 0)
+Corner.Size = UDim2.new(0, 22, 0, 23)
+Corner.Image = "http://www.roblox.com/asset/?id=10568531663"
+Corner_2.Name = "Corner"
+Corner_2.Parent = Frame
+Corner_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_2.BackgroundTransparency = 1.000
+Corner_2.Position = UDim2.new(0.940518916, 0, 0.022364242, 0)
+Corner_2.Size = UDim2.new(0, 15, 0, 24)
+Corner_3.Name = "Corner"
+Corner_3.Parent = Frame
+Corner_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_3.BackgroundTransparency = 1.000
+Corner_3.Position = UDim2.new(0.0429340973, 0, 0.022364242, 0)
+Corner_3.Size = UDim2.new(0, 22, 0, 24)
+Corner_3.Image = "http://www.roblox.com/asset/?id=10568705537"
+Corner_4.Name = "Corner"
+Corner_4.Parent = Frame
+Corner_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Corner_4.BackgroundTransparency = 1.000
+Corner_4.Position = UDim2.new(0.953949928, 0, 0.022364242, 0)
+Corner_4.Size = UDim2.new(0, 12, 0, 24)
+Corner_4.Image = "http://www.roblox.com/asset/?id=10568769340"
