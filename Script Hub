@@ -1,0 +1,236 @@
+--[[
+Version : V1
+Update: nice
+]]
+
+repeat wait() until game:IsLoaded()
+wait()
+
+local Li = Instance.new("ScreenGui")
+local ScriptHub = Instance.new("Frame")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local TextButton_8 = Instance.new("TextButton")
+
+--Properties:
+
+Li.Name = "Li"
+Li.Parent = game:GetService("CoreGui")
+Li.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Li.DisplayOrder = 999
+Li.ResetOnSpawn = false
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Li
+ScriptHub.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptHub.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+ScriptHub.BorderColor3 = Color3.fromRGB(245, 245, 245)
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Draggable = true
+ScriptHub.Position = UDim2.new(0.15126051, 134, 0.569848657, -156)
+ScriptHub.Selectable = true
+ScriptHub.Size = UDim2.new(0, 500, 0, 32)
+ScriptHub.Visible = false
+
+TextButton_6.Parent = ScriptHub
+TextButton_6.AnchorPoint = Vector2.new(1, 0)
+TextButton_6.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+TextButton_6.BorderColor3 = Color3.fromRGB(245, 245, 245)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(1.09000003, -90, 0, 0)
+TextButton_6.Size = UDim2.new(0, 45, 1, 0)
+TextButton_6.AutoButtonColor = false
+TextButton_6.Font = Enum.Font.Arial
+TextButton_6.Text = "–"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 25.000
+
+TextButton_7.Parent = ScriptHub
+TextButton_7.AnchorPoint = Vector2.new(1, 0)
+TextButton_7.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+TextButton_7.BorderColor3 = Color3.fromRGB(245, 245, 245)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(1, 0, 0, 0)
+TextButton_7.Size = UDim2.new(0, 45, 1, 0)
+TextButton_7.AutoButtonColor = false
+TextButton_7.Font = Enum.Font.Arial
+TextButton_7.Text = "X"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 18.000
+
+TextLabel_3.Parent = ScriptHub
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 42, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 0, 1, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Script Hub"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 18.000
+
+Frame_4.Parent = ScriptHub
+Frame_4.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Frame_4.BorderColor3 = Color3.fromRGB(235, 235, 235)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 1, 0)
+Frame_4.Size = UDim2.new(1, 0, 0, 250)
+
+UIGridLayout.Parent = Frame_4
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0.170000002, -10, 0.291999996, -5)
+
+TextButton_8.Parent = Frame_4
+TextButton_8.BackgroundColor3 = Color3.fromRGB(226, 226, 226)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0, 7, 0, 5)
+TextButton_8.Size = UDim2.new(0.170000002, -10, 0.292000115, -5)
+TextButton_8.Font = Enum.Font.SourceSansBold
+TextButton_8.Text = "ExampleScript"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 18.000
+TextButton_8.TextWrapped = true
+
+-- Scripts:
+
+local function NEVXYT_fake_script() -- TextButton_3.LocalScript 
+    local script = Instance.new('LocalScript', TextButton_3)
+
+    script.Parent.MouseButton1Click:Connect(function()
+        script.Parent.Parent.Visible = false
+        script.Parent.Parent.Position = script.Parent.Parent.Parent.ScriptHub.Position
+        script.Parent.Parent.Parent.ScriptHub.Visible = true
+    end)
+end
+coroutine.wrap(NEVXYT_fake_script)()
+local function UWZNZI_fake_script() -- TextButton_6.LocalScript 
+    local script = Instance.new('LocalScript', TextButton_6)
+
+    bool = false
+    
+    script.Parent.MouseButton1Click:Connect(function()
+        if bool == false then
+            bool = true
+            script.Parent.Parent.Frame.Visible = false
+        else
+            bool = false
+            script.Parent.Parent.Frame.Visible = true
+        end 
+    end)
+end
+coroutine.wrap(UWZNZI_fake_script)()
+local function MCWA_fake_script() -- TextButton_7.LocalScript 
+    local script = Instance.new('LocalScript', TextButton_7)
+
+    script.Parent.MouseButton1Click:Connect(function()
+        script.Parent.Parent.Parent:Destroy()
+    end)
+end
+coroutine.wrap(MCWA_fake_script)()
+local function RPTMX_fake_script() -- ScriptHub.Dragify 
+    local script = Instance.new('LocalScript', ScriptHub)
+
+    Executor.Active = true
+    Executor.Draggable = true
+end
+coroutine.wrap(RPTMX_fake_script)()
+local function CreateScript(name,callback)
+   local NewButton = Instance.new("TextButton")
+   NewButton.Name = name
+   NewButton.Parent = Frame_4
+   NewButton.BackgroundColor3 = Color3.fromRGB(226, 226, 226)
+   NewButton.BorderSizePixel = 0
+   NewButton.Position = UDim2.new(0, 7, 0, 5)
+   NewButton.Size = UDim2.new(0.170000002, -10, 0.292000115, -5)
+   NewButton.Font = Enum.Font.SourceSansBold
+   NewButton.Text = name
+   NewButton.TextColor3 = Color3.fromRGB(0,0,0)
+   NewButton.TextSize = 18.000
+   NewButton.TextWrapped = true
+   NewButton.MouseButton1Click:Connect(callback)
+end
+function GetObjects(id)
+    loadstring(game:GetObjects("rbxassetid://"..id.."")[1].Source)()
+end
+function LoadString(link)
+   loadstring(game:HttpGet(link))() 
+end
+
+TextButton_8:Destroy()
+
+-- Scripts:
+CreateScript("4nn1 GUI",function()
+    LoadString("https://pastebin.com/raw/9sxf7TVz")
+end)
+CreateScript("c00lgui (needs kohls admin or btools)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimagined")
+end)
+CreateScript("IY Admin SS",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/IY%20Admin")
+end)
+CreateScript("k00pgui (needs btools)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui")
+end)
+CreateScript("Ro-Xploit 6.0 (needs btools)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/Ro-Xploit")
+end)
+CreateScript("MML Admin (needs hd admin)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/mml%20admin")
+end)
+CreateScript("MML Admin (needs cloud)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/mml%20admin%20cloud")
+end)
+CreateScript("Btools (og)",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/btools%20old")
+end)
+CreateScript("Btools (old)",function()
+    LoadString("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/FE%20BTools%20V3.Lua")
+end)
+CreateScript("Btools (new)",function()
+    LoadString("https://raw.githubusercontent.com/rouxhaver/scripts-3/main/fe%20btools%20V5.lua")
+end)
+CreateScript("Reset",function()
+    local lp = game:GetService("Players").LocalPlayer
+    local cr = lp.Character
+    cr.Humanoid.Health = 0
+end)
+CreateScript("4nn1 Gui",function()
+    LoadString("https://pastebin.com/raw/9sxf7TVz")
+end)
+CreateScript("Dex",function()
+    LoadString("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua")
+end)
+CreateScript("LazyHub",function()
+   LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/lazy%20hub")
+end)
+CreateScript("Infinite Yield",function()
+    LoadString("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+end)
+CreateScript("Daycare Peels",function()
+    LoadString("https://pastebin.com/raw/1JvL5K3F")
+end)
+
+CreateScript("Spigma Admin (cloud)", function()
+   LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/spigma") 
+end)
+CreateScript("Rejoin",function()
+    local Asset = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+    local text = Asset.Name
+    local Msg = Instance.new("Message",workspace)
+    local TeleportService = game:GetService("TeleportService")
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    Msg.Text = "Rejoining "..text
+    TeleportService:Teleport(game.PlaceId, LocalPlayer)
+end)
+CreateScript("RetroHub",function()
+    LoadString("https://paste.bingner.com/paste/84sz2/raw")
+end)
+CreateScript("PsyHub",function()
+    GetObjects(3042778022)
+end)
+CreateScript("R6",function()
+    LoadString("https://raw.githubusercontent.com/rusello25/scripts/main/R6")
+end)
