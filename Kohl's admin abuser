@@ -1,0 +1,605 @@
+-- Instances:
+
+local Kohls = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Aspect = Instance.new("UIAspectRatioConstraint")
+local Topbar = Instance.new("Frame")
+local Close = Instance.new("ImageButton")
+local Aspect_2 = Instance.new("UIAspectRatioConstraint")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Aspect_3 = Instance.new("UIAspectRatioConstraint")
+local UIListLayout = Instance.new("UIListLayout")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local command = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local PlayerInfo = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local Welcome = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Aspect_4 = Instance.new("UIAspectRatioConstraint")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Actions = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Bans = Instance.new("TextButton")
+local Frame_6 = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local TextLabel_2 = Instance.new("TextLabel")
+local Bans_2 = Instance.new("TextButton")
+local Frame_7 = Instance.new("Frame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local TextLabel_3 = Instance.new("TextLabel")
+local Bans_3 = Instance.new("TextButton")
+local Frame_8 = Instance.new("Frame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local TextLabel_4 = Instance.new("TextLabel")
+local Bans_4 = Instance.new("TextButton")
+local Frame_9 = Instance.new("Frame")
+local UIListLayout_7 = Instance.new("UIListLayout")
+local TextLabel_5 = Instance.new("TextLabel")
+local func = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local exe = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local exefun = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local inject = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+Kohls.Name = "Kohls"
+Kohls.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Kohls.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Kohls.ResetOnSpawn = false
+
+Frame.Parent = Kohls
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, 0, 0.449999988, 0)
+Frame.Size = UDim2.new(0.5, 0, 0.550000012, 0)
+
+Aspect.Name = "Aspect"
+Aspect.Parent = Frame
+Aspect.AspectRatio = 1.600
+
+Topbar.Name = "Topbar"
+Topbar.Parent = Frame
+Topbar.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Topbar.BackgroundTransparency = 1.000
+Topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Topbar.BorderSizePixel = 0
+Topbar.Position = UDim2.new(0, 0, 0.0250000004, 0)
+Topbar.Size = UDim2.new(1, 0, 0.129999995, 0)
+Topbar.ZIndex = 2
+
+Close.Name = "Close"
+Close.Parent = Topbar
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.LayoutOrder = 5
+Close.Size = UDim2.new(0.0549999997, 0, 0.683000028, 0)
+Close.AutoButtonColor = false
+Close.Image = "rbxassetid://10152135063"
+Close.ImageColor3 = Color3.fromRGB(208, 208, 208)
+Close.ImageTransparency = 0.400
+
+Aspect_2.Name = "Aspect"
+Aspect_2.Parent = Close
+
+Frame_2.Parent = Topbar
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.LayoutOrder = 4
+Frame_2.Position = UDim2.new(0.293811202, 0, 2.45185703e-07, 0)
+Frame_2.Size = UDim2.new(0.60729003, 0, 0.99999994, 0)
+
+Frame_3.Parent = Topbar
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.LayoutOrder = 2
+Frame_3.Position = UDim2.new(0.10092061, 0, 0, 0)
+Frame_3.Size = UDim2.new(0.0174226593, 0, 0.99999994, 0)
+
+Frame_4.Parent = Topbar
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0.0454639159, 0, 0.99999994, 0)
+
+TextLabel.Parent = Topbar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.LayoutOrder = 3
+TextLabel.Size = UDim2.new(0, 0, 0.949999988, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Kohl's Admin Abuser"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+
+ImageLabel.Parent = Topbar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.LayoutOrder = 1
+ImageLabel.Size = UDim2.new(0.0554566942, 0, 0.682712853, 0)
+ImageLabel.Image = "rbxassetid://12348119032"
+
+Aspect_3.Name = "Aspect"
+Aspect_3.Parent = ImageLabel
+
+UIListLayout.Parent = Topbar
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 0, -3.77634386e-08, 0)
+ImageLabel_2.Size = UDim2.new(1, 0, 1.1138438, 0)
+ImageLabel_2.Image = "rbxassetid://12162975974"
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(208, 208, 208)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(18, 18, 18)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Rotation = 90
+UIGradient.Parent = ImageLabel_2
+
+UICorner.CornerRadius = UDim.new(0.0149999997, 0)
+UICorner.Parent = Frame
+
+command.Name = "command"
+command.Parent = Frame
+command.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+command.BorderColor3 = Color3.fromRGB(0, 0, 0)
+command.BorderSizePixel = 0
+command.Position = UDim2.new(0.112915702, 0, 0.881051898, 0)
+command.Size = UDim2.new(0, 245, 0, 38)
+command.Font = Enum.Font.SourceSansBold
+command.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+command.PlaceholderText = "Command Here"
+command.Text = ""
+command.TextColor3 = Color3.fromRGB(255, 255, 255)
+command.TextSize = 20.000
+
+UICorner_2.CornerRadius = UDim.new(1, 9)
+UICorner_2.Parent = command
+
+PlayerInfo.Name = "PlayerInfo"
+PlayerInfo.Parent = Frame
+PlayerInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerInfo.BackgroundTransparency = 1.000
+PlayerInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerInfo.BorderSizePixel = 0
+PlayerInfo.Position = UDim2.new(0.0438144319, 0, 0.235051543, 0)
+PlayerInfo.Size = UDim2.new(0.936126232, 0, 0.254639179, 0)
+PlayerInfo.ZIndex = 2
+
+Frame_5.Parent = PlayerInfo
+Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_5.BackgroundTransparency = 1.000
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.LayoutOrder = 3
+Frame_5.Size = UDim2.new(0, 0, 0.800000012, 0)
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Frame_5
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.LayoutOrder = 1
+Welcome.Position = UDim2.new(0, 0, 0.150000006, 0)
+Welcome.Font = Enum.Font.SourceSansBold
+Welcome.Text = "Welcome,"
+Welcome.TextColor3 = Color3.fromRGB(227, 227, 227)
+Welcome.TextSize = 18.000
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame_5
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.BorderSizePixel = 0
+PlayerName.LayoutOrder = 1
+PlayerName.Position = UDim2.new(0, 0, 0.5, 0)
+PlayerName.Font = Enum.Font.SourceSansBold
+PlayerName.Text = "OnlyTwentyCharacters"
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 20.000
+
+ImageLabel_3.Parent = PlayerInfo
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.LayoutOrder = 1
+ImageLabel_3.Position = UDim2.new(4.20101216e-08, 0, 0.336900473, 0)
+ImageLabel_3.Size = UDim2.new(0.171090141, 0, 1.00636184, 0)
+ImageLabel_3.Image = "rbxassetid://7992557358"
+
+Aspect_4.Name = "Aspect"
+Aspect_4.Parent = ImageLabel_3
+
+UIListLayout_2.Parent = PlayerInfo
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Actions.Name = "Actions"
+Actions.Parent = Frame
+Actions.Active = true
+Actions.AnchorPoint = Vector2.new(0.5, 0)
+Actions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Actions.BackgroundTransparency = 1.000
+Actions.BorderColor3 = Color3.fromRGB(162, 162, 162)
+Actions.BorderSizePixel = 0
+Actions.Position = UDim2.new(0.501024723, 0, 0.578999996, 0)
+Actions.Size = UDim2.new(0.952950418, 0, 0.261000007, 0)
+
+UIListLayout_3.Parent = Actions
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0.0399999991, 0)
+
+Bans.Name = "Bans"
+Bans.Parent = Actions
+Bans.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Bans.BackgroundTransparency = 1.000
+Bans.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bans.BorderSizePixel = 0
+Bans.LayoutOrder = 1
+Bans.Position = UDim2.new(4.95348935e-08, 0, 0, 0)
+Bans.Size = UDim2.new(0.300000012, 0, 0.0115347803, 0)
+Bans.Font = Enum.Font.SourceSans
+Bans.Text = ""
+Bans.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bans.TextSize = 14.000
+
+Frame_6.Parent = Bans
+Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_6.BackgroundTransparency = 1.000
+Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderSizePixel = 0
+Frame_6.LayoutOrder = 2
+Frame_6.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+UIListLayout_4.Parent = Bans
+UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_2.Parent = Bans
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.LayoutOrder = 3
+TextLabel_2.Size = UDim2.new(0, 0, 0.850000024, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = ";cmds"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 30.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Bans_2.Name = "Bans"
+Bans_2.Parent = Actions
+Bans_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Bans_2.BackgroundTransparency = 1.000
+Bans_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bans_2.BorderSizePixel = 0
+Bans_2.LayoutOrder = 1
+Bans_2.Position = UDim2.new(4.95348935e-08, 0, 0, 0)
+Bans_2.Size = UDim2.new(0.300000012, 0, 0.0115347803, 0)
+Bans_2.Font = Enum.Font.SourceSans
+Bans_2.Text = ""
+Bans_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bans_2.TextSize = 14.000
+
+Frame_7.Parent = Bans_2
+Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_7.BackgroundTransparency = 1.000
+Frame_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.BorderSizePixel = 0
+Frame_7.LayoutOrder = 2
+Frame_7.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+UIListLayout_5.Parent = Bans_2
+UIListLayout_5.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_3.Parent = Bans_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.LayoutOrder = 3
+TextLabel_3.Size = UDim2.new(0, 0, 0.850000024, 0)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = ";avatar"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 30.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Bans_3.Name = "Bans"
+Bans_3.Parent = Actions
+Bans_3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Bans_3.BackgroundTransparency = 1.000
+Bans_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bans_3.BorderSizePixel = 0
+Bans_3.LayoutOrder = 1
+Bans_3.Position = UDim2.new(4.95348935e-08, 0, 0, 0)
+Bans_3.Size = UDim2.new(0.300000012, 0, 0.0115347803, 0)
+Bans_3.Font = Enum.Font.SourceSans
+Bans_3.Text = " "
+Bans_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bans_3.TextSize = 14.000
+
+Frame_8.Parent = Bans_3
+Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_8.BackgroundTransparency = 1.000
+Frame_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_8.BorderSizePixel = 0
+Frame_8.LayoutOrder = 2
+Frame_8.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+UIListLayout_6.Parent = Bans_3
+UIListLayout_6.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_4.Parent = Bans_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.LayoutOrder = 3
+TextLabel_4.Size = UDim2.new(0, 0, 0.850000024, 0)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = ";cape"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 30.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Bans_4.Name = "Bans"
+Bans_4.Parent = Actions
+Bans_4.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Bans_4.BackgroundTransparency = 1.000
+Bans_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bans_4.BorderSizePixel = 0
+Bans_4.LayoutOrder = 1
+Bans_4.Position = UDim2.new(4.95348935e-08, 0, 0, 0)
+Bans_4.Size = UDim2.new(0.300000012, 0, 0.0115347803, 0)
+Bans_4.Font = Enum.Font.SourceSans
+Bans_4.Text = " "
+Bans_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bans_4.TextSize = 14.000
+
+Frame_9.Parent = Bans_4
+Frame_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_9.BackgroundTransparency = 1.000
+Frame_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_9.BorderSizePixel = 0
+Frame_9.LayoutOrder = 2
+Frame_9.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+UIListLayout_7.Parent = Bans_4
+UIListLayout_7.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_5.Parent = Bans_4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.LayoutOrder = 3
+TextLabel_5.Size = UDim2.new(0, 0, 0.850000024, 0)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = ";particle"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+func.Name = "func"
+func.Parent = Frame
+func.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+func.BorderColor3 = Color3.fromRGB(0, 0, 0)
+func.BorderSizePixel = 0
+func.Position = UDim2.new(0.507347226, 0, 0.881051898, 0)
+func.Size = UDim2.new(0, 245, 0, 38)
+func.Font = Enum.Font.SourceSansBold
+func.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+func.PlaceholderText = "Function Here"
+func.Text = ""
+func.TextColor3 = Color3.fromRGB(255, 255, 255)
+func.TextSize = 20.000
+
+UICorner_3.CornerRadius = UDim.new(1, 9)
+UICorner_3.Parent = func
+
+exe.Name = "exe"
+exe.Parent = Frame
+exe.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+exe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exe.BorderSizePixel = 0
+exe.Position = UDim2.new(0.117556073, 0, 0.992420793, 0)
+exe.Size = UDim2.new(0, 242, 0, 34)
+exe.Font = Enum.Font.SourceSansBold
+exe.Text = "Execute"
+exe.TextColor3 = Color3.fromRGB(255, 255, 255)
+exe.TextSize = 20.000
+
+UICorner_4.CornerRadius = UDim.new(1, 9)
+UICorner_4.Parent = exe
+
+exefun.Name = "exefun"
+exefun.Parent = Frame
+exefun.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+exefun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exefun.BorderSizePixel = 0
+exefun.Position = UDim2.new(0.507347226, 0, 0.992420793, 0)
+exefun.Size = UDim2.new(0, 245, 0, 34)
+exefun.Font = Enum.Font.SourceSansBold
+exefun.Text = "Execute"
+exefun.TextColor3 = Color3.fromRGB(255, 255, 255)
+exefun.TextSize = 20.000
+
+UICorner_5.CornerRadius = UDim.new(1, 9)
+UICorner_5.Parent = exefun
+
+inject.Name = "inject"
+inject.Parent = Frame
+inject.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+inject.BorderColor3 = Color3.fromRGB(0, 0, 0)
+inject.BorderSizePixel = 0
+inject.Position = UDim2.new(0.202629536, 0, 0.438051134, 0)
+inject.Size = UDim2.new(0, 175, 0, 34)
+inject.Font = Enum.Font.SourceSansBold
+inject.Text = "Inject"
+inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+inject.TextSize = 20.000
+
+UICorner_6.CornerRadius = UDim.new(1, 9)
+UICorner_6.Parent = inject
+
+-- Scripts:
+
+local function RWHD_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(RWHD_fake_script)()
+local function DZBGKOM_fake_script() -- PlayerName.LocalScript 
+	local script = Instance.new('LocalScript', PlayerName)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(DZBGKOM_fake_script)()
+local function IAZDITK_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local kholsmodule = loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/Kohl's%20Module"))()
+	local execmdbutton = script.Parent["exe"]
+	local exefunbutton = script.Parent["exefun"]
+	local injectbutton = script.Parent.inject
+	local func = script.Parent.func
+	local cmd = script.Parent.command
+	
+	injectbutton.MouseButton1Click:connect(function()
+		kholsmodule:inject()
+	end)
+	
+	execmdbutton.MouseButton1Click:connect(function()
+		kholsmodule:runcmd(cmd)
+	end)
+	
+	exefunbutton.MouseButton1Click:connect(function()
+		if cmd.Text == "avatar normal" then
+			kholsmodule:avatar("normal")
+		elseif cmd.Text == "avatar sky" then
+			kholsmodule:avatar("sky")
+		elseif cmd.Text == "avatar grass" then
+			kholsmodule:avatar("grass")
+		elseif cmd.Text == "avatar tix" then
+			kholsmodule:avatar("tix")
+		elseif cmd.Text == "avatar antlers" then
+			kholsmodule:avatar("antlers")
+		elseif cmd.Text == "cape normal" then
+			kholsmodule:cape("normal")
+		elseif cmd.Text == "cape bypassinian" then
+			kholsmodule:cape("bypassinian")
+		elseif cmd.Text == "cape vetrex" then
+			kholsmodule:cape("vetrex")
+		elseif cmd.Text == "cape c00lkidd" then
+			kholsmodule:runcmd("cape me red 433517917")
+		elseif cmd.Text == "particle c00lkidd" then
+			kholsmodule:runcmd("particle me 433517917")
+		elseif cmd.Text == "particle grass" then
+			kholsmodule:runcmd("particle me 70665424")
+		elseif cmd.Text == "particle tix" then
+			kholsmodule:runcmd("particle me 963894159")
+		elseif cmd.Text == "unparticle" then
+			kholsmodule:runcmd("unparticle")
+		end
+	end)
+end
+coroutine.wrap(IAZDITK_fake_script)()
+local function QHAVT_fake_script() -- Frame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(QHAVT_fake_script)()
