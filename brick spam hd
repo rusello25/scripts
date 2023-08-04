@@ -1,0 +1,320 @@
+-- Gui to Lua
+-- Version: 3.3
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local Toogle = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Toogle_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(52, 80, 91)
+Frame.BackgroundTransparency = 0.250
+Frame.BorderSizePixel = 3
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.808669567, -193, 0.750553906, -121)
+Frame.Size = UDim2.new(0, 208, 0, 131)
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Draggable = true
+Credits.Position = UDim2.new(0.0192308426, 0, 0.0946408212, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.Highway
+Credits.Text = "By Kosovo"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+
+Toogle.Name = "Toogle"
+Toogle.Parent = Frame
+Toogle.Active = false
+Toogle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toogle.BackgroundTransparency = 0.540
+Toogle.Draggable = true
+Toogle.Position = UDim2.new(0.0480769202, 0, 0.475588828, 0)
+Toogle.Size = UDim2.new(0, 88, 0, 50)
+Toogle.Font = Enum.Font.SourceSans
+Toogle.Text = "Netless 1 Run first"
+Toogle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toogle.TextSize = 14.000
+Toogle.MouseButton1Down:connect(function()
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+game:GetService("RunService").Heartbeat:connect(function()
+v.Velocity = Vector3.new(0,35.05,0)
+wait(0.5)
+end)
+end
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notification";
+	Text = "Netless activated";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 16;
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(47, 100, 135)
+TextLabel.Draggable = true
+TextLabel.Size = UDim2.new(0, 208, 0, 13)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Brickspam Fixer V1.1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Toogle_2.Name = "Toogle"
+Toogle_2.Parent = Frame
+Toogle_2.Active = false
+Toogle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toogle_2.BackgroundTransparency = 0.540
+Toogle_2.Draggable = true
+Toogle_2.Position = UDim2.new(0.519230783, 0, 0.475588828, 0)
+Toogle_2.Size = UDim2.new(0, 88, 0, 50)
+Toogle_2.Font = Enum.Font.SourceSans
+Toogle_2.Text = "Netless 2 causes lag so it can fix the brickspam"
+Toogle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toogle_2.TextScaled = true
+Toogle_2.TextSize = 14.000
+Toogle_2.TextWrapped = true
+Toogle_2.MouseButton1Down:connect(function()
+while true do
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+    game:GetService("RunService").Heartbeat:connect(function()
+    v.Velocity = Vector3.new(-30,0,0)
+    end)
+    end
+end
+wait()
+end
+end)
+
+-- Scripts:
+
+local function RRNKT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.05
+	end
+end
+coroutine.wrap(RRNKT_fake_script)()
+local function QSWIYCU_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(QSWIYCU_fake_script)()
+
+wait()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local Toogle = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Amount = Instance.new("TextBox")
+local Toogle_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(52, 80, 91)
+Frame.BackgroundTransparency = 0.250
+Frame.BorderSizePixel = 3
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.808669567, -251, 0.750553906, -78)
+Frame.Size = UDim2.new(0, 208, 0, 131)
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Draggable = true
+Credits.Position = UDim2.new(0.0192308426, 0, 0.0946408212, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.Highway
+Credits.Text = "By Kosovo"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+
+Toogle.Name = "Toogle"
+Toogle.Parent = Frame
+Toogle.Active = false
+Toogle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toogle.BackgroundTransparency = 0.540
+Toogle.Draggable = true
+Toogle.Position = UDim2.new(0.0480769239, 0, 0.422153622, 0)
+Toogle.Size = UDim2.new(0, 88, 0, 35)
+Toogle.Font = Enum.Font.SourceSans
+Toogle.Text = "Start Spam"
+Toogle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toogle.TextSize = 14.000
+Toogle.MouseButton1Down:connect(function()
+	for i = 1, Amount.Text do -- The amount of blocks you want to make!
+print("Currently making block " .. i .. "...")
+while wait() do
+loadstring(game:HttpGet("https://paste.website/p/f352bff3-3a13-4f9a-9b6c-b6ae37b5e6f3.txt"))()
+end
+end
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(47, 100, 135)
+TextLabel.Draggable = true
+TextLabel.Size = UDim2.new(0, 208, 0, 13)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "HD Admin brickspam"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Amount.Name = "Amount"
+Amount.Parent = Frame
+Amount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Amount.BackgroundTransparency = 0.540
+Amount.Draggable = true
+Amount.Position = UDim2.new(0.052884616, 0, 0.786259532, 0)
+Amount.Size = UDim2.new(0, 188, 0, 21)
+Amount.Font = Enum.Font.SourceSans
+Amount.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+Amount.PlaceholderText = "Amount"
+Amount.Text = ""
+Amount.TextColor3 = Color3.fromRGB(0, 0, 0)
+Amount.TextSize = 14.000
+Amount.TextWrapped = true
+
+Toogle_2.Name = "Toogle"
+Toogle_2.Parent = Frame
+Toogle_2.Active = false
+Toogle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toogle_2.BackgroundTransparency = 0.540
+Toogle_2.Draggable = true
+Toogle_2.Position = UDim2.new(0.576923072, 0, 0.422153622, 0)
+Toogle_2.Size = UDim2.new(0, 80, 0, 36)
+Toogle_2.Font = Enum.Font.SourceSans
+Toogle_2.Text = "Press this before brickspam"
+Toogle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toogle_2.TextScaled = true
+Toogle_2.TextSize = 14.000
+Toogle_2.TextWrapped = true
+Toogle_2.MouseButton1Down:connect(function()
+while true do
+        game.Players:Chat("/e :hat me 15857936")
+wait()
+end
+end)
+
+-- Scripts:
+
+local function OJCA_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local dragToggle
+	local dragInput
+	local dragSpeed
+	local dragStart
+	local dragPos
+	local startPos
+	
+	function dragify(Frame)
+	    dragToggle = nil
+	    dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    dragPos = nil
+	    local function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(OJCA_fake_script)()
