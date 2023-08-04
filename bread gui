@@ -1,0 +1,349 @@
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Hey nerd";
+ Text = "This only works on the babies noob so thats it daycare hax coming soon - Kosovo";
+ Icon = "";
+ Duration = 5;
+ Callback = NotificationBindable;
+})
+
+
+BreadGUI = Instance.new("ScreenGui")
+Frame = Instance.new("Frame")
+Frame_2 = Instance.new("Frame")
+GearShop = Instance.new("TextButton")
+ALLg = Instance.new("TextButton")
+Potion = Instance.new("TextButton")
+block = Instance.new("TextButton")
+creeper = Instance.new("TextButton")
+fly = Instance.new("TextButton")
+Title = Instance.new("TextLabel")
+Close = Instance.new("TextButton")
+info = Instance.new("TextButton")
+TextLabel = Instance.new("TextLabel")
+
+BreadGUI.Name = "Bread GUI"
+BreadGUI.Parent = game.CoreGui
+
+Frame.Parent = BreadGUI
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Frame.Draggable = true
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.572080314, 0, 0.173913047, 0)
+Frame.Size = UDim2.new(0, 325, 0, 281)
+
+Frame_2.Parent = Frame
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Frame_2.BorderSizePixel = 5
+Frame_2.Position = UDim2.new(0.0433155298, 0, 0.0442096889, 0)
+Frame_2.Size = UDim2.new(0, 296, 0, 256)
+
+GearShop.Name = "Gear Shop"
+GearShop.Parent = Frame_2
+GearShop.BackgroundColor3 = Color3.new(1, 1, 1)
+GearShop.BackgroundTransparency = 0.69999998807907
+GearShop.BorderSizePixel = 5
+GearShop.Position = UDim2.new(0.0540540516, 0, 0.300396889, 0)
+GearShop.Size = UDim2.new(0, 126, 0, 45)
+GearShop.Font = Enum.Font.Code
+GearShop.FontSize = Enum.FontSize.Size14
+GearShop.Text = "Kill all"
+GearShop.TextColor3 = Color3.new(1, 1, 1)
+GearShop.TextSize = 14
+GearShop.MouseButton1Down:connect(function()
+game.workspace.Gravity = 0
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-586, 30, 510, 1, 0, -1, -0, 1, 0, 1, -0, 1)
+wait()
+for i,v in pairs(game.Players:GetPlayers()) do
+local args = {
+    [1] = v,
+    [2] = "Boy"
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(unpack(args))
+wait(0.5)
+local args = {
+    [1] = v.Name
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_DropBaby:FireServer(unpack(args))
+
+end
+end)
+
+ALLg.Name = "ALLg"
+ALLg.Parent = Frame_2
+ALLg.BackgroundColor3 = Color3.new(1, 1, 1)
+ALLg.BackgroundTransparency = 0.69999998807907
+ALLg.BorderSizePixel = 5
+ALLg.Position = UDim2.new(0.0540540516, 0, 0.538515568, 0)
+ALLg.Size = UDim2.new(0, 126, 0, 45)
+ALLg.Font = Enum.Font.Code
+ALLg.FontSize = Enum.FontSize.Size14
+ALLg.Text = "Bang all"
+ALLg.TextColor3 = Color3.new(1, 1, 1)
+ALLg.TextSize = 14
+ALLg.MouseButton1Down:connect(function()
+		for i,v in next, game:GetService("Players"):GetPlayers() do
+	
+			game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Boy")
+			game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Girl")
+		end
+	
+		local A=Instance.new'Animation'
+		A.AnimationId='rbxassetid://148840371'
+		local P=game:GetService'Players'.LocalPlayer
+		local C=P.Character or P.CharacterAdded:Wait()
+		local H=C:WaitForChild'Humanoid':LoadAnimation(A)
+		H:Play()
+		H:AdjustSpeed(12.5)
+	
+		game.Players.LocalPlayer.Character.Humanoid.HipHeight = -0.35
+end)
+
+Potion.Name = "Potion"
+Potion.Parent = Frame_2
+Potion.BackgroundColor3 = Color3.new(1, 1, 1)
+Potion.BackgroundTransparency = 0.69999998807907
+Potion.BorderSizePixel = 5
+Potion.Position = UDim2.new(0.527027011, 0, 0.300396889, 0)
+Potion.Size = UDim2.new(0, 126, 0, 45)
+Potion.Font = Enum.Font.Code
+Potion.FontSize = Enum.FontSize.Size14
+Potion.Text = "Bring all"
+Potion.TextColor3 = Color3.new(1, 1, 1)
+Potion.TextSize = 14
+Potion.MouseButton1Down:connect(function()
+for i,v in pairs(game.Players:GetPlayers()) do
+local args = {
+    [1] = v,
+    [2] = "Boy"
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(unpack(args))
+wait(0.5)
+local args = {
+    [1] = v.Name
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_DropBaby:FireServer(unpack(args))
+
+end
+end)
+
+block.Name = "block"
+block.Parent = Frame_2
+block.BackgroundColor3 = Color3.new(1, 1, 1)
+block.BackgroundTransparency = 0.69999998807907
+block.BorderSizePixel = 5
+block.Position = UDim2.new(0.527027011, 0, 0.538515449, 0)
+block.Size = UDim2.new(0, 126, 0, 45)
+block.Font = Enum.Font.Code
+block.FontSize = Enum.FontSize.Size14
+block.Text = "Fling all"
+block.TextColor3 = Color3.new(1, 1, 1)
+block.TextSize = 14
+block.MouseButton1Down:connect(function()
+for i,v in next, game:GetService("Players"):GetPlayers() do
+	
+			game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Boy")
+			game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Girl")
+		end
+		local h = game.Players.LocalPlayer.Character.Humanoid:Clone()
+		local plr = game.Players.LocalPlayer.Character
+		local CF = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		local lp = game.Players.LocalPlayer
+	
+		h.Parent = game.Players.LocalPlayer.Character
+		h.Name = "Hum"
+	
+		local bambam = Instance.new("BodyThrust")
+		bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+		bambam.Force = Vector3.new(9e9,0,9e9)
+		bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+end)
+
+creeper.Name = "creeper"
+creeper.Parent = Frame_2
+creeper.BackgroundColor3 = Color3.new(1, 1, 1)
+creeper.BackgroundTransparency = 0.69999998807907
+creeper.BorderSizePixel = 5
+creeper.Position = UDim2.new(0.0540540516, 0, 0.778518558, 0)
+creeper.Size = UDim2.new(0, 126, 0, 45)
+creeper.Font = Enum.Font.Code
+creeper.FontSize = Enum.FontSize.Size14
+creeper.Text = "Brickspam"
+creeper.TextColor3 = Color3.new(1, 1, 1)
+creeper.TextSize = 14
+creeper.MouseButton1Down:connect(function()
+for i = 1,5 do
+			for i,v in next, game:GetService("Players"):GetPlayers() do
+	
+				game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Boy")
+				game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(v,"Girl")
+			end
+		end
+end)
+
+fly.Name = "fly"
+fly.Parent = Frame_2
+fly.BackgroundColor3 = Color3.new(1, 1, 1)
+fly.BackgroundTransparency = 0.69999998807907
+fly.BorderSizePixel = 5
+fly.Position = UDim2.new(0.527027011, 0, 0.778518438, 0)
+fly.Size = UDim2.new(0, 126, 0, 45)
+fly.Font = Enum.Font.Code
+fly.FontSize = Enum.FontSize.Size14
+fly.Text = "Box all"
+fly.TextColor3 = Color3.new(1, 1, 1)
+fly.TextSize = 14
+fly.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-617, -30, 108, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait()
+for i,v in pairs(game.Players:GetPlayers()) do
+local args = {
+    [1] = v,
+    [2] = "Boy"
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_PickUpBaby:FireServer(unpack(args))
+wait(0.5)
+local args = {
+    [1] = v.Name
+}
+
+game:GetService("ReplicatedStorage").Storage.Folder_Events.Event_DropBaby:FireServer(unpack(args))
+
+end
+end)
+
+Title.Name = "Title"
+Title.Parent = Frame_2
+Title.Active = true
+Title.BackgroundColor3 = Color3.new(0.819608, 0.427451, 0.2)
+Title.BorderSizePixel = 3
+Title.Size = UDim2.new(0, 296, 0, 50)
+Title.Font = Enum.Font.Antique
+Title.FontSize = Enum.FontSize.Size14
+Title.Text = "Bread 🍞"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Frame_2
+Close.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+Close.BorderSizePixel = 5
+Close.Position = UDim2.new(0.89864862, 0, 0, 0)
+Close.Size = UDim2.new(0, 30, 0, 23)
+Close.Font = Enum.Font.Code
+Close.FontSize = Enum.FontSize.Size14
+Close.Text = "X"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+info.Name = "info"
+info.Parent = Frame_2
+info.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+info.BorderSizePixel = 5
+info.Position = UDim2.new(-5.96046448e-08, 0, 0, 0)
+info.Size = UDim2.new(0, 30, 0, 23)
+info.Font = Enum.Font.Code
+info.FontSize = Enum.FontSize.Size14
+info.Text = "?"
+info.TextColor3 = Color3.new(1, 1, 1)
+info.TextScaled = true
+info.TextSize = 14
+info.TextWrapped = true
+
+TextLabel.Parent = Frame_2
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.new(1, 0.0588235, 0.2)
+TextLabel.BackgroundTransparency = 0.5
+TextLabel.BorderSizePixel = 5
+TextLabel.Position = UDim2.new(0.0540540554, 0, 0.3046875, 0)
+TextLabel.Size = UDim2.new(0, 266, 0, 164)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.FontSize = Enum.FontSize.Size14
+TextLabel.Text = "Made By Kosovo#3784"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextStrokeColor3 = Color3.new(0, 1, 0.0666667)
+TextLabel.TextStrokeTransparency = 0.5
+TextLabel.TextWrapped = true
+
+-- Scripts
+
+info.MouseButton1Click:connect(function()
+	TextLabel.Visible = true
+	wait(0.5)
+	TextLabel.TextTransparency = 0.1
+	TextLabel.BackgroundColor3 = Color3.new(0.180392, 0.427451, 1)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.2
+	TextLabel.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.3
+	TextLabel.BackgroundColor3 = Color3.new(0.180392, 0.427451, 1)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.4
+	TextLabel.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+	wait(0.5)
+	TextLabel.TextTransparency = 0.5
+	TextLabel.BackgroundColor3 = Color3.new(0.180392, 0.427451, 1)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.6
+	TextLabel.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.7
+	TextLabel.BackgroundColor3 = Color3.new(0.180392, 0.427451, 1)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.8
+	TextLabel.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+	wait(0.2)
+	TextLabel.TextTransparency = 0.9
+	TextLabel.BackgroundColor3 = Color3.new(0.180392, 0.427451, 1)
+	wait(0.2)
+	TextLabel.TextTransparency = 1
+	TextLabel.BackgroundColor3 = Color3.new(0.87451, 0.301961, 0.109804)
+	TextLabel.Visible = false
+end)
+
+Close.MouseButton1Click:connect(function()
+	wait(0.3)
+	ALLg.Visible = false
+	wait(0.3)
+	Close.Visible = false
+	wait(0.3)
+	GearShop.Visible = false
+	wait(0.3)
+	Potion.Visible = false
+	wait(0.3)
+	block.Visible = false
+	wait(0.3)
+	creeper.Visible = false
+	wait(0.3)
+	fly.Visible = false
+	wait(0.3)
+	info.Visible = false
+	wait(0.3)
+	TextLabel.Visible = false	
+	wait(0.3)
+	Title.Visible = false
+	wait(0.3)
+	Frame_2.Visible = false
+	wait(0.3)
+	Frame.Visible = false
+	wait(0.5)
+	BreadGUI:Destroy()
+end)
