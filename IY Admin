@@ -11562,6 +11562,614 @@ addcmd('fling',{},function(args, speaker)
 	until flinging == false
 end)
 
+addcmd('harked',{},function(args, speaker)
+	local message = Instance.new("Message")
+		message.Parent = game.Workspace
+		message.Text = "btools's name can be edited in settings if different than the regular name"
+		wait(3)
+		message:Destroy()
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+		local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
+	
+		local function get_f3x()
+			local lp = game:GetService('Players').LocalPlayer
+			if lp.Character:FindFirstChild(btools) then
+				return lp.Character:FindFirstChild(btools)
+			elseif lp.Backpack:FindFirstChild(btools) then
+				return lp.Backpack:FindFirstChild(btools)
+			end
+			return nil
+		end
+	
+		local function make_request(args)
+			local f3x = get_f3x()
+			if f3x == nil then
+				notify('Couldnt find F3X tool')
+				return
+			end
+	
+			f3x.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))  
+		end
+	
+		local click_del = nil
+		local unanchor = nil
+		local loopkill = {}
+	
+		local function on_childadded(child)
+			task.wait()
+			if game:GetService('Players'):GetPlayerFromCharacter(child) ~= nil and table.find(loopkill, child.Name) then
+				local head = child:WaitForChild('Head')
+				make_request({
+					[1] = 'Remove';
+					[2] = {
+						head;
+					};
+				})
+			end
+		end
+	
+		game:GetService('Workspace').ChildAdded:Connect(on_childadded)
+	
+		local main = Instance.new("ScreenGui")
+		local top = Instance.new("Frame")
+		local back = Instance.new("Frame")
+		local kill = Instance.new("TextButton")
+		local thaw = Instance.new("TextButton")
+		local top_2 = Instance.new("TextLabel")
+		local unthaw = Instance.new("TextButton")
+		local credits = Instance.new("TextLabel")
+		local nolimbs = Instance.new("TextButton")
+		local sink = Instance.new("TextButton")
+		local nuke = Instance.new("TextButton")
+		local kick = Instance.new("TextButton")
+		local target = Instance.new("TextBox")
+		local queue = Instance.new("TextButton")
+		local burn = Instance.new("TextButton")
+	
+		--Properties:
+		main.Name = "main"
+		main.Parent = game:GetService("CoreGui")
+	
+		top.Name = "top"
+		top.Parent = main
+		top.Draggable = true
+		top.Active = true
+		top.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+		top.BackgroundTransparency = 0.30000001192093
+		top.BorderColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+		top.Position = UDim2.new(0.612145662, 0, 0.311965823, 0)
+		top.Size = UDim2.new(0, 291, 0, 30)
+	
+		back.Name = "back"
+		back.Parent = top
+		back.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+		back.BackgroundTransparency = 0.30000001192093
+		back.BorderColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+		back.BorderSizePixel = 0
+		back.Position = UDim2.new(-0.00343642617, 0, 1, 0)
+		back.Size = UDim2.new(0, 293, 0, 293)
+	
+		kill.Name = "kill"
+		kill.Parent = top
+		kill.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		kill.BackgroundTransparency = 0.5
+		kill.BorderSizePixel = 0
+		kill.Position = UDim2.new(0.0206185561, 0, 1.76666665, 0)
+		kill.Size = UDim2.new(0, 134, 0, 40)
+		kill.Font = Enum.Font.SourceSansLight
+		kill.Text = "Kill"
+		kill.TextColor3 = Color3.new(1, 1, 1)
+		kill.TextSize = 23
+	
+		thaw.Name = "thaw"
+		thaw.Parent = top
+		thaw.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		thaw.BackgroundTransparency = 0.5
+		thaw.BorderSizePixel = 0
+		thaw.Position = UDim2.new(0.525773168, 0, 1.76666665, 0)
+		thaw.Size = UDim2.new(0, 131, 0, 40)
+		thaw.Font = Enum.Font.SourceSansLight
+		thaw.Text = "Thaw"
+		thaw.TextColor3 = Color3.new(1, 1, 1)
+		thaw.TextSize = 23
+	
+		top_2.Name = "top"
+		top_2.Parent = top
+		top_2.BackgroundColor3 = Color3.new(1, 1, 1)
+		top_2.BackgroundTransparency = 1
+		top_2.Position = UDim2.new(0.154639184, 0, -0.333333343, 0)
+		top_2.Size = UDim2.new(0, 200, 0, 50)
+		top_2.Font = Enum.Font.SourceSansLight
+		top_2.Text = "Harked"
+		top_2.TextColor3 = Color3.new(1, 1, 1)
+		top_2.TextSize = 45
+	
+		unthaw.Name = "unthaw"
+		unthaw.Parent = top
+		unthaw.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		unthaw.BackgroundTransparency = 0.5
+		unthaw.BorderSizePixel = 0
+		unthaw.Position = UDim2.new(0.0206185561, 0, 3.56217241, 0)
+		unthaw.Size = UDim2.new(0, 134, 0, 40)
+		unthaw.Font = Enum.Font.SourceSansLight
+		unthaw.Text = "Unthaw"
+		unthaw.TextColor3 = Color3.new(1, 1, 1)
+		unthaw.TextSize = 23
+	
+		credits.Name = "credits"
+		credits.Parent = top
+		credits.BackgroundColor3 = Color3.new(1, 1, 1)
+		credits.BackgroundTransparency = 1
+		credits.Position = UDim2.new(0, 0, 1, 0)
+		credits.Size = UDim2.new(0, 291, 0, 23)
+		credits.Font = Enum.Font.SourceSansLight
+		credits.Text = "only works if you have btools"
+		credits.TextColor3 = Color3.new(1, 1, 1)
+		credits.TextSize = 17
+		credits.TextWrapped = true
+	
+		nolimbs.Name = "nolimbs"
+		nolimbs.Parent = top
+		nolimbs.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		nolimbs.BackgroundTransparency = 0.5
+		nolimbs.BorderSizePixel = 0
+		nolimbs.Position = UDim2.new(0.0206185561, 0, 5.39550591, 0)
+		nolimbs.Size = UDim2.new(0, 134, 0, 40)
+		nolimbs.Font = Enum.Font.SourceSansLight
+		nolimbs.Text = "NoLimbs"
+		nolimbs.TextColor3 = Color3.new(1, 1, 1)
+		nolimbs.TextSize = 23
+	
+		sink.Name = "sink"
+		sink.Parent = top
+		sink.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		sink.BackgroundTransparency = 0.5
+		sink.BorderSizePixel = 0
+		sink.Position = UDim2.new(0.525773168, 0, 5.39550591, 0)
+		sink.Size = UDim2.new(0, 131, 0, 40)
+		sink.Font = Enum.Font.SourceSansLight
+		sink.Text = "Sink"
+		sink.TextColor3 = Color3.new(1, 1, 1)
+		sink.TextSize = 23
+	
+		nuke.Name = "nuke"
+		nuke.Parent = top
+		nuke.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		nuke.BackgroundTransparency = 0.5
+		nuke.BorderSizePixel = 0
+		nuke.Position = UDim2.new(0.525773168, 0, 7.1955061, 0)
+		nuke.Size = UDim2.new(0, 131, 0, 40)
+		nuke.Font = Enum.Font.SourceSansLight
+		nuke.Text = "Nuke"
+		nuke.TextColor3 = Color3.new(1, 1, 1)
+		nuke.TextSize = 23
+	
+		kick.Name = "kick"
+		kick.Parent = top
+		kick.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		kick.BackgroundTransparency = 0.5
+		kick.BorderSizePixel = 0
+		kick.Position = UDim2.new(0.0206185561, 0, 7.1955061, 0)
+		kick.Size = UDim2.new(0, 134, 0, 40)
+		kick.Font = Enum.Font.SourceSansLight
+		kick.Text = "Kick"
+		kick.TextColor3 = Color3.new(1, 1, 1)
+		kick.TextSize = 23
+	
+		target.Name = "target"
+		target.Parent = top
+		target.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		target.BackgroundTransparency = 0.40000000596046
+		target.Position = UDim2.new(0.0206185561, 0, 8.86666584, 0)
+		target.Size = UDim2.new(0, 278, 0, 33)
+		target.Font = Enum.Font.SourceSans
+		target.Text = ""
+		target.TextColor3 = Color3.new(1, 1, 1)
+		target.TextSize = 23
+	
+		queue.Name = "queue"
+		queue.Parent = top
+		queue.BackgroundColor3 = Color3.new(1, 1, 1)
+		queue.BackgroundTransparency = 1
+		queue.Position = UDim2.new(0.15463917, 0, 10.0333328, 0)
+		queue.Size = UDim2.new(0, 201, 0, 23)
+		queue.Font = Enum.Font.SourceSans
+		queue.Text = "Ban"
+		queue.TextColor3 = Color3.new(1, 0, 0.0156863)
+		queue.TextSize = 20
+		queue.TextWrapped = true
+	
+		burn.Name = "burn"
+		burn.Parent = top
+		burn.BackgroundColor3 = Color3.new(0.67451, 0.67451, 0.67451)
+		burn.BackgroundTransparency = 0.5
+		burn.BorderSizePixel = 0
+		burn.Position = UDim2.new(0.525773168, 0, 3.56217265, 0)
+		burn.Size = UDim2.new(0, 131, 0, 40)
+		burn.Font = Enum.Font.SourceSansLight
+		burn.Text = "Burn"
+		burn.TextColor3 = Color3.new(1, 1, 1)
+		burn.TextSize = 23
+	
+		-- RUSELLO25'S WORK --
+	
+		kill.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('Head') then
+						local head = char.Head
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('Head') then
+						local head = char.Head
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		thaw.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = true
+								}
+							}
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = true
+								}
+							}
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		unthaw.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = false
+								}
+							}
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local hrp = char.HumanoidRootPart
+						make_request({
+							[1] = "SyncAnchor",
+							[2] = {
+								[1] = {
+									["Part"] = hrp,
+									["Anchored"] = false
+								}
+							}
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		burn.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char then
+						for _, part in pairs(char:GetDescendants()) do
+							if part:IsA('BasePart') then
+								make_request({
+									[1] = "CreateDecorations",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["DecorationType"] = "Fire"
+										}
+									}
+								})
+								make_request({
+									[1] = "SyncColor",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["Color"] = Color3.fromRGB(0, 0, 0),
+											["UnionColoring"] = true
+										}
+									}
+								})
+								task.spawn(function()
+									if part.Name ~= 'Head' and part.Name ~= 'LowerTorso' and part.Name ~= 'UpperTorso' and part.Name ~= 'Torso' then
+										task.wait(math.random(20, 70)/10)
+										make_request({
+											[1] = 'Remove';
+											[2] = {
+												part;
+											};
+										})
+									end
+								end)
+							end
+						end
+					end
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char then
+						for _, part in pairs(char:GetDescendants()) do
+							if part:IsA('BasePart') then
+								make_request({
+									[1] = "CreateDecorations",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["DecorationType"] = "Fire"
+										}
+									}
+								})
+								make_request({
+									[1] = "SyncColor",
+									[2] = {
+										[1] = {
+											["Part"] = part,
+											["Color"] = Color3.fromRGB(0, 0, 0),
+											["UnionColoring"] = true
+										}
+									}
+								})
+								task.spawn(function()
+									if part.Name ~= 'Head' and part.Name ~= 'LowerTorso' and part.Name ~= 'UpperTorso' and part.Name ~= 'Torso' then
+										task.wait(math.random(20, 70)/10)
+										make_request({
+											[1] = 'Remove';
+											[2] = {
+												part;
+											};
+										}) else
+										print("nibba who this")
+									end
+								end)
+							end
+						end
+					end
+				end
+			end
+		end)
+	
+		nolimbs.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('Right Arm') then
+						local head = char["Right Arm"]
+						local head2 = char["Left Arm"]
+						local head3 = char["Right Leg"]
+						local head4 = char["Left Leg"]
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head, head2, head3, head4;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('Right Arm') then
+						local head = char["Right Arm"]
+						local head2 = char["Left Arm"]
+						local head3 = char["Right Leg"]
+						local head4 = char["Left Leg"]
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head, head2, head3, head4;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		sink.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local char = player.Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local head = char.HumanoidRootPart
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local char = game:GetService('Players')[player].Character
+					if char and char:FindFirstChild('HumanoidRootPart') then
+						local head = char.HumanoidRootPart
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		kick.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local instanceofplayer = player.Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						})
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local instanceofplayer = game:GetService('Players')[player].Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						make_request({
+							[1] = 'Remove';
+							[2] = {
+								head;
+							};
+						}) else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+	
+		nuke.MouseButton1Down:connect(function()
+			for i,c in pairs(game.Workspace:GetChildren()) do
+				local ohok = c
+				make_request({
+					[1] = 'Remove';
+					[2] = {
+						ohok;
+					};
+				})
+			end
+		end)
+	
+		queue.MouseButton1Down:connect(function()
+			if string.lower(target.Text) == "all" then
+				for i,c in pairs(game.Players:GetPlayers()) do
+					local player = game.Players:GetPlayers()
+					local instanceofplayer = player.Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						while true do
+							make_request({
+								[1] = 'Remove';
+								[2] = {
+									head;
+								};
+							})
+						end
+					end
+	
+				end
+			else
+				if game.Players:FindFirstChild(target.Text) then
+					local player = target.Text
+					local instanceofplayer = game:GetService('Players')[player].Character
+					if instanceofplayer and instanceofplayer:FindFirstChild('Humanoid') then
+						local head = instanceofplayer
+						while true do
+							make_request({
+								[1] = 'Remove';
+								[2] = {
+									head;
+								};
+							}) 
+						end
+					else
+						print("nibba who this")
+					end
+	
+				end
+	
+			end
+		end)
+end)
+
 addcmd('unfling',{'nofling'},function(args, speaker)
 	execCmd('clip')
 	if flingDied then
