@@ -11563,21 +11563,20 @@ addcmd('fling',{},function(args, speaker)
 end)
 
 addcmd('harked',{},function(args, speaker)
-	local message = Instance.new("Message")
-		message.Parent = game.Workspace
-		message.Text = "btools's name can be edited in settings if different than the regular name"
-		wait(3)
-		message:Destroy()
-	
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	
-		local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
 	
 		local function get_f3x()
 			local lp = game:GetService('Players').LocalPlayer
-			if lp.Character:FindFirstChild(btools) then
+			if lp.Character:FindFirstChild("Building Tools") then
 				return lp.Character:FindFirstChild(btools)
-			elseif lp.Backpack:FindFirstChild(btools) then
+			elseif lp.Backpack:FindFirstChild("Building Tools") then
+				return lp.Backpack:FindFirstChild(btools)
+			elseif lp.Character:FindFirstChild("F3X Btools!") then
+				return lp.Character:FindFirstChild(btools)
+			elseif lp.Backpack:FindFirstChild("F3X Btools!") then
+				return lp.Backpack:FindFirstChild(btools)
+			elseif lp.Character:FindFirstChild("F3X Building Tools") then
+				return lp.Character:FindFirstChild(btools)
+			elseif lp.Backpack:FindFirstChild("F3X Building Tools") then
 				return lp.Backpack:FindFirstChild(btools)
 			end
 			return nil
