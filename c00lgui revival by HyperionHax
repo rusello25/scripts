@@ -1,5 +1,3 @@
-
-
 -- Instances: 311 | Scripts: 114 | Modules: 0 | Tags: 0
 local G2L = {};
 
@@ -515,7 +513,7 @@ G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["2b"]["Size"] = UDim2.new(1, 2, 0, 30);
 G2L["2b"]["Position"] = UDim2.new(0, 0, 0, 33);
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["2b"]["Text"] = [[God]];
+G2L["2b"]["Text"] = [[c00lkidd]];
 
 
 -- StarterGui.CoolGui.Frame.Settings.Page2.Section2.spamid
@@ -1673,20 +1671,40 @@ G2L["97"] = Instance.new("LocalScript", G2L["96"]);
 
 -- StarterGui.CoolGui.Frame.Page3.Section1.Button
 G2L["98"] = Instance.new("TextButton", G2L["80"]);
+G2L["98"]["TextWrapped"] = true;
 G2L["98"]["BorderSizePixel"] = 3;
-G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["98"]["TextSize"] = 14;
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["98"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["98"]["Size"] = UDim2.new(0.5, 0, 0, 30);
+G2L["98"]["Size"] = UDim2.new(0.5, -3, 0, 30);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["98"]["Text"] = [[R15->R6]];
 G2L["98"]["Name"] = [[Button]];
-G2L["98"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["98"]["Text"] = [[Change Name]];
-G2L["98"]["Position"] = UDim2.new(0, 73, 0, 33);
+G2L["98"]["Position"] = UDim2.new(0.5, 3, 0.32653, 132);
+
+
+-- StarterGui.c00lgui.Frame.Page1.Scripts.SCP 173.LocalScript
+G2L["99"] = Instance.new("LocalScript", G2L["98"]);
+
+
+
+-- StarterGui.CoolGui.Frame.Page3.Section1.Button
+G2L["23423423"] = Instance.new("TextButton", G2L["80"]);
+G2L["23423423"]["BorderSizePixel"] = 3;
+G2L["23423423"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23423423"]["TextSize"] = 14;
+G2L["23423423"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23423423"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23423423"]["Size"] = UDim2.new(0.5, 0, 0, 30);
+G2L["23423423"]["Name"] = [[Button]];
+G2L["23423423"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["23423423"]["Text"] = [[Change Name]];
+G2L["23423423"]["Position"] = UDim2.new(0, 73, 0, 33);
 
 
 -- StarterGui.CoolGui.Frame.Page3.Section1.Button.LocalScript
-G2L["99"] = Instance.new("LocalScript", G2L["98"]);
+G2L["23423424"] = Instance.new("LocalScript", G2L["23423423"]);
 
 
 
@@ -3413,36 +3431,35 @@ task.spawn(C_7);
 -- StarterGui.CoolGui.Frame.Settings.SettingsButton.SettingsCloseOpen
 local function C_b()
 local script = G2L["b"];
-	local TweenService = game:GetService("TweenService")
-	local page = script.Parent.Parent
-	local sbutton = script.Parent
-	
-	local cango = true
-	local closedPosition = UDim2.new(1, -300, 0, 0)
-	local openPosition = UDim2.new(1, 3, 0, 0)
-	local tweenTime = 0.5
-	
-	local function togglePage()
-		if not cango then return end
-		cango = false
-	
-		if sbutton.Text == "<" then
-			sbutton.Text = ">"
-			local tween = TweenService:Create(page, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = closedPosition})
-			tween:Play()
-			tween.Completed:Wait()
-		else
-			sbutton.Text = "<"
-			local tween = TweenService:Create(page, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = openPosition})
-			tween:Play()
-			tween.Completed:Wait()
+	cango = true
+	sbutton = script.Parent
+	page = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if cango == true then
+			if sbutton.Text == "<" then
+				sbutton.Text = ">"
+				cango = false
+				repeat
+					wait()
+					page.Position = UDim2.new(1,page.Position.X.Offset-10,0,0)
+				until page.Position.X.Offset <= -293
+				wait()
+				page.Position = UDim2.new(1,-300,0,0)
+				cango = true
+			else
+				sbutton.Text = "<"
+				cango = false
+				repeat
+					wait()
+					page.Position = UDim2.new(1,page.Position.X.Offset+10,0,0)
+				until page.Position.X.Offset >= -10
+				wait()
+				page.Position = UDim2.new(1,3,0,0)
+				cango = true
+			end	
 		end
-	
-		cango = true
-	end
-	
-	sbutton.MouseButton1Click:Connect(togglePage)
-	
+	end)
 end;
 task.spawn(C_b);
 -- StarterGui.CoolGui.Frame.Settings.addonr.LocalScript
@@ -22228,8 +22245,8 @@ local script = G2L["97"];
 end;
 task.spawn(C_97);
 -- StarterGui.CoolGui.Frame.Page3.Section1.Button.LocalScript
-local function C_99()
-local script = G2L["99"];
+local function C_23423424()
+local script = G2L["23423424"];
 	local button = script.Parent
 	local input = script.Parent.Parent.Parent.Parent.Settings.Page2.Section2.nameid
 	
@@ -22256,7 +22273,17 @@ local script = G2L["99"];
 		char.Head.Transparency = 1
 	end)
 end;
+task.spawn(C_23423424);
+
+-- StarterGui.CoolGui.Frame.Page3.Section1.Button.LocalScript
+local function C_99()
+local script = G2L["99"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rusello25/scripts/refs/heads/main/R6'))()
+	end)
+end;
 task.spawn(C_99);
+
 -- StarterGui.CoolGui.Frame.Page4.Section2.Button.LocalScript
 local function C_9f()
 local script = G2L["9f"];
