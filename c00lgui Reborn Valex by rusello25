@@ -5395,22 +5395,22 @@ local function C_12()
 		end)
 		Section3:NewButton("Remove Walking All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
-	
-	
+
+
 					F3X.Object(player.Character.HumanoidRootPart):Destroy()
 					F3X.Object(player.Character.Humanoid).Sit = true
 				end)
 			end
-	
-	
+
+
 		end)
 		Section3:NewButton("Fire All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
@@ -5425,25 +5425,25 @@ local function C_12()
 					F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.new(154)
 					F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.new(154)
 					F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.new(154)
-	
+
 					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
 					pchar.Shirt:Remove()
-	
-	
+
+
 					pchar.Pants:Remove()
-	
-	
+
+
 					pchar["Shirt Graphic"].Graphic = ""
-	
-	
+
+
 				end)
 			end
-	
-	
+
+
 		end)
 		Section3:NewButton("Fairy All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
@@ -5458,16 +5458,16 @@ local function C_12()
 					F3X.Object(player.Character["Right Leg"]).BrickColor = BrickColor.new(221)
 					F3X.Object(player.Character["Left Arm"]).BrickColor = BrickColor.new(221)
 					F3X.Object(player.Character["Right Arm"]).BrickColor = BrickColor.new(221)
-	
+
 					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
 					pchar.Shirt:Remove()
-	
-	
+
+
 					pchar.Pants:Remove()
-	
-	
+
+
 					pchar["Shirt Graphic"].Graphic = ""
-	
+
 					for i,fee in pairs(player.Character:GetChildren()) do
 						if fee:IsA("BasePart") then
 							F3X.Object(fee):AddSparkles().Size = 0.8
@@ -5476,16 +5476,16 @@ local function C_12()
 							F3X.Object(fee):AddSparkles().Size = 0.8
 						end
 					end
-	
-	
+
+
 				end)
 			end
-	
-	
+
+
 		end)
 		Section3:NewButton("Tron All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
@@ -5505,20 +5505,20 @@ local function C_12()
 					end
 					local pchar = player.Character -- This bypasses all Anti exploits so do not worry .
 					pchar.Head.Face:Remove()
-	
-	
-	
-	
+
+
+
+
 				end)
 			end
 		end)
 		Section3:NewButton("Crusify All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
-	
+
 					local part = F3X.new("Part", workspace)
 					part.CanCollide = false
 					part.BrickColor = BrickColor.new(217)
@@ -5538,17 +5538,17 @@ local function C_12()
 					wait()
 					part:WeldTo(player.Character.HumanoidRootPart)
 					F3X.Object(player.Character.HumanoidRootPart).Anchored = true
-	
+
 				end)
 			end
-	
+
 		end)
 		Section2:NewButton("SoulStealer", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5562,15 +5562,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(4.75,0,0)*  CFrame.new(-0.05,2.85, -1.1)  wait()     
@@ -5579,18 +5579,18 @@ local function C_12()
 			duck.MeshId = "http://www.roblox.com/asset/?id=94840342"
 			duck.TextureId = "http://www.roblox.com/asset/?id=94840359"
 			part:AddFire().Size = 3
-	
+
 			duck.Scale = Vector3.new(1, 1, 1)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 		Section2:NewButton("Rainbow Periastron Omega", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5604,15 +5604,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-6.25,9.45,4.55)*  CFrame.new(0.85,0.2, 2.5)  wait()     
@@ -5621,18 +5621,18 @@ local function C_12()
 			duck.MeshId = "http://www.roblox.com/asset/?id=80557857"
 			duck.TextureId = "http://www.roblox.com/asset/?id=157345185"
 			part:AddSparkles()
-	
+
 			duck.Scale = Vector3.new(1, 1, 1)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 		Section2:NewButton("Telamon's Foe Hammer", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5646,15 +5646,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-6.25,9.45,-4.55)*  CFrame.new(-1.65,0.2,2.5)  wait()     
@@ -5662,19 +5662,19 @@ local function C_12()
 			local duck = part:AddMesh()
 			duck.MeshId = "http://www.roblox.com/asset/?id=53420470"
 			duck.TextureId = "http://www.roblox.com/asset/?id=53420537"
-	
-	
+
+
 			duck.Scale = Vector3.new(1.7, 1.7, 1.7)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 		Section2:NewButton("Big Ban Hammer", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5688,15 +5688,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,1.7,0.8)  wait()     
@@ -5704,16 +5704,16 @@ local function C_12()
 			local duck = part:AddMesh()
 			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
 			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
-	
-	
+
+
 			duck.Scale = Vector3.new(1, 1, 1)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 		Section3:NewButton("Loop Kill All", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
@@ -5725,14 +5725,14 @@ local function C_12()
 					while wait(0.4) do
 						F3X.Object(player.Character.Head).CFrame = game:GetService("Players").LocalPlayer.Character["Left Arm"].CFrame * CFrame.new(0, -0.5, 0)
 					end
-	
+
 				end)
 			end
-	
+
 		end)
 		Section3:NewButton("Color All Random", "", function()
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 			for _,player in pairs(game.Players:GetPlayers()) do
 				spawn(function()
 					F3X.Edit(player.Character:GetChildren(), {})
@@ -5741,23 +5741,23 @@ local function C_12()
 							F3X.Object(limb:FindFirstChildWhichIsA("BasePart")):Destroy()
 						end
 					end
-	
+
 					for i,fee in pairs(player.Character:GetChildren()) do
 						if fee:IsA("BasePart") then
 							F3X.Object(fee).BrickColor = BrickColor.random()
 						end
 					end
-	
+
 				end)
 			end
-	
+
 		end)
 		Section2:NewButton("Ultra Ban Hammer", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5771,15 +5771,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,9,0.8)  wait()     
@@ -5787,19 +5787,19 @@ local function C_12()
 			local duck = part:AddMesh()
 			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
 			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
-	
-	
+
+
 			duck.Scale = Vector3.new(3, 3, 3)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 		Section2:NewButton("Owner Ban Hammer (BIG)", "", function()
 			player = game.Players.LocalPlayer
-	
+
 			Tool0 = Instance.new("Tool")
 			Part1 = Instance.new("Part")
-	
+
 			Tool0.Parent = player.Backpack
 			Tool0.Grip = CFrame.new(0, -1.00000083, 0, 1, 5.77420778e-08, -3.2037471e-07, -5.77420316e-08, 1, 1.37835528e-07, 3.2037471e-07, -1.37835514e-07, 1)
 			Tool0.GripForward = Vector3.new(3.2037470987233974e-07, -1.378355278802701e-07, -1)
@@ -5813,15 +5813,15 @@ local function C_12()
 			Part1.Size = Vector3.new(0,0,0)
 			Part1.BottomSurface = Enum.SurfaceType.Smooth
 			Part1.TopSurface = Enum.SurfaceType.Smooth
-	
-	
+
+
 			local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
-	
-	
-	
+
+
+
+
 			local part = F3X.new("Part", workspace)
-	
+
 			part.Locked = true
 			part.Size = Vector3.new(-48583883487437474, -48583883487437474, -48583883487437455454)
 			part.CFrame = game.Players.LocalPlayer.Character["Right Arm"].CFrame * CFrame.Angles(-7.85,9.45,0)*  CFrame.new(0.15,18,0.8)  wait()     
@@ -5829,21 +5829,21 @@ local function C_12()
 			local duck = part:AddMesh()
 			duck.MeshId = "http://www.roblox.com/asset/?id=10604848"
 			duck.TextureId = "http://www.roblox.com/asset/?id=10605252"
-	
-	
+
+
 			duck.Scale = Vector3.new(5.5, 5.5, 5.5)
-	
+
 			game.Players.LocalPlayer.Backpack.Tool.Parent = game.Players.LocalPlayer.Character
-	
+
 		end)
 	end)
 end;
 task.spawn(C_12);
 -- StarterGui.c00lgui.Frame.Page3.Btools.Clear Workspace.LocalScript
 local function C_14()
-local script = G2L["14"];
+	local script = G2L["14"];
 	local btools = script.Parent.Parent.Parent.Parent.Settings.Page1["Btools Name"].Btools.Text
-	
+
 	local function get_f3x()
 		local lp = game:GetService('Players').LocalPlayer
 		if lp.Character:FindFirstChild(btools) then
@@ -5853,21 +5853,21 @@ local script = G2L["14"];
 		end
 		return nil
 	end
-	
+
 	local function make_request(args)
 		local f3x = get_f3x()
 		if f3x == nil then
 			notify('Couldnt find F3X tool')
 			return
 		end
-	
+
 		f3x.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))  
 	end
-	
+
 	local click_del = nil
 	local unanchor = nil
 	local loopkill = {}
-	
+
 	local function on_childadded(child)
 		task.wait()
 		if game:GetService('Players'):GetPlayerFromCharacter(child) ~= nil and table.find(loopkill, child.Name) then
@@ -5880,9 +5880,9 @@ local script = G2L["14"];
 			})
 		end
 	end
-	
+
 	game:GetService('Workspace').ChildAdded:Connect(on_childadded)
-	
+
 	script.Parent.MouseButton1Click:connect(function()
 		for i,c in pairs(game.Workspace:GetChildren()) do
 			local ohok = c
@@ -5898,16 +5898,16 @@ end;
 task.spawn(C_14);
 -- StarterGui.c00lgui.Frame.Page3.Btools.Crucify.LocalScript
 local function C_16()
-local script = G2L["16"];
+	local script = G2L["16"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
 		local player = game.Players:FindFirstChild(playername)
-		
+
 		spawn(function()
 			F3X.Edit(player.Character:GetChildren(), {})
-	
+
 			local part = F3X.new("Part", workspace)
 			part.CanCollide = false
 			part.BrickColor = BrickColor.new(217)
@@ -5927,24 +5927,24 @@ local script = G2L["16"];
 			wait()
 			part:WeldTo(player.Character.HumanoidRootPart)
 			F3X.Object(player.Character.HumanoidRootPart).Anchored = true
-	
+
 		end)
 	end)
 end;
 task.spawn(C_16);
 -- StarterGui.c00lgui.Frame.Page3.Btools.butt.LocalScript
 local function C_18()
-local script = G2L["18"];
+	local script = G2L["18"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-		
+
 		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
 		local player = game.Players:FindFirstChild(playername)
-		
+
 		spawn(function()
 			F3X.Edit(player.Character:GetChildren(), {})
-	
-	
+
+
 			local part2 = F3X.new("Ball", workspace)
 			part2.CanCollide = false
 			part2.BrickColor = BrickColor.new(3)
@@ -5953,8 +5953,8 @@ local script = G2L["18"];
 			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, 0.8)
 			wait()
 			part2:WeldTo(player.Character.HumanoidRootPart)
-	
-	
+
+
 			local part1 = F3X.new("Ball", workspace)
 			part1.CanCollide = false
 			part1.BrickColor = BrickColor.new(3)
@@ -5962,25 +5962,25 @@ local script = G2L["18"];
 			part1.Size = Vector3.new(2, 2, 2)
 			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, 0.8)
 			wait()
-	
+
 			part1:WeldTo(player.Character.HumanoidRootPart)
-	
+
 		end)
 	end)
 end;
 task.spawn(C_18);
 -- StarterGui.c00lgui.Frame.Page3.Btools.penis.LocalScript
 local function C_1a()
-local script = G2L["1a"];
+	local script = G2L["1a"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
 		local player = game.Players:FindFirstChild(playername)
-		
+
 		spawn(function()
 			F3X.Edit(player.Character:GetChildren(), {})
-	
+
 			local part = F3X.new("Part", workspace)
 			part.CanCollide = false
 			part.BrickColor = BrickColor.new(3)
@@ -5989,7 +5989,7 @@ local script = G2L["1a"];
 			part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, -0.5, -2)
 			wait()
 			part:WeldTo(player.Character.HumanoidRootPart)
-	
+
 			local part2 = F3X.new("Ball", workspace)
 			part2.CanCollide = false
 			part2.BrickColor = BrickColor.new(3)
@@ -5998,7 +5998,7 @@ local script = G2L["1a"];
 			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, -0.5, -1)
 			wait()
 			part2:WeldTo(player.Character.HumanoidRootPart)
-	
+
 			local part3 = F3X.new("Ball", workspace)
 			part3.CanCollide = false
 			part3.Material = ("Smooth Plastic")
@@ -6014,27 +6014,27 @@ local script = G2L["1a"];
 			part1.Size = Vector3.new(1, 1, 4)
 			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, -0.5, -1)
 			wait()
-	
+
 			part1:WeldTo(player.Character.HumanoidRootPart)
-	
+
 		end)
-	
+
 	end)
 end;
 task.spawn(C_1a);
 -- StarterGui.c00lgui.Frame.Page3.Btools.tits.LocalScript
 local function C_1c()
-local script = G2L["1c"];
+	local script = G2L["1c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local F3X = loadstring(game:HttpGet("https://pastebin.com/raw/TQgu7X5u"))()
-	
+
 		local playername = script.Parent.Parent.Parent.Parent.Settings.Page1.Victim.TextBox.Text
 		local player = game.Players:FindFirstChild(playername)
-		
+
 		spawn(function()
 			F3X.Edit(player.Character:GetChildren(), {})
-	
-	
+
+
 			local part2 = F3X.new("Ball", workspace)
 			part2.CanCollide = false
 			part2.BrickColor = BrickColor.new(3)
@@ -6043,8 +6043,8 @@ local script = G2L["1c"];
 			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1)
 			wait()
 			part2:WeldTo(player.Character.HumanoidRootPart)
-	
-	
+
+
 			local part1 = F3X.new("Ball", workspace)
 			part1.CanCollide = false
 			part1.BrickColor = BrickColor.new(3)
@@ -6052,7 +6052,7 @@ local script = G2L["1c"];
 			part1.Size = Vector3.new(2, 2, 2)
 			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1)
 			wait()
-	
+
 			part1:WeldTo(player.Character.HumanoidRootPart)
 			local part2 = F3X.new("Ball", workspace)
 			part2.CanCollide = false
@@ -6062,8 +6062,8 @@ local script = G2L["1c"];
 			part2.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0.8, 0.5, -1.8)
 			wait()
 			part2:WeldTo(player.Character.HumanoidRootPart)
-	
-	
+
+
 			local part1 = F3X.new("Ball", workspace)
 			part1.CanCollide = false
 			part1.BrickColor = BrickColor.new(9)
@@ -6071,16 +6071,16 @@ local script = G2L["1c"];
 			part1.Size = Vector3.new(1, 1, 1)
 			part1.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(-0.8, 0.5, -1.8)
 			wait()
-	
+
 			part1:WeldTo(player.Character.HumanoidRootPart)
-	
+
 		end)
 	end)
 end;
 task.spawn(C_1c);
 -- StarterGui.c00lgui.Frame.Settings.Page1.4nn1.TextButton.LocalScript
 local function C_27()
-local script = G2L["27"];
+	local script = G2L["27"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/rusello25/scripts/main/4nn1")))()
 	end)
@@ -6088,11 +6088,11 @@ end;
 task.spawn(C_27);
 -- StarterGui.c00lgui.Frame.Settings.Page1.FE Bypass GUI.TextButton.LocalScript
 local function C_32()
-local script = G2L["32"];
+	local script = G2L["32"];
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Instances:
 		-- the very new version with dripped out UI and new scripts
-	
+
 		local febypass = Instance.new("ScreenGui")
 		local main = Instance.new("Frame")
 		local Inject = Instance.new("TextButton")
@@ -6142,14 +6142,14 @@ local script = G2L["32"];
 		local exe = Instance.new("TextButton")
 		local clr = Instance.new("TextButton")
 		local exit_2 = Instance.new("TextButton")
-	
+
 		--Properties:
-	
+
 		febypass.Name = "fe bypass"
 		febypass.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 		febypass.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 		febypass.ResetOnSpawn = false
-	
+
 		main.Name = "main"
 		main.Parent = febypass
 		main.BackgroundColor3 = Color3.fromRGB(122, 122, 122)
@@ -6157,7 +6157,7 @@ local script = G2L["32"];
 		main.BorderSizePixel = 5
 		main.Position = UDim2.new(0.0296585672, 0, 0.631171346, 0)
 		main.Size = UDim2.new(0, 461, 0, 247)
-	
+
 		Inject.Name = "Inject"
 		Inject.Parent = main
 		Inject.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
@@ -6170,7 +6170,7 @@ local script = G2L["32"];
 		Inject.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Inject.TextSize = 40.000
 		Inject.TextWrapped = true
-	
+
 		Scripts.Name = "Scripts"
 		Scripts.Parent = main
 		Scripts.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
@@ -6183,7 +6183,7 @@ local script = G2L["32"];
 		Scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Scripts.TextSize = 30.000
 		Scripts.TextWrapped = true
-	
+
 		Executor.Name = "Executor"
 		Executor.Parent = main
 		Executor.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
@@ -6196,7 +6196,7 @@ local script = G2L["32"];
 		Executor.TextColor3 = Color3.fromRGB(0, 0, 0)
 		Executor.TextSize = 25.000
 		Executor.TextWrapped = true
-	
+
 		TextLabel.Parent = main
 		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel.BackgroundTransparency = 1.000
@@ -6209,7 +6209,7 @@ local script = G2L["32"];
 		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 		TextLabel.TextSize = 30.000
 		TextLabel.TextWrapped = true
-	
+
 		Startup.Name = "Startup"
 		Startup.Parent = febypass
 		Startup.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6218,7 +6218,7 @@ local script = G2L["32"];
 		Startup.BorderSizePixel = 0
 		Startup.Size = UDim2.new(0, 1915, 0, 930)
 		Startup.Visible = false
-	
+
 		ImageLabel.Parent = Startup
 		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ImageLabel.BackgroundTransparency = 1.000
@@ -6228,7 +6228,7 @@ local script = G2L["32"];
 		ImageLabel.Size = UDim2.new(0, 988, 0, 576)
 		ImageLabel.Image = "http://www.roblox.com/asset/?id=13983709155"
 		ImageLabel.ImageTransparency = 1.000
-	
+
 		scripts.Name = "scripts"
 		scripts.Parent = febypass
 		scripts.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6237,7 +6237,7 @@ local script = G2L["32"];
 		scripts.Position = UDim2.new(0.55966723, 0, 0.31361115, 0)
 		scripts.Size = UDim2.new(0, 382, 0, 285)
 		scripts.Visible = false
-	
+
 		ScrollingFrame.Parent = scripts
 		ScrollingFrame.Active = true
 		ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6245,7 +6245,7 @@ local script = G2L["32"];
 		ScrollingFrame.BorderSizePixel = 0
 		ScrollingFrame.Position = UDim2.new(0.0523560196, 0, 0.0771929845, 0)
 		ScrollingFrame.Size = UDim2.new(0, 341, 0, 240)
-	
+
 		_4nn1.Name = "4nn1"
 		_4nn1.Parent = ScrollingFrame
 		_4nn1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6257,10 +6257,10 @@ local script = G2L["32"];
 		_4nn1.Text = "require(9sxf7TVz)('username') -- 4nn1 GUI"
 		_4nn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		_4nn1.TextSize = 15.000
-	
+
 		UIListLayout.Parent = ScrollingFrame
 		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	
+
 		c00lgui.Name = "c00lgui"
 		c00lgui.Parent = ScrollingFrame
 		c00lgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6272,7 +6272,7 @@ local script = G2L["32"];
 		c00lgui.Text = "require(6032524768).Eagle('username') -- c00lgui"
 		c00lgui.TextColor3 = Color3.fromRGB(255, 255, 255)
 		c00lgui.TextSize = 12.000
-	
+
 		IYAdmin.Name = "IY Admin"
 		IYAdmin.Parent = ScrollingFrame
 		IYAdmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6284,7 +6284,7 @@ local script = G2L["32"];
 		IYAdmin.Text = "require(7624679472)('username') -- IY Admin"
 		IYAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
 		IYAdmin.TextSize = 14.000
-	
+
 		k00pgui.Name = "k00pgui"
 		k00pgui.Parent = ScrollingFrame
 		k00pgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6296,7 +6296,7 @@ local script = G2L["32"];
 		k00pgui.Text = "require(0x31051dacc).v2FIXED('username') -- k00pgui"
 		k00pgui.TextColor3 = Color3.fromRGB(255, 255, 255)
 		k00pgui.TextSize = 11.000
-	
+
 		k00pguipass.Name = "k00pgui pass"
 		k00pguipass.Parent = ScrollingFrame
 		k00pguipass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6308,7 +6308,7 @@ local script = G2L["32"];
 		k00pguipass.Text = "k00pgui password : k00pkidd"
 		k00pguipass.TextColor3 = Color3.fromRGB(255, 255, 255)
 		k00pguipass.TextSize = 12.000
-	
+
 		roexploit.Name = "roexploit"
 		roexploit.Parent = ScrollingFrame
 		roexploit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6320,7 +6320,7 @@ local script = G2L["32"];
 		roexploit.Text = "require(4159766103).load('username') -- Ro-Xploit 6.0"
 		roexploit.TextColor3 = Color3.fromRGB(255, 255, 255)
 		roexploit.TextSize = 11.000
-	
+
 		mml.Name = "mml"
 		mml.Parent = ScrollingFrame
 		mml.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6332,7 +6332,7 @@ local script = G2L["32"];
 		mml.Text = "require(5051243290).mml('username') -- MML Admin"
 		mml.TextColor3 = Color3.fromRGB(255, 255, 255)
 		mml.TextSize = 12.000
-	
+
 		namelessadmin.Name = "nameless admin"
 		namelessadmin.Parent = ScrollingFrame
 		namelessadmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6344,7 +6344,7 @@ local script = G2L["32"];
 		namelessadmin.Text = "require(ACk4JyVJ6x)('username') -- nameless admin"
 		namelessadmin.TextColor3 = Color3.fromRGB(255, 255, 255)
 		namelessadmin.TextSize = 11.000
-	
+
 		brookhaventroll.Name = "brookhaven troll"
 		brookhaventroll.Parent = ScrollingFrame
 		brookhaventroll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6356,7 +6356,7 @@ local script = G2L["32"];
 		brookhaventroll.Text = "require(0x553e65B9)('username') -- brookhaven"
 		brookhaventroll.TextColor3 = Color3.fromRGB(255, 255, 255)
 		brookhaventroll.TextSize = 11.000
-	
+
 		redwoodprisonrework.Name = "redwood prison rework"
 		redwoodprisonrework.Parent = ScrollingFrame
 		redwoodprisonrework.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6368,7 +6368,7 @@ local script = G2L["32"];
 		redwoodprisonrework.Text = "require(4294967104)('username') -- redwood prison reworked"
 		redwoodprisonrework.TextColor3 = Color3.fromRGB(255, 255, 255)
 		redwoodprisonrework.TextSize = 11.000
-	
+
 		highlandpark.Name = "highland park"
 		highlandpark.Parent = ScrollingFrame
 		highlandpark.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6380,7 +6380,7 @@ local script = G2L["32"];
 		highlandpark.Text = "require(VdL00hcf)('username') -- highland park"
 		highlandpark.TextColor3 = Color3.fromRGB(255, 255, 255)
 		highlandpark.TextSize = 11.000
-	
+
 		raiseafamily.Name = "raise a family"
 		raiseafamily.Parent = ScrollingFrame
 		raiseafamily.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6392,7 +6392,7 @@ local script = G2L["32"];
 		raiseafamily.Text = "require(9sg5X7S)('username') -- raise a family"
 		raiseafamily.TextColor3 = Color3.fromRGB(255, 255, 255)
 		raiseafamily.TextSize = 11.000
-	
+
 		livetopia.Name = "livetopia"
 		livetopia.Parent = ScrollingFrame
 		livetopia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6404,7 +6404,7 @@ local script = G2L["32"];
 		livetopia.Text = "require(2fht8IPS)('username') -- live topia"
 		livetopia.TextColor3 = Color3.fromRGB(255, 255, 255)
 		livetopia.TextSize = 11.000
-	
+
 		criminalvsswat.Name = "criminalvsswat"
 		criminalvsswat.Parent = ScrollingFrame
 		criminalvsswat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6416,7 +6416,7 @@ local script = G2L["32"];
 		criminalvsswat.Text = "require(CVS2416)('username') -- criminals vs swat"
 		criminalvsswat.TextColor3 = Color3.fromRGB(255, 255, 255)
 		criminalvsswat.TextSize = 11.000
-	
+
 		exit.Name = "exit"
 		exit.Parent = scripts
 		exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6428,7 +6428,7 @@ local script = G2L["32"];
 		exit.Text = "X"
 		exit.TextColor3 = Color3.fromRGB(0, 0, 0)
 		exit.TextSize = 10.000
-	
+
 		executor.Name = "executor"
 		executor.Parent = febypass
 		executor.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
@@ -6436,7 +6436,7 @@ local script = G2L["32"];
 		executor.Position = UDim2.new(0.0190408826, 0, 0.314197153, 0)
 		executor.Size = UDim2.new(0, 526, 0, 258)
 		executor.Visible = false
-	
+
 		TextLabel_2.Parent = executor
 		TextLabel_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 		TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -6450,7 +6450,7 @@ local script = G2L["32"];
 		TextLabel_2.TextSize = 13.000
 		TextLabel_2.TextWrapped = true
 		TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		size.Name = "size"
 		size.Parent = executor
 		size.Active = true
@@ -6464,10 +6464,10 @@ local script = G2L["32"];
 		size.MidImage = "rbxassetid://148970562"
 		size.ScrollBarThickness = 3
 		size.TopImage = "rbxassetid://148970562"
-	
+
 		UICorner.CornerRadius = UDim.new(0, 4)
 		UICorner.Parent = size
-	
+
 		Lines.Name = "Lines"
 		Lines.Parent = size
 		Lines.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
@@ -6481,7 +6481,7 @@ local script = G2L["32"];
 		Lines.TextWrapped = true
 		Lines.TextXAlignment = Enum.TextXAlignment.Right
 		Lines.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		CMDBox.Name = "CMDBox"
 		CMDBox.Parent = size
 		CMDBox.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
@@ -6500,7 +6500,7 @@ local script = G2L["32"];
 		CMDBox.TextWrapped = true
 		CMDBox.TextXAlignment = Enum.TextXAlignment.Left
 		CMDBox.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Tokens_.Name = "Tokens_"
 		Tokens_.Parent = CMDBox
 		Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6515,7 +6515,7 @@ local script = G2L["32"];
 		Tokens_.TextWrapped = true
 		Tokens_.TextXAlignment = Enum.TextXAlignment.Left
 		Tokens_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Strings_.Name = "Strings_"
 		Strings_.Parent = CMDBox
 		Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6530,7 +6530,7 @@ local script = G2L["32"];
 		Strings_.TextWrapped = true
 		Strings_.TextXAlignment = Enum.TextXAlignment.Left
 		Strings_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		RemoteHighlight_.Name = "RemoteHighlight_"
 		RemoteHighlight_.Parent = CMDBox
 		RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6545,7 +6545,7 @@ local script = G2L["32"];
 		RemoteHighlight_.TextWrapped = true
 		RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
 		RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Numbers_.Name = "Numbers_"
 		Numbers_.Parent = CMDBox
 		Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6560,7 +6560,7 @@ local script = G2L["32"];
 		Numbers_.TextWrapped = true
 		Numbers_.TextXAlignment = Enum.TextXAlignment.Left
 		Numbers_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Keywords_.Name = "Keywords_"
 		Keywords_.Parent = CMDBox
 		Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6575,7 +6575,7 @@ local script = G2L["32"];
 		Keywords_.TextWrapped = true
 		Keywords_.TextXAlignment = Enum.TextXAlignment.Left
 		Keywords_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Globals_.Name = "Globals_"
 		Globals_.Parent = CMDBox
 		Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6590,7 +6590,7 @@ local script = G2L["32"];
 		Globals_.TextWrapped = true
 		Globals_.TextXAlignment = Enum.TextXAlignment.Left
 		Globals_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Comments_.Name = "Comments_"
 		Comments_.Parent = CMDBox
 		Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6605,7 +6605,7 @@ local script = G2L["32"];
 		Comments_.TextWrapped = true
 		Comments_.TextXAlignment = Enum.TextXAlignment.Left
 		Comments_.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		Execute.Name = "Execute"
 		Execute.Parent = executor
 		Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6619,7 +6619,7 @@ local script = G2L["32"];
 		Execute.TextScaled = true
 		Execute.TextSize = 14.000
 		Execute.TextWrapped = true
-	
+
 		Clear.Name = "Clear"
 		Clear.Parent = executor
 		Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6633,7 +6633,7 @@ local script = G2L["32"];
 		Clear.TextScaled = true
 		Clear.TextSize = 14.000
 		Clear.TextWrapped = true
-	
+
 		Respawn.Name = "Respawn"
 		Respawn.Parent = executor
 		Respawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6647,7 +6647,7 @@ local script = G2L["32"];
 		Respawn.TextScaled = true
 		Respawn.TextSize = 14.000
 		Respawn.TextWrapped = true
-	
+
 		R6.Name = "R6"
 		R6.Parent = executor
 		R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6661,7 +6661,7 @@ local script = G2L["32"];
 		R6.TextScaled = true
 		R6.TextSize = 14.000
 		R6.TextWrapped = true
-	
+
 		close.Name = "close"
 		close.Parent = executor
 		close.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
@@ -6675,7 +6675,7 @@ local script = G2L["32"];
 		close.TextScaled = true
 		close.TextSize = 14.000
 		close.TextWrapped = true
-	
+
 		oldexecutor.Name = "old executor"
 		oldexecutor.Parent = febypass
 		oldexecutor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -6684,7 +6684,7 @@ local script = G2L["32"];
 		oldexecutor.Position = UDim2.new(0.625851631, 0, 0.316864103, 0)
 		oldexecutor.Size = UDim2.new(0, 382, 0, 285)
 		oldexecutor.Visible = false
-	
+
 		TextBox.Parent = oldexecutor
 		TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -6697,7 +6697,7 @@ local script = G2L["32"];
 		TextBox.TextSize = 14.000
 		TextBox.TextXAlignment = Enum.TextXAlignment.Left
 		TextBox.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		exe.Name = "exe"
 		exe.Parent = oldexecutor
 		exe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6709,7 +6709,7 @@ local script = G2L["32"];
 		exe.Text = "execute"
 		exe.TextColor3 = Color3.fromRGB(0, 0, 0)
 		exe.TextSize = 40.000
-	
+
 		clr.Name = "clr"
 		clr.Parent = oldexecutor
 		clr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6721,7 +6721,7 @@ local script = G2L["32"];
 		clr.Text = "clear"
 		clr.TextColor3 = Color3.fromRGB(0, 0, 0)
 		clr.TextSize = 40.000
-	
+
 		exit_2.Name = "exit"
 		exit_2.Parent = oldexecutor
 		exit_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -6733,14 +6733,14 @@ local script = G2L["32"];
 		exit_2.Text = "X"
 		exit_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 		exit_2.TextSize = 10.000
-	
+
 		-- Scripts:
-	
-		local function XTZLHTD_fake_script() -- Inject.LocalScript 
+
+		local function SILERY_fake_script() -- Inject.LocalScript 
 			local script = Instance.new('LocalScript', Inject)
-	
+
 			local injected = false
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				if injected == false then
 					local message = Instance.new("Message")
@@ -6760,25 +6760,25 @@ local script = G2L["32"];
 				end
 			end)
 		end
-		coroutine.wrap(XTZLHTD_fake_script)()
-		local function GTEKLRS_fake_script() -- Scripts.LocalScript 
+		coroutine.wrap(SILERY_fake_script)()
+		local function FFMO_fake_script() -- Scripts.LocalScript 
 			local script = Instance.new('LocalScript', Scripts)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.scripts.Visible = true
 			end)
 		end
-		coroutine.wrap(GTEKLRS_fake_script)()
-		local function ZKZXA_fake_script() -- Executor.LocalScript 
+		coroutine.wrap(FFMO_fake_script)()
+		local function UZJPOIM_fake_script() -- Executor.LocalScript 
 			local script = Instance.new('LocalScript', Executor)
-	
+
 			local bypassed = false
-	
+
 			script.Parent.Parent.Inject.MouseButton1Click:Connect(function()
 				wait(4)
 				bypassed = true
 			end)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				if bypassed == true then
 					script.Parent.Parent.Parent.executor.Visible = true
@@ -6791,24 +6791,24 @@ local script = G2L["32"];
 				end
 			end)
 		end
-		coroutine.wrap(ZKZXA_fake_script)()
-		local function VCHKODJ_fake_script() -- main.Smooth GUI Dragging 
+		coroutine.wrap(UZJPOIM_fake_script)()
+		local function IZDVY_fake_script() -- main.Smooth GUI Dragging 
 			local script = Instance.new('LocalScript', main)
-	
+
 			local UserInputService = game:GetService("UserInputService")
 			local runService = (game:GetService("RunService"));
-	
+
 			local gui = script.Parent
-	
+
 			local dragging
 			local dragInput
 			local dragStart
 			local startPos
-	
+
 			function Lerp(a, b, m)
 				return a + (b - a) * m
 			end;
-	
+
 			local lastMousePos
 			local lastGoalPos
 			local DRAG_SPEED = (8); -- // The speed of the UI darg.
@@ -6818,21 +6818,21 @@ local script = G2L["32"];
 					gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
 					return 
 				end;
-	
+
 				local delta = (lastMousePos - UserInputService:GetMouseLocation())
 				local xGoal = (startPos.X.Offset - delta.X);
 				local yGoal = (startPos.Y.Offset - delta.Y);
 				lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
 				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
 			end;
-	
+
 			gui.InputBegan:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 					dragging = true
 					dragStart = input.Position
 					startPos = gui.Position
 					lastMousePos = UserInputService:GetMouseLocation()
-	
+
 					input.Changed:Connect(function()
 						if input.UserInputState == Enum.UserInputState.End then
 							dragging = false
@@ -6840,19 +6840,19 @@ local script = G2L["32"];
 					end)
 				end
 			end)
-	
+
 			gui.InputChanged:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 					dragInput = input
 				end
 			end)
-	
+
 			runService.Heartbeat:Connect(Update)
 		end
-		coroutine.wrap(VCHKODJ_fake_script)()
-		local function MVNM_fake_script() -- Startup.LocalScript 
+		coroutine.wrap(IZDVY_fake_script)()
+		local function VSRTXR_fake_script() -- Startup.LocalScript 
 			local script = Instance.new('LocalScript', Startup)
-	
+
 			script.Parent.BackgroundTransparency = 1
 			script.Parent.ImageLabel.ImageTransparency = 1
 			wait()
@@ -6917,24 +6917,24 @@ local script = G2L["32"];
 			script.Parent.ImageLabel.ImageTransparency = 1
 			wait()
 		end
-		coroutine.wrap(MVNM_fake_script)()
-		local function ZKYJMGL_fake_script() -- scripts.Smooth GUI Dragging 
+		coroutine.wrap(VSRTXR_fake_script)()
+		local function VFGB_fake_script() -- scripts.Smooth GUI Dragging 
 			local script = Instance.new('LocalScript', scripts)
-	
+
 			local UserInputService = game:GetService("UserInputService")
 			local runService = (game:GetService("RunService"));
-	
+
 			local gui = script.Parent
-	
+
 			local dragging
 			local dragInput
 			local dragStart
 			local startPos
-	
+
 			function Lerp(a, b, m)
 				return a + (b - a) * m
 			end;
-	
+
 			local lastMousePos
 			local lastGoalPos
 			local DRAG_SPEED = (8); -- // The speed of the UI darg.
@@ -6944,21 +6944,21 @@ local script = G2L["32"];
 					gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
 					return 
 				end;
-	
+
 				local delta = (lastMousePos - UserInputService:GetMouseLocation())
 				local xGoal = (startPos.X.Offset - delta.X);
 				local yGoal = (startPos.Y.Offset - delta.Y);
 				lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
 				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
 			end;
-	
+
 			gui.InputBegan:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 					dragging = true
 					dragStart = input.Position
 					startPos = gui.Position
 					lastMousePos = UserInputService:GetMouseLocation()
-	
+
 					input.Changed:Connect(function()
 						if input.UserInputState == Enum.UserInputState.End then
 							dragging = false
@@ -6966,131 +6966,131 @@ local script = G2L["32"];
 					end)
 				end
 			end)
-	
+
 			gui.InputChanged:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 					dragInput = input
 				end
 			end)
-	
+
 			runService.Heartbeat:Connect(Update)
 		end
-		coroutine.wrap(ZKYJMGL_fake_script)()
-		local function AUVSM_fake_script() -- _4nn1.LocalScript 
+		coroutine.wrap(VFGB_fake_script)()
+		local function WFIWD_fake_script() -- _4nn1.LocalScript 
 			local script = Instance.new('LocalScript', _4nn1)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(9sxf7TVz)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(AUVSM_fake_script)()
-		local function ELUP_fake_script() -- c00lgui.LocalScript 
+		coroutine.wrap(WFIWD_fake_script)()
+		local function GOIP_fake_script() -- c00lgui.LocalScript 
 			local script = Instance.new('LocalScript', c00lgui)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(6032524768).Eagle('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(ELUP_fake_script)()
-		local function AWINCA_fake_script() -- IYAdmin.LocalScript 
+		coroutine.wrap(GOIP_fake_script)()
+		local function BIYBTD_fake_script() -- IYAdmin.LocalScript 
 			local script = Instance.new('LocalScript', IYAdmin)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(7624679472)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(AWINCA_fake_script)()
-		local function ZEEJV_fake_script() -- k00pgui.LocalScript 
+		coroutine.wrap(BIYBTD_fake_script)()
+		local function ZAMWZJ_fake_script() -- k00pgui.LocalScript 
 			local script = Instance.new('LocalScript', k00pgui)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(0x31051dacc).v2FIXED('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(ZEEJV_fake_script)()
-		local function KHOF_fake_script() -- roexploit.LocalScript 
+		coroutine.wrap(ZAMWZJ_fake_script)()
+		local function LXMXE_fake_script() -- roexploit.LocalScript 
 			local script = Instance.new('LocalScript', roexploit)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(4159766103).load('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(KHOF_fake_script)()
-		local function GWJDOBT_fake_script() -- mml.LocalScript 
+		coroutine.wrap(LXMXE_fake_script)()
+		local function JQKNDW_fake_script() -- mml.LocalScript 
 			local script = Instance.new('LocalScript', mml)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(5051243290).mml('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(GWJDOBT_fake_script)()
-		local function UCKT_fake_script() -- namelessadmin.LocalScript 
+		coroutine.wrap(JQKNDW_fake_script)()
+		local function EJGLG_fake_script() -- namelessadmin.LocalScript 
 			local script = Instance.new('LocalScript', namelessadmin)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(ACk4JyVJ6x)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(UCKT_fake_script)()
-		local function JONY_fake_script() -- brookhaventroll.LocalScript 
+		coroutine.wrap(EJGLG_fake_script)()
+		local function UOHTM_fake_script() -- brookhaventroll.LocalScript 
 			local script = Instance.new('LocalScript', brookhaventroll)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(0x553e65B9)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(JONY_fake_script)()
-		local function JKYGJW_fake_script() -- redwoodprisonrework.LocalScript 
+		coroutine.wrap(UOHTM_fake_script)()
+		local function YUDSBDJ_fake_script() -- redwoodprisonrework.LocalScript 
 			local script = Instance.new('LocalScript', redwoodprisonrework)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(4294967104)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(JKYGJW_fake_script)()
-		local function XHBU_fake_script() -- highlandpark.LocalScript 
+		coroutine.wrap(YUDSBDJ_fake_script)()
+		local function MIIQZRJ_fake_script() -- highlandpark.LocalScript 
 			local script = Instance.new('LocalScript', highlandpark)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(VdL00hcf)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(XHBU_fake_script)()
-		local function PNHVZ_fake_script() -- raiseafamily.LocalScript 
+		coroutine.wrap(MIIQZRJ_fake_script)()
+		local function AYARL_fake_script() -- raiseafamily.LocalScript 
 			local script = Instance.new('LocalScript', raiseafamily)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(9sg5X7S)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(PNHVZ_fake_script)()
-		local function FLQTRJ_fake_script() -- livetopia.LocalScript 
+		coroutine.wrap(AYARL_fake_script)()
+		local function IWZHXYQ_fake_script() -- livetopia.LocalScript 
 			local script = Instance.new('LocalScript', livetopia)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(2fht8IPS)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(FLQTRJ_fake_script)()
-		local function XUBUKSH_fake_script() -- criminalvsswat.LocalScript 
+		coroutine.wrap(IWZHXYQ_fake_script)()
+		local function ZTPINX_fake_script() -- criminalvsswat.LocalScript 
 			local script = Instance.new('LocalScript', criminalvsswat)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Parent.Parent.executor.size.CMDBox.Text = "require(CVS2416)('"..game.Players.LocalPlayer.Name.."')"
 			end)
 		end
-		coroutine.wrap(XUBUKSH_fake_script)()
-		local function JKLMYXP_fake_script() -- exit.LocalScript 
+		coroutine.wrap(ZTPINX_fake_script)()
+		local function SGOW_fake_script() -- exit.LocalScript 
 			local script = Instance.new('LocalScript', exit)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Visible = false
 			end)
 		end
-		coroutine.wrap(JKLMYXP_fake_script)()
-		local function UALCS_fake_script() -- Lines.stats 
+		coroutine.wrap(SGOW_fake_script)()
+		local function ZFWRRK_fake_script() -- Lines.stats 
 			local script = Instance.new('LocalScript', Lines)
-	
+
 			function updateStats()
 				while true do
 					local function getLines(str)
@@ -7098,7 +7098,7 @@ local script = G2L["32"];
 						str:gsub("\n", function()
 							lin = lin + 1
 						end)
-	
+
 						return lin
 					end
 					local function getCharacter(str)
@@ -7106,7 +7106,7 @@ local script = G2L["32"];
 						str:gsub("", function()
 							lin = lin + 1
 						end)
-	
+
 						return lin
 					end
 					while true do
@@ -7115,26 +7115,26 @@ local script = G2L["32"];
 					end
 				end	
 			end
-	
+
 			function Main()
 				spawn(updateStats)
 			end
-	
+
 			updateStats()
 			Main()
-	
-	
+
+
 		end
-		coroutine.wrap(UALCS_fake_script)()
-		local function SRPOYWK_fake_script() -- size.Highlighting 
+		coroutine.wrap(ZFWRRK_fake_script)()
+		local function EDHYHS_fake_script() -- size.Highlighting 
 			local script = Instance.new('LocalScript', size)
-	
+
 			local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
 			local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
-	
+
 			local Source = script.Parent.CMDBox
 			local Lines = Source.Parent.Lines
-	
+
 			local Highlight = function(string, keywords)
 				local K = {}
 				local S = string
@@ -7175,10 +7175,10 @@ local script = G2L["32"];
 						return (" "):rep(#c)
 					end
 				end)
-	
+
 				return S
 			end
-	
+
 			local hTokens = function(string)
 				local Token =
 					{
@@ -7212,11 +7212,11 @@ local script = G2L["32"];
 						A = A .. "\32"
 					end
 				end)
-	
+
 				return A
 			end
-	
-	
+
+
 			local strings = function(string)
 				local highlight = ""
 				local quote = false
@@ -7238,10 +7238,10 @@ local script = G2L["32"];
 						highlight = highlight .. "\32"
 					end
 				end)
-	
+
 				return highlight
 			end
-	
+
 			local comments = function(string)
 				local ret = ""
 				string:gsub("[^\r\n]+", function(c)
@@ -7260,10 +7260,10 @@ local script = G2L["32"];
 					end)
 					ret = ret
 				end)
-	
+
 				return ret
 			end
-	
+
 			local numbers = function(string)
 				local A = ""
 				string:gsub(".", function(c)
@@ -7277,10 +7277,10 @@ local script = G2L["32"];
 						A = A .. "\32"
 					end
 				end)
-	
+
 				return A
 			end
-	
+
 			local highlight_source = function(type)
 				if type == "Text" then
 					Source.Text = Source.Text:gsub("\13", "")
@@ -7302,28 +7302,28 @@ local script = G2L["32"];
 					end
 				end
 			end
-	
+
 			highlight_source("Text")
-	
+
 			Source.Changed:Connect(highlight_source)
 		end
-		coroutine.wrap(SRPOYWK_fake_script)()
-		local function AIZVYO_fake_script() -- Execute.LocalScript 
+		coroutine.wrap(EDHYHS_fake_script)()
+		local function DENWI_fake_script() -- Execute.LocalScript 
 			local script = Instance.new('LocalScript', Execute)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				if script.Parent.Parent.size.CMDBox.Text == "require(6032524768).Eagle('"..game.Players.LocalPlayer.Name.."')" then
-					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimagined'),true))()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimaginedd'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(9sxf7TVz)('"..game.Players.LocalPlayer.Name.."')" then
 					loadstring(game:HttpGet(('https://pastebin.com/raw/9sxf7TVz'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(7624679472)('"..game.Players.LocalPlayer.Name.."')" then
-					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/IY%20Admin'),true))()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/IY%20Adminn'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(0x31051dacc).v2FIXED('"..game.Players.LocalPlayer.Name.."')" then
-					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui'),true))()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/k00pguii'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(4159766103).load('"..game.Players.LocalPlayer.Name.."')" then
-					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/Ro-Xploit'),true))()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/Ro-Xploitt'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(5051243290).mml('"..game.Players.LocalPlayer.Name.."')" then
-					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/mml%20admin'),true))()
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/mml%20adminn'),true))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(ACk4JyVJ6x)('"..game.Players.LocalPlayer.Name.."')" then
 					loadstring(game:HttpGet('https://raw.githubusercontent.com/rusello25/scripts/refs/heads/main/Nameless%20Admin%20V1.13'))()
 				elseif script.Parent.Parent.size.CMDBox.Text == "require(0x553e65B9)('"..game.Players.LocalPlayer.Name.."')" then
@@ -7341,53 +7341,53 @@ local script = G2L["32"];
 				end
 			end)
 		end
-		coroutine.wrap(AIZVYO_fake_script)()
-		local function ISNRSFJ_fake_script() -- Execute.LocalScript 
+		coroutine.wrap(DENWI_fake_script)()
+		local function PHMT_fake_script() -- Execute.LocalScript 
 			local script = Instance.new('LocalScript', Execute)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				assert(loadstring(script.Parent.Parent.size.CMDBox.Text))()
 			end)
 		end
-		coroutine.wrap(ISNRSFJ_fake_script)()
-		local function TNCHM_fake_script() -- Clear.LocalScript 
+		coroutine.wrap(PHMT_fake_script)()
+		local function HECDHIL_fake_script() -- Clear.LocalScript 
 			local script = Instance.new('LocalScript', Clear)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.size.CMDBox.Text = "Cleared Text!"
 				wait(1)
 				script.Parent.Parent.size.CMDBox.Text = ""
 			end)
 		end
-		coroutine.wrap(TNCHM_fake_script)()
-		local function WTPONKK_fake_script() -- Respawn.LocalScript 
+		coroutine.wrap(HECDHIL_fake_script)()
+		local function CJKWHH_fake_script() -- Respawn.LocalScript 
 			local script = Instance.new('LocalScript', Respawn)
-	
+
 			script.Parent.MouseButton1Click:connect(function()
 				game.Players.LocalPlayer.Character:Destroy()
 				game.Players.LocalPlayer.Character.Humanoid.Health = 0
 			end)
 		end
-		coroutine.wrap(WTPONKK_fake_script)()
-		local function HLCN_fake_script() -- R6.LocalScript 
+		coroutine.wrap(CJKWHH_fake_script)()
+		local function DFZKADZ_fake_script() -- R6.LocalScript 
 			local script = Instance.new('LocalScript', R6)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/R6", true))()
 			end)
 		end
-		coroutine.wrap(HLCN_fake_script)()
-		local function HNMXJ_fake_script() -- close.LocalScript 
+		coroutine.wrap(DFZKADZ_fake_script)()
+		local function OIXT_fake_script() -- close.LocalScript 
 			local script = Instance.new('LocalScript', close)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Visible = false
 			end)
 		end
-		coroutine.wrap(HNMXJ_fake_script)()
-		local function BYYSKXE_fake_script() -- executor.LocalScript 
+		coroutine.wrap(OIXT_fake_script)()
+		local function PBCUWNE_fake_script() -- executor.LocalScript 
 			local script = Instance.new('LocalScript', executor)
-	
+
 			local UIS = game:GetService("UserInputService")
 			function dragify(Frame)
 				dragToggle = nil
@@ -7423,13 +7423,13 @@ local script = G2L["32"];
 					end
 				end)
 			end
-	
+
 			dragify(script.Parent)
 		end
-		coroutine.wrap(BYYSKXE_fake_script)()
-		local function JDHVIDI_fake_script() -- exe.LocalScript 
+		coroutine.wrap(PBCUWNE_fake_script)()
+		local function ONWRR_fake_script() -- exe.LocalScript 
 			local script = Instance.new('LocalScript', exe)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				if script.Parent.Parent.TextBox.Text == "require(6032524768).Eagle('"..game.Players.LocalPlayer.Name.."')" then
 					loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimagined'),true))()
@@ -7446,32 +7446,32 @@ local script = G2L["32"];
 				end
 			end)
 		end
-		coroutine.wrap(JDHVIDI_fake_script)()
-		local function VXQUEHZ_fake_script() -- clr.LocalScript 
+		coroutine.wrap(ONWRR_fake_script)()
+		local function VNXW_fake_script() -- clr.LocalScript 
 			local script = Instance.new('LocalScript', clr)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.TextBox.Text = ""
 			end)
 		end
-		coroutine.wrap(VXQUEHZ_fake_script)()
-		local function EOQRZTQ_fake_script() -- oldexecutor.Smooth GUI Dragging 
+		coroutine.wrap(VNXW_fake_script)()
+		local function AKGEA_fake_script() -- oldexecutor.Smooth GUI Dragging 
 			local script = Instance.new('LocalScript', oldexecutor)
-	
+
 			local UserInputService = game:GetService("UserInputService")
 			local runService = (game:GetService("RunService"));
-	
+
 			local gui = script.Parent
-	
+
 			local dragging
 			local dragInput
 			local dragStart
 			local startPos
-	
+
 			function Lerp(a, b, m)
 				return a + (b - a) * m
 			end;
-	
+
 			local lastMousePos
 			local lastGoalPos
 			local DRAG_SPEED = (8); -- // The speed of the UI darg.
@@ -7481,21 +7481,21 @@ local script = G2L["32"];
 					gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
 					return 
 				end;
-	
+
 				local delta = (lastMousePos - UserInputService:GetMouseLocation())
 				local xGoal = (startPos.X.Offset - delta.X);
 				local yGoal = (startPos.Y.Offset - delta.Y);
 				lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
 				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
 			end;
-	
+
 			gui.InputBegan:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 					dragging = true
 					dragStart = input.Position
 					startPos = gui.Position
 					lastMousePos = UserInputService:GetMouseLocation()
-	
+
 					input.Changed:Connect(function()
 						if input.UserInputState == Enum.UserInputState.End then
 							dragging = false
@@ -7503,30 +7503,30 @@ local script = G2L["32"];
 					end)
 				end
 			end)
-	
+
 			gui.InputChanged:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 					dragInput = input
 				end
 			end)
-	
+
 			runService.Heartbeat:Connect(Update)
 		end
-		coroutine.wrap(EOQRZTQ_fake_script)()
-		local function VYBUU_fake_script() -- exit_2.LocalScript 
+		coroutine.wrap(AKGEA_fake_script)()
+		local function VMKDW_fake_script() -- exit_2.LocalScript 
 			local script = Instance.new('LocalScript', exit_2)
-	
+
 			script.Parent.MouseButton1Click:Connect(function()
 				script.Parent.Parent.Visible = false
 			end)
 		end
-		coroutine.wrap(VYBUU_fake_script)()
+		coroutine.wrap(VMKDW_fake_script)()
 	end)
 end;
 task.spawn(C_32);
 -- StarterGui.c00lgui.Frame.Settings.Page1.R6.TextButton.LocalScript
 local function C_36()
-local script = G2L["36"];
+	local script = G2L["36"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
 	end)
@@ -7534,41 +7534,41 @@ end;
 task.spawn(C_36);
 -- StarterGui.c00lgui.Frame.Settings.Page1.Bakers Valley.TextButton.LocalScript
 local function C_3a()
-local script = G2L["3a"];
+	local script = G2L["3a"];
 	script.Parent.MouseButton1Click:Connect(function()
 		shared.noclip = false
 		local stuff = {}
-	
-	
+
+
 		if not game:IsLoaded() then 
 			game.Loaded:Wait()
 		end
-	
+
 		local targetPlayer = game.Players.LocalPlayer
 		local teamFu = "Fugitives"
 		local teamPo = "Police"
 		local teamPr = "Prisoners"
 		local teamCh = "Choosing"
-	
-	
-	
+
+
+
 		lp = game.Players.LocalPlayer
-	
+
 		doorspamming = false
 		local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-	
+
 		local Main = OrionLib:MakeWindow({Name = "Bakers Valley", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-	
+
 		local Tab = Main:MakeTab({
 			Name = "Bakers Valley",
 			Icon = "rbxassetid://4483345998",
 			PremiumOnly = false
 		})
-	
+
 		local Section = Tab:AddSection({
 			Name = "All Haxxxxx"
 		})
-	
+
 		function doorSpam()
 			wait()
 			for _,doors in next, workspace.AllDoors:GetChildren() do --loop through doors
@@ -7589,8 +7589,8 @@ local script = G2L["3a"];
 				Bubble.BrickColor = BrickColor.new("21")
 				Bubble.Material = Enum.Material.ForceField
 				Bubble.Transparency = 0
-	
-	
+
+
 				function Shield(part)
 					local properties = {
 						["CanCollide"] = true,
@@ -7605,16 +7605,16 @@ local script = G2L["3a"];
 						["Size"] = part.Size,
 						["CastShadow"] = false,
 						["Transparency"] = 1
-	
-	
+
+
 					}
-	
+
 					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
 				end
-	
+
 				while task.wait(0.01) do
 					Bubble.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-	
+
 					Shield(Bubble)
 				end
 			end
@@ -7632,8 +7632,8 @@ local script = G2L["3a"];
 				Bubble.Color = Color3.fromRGB(255, 0, 0)
 				Bubble.Material = Enum.Material.Neon
 				Bubble.Transparency = 0
-	
-	
+
+
 				function fly(part)
 					local properties = {
 						["CanCollide"] = true,
@@ -7647,16 +7647,16 @@ local script = G2L["3a"];
 						["Size"] = part.Size,
 						["CastShadow"] = false,
 						["Transparency"] = 1
-	
-	
+
+
 					}
-	
+
 					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
 				end
-	
+
 				while task.wait(0.01) do
 					Bubble.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-5,0)
-	
+
 					fly(Bubble)
 				end
 			end
@@ -7677,7 +7677,7 @@ local script = G2L["3a"];
 			Name = "Nuke",
 			Callback = function()
 				local Yourmessage = "A Nuclear Missile Has Been Launched!"
-	
+
 				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage) workspace.resources.RemoteEvent:FireServer("FireAllClients", "updateAlarmLight", {
 					Active = {Value = true},
 					glass = game.Players.LocalPlayer.Character.Head,
@@ -7689,75 +7689,75 @@ local script = G2L["3a"];
 					[1] = "[Nuke Launch:10 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait (1)
 				local args = {
 					[1] = "[Nuke Launch: 9 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				local args = {
 					[1] = "[Nuke Launch:8 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait(1)
 				local args = {
 					[1] = "[Nuke Launch:7 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait(1)
 				local args = {
 					[1] = "[Nuke Launch:6 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait (1)
 				local args = {
 					[1] = "[Nuke Launch:5 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait (1)
 				local args = {
 					[1] = "[Nuke Launch:4 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait(1)
 				local args = {
 					[1] = "[Nuke Launch:3 sec]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait(1)
 				local args = {
 					[1] = "[Nuke Launch:2 sec ]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait(1)
 				local args = {
 					[1] = "[Nuke Launch:1 sec ]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				local args = {
 					[1] = "[Nuke Launch: Success ! ]",
 					[2] = "All"
 				}
-	
+
 				game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
 				wait (10)
 				local lib = require(game:GetService("Workspace").upsilonLibrary)
@@ -7775,8 +7775,8 @@ local script = G2L["3a"];
 				Bubble.BrickColor = BrickColor.new("1009")
 				Bubble.Material = Enum.Material.Neon
 				Bubble.Transparency = 0
-	
-	
+
+
 				function Nuke(part)
 					local properties = {
 						["CanCollide"] = true,
@@ -7791,10 +7791,10 @@ local script = G2L["3a"];
 						["Size"] = part.Size,
 						["CastShadow"] = false,
 						["Transparency"] = 1
-	
-	
+
+
 					}
-	
+
 					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
 				end
 				while task.wait(0.01) do
@@ -7819,8 +7819,8 @@ local script = G2L["3a"];
 				Bubble.BrickColor = BrickColor.new("1009")
 				Bubble.Material = Enum.Material.Neon
 				Bubble.Transparency = 0
-	
-	
+
+
 				function Nuke(part)
 					local properties = {
 						["CanCollide"] = true,
@@ -7835,13 +7835,13 @@ local script = G2L["3a"];
 						["Size"] = part.Size,
 						["CastShadow"] = false,
 						["Transparency"] = 1
-	
-	
+
+
 					}
-	
+
 					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
 				end
-	
+
 				Bubble.CFrame = 
 					CFrame.new(-6.10489082, 4, -15.8136148)
 				Nuke(Bubble)
@@ -7862,7 +7862,7 @@ local script = G2L["3a"];
 				Bubble.Material = Enum.Material.Neon
 				Bubble.Transparency = 0
 				Bubble.Orientation = Vector3.new(0, 0, 90)
-	
+
 				function Shield(part)
 					local properties = {
 						["CanCollide"] = true,
@@ -7878,15 +7878,15 @@ local script = G2L["3a"];
 						["Size"] = part.Size,
 						["CastShadow"] = true,
 						["Transparency"] = 1
-	
+
 					}
-	
+
 					lib.FireOtherClients("drawLaser",part.Position,part.Position,properties)
 				end
-	
+
 				while task.wait(0.01) do
 					Bubble.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-5,0)
-	
+
 					Shield(Bubble)
 				end
 			end
@@ -7896,19 +7896,19 @@ local script = G2L["3a"];
 			Callback = function()
 				for i,v in pairs(game.Players:GetChildren())do
 					local lib = require(game:GetService("Workspace").upsilonLibrary)
-	
+
 					firesignal(game.Workspace.resources.RemoteEvent.OnClientEvent,"displayChoice",'returnToMenu',"sex")
 					lib.FireOtherClients("displayChoice",'returnToMenu',"sex")
 				end
 			end    
 		})
-	
+
 		Tab:AddButton({
 			Name = "Lag Others",
 			Callback = function() loadstring(game:HttpGet(('https://pastebin.com/raw/bLsmSvd0'),true))()
 			end
 		})
-	
+
 		Tab:AddButton({
 			Name = "Bridge Tool",
 			Callback = function() 
@@ -7916,7 +7916,7 @@ local script = G2L["3a"];
 				tool.RequiresHandle = false
 				tool.Name = "Bridge"
 				tool.CanBeDropped = false
-	
+
 				local pos1 = nil
 				local pos2 = nil
 				local bridgesize = 10
@@ -7925,11 +7925,11 @@ local script = G2L["3a"];
 				local isSettingPos = false
 				local bridgeEnabled = false
 				local dist = 0
-	
+
 				function asdf(origin, target, properties)
 					game.Workspace.resources.RemoteEvent:FireServer("FireAllClients","drawLaser", origin, target, properties)
 				end
-	
+
 				mouse.KeyDown:Connect(function(k)
 					if not isEquipped then return end
 					key = k:lower()
@@ -7963,8 +7963,8 @@ local script = G2L["3a"];
 						})
 					end
 				end)
-	
-	
+
+
 				tool.Equipped:Connect(function()
 					isEquipped = true
 					game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -7972,13 +7972,13 @@ local script = G2L["3a"];
 						Text = "Click to set positions, Press R to increase width, E to decrease width and Press T to reset.";
 					})
 				end)
-	
+
 				tool.Unequipped:Connect(function()
 					isEquipped = false
 				end)
-	
-	
-	
+
+
+
 				tool.Activated:Connect(function()
 					if not isSettingPos then
 						pos1 = mouse.hit
@@ -7998,7 +7998,7 @@ local script = G2L["3a"];
 						dist = (pos1.p-pos2.p).magnitude
 					end
 				end)
-	
+
 				while true do
 					wait(.1)
 					if bridgeEnabled then
@@ -8011,7 +8011,7 @@ local script = G2L["3a"];
 				end
 			end
 		})
-	
+
 		Tab:AddButton({
 			Name = "C4 tool",
 			Callback = function()
@@ -8032,8 +8032,8 @@ local script = G2L["3a"];
 					g.Parent = Workspace
 					g.Shape = Enum.PartType.Block
 					g.Orientation = Vector3.new(0, 0, 90)
-	
-	
+
+
 					local properties = {
 						["TopSurface"] = "Smooth",
 						["Material"] = Enum.Material.Ice,
@@ -8048,13 +8048,13 @@ local script = G2L["3a"];
 						["Transparency"] = transparency,
 						["Parent"] = Workspace
 					}
-	
-	
+
+
 					lib.FireOtherClients("drawLaser", part.Position, part.Position, properties)
 					wait(1)
 					g:Destroy()
 				end
-	
+
 				function createCPart(part, size, cframe, material, color, transparency)
 					wait (0.4)
 					local lib = require(game:GetService("Workspace").upsilonLibrary)
@@ -8073,8 +8073,8 @@ local script = G2L["3a"];
 					g.Parent = Workspace
 					g.Shape = Enum.PartType.Ball
 					g.Orientation = Vector3.new(0, 0, 90)
-	
-	
+
+
 					local properties = {
 						["TopSurface"] = "Smooth",
 						["Material"] = Enum.Material.Neon,
@@ -8090,17 +8090,17 @@ local script = G2L["3a"];
 						["Transparency"] = transparency,
 						["Parent"] = Workspace
 					}
-	
-	
+
+
 					lib.FireOtherClients("drawLaser", part.Position, part.Position, properties)
 					wait(0.7)
 					g:Destroy()
 				end
-	
+
 				local tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
 				tool.Name = "C4 Tool"
 				tool.RequiresHandle = false
-	
+
 				tool.Activated:Connect(function()
 					local mouse = game:GetService("Players").LocalPlayer:GetMouse()
 					local mouseHit = mouse.Hit.p + Vector3.new(0, 0, 0)
@@ -8108,7 +8108,7 @@ local script = G2L["3a"];
 					if mouse.Target and mouse.Target:IsA("BasePart") then
 						createC4art(mouse.Target, mouse.Target.Size + Vector3.new(0.005, 0.005, 0.005), cframe, mouse.Target.Material, mouse.Target.Color, mouse.Target.Transparency)
 					end
-	
+
 					local mouse = game:GetService("Players").LocalPlayer:GetMouse()
 					local mouseHit = mouse.Hit.p + Vector3.new(0, 0, 0)
 					local cframe = CFrame.new(mouseHit)
@@ -8135,7 +8135,7 @@ local script = G2L["3a"];
 					paint.Color = Color3.fromRGB(255, 0, 0)
 					paint.Transparency = transparency
 					paint.Parent = Workspace
-	
+
 					local properties = {
 						["TopSurface"] = DiscordInvite,
 						["Material"] = Material,
@@ -8173,7 +8173,7 @@ local script = G2L["3a"];
 			Name = "SEX1",
 			Callback = function()
 				local Yourmessage = "SEX"
-	
+
 				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
 			end
 		})
@@ -8181,7 +8181,7 @@ local script = G2L["3a"];
 			Name = "Say Fuck",
 			Callback = function()
 				local Yourmessage = "fuck you"
-	
+
 				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "smallNotice", Yourmessage)
 			end
 		})
@@ -8190,8 +8190,8 @@ local script = G2L["3a"];
 			Callback = function()
 				local Title = "Fuck you"
 				local Yourmessage = "bitch asses"
-	
-	
+
+
 				game:GetService("Workspace").resources.RemoteEvent:FireServer("FireAllClients", "showNotice", Title, Yourmessage)
 			end
 		})
