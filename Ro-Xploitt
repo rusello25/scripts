@@ -1014,7 +1014,7 @@ local function EXMYH_fake_script() -- c00lgui.LocalScript
 	local script = Instance.new('LocalScript', c00lgui)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimagined"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/c00lgui%20reimaginedd"))()
 	end)
 end
 coroutine.wrap(EXMYH_fake_script)()
@@ -1022,7 +1022,7 @@ local function SOHT_fake_script() -- k00pgui.LocalScript
 	local script = Instance.new('LocalScript', k00pgui)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/k00pguii"))()
 	end)
 end
 coroutine.wrap(SOHT_fake_script)()
