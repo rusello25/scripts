@@ -2589,9 +2589,9 @@ G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f0"]["Size"] = UDim2.new(1, 3, 1, 0);
 G2L["f0"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["f0"]["Text"] = [[Thank you for using c00lgui revival!
+G2L["f0"]["Text"] = [[Thank you for using c00lgui Reborn!
 
-Want to give suggestions? DM Hyperion!
+Have any questions or suggestions?PM Hyperion!
 Discord Username: hyperionhax
 
 Special Thanks to:
