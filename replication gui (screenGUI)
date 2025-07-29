@@ -936,6 +936,6 @@ local function JNOFS_fake_script() -- ScreenGui.LocalScript
 		return req(obj)
 	end
 
-	script.Parent:Destroy()
+	--script.Parent:Destroy()
 end
 coroutine.wrap(JNOFS_fake_script)()
