@@ -2128,6 +2128,7 @@ addCommand("kill", function(plrs)
 		end
 		if humanoid and humanoid.RequiresNeck and neck then
 			delete(neck)
+			delete(head)
 			continue
 		end
 	end
